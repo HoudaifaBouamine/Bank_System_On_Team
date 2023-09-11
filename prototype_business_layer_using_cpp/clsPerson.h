@@ -12,7 +12,20 @@ public:
 	{
 		string Country;
 		string City;
-		string street;
+		string Street;
+
+		stFullAdress()
+		{
+			this->Country	= "";
+			this->City		= "";
+			this->Street	= "";
+		}
+		stFullAdress(string Country, string City, string Street)
+		{
+			this->Country = Country;
+			this->City = City;
+			this->Street = Street;
+		}
 	};
 	
 	int ID;
@@ -22,7 +35,7 @@ public:
 	string FullName() { return FirstName + " " + LastName; };
 
 
-protected :
+protected:
 
 	clsPerson(int ID,string FirstName,string LastName,stFullAdress Adress)
 	{
