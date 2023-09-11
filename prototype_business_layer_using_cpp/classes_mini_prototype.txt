@@ -1,0 +1,106 @@
+class clsPerson
+{
+	int ID;
+	string FirstName,LastName;
+	FullAdress Adress;		
+}
+
+class clsUser : clsPerson
+{
+	int ID;
+	stPermetion Permetion;
+	Email,Password,Phone;
+
+	static public getAllUsers();
+
+	static public Find_User(string Email,string Password);
+	static public Find_User(string ID,string Password);
+
+	static private Find_User(string Email)
+
+	public clsUser Create();
+
+	public bool Update();
+
+	public bool Delete();
+
+	public clsUser Read();
+}
+
+clsUser User = clsUser.Find_User(intput_email,input_password);
+
+if(User != null)
+{
+	Login();
+}
+else
+{
+	LoginFailed();
+}
+
+class clsClient : clsPerson
+{
+	int ID;
+	float Balance;
+	Email,Password,Phone;
+}
+
+class clsTransaction
+{
+		
+	enum enTranscation_Type {eDisposit,eWithdraw,eVersi};
+	enum enMethod {eUser,eATM,eSite};
+
+	public enTranscation_Type type;
+	public enMethod method;
+	DateTime date_time;
+	float Balance;
+	clsUser user;
+	clsATM ATM;
+	clsClient Sender;
+	clsClient Resiver;
+
+	clsTranscation(clsUser user,clsClient sender,clsClient reciver, float amount)
+	{
+		method = enMethod.eUser;
+		type = eVersi;
+	}
+
+	clsTranscation(clsClient sender,clsClient reciver, float amount)
+	{
+		method = enMethod.eSite;
+		type = eVersi;
+	}
+
+	clsTranscation(clsATM atm,clsClient sender,clsClient reciver, float amount)
+	{
+		method = enMethod.eATM;
+		type = eVersi;
+	}
+
+	clsTranscation(clsUser,clsClient reciver, float amount)
+	{
+		method = enMethod.eUser;
+		type = eWithdraw;
+	}
+
+	clsTranscation(clsUser,clsClient sender,float amount)
+	{
+		method = enMethod.eDispsit;
+		type = eWithdraw;
+	}
+
+	public void SaveToDatabase()
+	{
+		
+	}
+
+
+	public static List<clsTranscation> GetAllTranscations()
+	{
+		
+	}
+	
+}
+
+
