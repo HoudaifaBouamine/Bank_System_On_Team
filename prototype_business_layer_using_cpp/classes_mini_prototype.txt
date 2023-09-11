@@ -71,31 +71,25 @@ class clsTransaction
 		method = enMethod.eSite;
 		type = eVersi;
 	}
-
 	clsTranscation(clsATM atm,clsClient sender,clsClient reciver, float amount)
 	{
 		method = enMethod.eATM;
 		type = eVersi;
 	}
-
 	clsTranscation(clsUser,clsClient reciver, float amount)
 	{
 		method = enMethod.eUser;
 		type = eWithdraw;
 	}
-
 	clsTranscation(clsUser,clsClient sender,float amount)
 	{
 		method = enMethod.eDispsit;
 		type = eWithdraw;
 	}
-
 	public void SaveToDatabase()
 	{
 		
 	}
-
-
 	public static List<clsTranscation> GetAllTranscations()
 	{
 		
