@@ -14,7 +14,7 @@ class clsUser : clsPerson
 	static public getAllUsers();
 
 	static public Find_User(string Email,string Password);
-	static public Find_User(string ID,string Password);
+	static privet Find_User(string ID,string Password);
 
 	static private Find_User(string Email)
 
