@@ -28,7 +28,6 @@ public:
 		}
 	};
 	
-	int ID;
 	string FirstName, LastName;
 	stFullAdress Adress;
 
@@ -37,9 +36,8 @@ public:
 
 protected:
 
-	clsPerson(int ID,string FirstName,string LastName,stFullAdress Adress)
+	clsPerson(string FirstName,string LastName,stFullAdress Adress)
 	{
-		this->ID = ID;
 		this->FirstName = FirstName;
 		this->LastName = LastName;
 		this->Adress = Adress;
