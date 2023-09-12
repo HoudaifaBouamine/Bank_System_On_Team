@@ -14,9 +14,9 @@ private:
 
 public :
     int Permition ; 
-    static  Email,Password,Phone;
-    static int ArrayLength = 0 ; 
-    statis clsUser ArrayOfUsers[]; 
+    static string Email,Password,Phone;
+    static int ArrayLength ; 
+    clsUser ArrayOfUsers[]; 
     
 
     bool UserPermition(int IsHasPermition ){
