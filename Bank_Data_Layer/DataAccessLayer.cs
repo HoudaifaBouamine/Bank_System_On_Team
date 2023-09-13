@@ -10,7 +10,5 @@ namespace Bank_Data_Layer
     public class clsDataAccessLayer
     {
 
-       
-
     }
 }

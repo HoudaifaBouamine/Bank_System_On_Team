@@ -12,7 +12,7 @@ namespace Bank_Presentation_Layer_Consol_App
     {
         static void Main(string[] args)
         {
-            
+
             Console.ReadKey();
         }
     }

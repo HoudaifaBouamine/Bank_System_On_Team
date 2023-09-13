@@ -10,6 +10,6 @@ namespace Bank_Business_Layer
 {
     public class clsClient : clsPerson
     {
-     
+
     }
 }
