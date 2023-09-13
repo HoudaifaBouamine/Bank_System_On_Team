@@ -1,5 +1,6 @@
 #include "clsPerson.h" 
-
+clsUser ArrayOfUsers[]; 
+    
 class clsUser :public clsPerson
 {
 private:
@@ -16,7 +17,6 @@ public :
     int Permition ; 
     static string Email,Password,Phone;
     static int ArrayLength ; 
-    clsUser ArrayOfUsers[]; 
     
 
     bool UserPermition(int IsHasPermition ){
