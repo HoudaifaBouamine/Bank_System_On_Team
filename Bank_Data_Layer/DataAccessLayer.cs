@@ -132,5 +132,65 @@ namespace Bank_Data_Layer
             return isFound;
         }
 
+
+        static public bool Add_New_User_By_User_ID_And_Person_ID
+            (
+                ref int User_ID, int Person_ID, string FirstName, string LastName,
+                string Country, string City, string Street,
+                string Email, string Password,
+                string Phone, int Permission
+            )
+
+        {
+            bool result = false;
+
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+
+            string query = " insert into Persons (FirstName,LastName,Country,City,Street) values (@FirstName,@LastName,@Country,@City,@Street); INSERT INTO Users (Person_ID,Email,[Password],Phone,Permission) VALUES ((select top 1 SCOPE_IDENTITY() from Persons),@Email,@Password,@Phone,@Permission) select top 1 SCOPE_IDENTITY() from Users;"''
+
+
+
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@FirstName", FirstName);
+            command.Parameters.AddWithValue("@LastName", LastName);
+            command.Parameters.AddWithValue("@Country", Country);
+            command.Parameters.AddWithValue("@City", City);
+            command.Parameters.AddWithValue("@Street", Street);
+            command.Parameters.AddWithValue("@Email", Email);
+            command.Parameters.AddWithValue("@Password", Password);
+            command.Parameters.AddWithValue("@Phone", Phone);
+            command.Parameters.AddWithValue("@Permission", Permission);
+
+
+            try
+            {
+                connection.Open();
+
+                object new_id = command.ExecuteScalar();
+
+                if(new_id == null)
+                {
+                    result = false;
+                }
+                else
+                {
+                    User_ID = Convert.ToInt32(new_id);
+                    result = true;
+                }
+
+            }
+            catch
+            {
+                result = false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return result;
+
+        }
+
     }
 }
