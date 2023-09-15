@@ -7,6 +7,7 @@ using System.Data;
 using Bank_Business_Layer;
 using System.IO;
 using System.Security.Policy;
+using System.Net;
 
 namespace Bank_Presentation_Layer_Consol_App
 {
@@ -57,14 +58,34 @@ namespace Bank_Presentation_Layer_Consol_App
             }
         }
 
+        static void add_new_user()
+        {
+            clsUser new_user = new clsUser();
+
+            new_user.FirstName  = "user";
+            new_user.LastName   = "person";
+            new_user.Country    = "USA";
+            new_user.City       = "KOKO";
+            new_user.Street     = "AS";
+            new_user.Email      = "user2@gmail.com";
+            new_user.Password   = "00001111";
+            new_user.Phone      = "0987678982";
+            new_user.Permission = 21;
+
+            if(new_user.save())
+            {
+                Console.WriteLine($"User saved succssfuly with id = {new_user.User_ID}");
+            }
+            else
+            {
+                Console.WriteLine("User Failed to add");
+            }
+        }
+
         static void Main(string[] args)
         {
-            find_user(1);
-
-            //update_user_phone(1,"-3242342423");
-
-            find_user(1);
-
+            //add_new_user();
+            find_user(13);
 
             Console.ReadKey();
         }

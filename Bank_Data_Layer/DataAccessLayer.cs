@@ -182,9 +182,10 @@ namespace Bank_Data_Layer
 
                 if(result == true)
                 {
-                    string query_to_get_person_id = "select top 1 SCOPE_IDENTITY() from Persons";
+                    string query_to_get_person_id = "select Users.Person_ID from Users Where User_ID = @User_ID";
 
                     SqlCommand command_to_get_person_id = new SqlCommand(query_to_get_person_id, connection);
+                    command_to_get_person_id.Parameters.AddWithValue("@User_ID", User_ID);
 
                     object person_id = command_to_get_person_id.ExecuteScalar();
 
