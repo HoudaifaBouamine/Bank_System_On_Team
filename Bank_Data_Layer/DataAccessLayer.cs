@@ -212,5 +212,76 @@ namespace Bank_Data_Layer
 
         }
 
+        static public bool Update_User_By_ID
+            (
+                int User_ID,int Person_ID, string FirstName, string LastName,
+                string Country, string City, string Street,
+                string Email, string Password,
+                string Phone, int Permission
+            )
+
+        {
+
+            bool result = false;
+
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+
+            string query = "UPDATE [Users]" +
+                " SET [Email] = @Email," +
+                "[Password] = @Password," +
+                "[Phone] = @Phone," +
+                "[Permission] = @Permission" +
+                " WHERE [User_ID] = @User_ID;" +
+                "" +
+                "UPDATE Persons" +
+                " SET [FirstName] = @FirstName," +
+                "[LastName] = @LastName," +
+                "[Country] = @Country," +
+                "[City] = @City," +
+                "[Street] = @Street " +
+                " WHERE Person_ID = @Person_ID;";
+
+            SqlCommand command = new SqlCommand(query, connection);
+
+            command.Parameters.AddWithValue("@User_ID", User_ID);
+            command.Parameters.AddWithValue("@Person_ID", Person_ID);
+            command.Parameters.AddWithValue("@FirstName", FirstName);
+            command.Parameters.AddWithValue("@LastName", LastName);
+            command.Parameters.AddWithValue("@Country", Country);
+            command.Parameters.AddWithValue("@City", City);
+            command.Parameters.AddWithValue("@Street", Street);
+            command.Parameters.AddWithValue("@Email", Email);
+            command.Parameters.AddWithValue("@Password", Password);
+            command.Parameters.AddWithValue("@Phone", Phone);
+            command.Parameters.AddWithValue("@Permission", Permission);
+
+            try
+            {
+                connection.Open();
+
+                int row_affected = command.ExecuteNonQuery();
+
+                if(row_affected > 0)
+                {
+                    result = true; 
+                }
+                else
+                {
+                    result = false;
+                }
+
+            }
+            catch (Exception ex) 
+            {
+                result = false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return result;
+
+        }
     }
 }
