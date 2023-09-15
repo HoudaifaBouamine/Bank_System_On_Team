@@ -146,7 +146,7 @@ namespace Bank_Data_Layer
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
-            string query = " insert into Persons (FirstName,LastName,Country,City,Street) values (@FirstName,@LastName,@Country,@City,@Street); INSERT INTO Users (Person_ID,Email,[Password],Phone,Permission) VALUES ((select top 1 SCOPE_IDENTITY() from Persons),@Email,@Password,@Phone,@Permission) select top 1 SCOPE_IDENTITY() from Users;"''
+            string query = " insert into Persons (FirstName,LastName,Country,City,Street) values (@FirstName,@LastName,@Country,@City,@Street); INSERT INTO Users (Person_ID,Email,[Password],Phone,Permission) VALUES ((select top 1 SCOPE_IDENTITY() from Persons),@Email,@Password,@Phone,@Permission) select top 1 SCOPE_IDENTITY() from Users;";
 
 
 
