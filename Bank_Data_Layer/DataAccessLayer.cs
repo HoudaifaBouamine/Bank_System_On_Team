@@ -133,9 +133,9 @@ namespace Bank_Data_Layer
         }
 
 
-        static public bool Add_New_User_By_User_ID_And_Person_ID
+        static public bool Add_New_User_By_User_ID
             (
-                ref int User_ID, int Person_ID, string FirstName, string LastName,
+                ref int User_ID,ref int Person_ID, string FirstName, string LastName,
                 string Country, string City, string Street,
                 string Email, string Password,
                 string Phone, int Permission
@@ -176,6 +176,26 @@ namespace Bank_Data_Layer
                 {
                     User_ID = Convert.ToInt32(new_id);
                     result = true;
+                }
+
+                // Getting Person_ID
+
+                if(result == true)
+                {
+                    string query_to_get_person_id = "select top 1 SCOPE_IDENTITY() from Persons";
+
+                    SqlCommand command_to_get_person_id = new SqlCommand(query_to_get_person_id, connection);
+
+                    object person_id = command_to_get_person_id.ExecuteScalar();
+
+                    if (person_id == null)
+                    {
+                        result = false;
+                    }
+                    else
+                    {
+                        Person_ID = Convert.ToInt32(person_id);
+                    }
                 }
 
             }
