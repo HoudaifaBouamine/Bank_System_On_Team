@@ -35,12 +35,13 @@ namespace Bank_Business_Layer
 
         static public clsUser find
             (
-                int User_ID, ref int Person_ID, ref string FirstName, 
-                ref string LastName,ref string Country,ref string City,
-                ref string Street,ref string Email,ref string Password,
-                ref string Phone,ref int Permission
+                int User_ID
             )
         {
+
+            int Person_ID = -1, Permission = 0;
+            string FirstName = "", LastName = "", Country = "", City = "", Street = "",
+                Email = "", Password = "", Phone = "";
 
             clsUser user = null;
 
@@ -93,7 +94,12 @@ namespace Bank_Business_Layer
                     }
                 case enMode.eUpdate:
                     {
-                        return false;
+
+                        return clsDataAccessLayer.Update_User_By_ID
+                            (
+                                User_ID,Person_ID, FirstName, LastName,
+                                Country, City, Street, Email, Password, Phone,Permission
+                            );
                     }
 
                 default:
