@@ -65,6 +65,42 @@ namespace Bank_Business_Layer
 
         }
 
+        static public List<clsUser> list()
+        {
+            List<clsUser> users_list = new List<clsUser>();
+
+            List<int> User_ID = new List<int>();
+            List<int> Person_ID = new List<int>();
+            List<string> FirstName = new List<string>();
+            List<string> LastName = new List<string>();
+            List<string> Country = new List<string>();
+            List<string> City = new List<string>();
+            List<string> Street = new List<string>();
+            List<string> Email = new List<string>();
+            List<string> Password = new List<string>();
+            List<string> Phone = new List<string>();
+            List<int> Permission = new List<int>();
+
+            clsDataAccessLayer.Get_Users_List
+                (
+                    ref User_ID, ref Person_ID, ref FirstName, ref LastName, ref Country, ref City, ref Street,
+                    ref Email, ref Password, ref Phone, ref Permission
+                );
+
+
+            for (int i = 0; i < User_ID.Count; i++)
+            {
+                clsUser user = new clsUser(
+                    User_ID[i], Person_ID[i], FirstName[i], LastName[i],
+                    Country[i], City[i], Street[i],
+                    Email[i], Password[i], Phone[i], Permission[i]);
+
+                users_list.Add(user);
+            }
+
+
+            return users_list;
+        }
 
         public bool save()
         {

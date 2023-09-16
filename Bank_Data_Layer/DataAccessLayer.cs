@@ -284,5 +284,61 @@ namespace Bank_Data_Layer
             return result;
 
         }
+
+        static public bool Get_Users_List
+            (
+                ref List<int> User_ID, ref List<int> Person_ID, ref List<string> FirstName, ref List<string> LastName,
+                ref List<string> Country, ref List<string> City, ref List<string> Street,
+                ref List<string> Email, ref List<string> Password,
+                ref List<string> Phone, ref List<int> Permission
+            )
+        {
+            bool result = false;
+
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+
+            string query = "Select Persons.FirstName,Persons.LastName,Persons.Country,Persons.City,Persons.Street ,Users.* from Users Inner join Persons on Persons.Person_ID = Users.Person_ID";
+
+            SqlCommand command = new SqlCommand(query,connection);
+
+            // Param
+
+            try
+            {
+
+                connection.Open();
+                
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    User_ID.Add(Convert.ToInt32(reader["User_ID"]));
+                    Person_ID.Add(Convert.ToInt32(reader["Person_ID"]));
+                    FirstName.Add((string)reader["FirstName"]);
+                    LastName.Add((string)reader["LastName"]);
+                    Country.Add((string)reader["Country"]);
+                    City.Add((string)reader["City"]);
+                    Street.Add((string)reader["Street"]);
+                    Email.Add((string)reader["Email"]);
+                    Password.Add((string)reader["Password"]);
+                    Phone.Add((string)reader["Phone"]);
+                    Permission.Add(Convert.ToInt32(reader["Permission"]));
+                }
+
+                reader.Close();
+                result = true;
+
+            }
+            catch ( Exception ex )
+            {
+                result = false;
+            }
+            finally 
+            {
+                connection.Close(); 
+            }
+
+            return result;
+        }
     }
 }

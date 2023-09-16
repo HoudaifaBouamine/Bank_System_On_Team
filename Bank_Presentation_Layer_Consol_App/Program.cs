@@ -16,17 +16,22 @@ namespace Bank_Presentation_Layer_Consol_App
 
         static void print_user(clsUser user)
         {
-             Console.WriteLine($"User_ID    : {user.User_ID   }");
-             Console.WriteLine($"Person_ID  : {user.Person_ID }");
-             Console.WriteLine($"FirstName  : {user.FirstName }");
-             Console.WriteLine($"LastName   : {user.LastName  }");
-             Console.WriteLine($"Country    : {user.Country   }");
-             Console.WriteLine($"City       : {user.City      }");
-             Console.WriteLine($"Street     : {user.Street    }");
-             Console.WriteLine($"Email      : {user.Email     }");
-             Console.WriteLine($"Password   : {user.Password  }");
-             Console.WriteLine($"Phone      : {user.Phone     }");
-             Console.WriteLine($"Permission : {user.Permission}");
+
+            Console.WriteLine($"===============================");
+            Console.WriteLine($"=      User Info              =");
+            Console.WriteLine($"===============================");
+            Console.WriteLine($" User_ID    : {user.User_ID   }");
+            Console.WriteLine($" Person_ID  : {user.Person_ID }");
+            Console.WriteLine($" FirstName  : {user.FirstName }");
+            Console.WriteLine($" LastName   : {user.LastName  }");
+            Console.WriteLine($" Country    : {user.Country   }");
+            Console.WriteLine($" City       : {user.City      }");
+            Console.WriteLine($" Street     : {user.Street    }");
+            Console.WriteLine($" Email      : {user.Email     }");
+            Console.WriteLine($" Password   : {user.Password  }");
+            Console.WriteLine($" Phone      : {user.Phone     }");
+            Console.WriteLine($" Permission : {user.Permission}");
+            Console.WriteLine($"===============================\n\n");
         }
         static void find_user(int id)
         {
@@ -82,10 +87,21 @@ namespace Bank_Presentation_Layer_Consol_App
             }
         }
 
+        static void print_users_list()
+        {
+            List<clsUser> list_users = clsUser.list();
+
+            if(list_users.Count < 1)
+            {
+                Console.WriteLine("Empty list");
+            }
+
+            foreach(clsUser user in list_users) print_user(user);
+        }
         static void Main(string[] args)
         {
-            //add_new_user();
-            find_user(13);
+
+            print_users_list();
 
             Console.ReadKey();
         }
