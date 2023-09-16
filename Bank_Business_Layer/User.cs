@@ -166,11 +166,11 @@ namespace Bank_Business_Layer
         }
 
         /// <summary>
-        /// this function save the information on the object to the database
-        /// if <c>Mode == enMode.eAddNew</c> then it store the information on new row on the database
-        /// else if <c>Mode == enMode.eUpdate</c> then it store the information on the same row with the User_ID of the object
+        /// this function save the information on the object to the database;<br></br>
+        /// if the object created using the return of the <c>clsUser.find(int User_ID)</c> then this function will update the user info on the database;<br></br>
+        /// else if the object created using <c>new clsUser()</c> (the constructor) then it will add new user to the database,but when using it again it will update the new user info without creating new one<br></br>
         /// </summary>
-        /// <returns>return <c>true</c> if the save complited successfuly,otherwise return <c>false</c></returns>
+        /// <returns>return <c>true</c> if the save complited successfuly, otherwise return <c>false</c></returns>
         public bool save()
         {
             switch (this.Mode)
