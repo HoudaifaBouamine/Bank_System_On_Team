@@ -301,8 +301,6 @@ namespace Bank_Data_Layer
 
             SqlCommand command = new SqlCommand(query,connection);
 
-            // Param
-
             try
             {
 
