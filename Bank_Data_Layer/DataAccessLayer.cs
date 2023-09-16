@@ -10,6 +10,11 @@ namespace Bank_Data_Layer
     public class clsDataAccessLayer
     {
 
+        /// <summary>
+        /// Search on the Database for client by <c>Client_ID</c> and return the client info as variables using <c>ref</c> key word
+        /// </summary>
+        /// <param name="Client_ID"></param>
+        /// <returns>return <c>true</c> if the Client found succssufuly, otherwise return <c>flase</c></returns>
         static public bool Find_Client_By_ID
             (
             int Client_ID,ref int Person_ID,ref string FirstName,ref string LastName,
@@ -71,6 +76,11 @@ namespace Bank_Data_Layer
             return isFound;
         }
 
+        /// <summary>
+        /// Search on the Database for user by <c>User_ID</c> and return the user info as variables using <c>ref</c> key word
+        /// </summary>
+        /// <param name="User_ID"></param>
+        /// <returns>return <c>true</c> if the User found succssufuly, otherwise return <c>flase</c></returns>
         static public bool Find_User_By_ID
             (
                 int User_ID, ref int Person_ID, ref string FirstName, ref string LastName,
@@ -132,7 +142,14 @@ namespace Bank_Data_Layer
             return isFound;
         }
 
-
+        /// <summary>
+        /// Create new User on the Database ,
+        /// if user created successfuly return by <c>ref</c>
+        /// the <c>User_ID</c> and <c>Person_ID</c><br></br>
+        /// </summary>
+        /// <param name="User_ID">must have reference to store the <c>User_ID</c> on it</param>
+        /// <param name="Person_ID">must have reference to store the <c>Person_ID</c> on it</param>
+        /// <returns>return <c>true</c> if the User added succssufuly, otherwise return <c>flase</c></returns>
         static public bool Add_New_User_By_User_ID
             (
                 ref int User_ID,ref int Person_ID, string FirstName, string LastName,
@@ -213,6 +230,11 @@ namespace Bank_Data_Layer
 
         }
 
+        /// <summary>
+        /// Update the user by <c>User_ID</c><br></br>
+        /// <c>Person_ID</c> is required to find the Person row on the database and update it
+        /// </summary>
+        /// <returns>return <c>true</c> if the User updated succssufuly, otherwise return <c>flase</c></returns>
         static public bool Update_User_By_ID
             (
                 int User_ID,int Person_ID, string FirstName, string LastName,
@@ -285,6 +307,10 @@ namespace Bank_Data_Layer
 
         }
 
+        /// <summary>
+        /// return lists of all users info
+        /// </summary>
+        /// <returns>return <c>true</c> if the it get the list successfuly, otherwise return false</returns>
         static public bool Get_Users_List
             (
                 ref List<int> User_ID, ref List<int> Person_ID, ref List<string> FirstName, ref List<string> LastName,
