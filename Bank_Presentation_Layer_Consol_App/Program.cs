@@ -98,10 +98,35 @@ namespace Bank_Presentation_Layer_Consol_App
 
             foreach(clsUser user in list_users) print_user(user);
         }
+
+     
+
+        static public void Print_user_list_as_tabke()
+        {
+            List<clsUser> usersList = clsUser.list();
+
+            if (usersList.Count == 0)
+            {
+                Console.WriteLine("The user list is empty.");
+                return;
+            }
+
+            Console.WriteLine("User_ID | Person_ID | FirstName    | LastName    | Country       | City          | Street                | Email                            | Password    | Phone         | Permission");
+            Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+
+            foreach (var user in usersList)
+            {
+                Console.WriteLine($"{user.User_ID,-7} | {user.Person_ID,-9} | {user.FirstName,-12} | {user.LastName,-12} | {user.Country,-15} | {user.City,-15} | {user.Street,-20} | {user.Email,-30} | {user.Password,-12} | {user.Phone,-13} | {user.Permission,-10}");
+            }
+        }
+
+
+
+
         static void Main(string[] args)
         {
 
-            print_users_list();
+            Print_user_list_as_tabke();
 
             Console.ReadKey();
         }
