@@ -21,7 +21,13 @@ namespace Bank_Business_Layer
         /// <param name="user_ID">the unique identifire of the user</param>
         /// <param name="person_ID">the uniqye identifire if the person</param>
         /// <param name="permission">an <c>integer number</c> represent the user permission as <c>flags</c> , every bit on this integer tell if he have the permission to do something (1) or not (0)</param>
-        private clsUser(int user_ID, int person_ID, string firstName, string lastName, string country, string city, string street, string email, string password, string phone, int permission)
+        private clsUser
+            (
+                int user_ID, int person_ID, string firstName,
+                string lastName, string country, string city, 
+                string street, string email, string password,
+                string phone, int permission
+            )
             : base(person_ID, firstName, lastName, country, city, street)
         {
             _user_id = user_ID;
@@ -54,10 +60,7 @@ namespace Bank_Business_Layer
         /// </summary>
         /// <returns> the full user info when user found,null otherwize</returns>
         /// <param name="User_ID">The unique identifier of the user</param>
-        static public clsUser find
-            (
-                int User_ID
-            )
+        static public clsUser find(int User_ID)
         {
 
             int Person_ID = -1, Permission = 0;
@@ -129,6 +132,39 @@ namespace Bank_Business_Layer
         }
 
 
+        private bool _Add_New()
+        {
+            int tmp_user_id = -1, tmp_person_id = -1;
+
+            if (
+                clsDataAccessLayer.Add_New_User_By_User_ID
+                (
+                    ref tmp_user_id, ref tmp_person_id, FirstName, LastName,
+                    Country, City, Street, Email, Password, Phone, Permission
+                )
+               )
+
+            {
+                _user_id = tmp_user_id;
+                _person_id = tmp_person_id;
+                Mode = enMode.eUpdate; // IF we do not change the mode the next update of the same object (User) will be added as new user to the database
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private bool _Update()
+        {
+            return clsDataAccessLayer.Update_User_By_ID
+                         (
+                             User_ID, Person_ID, FirstName, LastName,
+                             Country, City, Street, Email, Password, Phone, Permission
+                         );
+        }
+
         /// <summary>
         /// this function save the information on the object to the database
         /// if <c>Mode == enMode.eAddNew</c> then it store the information on new row on the database
@@ -141,35 +177,12 @@ namespace Bank_Business_Layer
             {
                 case enMode.eAddNew:
                     {
-                        int tmp_user_id = -1, tmp_person_id = -1;
-
-                        if (
-                            clsDataAccessLayer.Add_New_User_By_User_ID
-                            (
-                                ref tmp_user_id, ref tmp_person_id, FirstName, LastName,
-                                Country, City, Street, Email, Password, Phone, Permission
-                            )
-                           )
-
-                        {
-                            _user_id = tmp_user_id;
-                            _person_id = tmp_person_id;
-                            Mode = enMode.eUpdate; // IF we do not change the mode the next update of the same object (User) will be added as new user to the database
-                            return true;
-                        }
-                        else
-                        {
-                            return false;
-                        }
+                        return _Add_New();
                     }
                 case enMode.eUpdate:
                     {
 
-                        return clsDataAccessLayer.Update_User_By_ID
-                            (
-                                User_ID,Person_ID, FirstName, LastName,
-                                Country, City, Street, Email, Password, Phone,Permission
-                            );
+                        return _Update();
                     }
 
                 default:
