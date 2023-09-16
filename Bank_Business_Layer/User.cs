@@ -12,6 +12,15 @@ namespace Bank_Business_Layer
 {
     public class clsUser : clsPerson
     {
+
+        /// <summary>
+        /// When you create an object using the constructor,
+        /// then use the <c>Save()</c> method,
+        /// the information on this object will overriding the information of the user with <c>user_ID</c> (Perform update operation)
+        /// </summary>
+        /// <param name="user_ID">the unique identifire of the user</param>
+        /// <param name="person_ID">the uniqye identifire if the person</param>
+        /// <param name="permission">an <c>integer number</c> represent the user permission as <c>flags</c> , every bit on this integer tell if he have the permission to do something (1) or not (0)</param>
         private clsUser(int user_ID, int person_ID, string firstName, string lastName, string country, string city, string street, string email, string password, string phone, int permission)
             : base(person_ID, firstName, lastName, country, city, street)
         {
@@ -23,6 +32,11 @@ namespace Bank_Business_Layer
             Mode = enMode.eUpdate;
         }
 
+        /// <summary>
+        /// When you create an object using the constructor,
+        /// then use the <c>Save()</c> method,
+        /// the information on this object will be stored on new row on the database
+        /// </summary>
         public clsUser()
         {
             _user_id = -1;
@@ -33,6 +47,13 @@ namespace Bank_Business_Layer
             Mode = enMode.eAddNew;
         }
 
+        /// <summary>
+        /// find function get the user <c>ID</c> 
+        /// if user is found it returns an object full with the user info
+        /// else it return <c>null</c>
+        /// </summary>
+        /// <returns> the full user info when user found,null otherwize</returns>
+        /// <param name="User_ID">The unique identifier of the user</param>
         static public clsUser find
             (
                 int User_ID
@@ -65,6 +86,10 @@ namespace Bank_Business_Layer
 
         }
 
+        /// <summary>
+        /// list function return all the users on the system as List of clsUser
+        /// </summary>
+        /// <returns>List of all Users on the system</returns>
         static public List<clsUser> list()
         {
 
@@ -103,8 +128,13 @@ namespace Bank_Business_Layer
             return users_list;
         }
 
-        
 
+        /// <summary>
+        /// this function save the information on the object to the database
+        /// if <c>Mode == enMode.eAddNew</c> then it store the information on new row on the database
+        /// else if <c>Mode == enMode.eUpdate</c> then it store the information on the same row with the User_ID of the object
+        /// </summary>
+        /// <returns>return <c>true</c> if the save complited successfuly,otherwise return <c>false</c></returns>
         public bool save()
         {
             switch (this.Mode)
