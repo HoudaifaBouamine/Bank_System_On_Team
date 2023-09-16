@@ -67,6 +67,7 @@ namespace Bank_Business_Layer
 
         static public List<clsUser> list()
         {
+
             List<clsUser> users_list = new List<clsUser>();
 
             List<int> User_ID = new List<int>();
@@ -102,6 +103,8 @@ namespace Bank_Business_Layer
             return users_list;
         }
 
+        
+
         public bool save()
         {
             switch (this.Mode)
@@ -121,6 +124,7 @@ namespace Bank_Business_Layer
                         {
                             _user_id = tmp_user_id;
                             _person_id = tmp_person_id;
+                            Mode = enMode.eUpdate; // IF we do not change the mode the next update of the same object (User) will be added as new user to the database
                             return true;
                         }
                         else
