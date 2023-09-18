@@ -364,5 +364,47 @@ namespace Bank_Data_Layer
 
             return result;
         }
+
+        static public bool Delete_User_By_ID(int User_ID)
+        {
+            bool isDeleted = false;
+
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+
+            string query = "DELETE FROM Persons WHERE Persons.Person_ID = (select Users.Person_ID from Users WHERE Users.User_ID = @User_ID); DELETE FROM Users WHERE User_ID = @User_ID; ";
+
+            // NOTE (HOUDAIFA) : You have to modify this query to check if the Person is related to a client (because a person may be a client and a user at the same time)
+
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@User_ID", User_ID);
+
+            try
+            {
+                connection.Open();
+
+                int row_affected = command.ExecuteNonQuery();
+
+                if(row_affected > 0)
+                {
+                    isDeleted = true;
+                }
+                else
+                {
+                    isDeleted = false;
+                }
+
+
+            }
+            catch ( Exception ex )
+            {
+                isDeleted = false;
+            }
+            finally
+            { 
+                connection.Close();
+            }
+
+            return isDeleted;
+        }
     }
 }

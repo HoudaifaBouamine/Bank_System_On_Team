@@ -22,3 +22,15 @@ C:\Users\admin\Desktop\prototypes\prototype-6\Bank_System_On_Team\Bank_Presentat
 C:\Users\admin\Desktop\prototypes\prototype-6\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\obj\Debug\Bank_Presentation_Layer_Consol_App.csproj.CopyComplete
 C:\Users\admin\Desktop\prototypes\prototype-6\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\obj\Debug\Bank_Presentation_Layer_Consol_App.exe
 C:\Users\admin\Desktop\prototypes\prototype-6\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\obj\Debug\Bank_Presentation_Layer_Consol_App.pdb
+C:\Users\houda\Source\Repos\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\bin\Debug\Bank_Presentation_Layer_Consol_App.exe.config
+C:\Users\houda\Source\Repos\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\bin\Debug\Bank_Presentation_Layer_Consol_App.exe
+C:\Users\houda\Source\Repos\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\bin\Debug\Bank_Presentation_Layer_Consol_App.pdb
+C:\Users\houda\Source\Repos\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\bin\Debug\Bank_Business_Layer.dll
+C:\Users\houda\Source\Repos\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\bin\Debug\Bank_Data_Layer.dll
+C:\Users\houda\Source\Repos\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\bin\Debug\Bank_Business_Layer.pdb
+C:\Users\houda\Source\Repos\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\bin\Debug\Bank_Data_Layer.pdb
+C:\Users\houda\Source\Repos\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\obj\Debug\Bank_Presentation_Layer_Consol_App.csproj.AssemblyReference.cache
+C:\Users\houda\Source\Repos\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\obj\Debug\Bank_Presentation_Layer_Consol_App.csproj.CoreCompileInputs.cache
+C:\Users\houda\Source\Repos\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\obj\Debug\Bank_Presentation_Layer_Consol_App.csproj.CopyComplete
+C:\Users\houda\Source\Repos\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\obj\Debug\Bank_Presentation_Layer_Consol_App.exe
+C:\Users\houda\Source\Repos\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\obj\Debug\Bank_Presentation_Layer_Consol_App.pdb
