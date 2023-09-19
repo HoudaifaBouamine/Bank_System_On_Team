@@ -62,3 +62,40 @@ CREATE TABLE Transactions (
 );
 
 
+
+
+
+CREATE VIEW ClientPersonView AS
+SELECT
+    C.Client_ID,
+    C.AccountNumber,
+    C.Email AS ClientEmail,
+    C.PinCode,
+    C.Phone AS ClientPhone,
+    C.Balance,
+    P.Person_ID,
+    P.FirstName,
+    P.LastName,
+    P.Country,
+    P.City,
+    P.Street
+FROM Clients C
+INNER JOIN Persons P ON C.Person_ID = P.Person_ID;
+
+
+CREATE VIEW UserPersonView AS
+SELECT
+    U.User_ID,
+    U.UserName,
+    U.Email AS UserEmail,
+    U.Password,
+    U.Phone AS UserPhone,
+    P.Person_ID,
+    P.FirstName,
+    P.LastName,
+    P.Country,
+    P.City,
+    P.Street
+FROM Users U
+INNER JOIN Persons P ON U.Person_ID = P.Person_ID;
+
