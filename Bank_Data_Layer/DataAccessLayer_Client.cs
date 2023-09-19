@@ -17,9 +17,9 @@ namespace Bank_Data_Layer
         /// <returns>return <c>true</c> if the Client found succssufuly, otherwise return <c>flase</c></returns>
         static public bool Find_Client_By_ID
             (
-            int Client_ID, ref int Person_ID, ref string FirstName, ref string LastName,
+            int Client_ID, ref int Person_ID,ref string AccountNumber, ref string FirstName, ref string LastName,
             ref string Country, ref string City, ref string Street,
-            ref string Email, ref string Password,
+            ref string Email, ref string PinCode,
             ref string Phone, ref double Balance
             )
 
@@ -43,15 +43,16 @@ namespace Bank_Data_Layer
                 {
 
                     Person_ID = (int)reader["Person_ID"];
+                    AccountNumber = (string)reader["AccountNumber"];
                     FirstName = (string)reader["FirstName"];
                     LastName = (string)reader["LastName"];
                     Country = (string)reader["Country"];
                     City = (string)reader["City"];
                     Street = (string)reader["Street"];
                     Email = (string)reader["Email"];
-                    Password = (string)reader["Password"];
+                    PinCode = (string)reader["PinCode"];
                     Phone = (string)reader["Phone"];
-                    Balance = (double)reader["Balance"];
+                    Balance = Convert.ToInt32( reader["Balance"]);
 
 
                     isFound = true;
@@ -75,5 +76,7 @@ namespace Bank_Data_Layer
 
             return isFound;
         }
+
+
     }
 }

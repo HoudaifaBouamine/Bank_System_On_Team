@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Bank_Data_Layer
 {
-    public class clsDataAccessLayer
+    public partial class clsDataAccessLayer
     {
 
         static public void testing ()
@@ -88,7 +88,7 @@ namespace Bank_Data_Layer
                     Email = (string)reader["Email"];
                     Password = (string)reader["Password"];
                     Phone = (string)reader["Phone"];
-                    Permission = (int)reader["Permission"];
+                    Permission = Convert.ToInt32( reader["Permission"]);
                     UserName = (string)reader["UserName"];
 
                     isFound = true;

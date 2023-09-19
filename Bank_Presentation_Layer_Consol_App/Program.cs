@@ -104,6 +104,7 @@ namespace Bank_Presentation_Layer_Consol_App
 
 
 
+
         static public void Print_user_list_as_table()
         {
             DataTable list_users = clsUser.list();
@@ -121,8 +122,6 @@ namespace Bank_Presentation_Layer_Consol_App
             }
             
         }
-
-
         static void delete_user(int id)
         {
             clsUser user = clsUser.find(id);
@@ -157,10 +156,49 @@ namespace Bank_Presentation_Layer_Consol_App
 
         }
 
+
+
+
+
+        static void print_client(clsClient client)
+        {
+
+            Console.WriteLine($"===============================");
+            Console.WriteLine($"=      User Info              =");
+            Console.WriteLine($"===============================");
+            Console.WriteLine($" Client_ID  : {client.Client_ID}");
+            Console.WriteLine($" Person_ID  : {client.Person_ID}");
+            Console.WriteLine($" Acc Num    : {client.AccountNumber}");
+            Console.WriteLine($" FirstName  : {client.FirstName}");
+            Console.WriteLine($" LastName   : {client.LastName}");
+            Console.WriteLine($" Country    : {client.Country}");
+            Console.WriteLine($" City       : {client.City}");
+            Console.WriteLine($" Street     : {client.Street}");
+            Console.WriteLine($" Email      : {client.Email}");
+            Console.WriteLine($" Pin Code   : {client.PinCode}");
+            Console.WriteLine($" Phone      : {client.Phone}");
+            Console.WriteLine($" Balance : {client.Balance}");
+            Console.WriteLine($"===============================\n\n");
+        }
+
+        static void find_client(int Client_ID)
+        {
+            clsClient client = clsClient.find(Client_ID);
+
+            if(client == null)
+            {
+                Console.WriteLine("Client Not FOund\n\n");
+            }
+            else
+            {
+                print_client(client);
+            }
+        }
+
         static void Main(string[] args)
         {
-            Print_user_list_as_table();
 
+            find_client(1);
             Console.ReadKey();
         }
     }
