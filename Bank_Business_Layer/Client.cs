@@ -13,7 +13,19 @@ namespace Bank_Business_Layer
     public class clsClient : clsPerson
     {
 
-        public static clsClient find(int Client_ID)
+        /// <summary>
+        /// Finds a client based on their unique Client ID and retrieves their information from the data source.
+        /// </summary>
+        /// <param name="Client_ID">The unique identifier of the client to find.</param>
+        /// <returns>
+        /// A <see cref="clsClient"/> object containing the client's information if found; otherwise, returns null.
+        /// </returns>
+        /// <remarks>
+        /// This method queries the data source to locate a client using the specified Client ID. If a matching client
+        /// is found, their details are retrieved and returned as a <see cref="clsClient"/> object. If no client is found
+        /// with the provided Client ID, the method returns null.
+        /// </remarks>
+        public static clsClient Find(int Client_ID)
         {
             int Person_ID = -1;
             string AccountNumber = "", Email = "", PinCode = "", Phone = "", FirstName="",LastName ="",Country="",City="",Street="";
@@ -33,8 +45,20 @@ namespace Bank_Business_Layer
 
             return client;
         }
-    
-        public static bool delete(int Client_ID)
+
+        /// <summary>
+        /// Deletes a client based on their unique Client ID from the data source.
+        /// </summary>
+        /// <param name="Client_ID">The unique identifier of the client to delete.</param>
+        /// <returns>
+        /// True if the client was successfully deleted; otherwise, false.
+        /// </returns>
+        /// <remarks>
+        /// This method attempts to delete a client from the data source using the specified Client ID. If the deletion is
+        /// successful, it returns true. If the deletion fails or the client with the provided Client ID does not exist,
+        /// it returns false.
+        /// </remarks>
+        public static bool Delete(int Client_ID)
         {
             if(clsDataAccessLayer.Delete_Client_By_ID(Client_ID))
             {
@@ -47,7 +71,20 @@ namespace Bank_Business_Layer
             }
         }
 
-        public bool save()
+        /// <summary>
+        /// Saves the current state of the client object to the data source based on its mode.
+        /// </summary>
+        /// <returns>
+        /// True if the client data was successfully saved; otherwise, false.
+        /// </returns>
+        /// <remarks>
+        /// This method is responsible for saving the current state of the client object to the data source based on its mode.
+        /// If the client object is initialized using the default constructor <see cref="clsClient()"/>, it operates in 'eAddNew'
+        /// mode, attempting to add a new client to the data source. If the client object is obtained using the <see cref="clsClient.Find(int)"/>
+        /// function, it operates in 'eUpdate' mode, attempting to update an existing client's information. Returns true if the operation
+        /// is successful, and false otherwise.
+        /// </remarks>
+        public bool Save()
         {
             switch(this.Mode)
             {

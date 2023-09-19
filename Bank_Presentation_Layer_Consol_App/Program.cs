@@ -183,7 +183,7 @@ namespace Bank_Presentation_Layer_Consol_App
 
         static bool find_client(int Client_ID)
         {
-            clsClient client = clsClient.find(Client_ID);
+            clsClient client = clsClient.Find(Client_ID);
 
             if(client == null)
             {
@@ -206,7 +206,7 @@ namespace Bank_Presentation_Layer_Consol_App
 
                 if(yes == 'y')
                 {
-                    clsClient.delete(id);
+                    clsClient.Delete(id);
                 }
                
             }
@@ -214,7 +214,7 @@ namespace Bank_Presentation_Layer_Consol_App
 
         static void update_client(int id)
         {
-            clsClient client = clsClient.find(id);
+            clsClient client = clsClient.Find(id);
 
             if (client != null)
             {
@@ -225,7 +225,7 @@ namespace Bank_Presentation_Layer_Consol_App
                 client.LastName = "Riad";
                 client.Email = "m.riad@gmail.com";
 
-                if (client.save())
+                if (client.Save())
                 {
                     Console.WriteLine("\nClient updated successfuly\n\n");
                     Console.WriteLine("Client after update :\n");
@@ -258,7 +258,7 @@ namespace Bank_Presentation_Layer_Consol_App
             new_client.Phone = "0123456788";
             new_client.Balance = 123456789.123456789;
 
-            if (new_client.save())
+            if (new_client.Save())
             {
                 Console.WriteLine($"User saved succssfuly with id = {new_client.Client_ID}");
             }
