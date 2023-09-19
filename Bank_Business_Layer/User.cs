@@ -13,17 +13,21 @@ namespace Bank_Business_Layer
     public class clsUser : clsPerson
     {
 
-
+        /// <summary>
+        /// Initializes a new instance of the <see cref="clsUser"/> class based on a DataRow from the database.
+        /// </summary>
+        /// <param name="row">The DataRow containing user information.</param>
+                
         public clsUser(DataRow row)
         {
 
-            _user_id = Convert.ToInt32(row["User_ID"]); 
+            User_ID = Convert.ToInt32(row["User_ID"]); 
             UserName = row["UserName"].ToString();
             Email = row["Email"].ToString();
             Password = row["Password"].ToString();
             Phone = row["Phone"].ToString();
             Permission = Convert.ToInt32(row["Permission"]);
-            _user_id = Convert.ToInt32(row["Person_ID"]); 
+            Person_ID = Convert.ToInt32(row["Person_ID"]); 
             FirstName = row["FirstName"].ToString();
             LastName = row["LastName"].ToString();
             Country = row["Country"].ToString();
@@ -56,7 +60,7 @@ namespace Bank_Business_Layer
             )
             : base(person_ID, firstName, lastName, country, city, street)
         {
-            _user_id = user_ID;
+            User_ID = user_ID;
             UserName = userName;
             Email = email;
             Password = password;
@@ -72,7 +76,7 @@ namespace Bank_Business_Layer
         /// </summary>
         public clsUser()
         {
-            _user_id = -1;
+            User_ID = -1;
             UserName = "";
             Email = "";
             Password = "";
@@ -82,13 +86,11 @@ namespace Bank_Business_Layer
         }
 
         /// <summary>
-        /// find function get the user <c>ID</c> 
-        /// if user is found it returns an object full with the user info
-        /// else it return <c>null</c>
+        /// Retrieves a user by their unique User_ID.
         /// </summary>
-        /// <returns> the full user info when user found,null otherwize</returns>
-        /// <param name="User_ID">The unique identifier of the user</param>
-        static public clsUser find(int User_ID)
+        /// <param name="User_ID">The unique identifier of the user.</param>
+        /// <returns>The user object if found; otherwise, null.</returns>
+        static public clsUser Find(int User_ID)
         {
 
             int Person_ID = -1, Permission = 0;
@@ -117,56 +119,29 @@ namespace Bank_Business_Layer
 
         }
 
+
         /// <summary>
-        /// list function return all the users on the system as List of clsUser
+        /// Retrieves a list of all users in the system.
         /// </summary>
-        /// <returns>List of all Users on the system</returns>
+        /// <returns>A DataTable containing the list of users.</returns>
         static public DataTable list()
         {
             return clsDataAccessLayer.Get_Users_List();
         }
 
 
-        private bool _Add_New()
-        {
-            int tmp_user_id = -1, tmp_person_id = -1;
-
-            if (
-                clsDataAccessLayer.Add_New_User_By_User_ID
-                (
-                    ref tmp_user_id, ref tmp_person_id,UserName, FirstName, LastName,
-                    Country, City, Street, Email, Password, Phone, Permission
-                )
-               )
-
-            {
-                _user_id = tmp_user_id;
-                Person_ID = tmp_person_id;
-                Mode = enMode.eUpdate; // IF we do not change the mode the next update of the same object (User) will be added as new user to the database
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        private bool _Update()
-        {
-            return clsDataAccessLayer.Update_User_By_ID
-                         (
-                             User_ID, Person_ID,UserName, FirstName, LastName,
-                             Country, City, Street, Email, Password, Phone, Permission
-                         );
-        }
 
         /// <summary>
-        /// this function save the information on the object to the database;<br></br>
-        /// if the object created using the return of the <c>clsUser.find(int User_ID)</c> then this function will update the user info on the database;<br></br>
-        /// else if the object created using <c>new clsUser()</c> (the constructor) then it will add new user to the database,but when using it again it will update the new user info without creating new one<br></br>
+        /// Saves the user's information to the database.
         /// </summary>
-        /// <returns>return <c>true</c> if the save complited successfuly, otherwise return <c>false</c></returns>
-        public bool save()
+        /// <returns>True if the save operation is successful; otherwise, false.</returns>
+        /// <remarks>
+        /// If the user object is created using the <see cref="clsUser.Find(int)"/> method,
+        /// this function will update the user's information in the database. If the user object
+        /// is created using the default constructor <see cref="clsUser()"/>, it will add a new user
+        /// to the database. Subsequent calls will update the existing user's information.
+        /// </remarks>
+        public bool Save()
         {
             switch (this.Mode)
             {
@@ -183,13 +158,48 @@ namespace Bank_Business_Layer
                 default:
                     return false;
             }
+
+
+            bool _Add_New()
+            {
+                int tmp_user_id = -1, tmp_person_id = -1;
+
+                if (
+                    clsDataAccessLayer.Add_New_User_By_User_ID
+                    (
+                        ref tmp_user_id, ref tmp_person_id, UserName, FirstName, LastName,
+                        Country, City, Street, Email, Password, Phone, Permission
+                    )
+                   )
+
+                {
+                    User_ID = tmp_user_id;
+                    Person_ID = tmp_person_id;
+                    Mode = enMode.eUpdate; // IF we do not change the mode the next update of the same object (User) will be added as new user to the database
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+            bool _Update()
+            {
+                return clsDataAccessLayer.Update_User_By_ID
+                             (
+                                 User_ID, Person_ID, UserName, FirstName, LastName,
+                                 Country, City, Street, Email, Password, Phone, Permission
+                             );
+            }
         }
 
         /// <summary>
-        /// get <c>User_ID</c>  as parameter and delete the user with this user name<br></br>
+        /// Deletes a user by their User_ID.
         /// </summary>
-        /// <returns>return <c>true</c> if deleted successfuly , otherwise return <c>false</c> </returns>
-        static public bool delete(int User_ID)
+        /// <param name="User_ID">The unique identifier of the user to delete.</param>
+        /// <returns>True if the user is deleted successfully; otherwise, false.</returns>
+        static public bool Delete(int User_ID)
         {
             bool isDeleted = false;
 
@@ -198,8 +208,7 @@ namespace Bank_Business_Layer
             return isDeleted;
         }
 
-        private int _user_id;
-        public int User_ID { get { return _user_id; } }
+        public int User_ID { get; private set; }
 
         public string UserName { get; set; }
         public string Email { get; set; }

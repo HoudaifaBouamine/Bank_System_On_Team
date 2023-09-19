@@ -37,7 +37,7 @@ namespace Bank_Presentation_Layer_Consol_App
         static void find_user(int id)
         {
 
-            clsUser user = clsUser.find(id);
+            clsUser user = clsUser.Find(id);
 
             if (user == null)
             {
@@ -51,13 +51,13 @@ namespace Bank_Presentation_Layer_Consol_App
 
         static void update_user_phone(int id,string phone)
         {
-            clsUser user =clsUser.find(id);
+            clsUser user =clsUser.Find(id);
 
             if(user != null)
             {
                 user.Phone = phone;
 
-                if (!user.save())
+                if (!user.Save())
                 {
                     Console.WriteLine("Error, Con not save \n\n\n");
                 }
@@ -80,7 +80,7 @@ namespace Bank_Presentation_Layer_Consol_App
             new_user.Phone      = "0987654321";
             new_user.Permission = -1;
 
-            if(new_user.save())
+            if(new_user.Save())
             {
                 Console.WriteLine($"User saved succssfuly with id = {new_user.User_ID}");
             }
@@ -124,7 +124,7 @@ namespace Bank_Presentation_Layer_Consol_App
         }
         static void delete_user(int id)
         {
-            clsUser user = clsUser.find(id);
+            clsUser user = clsUser.Find(id);
 
             if (user == null)
             {
@@ -143,7 +143,7 @@ namespace Bank_Presentation_Layer_Consol_App
 
                 if(yes_or_no == 'y')
                 {
-                    if (clsUser.delete(user.User_ID))
+                    if (clsUser.Delete(user.User_ID))
                     {
                         Console.WriteLine("\n\nUser Deleted Successfuly\n\n");
                     }
