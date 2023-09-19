@@ -35,7 +35,7 @@ namespace Bank_Business_Layer
         }
 
         private clsClient(int Client_ID, int Person_ID, string AccountNumber, string FirstName,string LastName,string Country,string City,string Street, string Email, string PinCode, string Phone, decimal Balance) : base(Person_ID,FirstName,LastName,Country,City,Street)
-        {
+        { 
 
             Mode = enMode.eUpdate;
 
