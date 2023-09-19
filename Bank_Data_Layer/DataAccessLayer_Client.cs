@@ -192,5 +192,101 @@ namespace Bank_Data_Layer
             return result;
 
         }
+
+        static public bool Add_New_Client_By_ID
+          (
+              ref int Client_ID, ref int Person_ID, string AccountNumber, string FirstName, string LastName,
+                string Country, string City, string Street,
+                string Email, string PinCode,
+                string Phone, double Balance
+          )
+
+        {
+            bool result = false;
+
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+
+            string query = "";
+
+            if (Person_ID == -1)
+            {
+                query = " " +
+                    "insert into Persons" +
+                    " (FirstName,LastName,Country,City,Street) " +
+                    "values " +
+                    "(@FirstName,@LastName,@Country,@City,@Street);" +
+                    " INSERT INTO Clients " +
+                    "(Person_ID,AccountNumber,Email,[PinCode],Phone,Balance)" +
+                    " VALUES ((select top 1 SCOPE_IDENTITY() from Persons),@AccountNumber,@Email,@PinCode,@Phone,@Balance) " +
+                    "select top 1 SCOPE_IDENTITY() from Clients;";
+
+            }
+
+
+
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@AccountNumber", AccountNumber);
+            command.Parameters.AddWithValue("@FirstName", FirstName);
+            command.Parameters.AddWithValue("@LastName", LastName);
+            command.Parameters.AddWithValue("@Country", Country);
+            command.Parameters.AddWithValue("@City", City);
+            command.Parameters.AddWithValue("@Street", Street);
+            command.Parameters.AddWithValue("@Email", Email);
+            command.Parameters.AddWithValue("@PinCode", PinCode);
+            command.Parameters.AddWithValue("@Phone", Phone);
+            command.Parameters.AddWithValue("@Balance", Balance);
+
+
+            try
+            {
+                connection.Open();
+
+                object new_id = command.ExecuteScalar();
+
+                if (new_id == null)
+                {
+                    result = false;
+                }
+                else
+                {
+                    Client_ID = Convert.ToInt32(new_id);
+                    result = true;
+                }
+
+                // Getting Person_ID
+
+                if (result == true)
+                {
+                    string query_to_get_person_id = "select Clients.Person_ID from Clients Where Client_ID = @Client_ID";
+
+                    SqlCommand command_to_get_person_id = new SqlCommand(query_to_get_person_id, connection);
+                    command_to_get_person_id.Parameters.AddWithValue("@Client_ID", Client_ID);
+
+                    object person_id = command_to_get_person_id.ExecuteScalar();
+
+                    if (person_id == null)
+                    {
+                        result = false;
+                    }
+                    else
+                    {
+                        Person_ID = Convert.ToInt32(person_id);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                result = false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return result;
+
+        }
+
     }
 }

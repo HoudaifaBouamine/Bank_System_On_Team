@@ -70,7 +70,22 @@ namespace Bank_Business_Layer
 
             bool _Add_New_Client()
             {
-                return false;
+                int client_id=-1, perons_id = -1;
+                bool isAdded = clsDataAccessLayer.Add_New_Client_By_ID(ref client_id,ref perons_id, AccountNumber,FirstName,LastName,Country,City,Street, Email, PinCode,Phone, Balance);
+
+                if (isAdded)
+                {
+                    this.Mode = enMode.eUpdate;
+                    this.Client_ID = client_id;
+                    this.Person_ID = perons_id;
+
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+
             }
 
             bool _Update_Client()

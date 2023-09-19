@@ -11,9 +11,7 @@ namespace Bank_Business_Layer
 {
     public class clsPerson
     {
-
-        protected int  _person_id;
-        public int Person_ID { get { return _person_id; } }
+        public int Person_ID { get; protected set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Country { get; set; }
@@ -22,7 +20,7 @@ namespace Bank_Business_Layer
 
         protected clsPerson(int person_ID, string firstName, string lastName, string country, string city, string street)
         {
-            _person_id = person_ID;
+            Person_ID = person_ID;
             FirstName = firstName;
             LastName = lastName;
             Country = country;
@@ -32,7 +30,7 @@ namespace Bank_Business_Layer
 
         protected clsPerson()
         {
-            _person_id = -1;
+            Person_ID = -1;
             FirstName = "";
             LastName = "";
             Country = "";

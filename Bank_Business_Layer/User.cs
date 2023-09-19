@@ -141,7 +141,7 @@ namespace Bank_Business_Layer
 
             {
                 _user_id = tmp_user_id;
-                _person_id = tmp_person_id;
+                Person_ID = tmp_person_id;
                 Mode = enMode.eUpdate; // IF we do not change the mode the next update of the same object (User) will be added as new user to the database
                 return true;
             }

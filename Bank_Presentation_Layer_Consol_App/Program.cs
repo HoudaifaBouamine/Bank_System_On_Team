@@ -241,13 +241,40 @@ namespace Bank_Presentation_Layer_Consol_App
                 Console.WriteLine("\nFailed to find client\n\n");
             }
         }
+
+        static void add_new_client()
+        {
+            clsClient new_client = new clsClient();
+
+
+            new_client.FirstName = "Ishaq";
+            new_client.LastName = "Ishaq";
+            new_client.AccountNumber = "A001";
+            new_client.Country = "Algeria";
+            new_client.City = "Sidi-Bel-Abess";
+            new_client.Street = "Home";
+            new_client.Email = "i.ishaq@gmail.com";
+            new_client.PinCode = "0000";
+            new_client.Phone = "0123456788";
+            new_client.Balance = 123456789.123456789;
+
+            if (new_client.save())
+            {
+                Console.WriteLine($"User saved succssfuly with id = {new_client.Client_ID}");
+            }
+            else
+            {
+                Console.WriteLine("User Failed to add");
+            }
+        }
+
         static void Main(string[] args)
         {
-
-            //find_client(1);
+            add_new_client();
+            find_client(17);
             //delete_client(15);
 
-            update_client(14);
+            //update_client(14);
 
             Console.ReadKey();
         }
