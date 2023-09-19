@@ -121,12 +121,51 @@ namespace Bank_Presentation_Layer_Consol_App
         }
 
 
+        static void delete_user(int id)
+        {
+            clsUser user = clsUser.find(id);
 
+            if (user == null)
+            {
+
+                Console.WriteLine("\n\nUser not found\n\n");
+            }
+
+            else
+            {
+                print_user(user);
+
+
+                Console.WriteLine("Are you sure to delete this user ?[y/n] >> ");
+                char yes_or_no = 'n';
+                yes_or_no = Console.ReadLine()[0];
+
+                if(yes_or_no == 'y')
+                {
+                    if (clsUser.delete(user.User_ID))
+                    {
+                        Console.WriteLine("\n\nUser Deleted Successfuly\n\n");
+                    }
+                    else
+                    {
+                        Console.WriteLine("\n\nFailed To delete user\n\n");
+                    }
+                }
+            }
+
+        }
 
         static void Main(string[] args)
         {
 
             Print_user_list_as_tabke();
+
+            
+            delete_user(13);
+
+
+            Print_user_list_as_tabke();
+
 
             Console.ReadKey();
         }

@@ -190,6 +190,19 @@ namespace Bank_Business_Layer
             }
         }
 
+        /// <summary>
+        /// get <c>User_ID</c>  as parameter and delete the user with this user name<br></br>
+        /// </summary>
+        /// <returns>return <c>true</c> if deleted successfuly , otherwise return <c>false</c> </returns>
+        static public bool delete(int User_ID)
+        {
+            bool isDeleted = false;
+
+            isDeleted = clsDataAccessLayer.Delete_User_By_ID(User_ID);
+
+            return isDeleted;
+        }
+
         private int _user_id;
         public int User_ID { get { return _user_id; } }
         public string Email { get; set; }

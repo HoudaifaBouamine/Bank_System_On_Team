@@ -16,3 +16,12 @@ C:\Users\admin\Desktop\prototypes\prototype-6\Bank_System_On_Team\Bank_Business_
 C:\Users\admin\Desktop\prototypes\prototype-6\Bank_System_On_Team\Bank_Business_Layer\obj\Debug\Bank_Business_Layer.csproj.CopyComplete
 C:\Users\admin\Desktop\prototypes\prototype-6\Bank_System_On_Team\Bank_Business_Layer\obj\Debug\Bank_Business_Layer.dll
 C:\Users\admin\Desktop\prototypes\prototype-6\Bank_System_On_Team\Bank_Business_Layer\obj\Debug\Bank_Business_Layer.pdb
+C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Business_Layer\bin\Debug\Bank_Business_Layer.dll
+C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Business_Layer\bin\Debug\Bank_Business_Layer.pdb
+C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Business_Layer\bin\Debug\Bank_Data_Layer.dll
+C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Business_Layer\bin\Debug\Bank_Data_Layer.pdb
+C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Business_Layer\obj\Debug\Bank_Business_Layer.csproj.AssemblyReference.cache
+C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Business_Layer\obj\Debug\Bank_Business_Layer.csproj.CoreCompileInputs.cache
+C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Business_Layer\obj\Debug\Bank_Business_Layer.csproj.CopyComplete
+C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Business_Layer\obj\Debug\Bank_Business_Layer.dll
+C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Business_Layer\obj\Debug\Bank_Business_Layer.pdb
