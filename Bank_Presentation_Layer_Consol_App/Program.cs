@@ -92,35 +92,34 @@ namespace Bank_Presentation_Layer_Consol_App
 
         static void print_users_list()
         {
-            List<clsUser> list_users = clsUser.list();
+            DataTable list_users = clsUser.list();
 
-            if(list_users.Count < 1)
+            if(list_users.Rows.Count < 1)
             {
                 Console.WriteLine("Empty list");
             }
 
-            foreach(clsUser user in list_users) print_user(user);
+            foreach(DataRow user in list_users.Rows) print_user(new clsUser( user));
         }
 
-     
 
-        static public void Print_user_list_as_tabke()
+
+        static public void Print_user_list_as_table()
         {
-            List<clsUser> usersList = clsUser.list();
+            DataTable list_users = clsUser.list();
 
-            if (usersList.Count == 0)
+            if (list_users.Rows.Count < 1)
             {
-                Console.WriteLine("The user list is empty.");
-                return;
+                Console.WriteLine("Empty list");
             }
 
-            Console.WriteLine("User_ID | Person_ID | User Name       | FirstName    | LastName    | Country       | City          | Street                | Email                            | Password    | Phone         | Permission");
-            Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
 
-            foreach (var user in usersList)
+     
+            foreach (DataRow user in list_users.Rows)
             {
-                Console.WriteLine($"{user.User_ID,-7} | {user.Person_ID,-9} | {user.UserName,-12} | {user.FirstName,-12} | {user.LastName,-12} | {user.Country,-15} | {user.City,-15} | {user.Street,-20} | {user.Email,-30} | {user.Password,-12} | {user.Phone,-13} | {user.Permission,-10}");
+                Console.WriteLine($"{user["User_ID"],-6} | {user["UserName"],-15} | {user["FirstName"],-15} | {user["LastName"],-15} | {user["Permission"],-5}");
             }
+            
         }
 
 
@@ -160,11 +159,7 @@ namespace Bank_Presentation_Layer_Consol_App
 
         static void Main(string[] args)
         {
-            update_user_phone(14, "0123456789");
-            Print_user_list_as_tabke();
-            //add_new_user();
-            //delete_user(13);
-            //clsUser.test();
+            Print_user_list_as_table();
 
             Console.ReadKey();
         }

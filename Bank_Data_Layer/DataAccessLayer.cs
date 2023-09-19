@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -363,61 +364,39 @@ namespace Bank_Data_Layer
         /// <summary>
         /// return lists of all users info
         /// </summary>
-        /// <returns>return <c>true</c> if the it get the list successfuly, otherwise return false</returns>
-        static public bool Get_Users_List
-            (
-                ref List<int> User_ID, ref List<int> Person_ID,ref List<string> UserName, ref List<string> FirstName, ref List<string> LastName,
-                ref List<string> Country, ref List<string> City, ref List<string> Street,
-                ref List<string> Email, ref List<string> Password,
-                ref List<string> Phone, ref List<int> Permission
-            )
+        /// <returns>return data table if query seccess , otherwise return <c>null</c></returns>      
+        static public DataTable Get_Users_List()
         {
-            bool result = false;
+            DataTable table = new DataTable();
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+            string query = "SELECT * FROM UserPersonView";
 
-            string query = "Select Persons.FirstName,Persons.LastName,Persons.Country,Persons.City,Persons.Street ,Users.* from Users Inner join Persons on Persons.Person_ID = Users.Person_ID";
-
-            SqlCommand command = new SqlCommand(query,connection);
+            SqlCommand command = new SqlCommand(query, connection);
 
             try
             {
-
                 connection.Open();
-                
+
                 SqlDataReader reader = command.ExecuteReader();
 
-                while (reader.Read())
+                if (reader.HasRows)
                 {
-                    User_ID.Add(Convert.ToInt32(reader["User_ID"]));
-                    Person_ID.Add(Convert.ToInt32(reader["Person_ID"]));
-                    UserName.Add((string)reader["UserName"]);
-                    FirstName.Add((string)reader["FirstName"]);
-                    LastName.Add((string)reader["LastName"]);
-                    Country.Add((string)reader["Country"]);
-                    City.Add((string)reader["City"]);
-                    Street.Add((string)reader["Street"]);
-                    Email.Add((string)reader["Email"]);
-                    Password.Add((string)reader["Password"]);
-                    Phone.Add((string)reader["Phone"]);
-                    Permission.Add(Convert.ToInt32(reader["Permission"]));
-
+                    table.Load(reader);
                 }
 
                 reader.Close();
-                result = true;
-
             }
-            catch ( Exception ex )
+            catch(Exception ex)
             {
-                result = false;
+                return null;
             }
-            finally 
+            finally
             {
-                connection.Close(); 
+                connection.Close();
             }
 
-            return result;
+            return table;
         }
 
         /// <summary>

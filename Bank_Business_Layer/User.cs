@@ -13,6 +13,27 @@ namespace Bank_Business_Layer
     public class clsUser : clsPerson
     {
 
+
+        public clsUser(DataRow row)
+        {
+
+            _user_id = Convert.ToInt32(row["User_ID"]); 
+            UserName = row["UserName"].ToString();
+            Email = row["Email"].ToString();
+            Password = row["Password"].ToString();
+            Phone = row["Phone"].ToString();
+            Permission = Convert.ToInt32(row["Permission"]);
+            _user_id = Convert.ToInt32(row["Person_ID"]); 
+            FirstName = row["FirstName"].ToString();
+            LastName = row["LastName"].ToString();
+            Country = row["Country"].ToString();
+            City = row["City"].ToString();
+            Street = row["Street"].ToString();
+
+        }
+
+
+
         static public void test()
         {
             clsDataAccessLayer.testing();
@@ -100,43 +121,9 @@ namespace Bank_Business_Layer
         /// list function return all the users on the system as List of clsUser
         /// </summary>
         /// <returns>List of all Users on the system</returns>
-        static public List<clsUser> list()
+        static public DataTable list()
         {
-
-            List<clsUser> users_list = new List<clsUser>();
-
-            List<int> User_ID = new List<int>();
-            List<int> Person_ID = new List<int>();
-            List<string> UserName = new List<string>();
-            List<string> FirstName = new List<string>();
-            List<string> LastName = new List<string>();
-            List<string> Country = new List<string>();
-            List<string> City = new List<string>();
-            List<string> Street = new List<string>();
-            List<string> Email = new List<string>();
-            List<string> Password = new List<string>();
-            List<string> Phone = new List<string>();
-            List<int> Permission = new List<int>();
-
-            clsDataAccessLayer.Get_Users_List
-                (
-                    ref User_ID, ref Person_ID,ref UserName, ref FirstName, ref LastName, ref Country, ref City, ref Street,
-                    ref Email, ref Password, ref Phone, ref Permission
-                );
-
-
-            for (int i = 0; i < User_ID.Count; i++)
-            {
-                clsUser user = new clsUser(
-                    User_ID[i], Person_ID[i], UserName[i], FirstName[i], LastName[i],
-                    Country[i], City[i], Street[i],
-                    Email[i], Password[i], Phone[i], Permission[i]);
-
-                users_list.Add(user);
-            }
-
-
-            return users_list;
+            return clsDataAccessLayer.Get_Users_List();
         }
 
 
