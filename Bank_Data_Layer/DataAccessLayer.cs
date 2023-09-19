@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,41 @@ namespace Bank_Data_Layer
 {
     public class clsDataAccessLayer
     {
+
+        static public void testing ()
+        {
+
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+                string query = "select Permission from users where User_ID=1;";
+            SqlCommand cmd = new SqlCommand(query, connection);
+
+            try
+            {
+                connection.Open();
+                Console.WriteLine("Connected successfuly\n\n");
+
+                object test = cmd.ExecuteScalar();
+                if(test != null)
+                {
+                    Console.WriteLine("\n\nPerson 1 permisstion : " + Convert.ToInt32(test));
+                }
+                else
+                {
+                    Console.WriteLine("Failed to execute commadn");
+                }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Conncetion Failed : " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+
+
+        }
 
         /// <summary>
         /// Search on the Database for client by <c>Client_ID</c> and return the client info as variables using <c>ref</c> key word
@@ -83,7 +119,7 @@ namespace Bank_Data_Layer
         /// <returns>return <c>true</c> if the User found succssufuly, otherwise return <c>flase</c></returns>
         static public bool Find_User_By_ID
             (
-                int User_ID, ref int Person_ID, ref string FirstName, ref string LastName,
+                int User_ID, ref int Person_ID,ref string UserName, ref string FirstName, ref string LastName,
                 ref string Country, ref string City, ref string Street,
                 ref string Email, ref string Password,
                 ref string Phone, ref int Permission
@@ -118,7 +154,7 @@ namespace Bank_Data_Layer
                     Password = (string)reader["Password"];
                     Phone = (string)reader["Phone"];
                     Permission = (int)reader["Permission"];
-
+                    UserName = (string)reader["UserName"];
 
                     isFound = true;
                 }
@@ -152,7 +188,7 @@ namespace Bank_Data_Layer
         /// <returns>return <c>true</c> if the User added succssufuly, otherwise return <c>flase</c></returns>
         static public bool Add_New_User_By_User_ID
             (
-                ref int User_ID,ref int Person_ID, string FirstName, string LastName,
+                ref int User_ID,ref int Person_ID,string UserName, string FirstName, string LastName,
                 string Country, string City, string Street,
                 string Email, string Password,
                 string Phone, int Permission
@@ -163,11 +199,26 @@ namespace Bank_Data_Layer
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
-            string query = " insert into Persons (FirstName,LastName,Country,City,Street) values (@FirstName,@LastName,@Country,@City,@Street); INSERT INTO Users (Person_ID,Email,[Password],Phone,Permission) VALUES ((select top 1 SCOPE_IDENTITY() from Persons),@Email,@Password,@Phone,@Permission) select top 1 SCOPE_IDENTITY() from Users;";
+            string query = "";
 
+            if (Person_ID == -1)
+            {
+                query = " " +
+                    "insert into Persons" +
+                    " (FirstName,LastName,Country,City,Street) " +
+                    "values " +
+                    "(@FirstName,@LastName,@Country,@City,@Street);" +
+                    " INSERT INTO Users " +
+                    "(Person_ID,UserName,Email,[Password],Phone,Permission)" +
+                    " VALUES ((select top 1 SCOPE_IDENTITY() from Persons),@UserName,@Email,@Password,@Phone,@Permission) " +
+                    "select top 1 SCOPE_IDENTITY() from Users;";
 
+            }
+            
+            
 
             SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@UserName", UserName);
             command.Parameters.AddWithValue("@FirstName", FirstName);
             command.Parameters.AddWithValue("@LastName", LastName);
             command.Parameters.AddWithValue("@Country", Country);
@@ -217,7 +268,7 @@ namespace Bank_Data_Layer
                 }
 
             }
-            catch
+            catch (Exception ex) 
             {
                 result = false;
             }
@@ -237,7 +288,7 @@ namespace Bank_Data_Layer
         /// <returns>return <c>true</c> if the User updated succssufuly, otherwise return <c>flase</c></returns>
         static public bool Update_User_By_ID
             (
-                int User_ID,int Person_ID, string FirstName, string LastName,
+                int User_ID,int Person_ID,string UserName, string FirstName, string LastName,
                 string Country, string City, string Street,
                 string Email, string Password,
                 string Phone, int Permission
@@ -252,6 +303,7 @@ namespace Bank_Data_Layer
             string query = "UPDATE [Users]" +
                 " SET [Email] = @Email," +
                 "[Password] = @Password," +
+                "[UserName] = @UserName," +
                 "[Phone] = @Phone," +
                 "[Permission] = @Permission" +
                 " WHERE [User_ID] = @User_ID;" +
@@ -268,6 +320,7 @@ namespace Bank_Data_Layer
 
             command.Parameters.AddWithValue("@User_ID", User_ID);
             command.Parameters.AddWithValue("@Person_ID", Person_ID);
+            command.Parameters.AddWithValue("@UserName", UserName);
             command.Parameters.AddWithValue("@FirstName", FirstName);
             command.Parameters.AddWithValue("@LastName", LastName);
             command.Parameters.AddWithValue("@Country", Country);
@@ -313,7 +366,7 @@ namespace Bank_Data_Layer
         /// <returns>return <c>true</c> if the it get the list successfuly, otherwise return false</returns>
         static public bool Get_Users_List
             (
-                ref List<int> User_ID, ref List<int> Person_ID, ref List<string> FirstName, ref List<string> LastName,
+                ref List<int> User_ID, ref List<int> Person_ID,ref List<string> UserName, ref List<string> FirstName, ref List<string> LastName,
                 ref List<string> Country, ref List<string> City, ref List<string> Street,
                 ref List<string> Email, ref List<string> Password,
                 ref List<string> Phone, ref List<int> Permission
@@ -338,6 +391,7 @@ namespace Bank_Data_Layer
                 {
                     User_ID.Add(Convert.ToInt32(reader["User_ID"]));
                     Person_ID.Add(Convert.ToInt32(reader["Person_ID"]));
+                    UserName.Add((string)reader["UserName"]);
                     FirstName.Add((string)reader["FirstName"]);
                     LastName.Add((string)reader["LastName"]);
                     Country.Add((string)reader["Country"]);
@@ -347,6 +401,7 @@ namespace Bank_Data_Layer
                     Password.Add((string)reader["Password"]);
                     Phone.Add((string)reader["Phone"]);
                     Permission.Add(Convert.ToInt32(reader["Permission"]));
+
                 }
 
                 reader.Close();

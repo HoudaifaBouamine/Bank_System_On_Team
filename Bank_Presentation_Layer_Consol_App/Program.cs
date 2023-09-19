@@ -22,6 +22,7 @@ namespace Bank_Presentation_Layer_Consol_App
             Console.WriteLine($"===============================");
             Console.WriteLine($" User_ID    : {user.User_ID   }");
             Console.WriteLine($" Person_ID  : {user.Person_ID }");
+            Console.WriteLine($" UserName  : {user.UserName }");
             Console.WriteLine($" FirstName  : {user.FirstName }");
             Console.WriteLine($" LastName   : {user.LastName  }");
             Console.WriteLine($" Country    : {user.Country   }");
@@ -67,15 +68,17 @@ namespace Bank_Presentation_Layer_Consol_App
         {
             clsUser new_user = new clsUser();
 
-            new_user.FirstName  = "user";
-            new_user.LastName   = "person";
-            new_user.Country    = "USA";
-            new_user.City       = "KOKO";
-            new_user.Street     = "AS";
-            new_user.Email      = "user2@gmail.com";
-            new_user.Password   = "00001111";
-            new_user.Phone      = "0987678982";
-            new_user.Permission = 21;
+
+            new_user.FirstName  = "Houdaifa";
+            new_user.LastName   = "Bouamine";
+            new_user.UserName = "Admin";
+            new_user.Country    = "Algeria";
+            new_user.City       = "Souk-Ahras";
+            new_user.Street     = "Home";
+            new_user.Email      = "houdaifa@gmail.com";
+            new_user.Password   = "password123";
+            new_user.Phone      = "0987654321";
+            new_user.Permission = -1;
 
             if(new_user.save())
             {
@@ -111,12 +114,12 @@ namespace Bank_Presentation_Layer_Consol_App
                 return;
             }
 
-            Console.WriteLine("User_ID | Person_ID | FirstName    | LastName    | Country       | City          | Street                | Email                            | Password    | Phone         | Permission");
+            Console.WriteLine("User_ID | Person_ID | User Name       | FirstName    | LastName    | Country       | City          | Street                | Email                            | Password    | Phone         | Permission");
             Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
 
             foreach (var user in usersList)
             {
-                Console.WriteLine($"{user.User_ID,-7} | {user.Person_ID,-9} | {user.FirstName,-12} | {user.LastName,-12} | {user.Country,-15} | {user.City,-15} | {user.Street,-20} | {user.Email,-30} | {user.Password,-12} | {user.Phone,-13} | {user.Permission,-10}");
+                Console.WriteLine($"{user.User_ID,-7} | {user.Person_ID,-9} | {user.UserName,-12} | {user.FirstName,-12} | {user.LastName,-12} | {user.Country,-15} | {user.City,-15} | {user.Street,-20} | {user.Email,-30} | {user.Password,-12} | {user.Phone,-13} | {user.Permission,-10}");
             }
         }
 
@@ -157,15 +160,11 @@ namespace Bank_Presentation_Layer_Consol_App
 
         static void Main(string[] args)
         {
-
+            update_user_phone(14, "0123456789");
             Print_user_list_as_tabke();
-
-            
-            delete_user(13);
-
-
-            Print_user_list_as_tabke();
-
+            //add_new_user();
+            //delete_user(13);
+            //clsUser.test();
 
             Console.ReadKey();
         }

@@ -13,6 +13,11 @@ namespace Bank_Business_Layer
     public class clsUser : clsPerson
     {
 
+        static public void test()
+        {
+            clsDataAccessLayer.testing();
+        }
+
         /// <summary>
         /// When you create an object using the constructor,
         /// then use the <c>Save()</c> method,
@@ -23,7 +28,7 @@ namespace Bank_Business_Layer
         /// <param name="permission">an <c>integer number</c> represent the user permission as <c>flags</c> , every bit on this integer tell if he have the permission to do something (1) or not (0)</param>
         private clsUser
             (
-                int user_ID, int person_ID, string firstName,
+                int user_ID, int person_ID,string userName, string firstName,
                 string lastName, string country, string city, 
                 string street, string email, string password,
                 string phone, int permission
@@ -31,6 +36,7 @@ namespace Bank_Business_Layer
             : base(person_ID, firstName, lastName, country, city, street)
         {
             _user_id = user_ID;
+            UserName = userName;
             Email = email;
             Password = password;
             Phone = phone;
@@ -46,6 +52,7 @@ namespace Bank_Business_Layer
         public clsUser()
         {
             _user_id = -1;
+            UserName = "";
             Email = "";
             Password = "";
             Phone = "";
@@ -65,19 +72,19 @@ namespace Bank_Business_Layer
 
             int Person_ID = -1, Permission = 0;
             string FirstName = "", LastName = "", Country = "", City = "", Street = "",
-                Email = "", Password = "", Phone = "";
+                Email = "", Password = "", Phone = "", UserName="";
 
             clsUser user = null;
 
             if (clsDataAccessLayer.Find_User_By_ID(
-                User_ID, ref  Person_ID, ref FirstName, 
+                User_ID, ref  Person_ID,ref UserName, ref FirstName, 
                 ref  LastName,ref  Country,ref  City,ref  Street,
                 ref  Email,ref  Password,ref  Phone,ref  Permission
                 ))
            
             {
 
-                user = new clsUser(User_ID, Person_ID, FirstName, LastName, Country, City, Street, Email, Password, Phone, Permission);
+                user = new clsUser(User_ID, Person_ID,UserName, FirstName, LastName, Country, City, Street, Email, Password, Phone, Permission);
             
             }
             else
@@ -100,6 +107,7 @@ namespace Bank_Business_Layer
 
             List<int> User_ID = new List<int>();
             List<int> Person_ID = new List<int>();
+            List<string> UserName = new List<string>();
             List<string> FirstName = new List<string>();
             List<string> LastName = new List<string>();
             List<string> Country = new List<string>();
@@ -112,7 +120,7 @@ namespace Bank_Business_Layer
 
             clsDataAccessLayer.Get_Users_List
                 (
-                    ref User_ID, ref Person_ID, ref FirstName, ref LastName, ref Country, ref City, ref Street,
+                    ref User_ID, ref Person_ID,ref UserName, ref FirstName, ref LastName, ref Country, ref City, ref Street,
                     ref Email, ref Password, ref Phone, ref Permission
                 );
 
@@ -120,7 +128,7 @@ namespace Bank_Business_Layer
             for (int i = 0; i < User_ID.Count; i++)
             {
                 clsUser user = new clsUser(
-                    User_ID[i], Person_ID[i], FirstName[i], LastName[i],
+                    User_ID[i], Person_ID[i], UserName[i], FirstName[i], LastName[i],
                     Country[i], City[i], Street[i],
                     Email[i], Password[i], Phone[i], Permission[i]);
 
@@ -139,7 +147,7 @@ namespace Bank_Business_Layer
             if (
                 clsDataAccessLayer.Add_New_User_By_User_ID
                 (
-                    ref tmp_user_id, ref tmp_person_id, FirstName, LastName,
+                    ref tmp_user_id, ref tmp_person_id,UserName, FirstName, LastName,
                     Country, City, Street, Email, Password, Phone, Permission
                 )
                )
@@ -160,7 +168,7 @@ namespace Bank_Business_Layer
         {
             return clsDataAccessLayer.Update_User_By_ID
                          (
-                             User_ID, Person_ID, FirstName, LastName,
+                             User_ID, Person_ID,UserName, FirstName, LastName,
                              Country, City, Street, Email, Password, Phone, Permission
                          );
         }
@@ -205,6 +213,8 @@ namespace Bank_Business_Layer
 
         private int _user_id;
         public int User_ID { get { return _user_id; } }
+
+        public string UserName { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
         public string Phone { get; set; }
