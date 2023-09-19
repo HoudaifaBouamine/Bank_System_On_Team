@@ -177,28 +177,45 @@ namespace Bank_Presentation_Layer_Consol_App
             Console.WriteLine($" Email      : {client.Email}");
             Console.WriteLine($" Pin Code   : {client.PinCode}");
             Console.WriteLine($" Phone      : {client.Phone}");
-            Console.WriteLine($" Balance : {client.Balance}");
+            Console.WriteLine($" Balance    : {client.Balance}");
             Console.WriteLine($"===============================\n\n");
         }
 
-        static void find_client(int Client_ID)
+        static bool find_client(int Client_ID)
         {
             clsClient client = clsClient.find(Client_ID);
 
             if(client == null)
             {
                 Console.WriteLine("Client Not FOund\n\n");
+                return false;
             }
             else
             {
                 print_client(client);
+                return true;
             }
         }
 
+        static public void delete_client(int id)
+        {
+            if (find_client(id))
+            {
+                Console.Write("Are you sure to delete this client ? [y/n] >> ");
+                char yes = Console.ReadLine()[0];
+
+                if(yes == 'y')
+                {
+                    clsClient.delete(id);
+                }
+               
+            }
+        }
         static void Main(string[] args)
         {
 
-            find_client(1);
+            //find_client(1);
+            delete_client(15);
             Console.ReadKey();
         }
     }

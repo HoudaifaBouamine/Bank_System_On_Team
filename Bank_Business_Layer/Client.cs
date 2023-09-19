@@ -34,6 +34,34 @@ namespace Bank_Business_Layer
             return client;
         }
     
+        public static bool delete(int Client_ID)
+        {
+            if(clsDataAccessLayer.Delete_Client_By_ID(Client_ID))
+            {
+                // NOTE (HOUDAIFA) : I know this look stupid , but how know when I need to debug it ? (Houdaifa ,fix this later)
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         public int Client_ID { get; private set; }
         public string AccountNumber { get; set; }
         public string Email { get; set; }
