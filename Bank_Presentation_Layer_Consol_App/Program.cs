@@ -211,11 +211,44 @@ namespace Bank_Presentation_Layer_Consol_App
                
             }
         }
+
+        static void update_client(int id)
+        {
+            clsClient client = clsClient.find(id);
+
+            if (client != null)
+            {
+                Console.WriteLine("Client before update :\n");
+                print_client(client);
+
+                client.FirstName = "Mohammed";
+                client.LastName = "Riad";
+                client.Email = "m.riad@gmail.com";
+
+                if (client.save())
+                {
+                    Console.WriteLine("\nClient updated successfuly\n\n");
+                    Console.WriteLine("Client after update :\n");
+                    print_client(client);
+                }
+                else
+                {
+                    Console.WriteLine("\nFailed to update client\n\n");
+                }
+            }
+            else
+            {
+                Console.WriteLine("\nFailed to find client\n\n");
+            }
+        }
         static void Main(string[] args)
         {
 
             //find_client(1);
-            delete_client(15);
+            //delete_client(15);
+
+            update_client(14);
+
             Console.ReadKey();
         }
     }

@@ -119,5 +119,78 @@ namespace Bank_Data_Layer
             return isDeleted;
         }
 
+        static public bool Update_Client_By_ID
+            (
+                int Client_ID, int Person_ID, string AccountNumber, string FirstName, string LastName,
+                string Country, string City, string Street,
+                string Email, string PinCode,
+                string Phone, double Balance
+            )
+
+        {
+
+            bool result = false;
+
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+
+            string query = "UPDATE [Clients]" +
+                " SET [Email] = @Email," +
+                "[PinCode] = @PinCode," +
+                "[AccountNumber] = @AccountNumber," +
+                "[Phone] = @Phone," +
+                "[Balance] = @Balance" +
+                " WHERE [Client_ID] = @Client_ID;" +
+                "" +
+                "UPDATE Persons" +
+                " SET [FirstName] = @FirstName," +
+                "[LastName] = @LastName," +
+                "[Country] = @Country," +
+                "[City] = @City," +
+                "[Street] = @Street " +
+                " WHERE Person_ID = @Person_ID;";
+
+            SqlCommand command = new SqlCommand(query, connection);
+
+            command.Parameters.AddWithValue("@Client_ID", Client_ID);
+            command.Parameters.AddWithValue("@Person_ID", Person_ID);
+            command.Parameters.AddWithValue("@AccountNumber", AccountNumber);
+            command.Parameters.AddWithValue("@FirstName", FirstName);
+            command.Parameters.AddWithValue("@LastName", LastName);
+            command.Parameters.AddWithValue("@Country", Country);
+            command.Parameters.AddWithValue("@City", City);
+            command.Parameters.AddWithValue("@Street", Street);
+            command.Parameters.AddWithValue("@Email", Email);
+            command.Parameters.AddWithValue("@PinCode", PinCode);
+            command.Parameters.AddWithValue("@Phone", Phone);
+            command.Parameters.AddWithValue("@Balance", Balance);
+
+            try
+            {
+                connection.Open();
+
+                int row_affected = command.ExecuteNonQuery();
+
+                if (row_affected > 0)
+                {
+                    result = true;
+                }
+                else
+                {
+                    result = false;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                result = false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return result;
+
+        }
     }
 }

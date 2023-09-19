@@ -47,7 +47,37 @@ namespace Bank_Business_Layer
             }
         }
 
+        public bool save()
+        {
+            switch(this.Mode)
+            {
+                case enMode.eAddNew:
+                    {
+                        return _Add_New_Client();
+                    }
 
+                case enMode.eUpdate:
+                    {
+                        return _Update_Client();
+                    }
+
+                default:
+                    {
+                        return false;
+                    }
+            }
+
+
+            bool _Add_New_Client()
+            {
+                return false;
+            }
+
+            bool _Update_Client()
+            {
+                return clsDataAccessLayer.Update_Client_By_ID(Client_ID, Person_ID, AccountNumber, FirstName, LastName, Country, City, Street, Email, PinCode,Phone,Balance);
+            }
+        }
 
 
 
