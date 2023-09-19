@@ -420,6 +420,11 @@ namespace Bank_Data_Layer
             return result;
         }
 
+        /// <summary>
+        /// Get <c>User_ID</c> and delete the user 
+        /// </summary>
+        /// <param name="User_ID"></param>
+        /// <returns>return <c>true</c> if the user deleted successfuly, otherwise return false</returns>
         static public bool Delete_User_By_ID(int User_ID)
         {
             bool isDeleted = false;
