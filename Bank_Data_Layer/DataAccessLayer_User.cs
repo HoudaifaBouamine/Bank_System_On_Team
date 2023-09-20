@@ -269,7 +269,7 @@ namespace Bank_Data_Layer
             DataTable table = new DataTable();
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
-            string query = "SELECT * FROM UserPersonView";
+            string query = "SELECT * FROM User_Person_List_View";
 
             SqlCommand command = new SqlCommand(query, connection);
 

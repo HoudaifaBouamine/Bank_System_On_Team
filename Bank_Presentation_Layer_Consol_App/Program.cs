@@ -43,7 +43,7 @@ namespace Bank_Presentation_Layer_Consol_App
         static void Main(string[] args)
         {
             //execute_query("CREATE View User_Person_List_View as select Users.* , Persons.FirstName,Persons.LastName,Persons.Country,Persons.City,Persons.Street from Users left join persons on users.person_id = persons.person_id");
-            test.find_user(1);
+            test.print_users_list();
 
 
 
