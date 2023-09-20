@@ -14,7 +14,7 @@ namespace Bank_Business_Layer
     public class clsTransaction
     {
 
-        public DataTable List()
+        static public DataTable Table()
         {
             return clsDataAccessLayer.Get_Transaction_List();
         }
@@ -27,7 +27,8 @@ namespace Bank_Business_Layer
         public double Amount { get; set; }
         public DateTime TransactionDateTime { get; set; }
 
-        enum enTransaction { eDesposit_With_User, eDesposit_Without_User,eWithdrawl_With_User, eWithdrawal_Without_User,eTransfer_With_User, eTransfer_Without_User };
+        public enTransaction TransactionType { get; private set ; }
+        public enum enTransaction { eDesposit_With_User, eDesposit_Without_User,eWithdrawl_With_User, eWithdrawal_Without_User,eTransfer_With_User, eTransfer_Without_User };
         private clsTransaction(DataRow row)
         {
             Transaction_ID = Convert.ToInt32( row["Transaction_ID"]);
@@ -97,8 +98,7 @@ namespace Bank_Business_Layer
             }
 
         }
-
-        private clsTransaction(int sender_id, int receiver_id, int user_id, int transactionTypeID, double amount, DateTime transactionDateTime)
+        public clsTransaction(enTransaction trans_type,int sender_id, int receiver_id, int user_id, int transactionTypeID, double amount, DateTime transactionDateTime)
         {
             TransactionType_ID = transactionTypeID;
             Amount = amount;

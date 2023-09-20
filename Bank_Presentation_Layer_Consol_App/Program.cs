@@ -268,10 +268,32 @@ namespace Bank_Presentation_Layer_Consol_App
             }
         }
 
+
+        static void transaction_list()
+        {
+            
+
+            DataTable trans_list = clsTransaction.Table();
+
+            if (trans_list.Rows.Count < 1)
+            {
+                Console.WriteLine("Empty list");
+            }
+
+
+
+            foreach (DataRow trans in trans_list.Rows)
+            {
+                Console.WriteLine($"{trans["Transaction_ID"],-6} | {trans["Sender_ID"],-15} | {trans["Receiver_ID"],-15} | {trans["User_ID"],-15} | {trans["Amount"],-5}");
+            }
+        }
+
         static void Main(string[] args)
         {
-            add_new_client();
-            find_client(17);
+
+            transaction_list();
+            //add_new_client();
+            //find_client(17);
             //delete_client(15);
 
             //update_client(14);
