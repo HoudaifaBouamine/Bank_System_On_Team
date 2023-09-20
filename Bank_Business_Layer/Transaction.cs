@@ -16,7 +16,7 @@ namespace Bank_Business_Layer
 
         public DataTable List()
         {
-
+            return clsDataAccessLayer.Get_Transaction_List();
         }
 
         public int Transaction_ID { get; private set; }
@@ -24,18 +24,77 @@ namespace Bank_Business_Layer
         public clsClient Receiver { get; set; }
         public clsUser User { get; set; }
         public int TransactionType_ID { get; set; }
-        public decimal Amount { get; set; }
+        public double Amount { get; set; }
         public DateTime TransactionDateTime { get; set; }
 
-        private clsTransaction(int transactionID, clsClient sender, clsClient receiver, clsUser user, int transactionTypeID, decimal amount, DateTime transactionDateTime)
+        private clsTransaction(DataRow row)
+        {
+            Transaction_ID = Convert.ToInt32( row["Transaction_ID"]);
+            TransactionType_ID = Convert.ToInt32(row["TransactionType_ID"]);
+            Amount = Convert.ToDouble(row["Amount"]);
+            TransactionDateTime = Convert.ToDateTime(row["TransactionDateTime"]); ;
+
+            if (Convert.ToInt32(row["Sender_ID"]) == -1)
+            {
+                Sender = null;
+            }
+            else
+            {
+                Sender = clsClient.Find(Convert.ToInt32(row["Sender_ID"]));
+            }
+
+            if (Convert.ToInt32(row["Receiver_ID"]) == -1)
+            {
+                Receiver = null;
+            }
+            else
+            {
+                Receiver = clsClient.Find(Convert.ToInt32(row["Receiver_ID"]));
+            }
+
+            if (Convert.ToInt32(row["User_ID"]) == -1)
+            {
+                User = null;
+            }
+            else
+            {
+                User = clsUser.Find(Convert.ToInt32(row["User_ID"]));
+            }
+        }
+        private clsTransaction(int transactionID,int sender_id, int receiver_id, int user_id, int transactionTypeID, double amount, DateTime transactionDateTime)
         {
             Transaction_ID = transactionID;
-            Sender = sender;
-            Receiver = receiver;
-            User = user;
             TransactionType_ID = transactionTypeID;
             Amount = amount;
             TransactionDateTime = transactionDateTime;
+
+            if (sender_id == -1)
+            {
+                Sender = null;
+            }
+            else
+            {
+                Sender = clsClient.Find(sender_id);
+            }
+
+            if (receiver_id == -1)
+            {
+                Receiver = null;
+            }
+            else
+            {
+                Receiver = clsClient.Find(receiver_id);
+            }
+
+            if(user_id == -1)
+            {
+                User = null;
+            }
+            else
+            {
+                User = clsUser.Find(user_id);
+            }
+
         }
     }
 
