@@ -131,8 +131,10 @@ namespace Bank_Business_Layer
             }
         }
 
-
-
+        static public DataTable Table()
+        {
+            return clsDataAccessLayer.Get_Clients_List();
+        }
 
 
         public bool Deposit(double amount)

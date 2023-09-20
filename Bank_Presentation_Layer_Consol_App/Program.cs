@@ -42,12 +42,8 @@ namespace Bank_Presentation_Layer_Consol_App
         }
         static void Main(string[] args)
         {
-            execute_query("CREATE View Client_Person_List_View as select Clients.* , Persons.FirstName,Persons.LastName,Persons.Country,Persons.City,Persons.Street from Clients left join persons on Clients.person_id = persons.person_id");
-            execute_query("drop view ClientPersonView;");
-            execute_query("drop view UserPersonView;");
-            //test.find_client(5);
 
-
+            test.Print_Clients_List();
 
             Console.ReadKey();
         }
@@ -311,6 +307,21 @@ namespace Bank_Presentation_Layer_Consol_App
             else
             {
                 Console.WriteLine("User Failed to add");
+            }
+        }
+
+        public static void Print_Clients_List()
+        {
+
+            DataTable dataTable = clsClient.Table();
+
+            Console.WriteLine("List of Clients:");
+            Console.WriteLine("{0,-10} {1,-20} {2,-20} {3,-15} {4,-15}", "Client_ID", "FirstName", "LastName", "AccountNumber", "Phone");
+
+            foreach (DataRow row in dataTable.Rows)
+            {
+                Console.WriteLine("{0,-10} {1,-20} {2,-20} {3,-15} {4,-15}",
+                    row["Client_ID"], row["FirstName"], row["LastName"], row["AccountNumber"], row["Phone"]);
             }
         }
 
