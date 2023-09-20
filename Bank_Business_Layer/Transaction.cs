@@ -97,6 +97,42 @@ namespace Bank_Business_Layer
             }
 
         }
+
+        private clsTransaction(int sender_id, int receiver_id, int user_id, int transactionTypeID, double amount, DateTime transactionDateTime)
+        {
+            TransactionType_ID = transactionTypeID;
+            Amount = amount;
+            TransactionDateTime = transactionDateTime;
+
+            if (sender_id == -1)
+            {
+                Sender = null;
+            }
+            else
+            {
+                Sender = clsClient.Find(sender_id);
+            }
+
+            if (receiver_id == -1)
+            {
+                Receiver = null;
+            }
+            else
+            {
+                Receiver = clsClient.Find(receiver_id);
+            }
+
+            if (user_id == -1)
+            {
+                User = null;
+            }
+            else
+            {
+                User = clsUser.Find(user_id);
+            }
+
+        }
+
     }
 
 

@@ -135,9 +135,32 @@ namespace Bank_Business_Layer
 
 
 
+        public bool Deposit(double amount)
+        {
+            if(Mode == enMode.eAddNew)
+            {
+                return false;
+            }
+
+            Balance += amount;
 
 
 
+            return Save();
+        }
+
+        public bool Withdrawal(double amount)
+        {
+            if(Balance >= amount)
+            {
+                Balance -= amount;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
 
 
