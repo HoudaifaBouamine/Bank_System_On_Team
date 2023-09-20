@@ -19,6 +19,19 @@ namespace Bank_Business_Layer
             return clsDataAccessLayer.Get_Transaction_List();
         }
 
+        static public List<clsTransaction> List()
+        {
+            DataTable table = clsTransaction.Table();
+            List < clsTransaction > list = new List < clsTransaction >();
+
+            foreach (DataRow row in table.Rows)
+            {
+                list.Add(new clsTransaction(row));
+            }
+
+            return list;
+        }
+
         public int Transaction_ID { get; private set; }
         public clsClient Sender { get; set; }
         public clsClient Receiver { get; set; }
@@ -36,7 +49,7 @@ namespace Bank_Business_Layer
             Amount = Convert.ToDouble(row["Amount"]);
             TransactionDateTime = Convert.ToDateTime(row["TransactionDateTime"]); ;
 
-            if (Convert.ToInt32(row["Sender_ID"]) == -1)
+            if (row["Sender_ID"] == DBNull.Value)
             {
                 Sender = null;
             }
@@ -45,7 +58,7 @@ namespace Bank_Business_Layer
                 Sender = clsClient.Find(Convert.ToInt32(row["Sender_ID"]));
             }
 
-            if (Convert.ToInt32(row["Receiver_ID"]) == -1)
+            if (row["Receiver_ID"] == DBNull.Value)
             {
                 Receiver = null;
             }
@@ -54,7 +67,7 @@ namespace Bank_Business_Layer
                 Receiver = clsClient.Find(Convert.ToInt32(row["Receiver_ID"]));
             }
 
-            if (Convert.ToInt32(row["User_ID"]) == -1)
+            if (row["User_ID"] == DBNull.Value)
             {
                 User = null;
             }

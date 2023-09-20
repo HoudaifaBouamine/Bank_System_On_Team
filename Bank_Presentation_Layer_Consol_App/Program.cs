@@ -288,10 +288,36 @@ namespace Bank_Presentation_Layer_Consol_App
             }
         }
 
+        public static void PrintTransactionsTable()
+        {
+            List<clsTransaction> transactions = clsTransaction.List();
+
+            if (transactions.Count == 0)
+            {
+                Console.WriteLine("No transactions found.");
+            }
+            else
+            {
+                // Print table header
+                Console.WriteLine("{0,-15} {1,-15} {2,-15} {3,-25} {4,-15} {5,-15} {6,-15}",
+                    "Transaction ID", "Transaction Type ID", "Amount", "Transaction Date Time", "Sender", "Receiver", "User");
+
+                foreach (var transaction in transactions)
+                {
+                    // Print transaction details
+                    Console.WriteLine("{0,-15} {1,-15} {2,-15:C} {3,-25} {4,-15} {5,-15} {6,-15}",
+                        transaction.Transaction_ID, transaction.TransactionType_ID, transaction.Amount,
+                        transaction.TransactionDateTime, transaction.Sender?.AccountNumber ?? "N/A",
+                        transaction.Receiver?.AccountNumber ?? "N/A", transaction.User?.UserName ?? "N/A");
+                }
+            }
+        }
+
         static void Main(string[] args)
         {
 
-            transaction_list();
+            PrintTransactionsTable();
+                //transaction_list();
             //add_new_client();
             //find_client(17);
             //delete_client(15);
