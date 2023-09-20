@@ -9,17 +9,41 @@ using Bank_Data_Layer;
 using System.IO;
 using System.Security.Policy;
 using System.Net;
+using System.Data.SqlClient;
 
 namespace Bank_Presentation_Layer_Consol_App
 {
     internal class Program
     {
 
+        static void execute_query(string query)
+        {
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
+            SqlCommand Command = new SqlCommand(query,connection);
+
+            try
+            {
+                connection.Open();
+
+                Command.ExecuteNonQuery();
+
+                Console.WriteLine("Query Done Successfuly\n");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Something went wrong, Query not done succssfuly\n");
+
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
         static void Main(string[] args)
         {
 
-              
+            execute_query("UPDATE Transactions SET     Sender_Balance_Befor = 0.00,     Sender_Balance_After = 0.00,     Receiver_Balance_Befor = 0.00,     Receiver_Balance_After = 0.00; \tALTER TABLE Transactions ALTER COLUMN Sender_Balance_Befor DECIMAL(12, 2) NOT NULL; ALTER TABLE Transactions ALTER COLUMN Sender_Balance_After DECIMAL(12, 2) NOT NULL; ALTER TABLE Transactions ALTER COLUMN Receiver_Balance_Befor DECIMAL(12, 2) NOT NULL; ALTER TABLE Transactions ALTER COLUMN Receiver_Balance_After DECIMAL(12, 2) NOT NULL;");
 
             Console.ReadKey();
         }
