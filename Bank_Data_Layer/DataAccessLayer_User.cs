@@ -12,41 +12,6 @@ namespace Bank_Data_Layer
     public partial class clsDataAccessLayer
     {
 
-        static public void testing ()
-        {
-
-            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
-                string query = "select Permission from users where User_ID=1;";
-            SqlCommand cmd = new SqlCommand(query, connection);
-
-            try
-            {
-                connection.Open();
-                Console.WriteLine("Connected successfuly\n\n");
-
-                object test = cmd.ExecuteScalar();
-                if(test != null)
-                {
-                    Console.WriteLine("\n\nPerson 1 permisstion : " + Convert.ToInt32(test));
-                }
-                else
-                {
-                    Console.WriteLine("Failed to execute commadn");
-                }
-            }
-            catch(Exception ex)
-            {
-                Console.WriteLine("Conncetion Failed : " + ex.Message);
-            }
-            finally
-            {
-                connection.Close();
-            }
-
-
-
-        }
-
         /// <summary>
         /// Search on the Database for user by <c>User_ID</c> and return the user info as variables using <c>ref</c> key word
         /// </summary>

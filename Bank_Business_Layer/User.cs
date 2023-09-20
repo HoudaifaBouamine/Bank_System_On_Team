@@ -36,13 +36,6 @@ namespace Bank_Business_Layer
 
         }
 
-
-
-        static public void test()
-        {
-            clsDataAccessLayer.testing();
-        }
-
         /// <summary>
         /// When you create an object using the constructor,
         /// then use the <c>Save()</c> method,
