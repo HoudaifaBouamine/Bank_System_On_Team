@@ -42,8 +42,10 @@ namespace Bank_Presentation_Layer_Consol_App
         }
         static void Main(string[] args)
         {
-            //execute_query("CREATE View User_Person_List_View as select Users.* , Persons.FirstName,Persons.LastName,Persons.Country,Persons.City,Persons.Street from Users left join persons on users.person_id = persons.person_id");
-            test.print_users_list();
+            execute_query("CREATE View Client_Person_List_View as select Clients.* , Persons.FirstName,Persons.LastName,Persons.Country,Persons.City,Persons.Street from Clients left join persons on Clients.person_id = persons.person_id");
+            execute_query("drop view ClientPersonView;");
+            execute_query("drop view UserPersonView;");
+            //test.find_client(5);
 
 
 

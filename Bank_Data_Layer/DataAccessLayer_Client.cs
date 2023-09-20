@@ -28,7 +28,7 @@ namespace Bank_Data_Layer
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
-            string query = "Select Persons.FirstName,Persons.LastName,Persons.Country,Persons.City,Persons.Street ,Clients.* from Clients Inner join Persons on Persons.Person_ID = Clients.Person_ID WHERE Clients.Client_ID = @Client_ID";
+            string query = "select * from Client_Person_List_View WHERE Client_ID = @Client_ID";
 
             SqlCommand command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@Client_ID", Client_ID);
