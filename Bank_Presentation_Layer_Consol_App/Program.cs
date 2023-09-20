@@ -42,8 +42,7 @@ namespace Bank_Presentation_Layer_Consol_App
         }
         static void Main(string[] args)
         {
-
-            execute_query("UPDATE Transactions SET     Sender_Balance_Befor = 0.00,     Sender_Balance_After = 0.00,     Receiver_Balance_Befor = 0.00,     Receiver_Balance_After = 0.00; \tALTER TABLE Transactions ALTER COLUMN Sender_Balance_Befor DECIMAL(12, 2) NOT NULL; ALTER TABLE Transactions ALTER COLUMN Sender_Balance_After DECIMAL(12, 2) NOT NULL; ALTER TABLE Transactions ALTER COLUMN Receiver_Balance_Befor DECIMAL(12, 2) NOT NULL; ALTER TABLE Transactions ALTER COLUMN Receiver_Balance_After DECIMAL(12, 2) NOT NULL;");
+            execute_query("CREATE View User_Person_List_View as select Users.* , Persons.FirstName,Persons.LastName,Persons.Country,Persons.City,Persons.Street from Users left join persons on users.person_id = persons.person_id");
 
             Console.ReadKey();
         }
