@@ -27,6 +27,7 @@ namespace Bank_Business_Layer
         public double Amount { get; set; }
         public DateTime TransactionDateTime { get; set; }
 
+        enum enTransaction { eDesposit_With_User, eDesposit_Without_User,eWithdrawl_With_User, eWithdrawal_Without_User,eTransfer_With_User, eTransfer_Without_User };
         private clsTransaction(DataRow row)
         {
             Transaction_ID = Convert.ToInt32( row["Transaction_ID"]);
