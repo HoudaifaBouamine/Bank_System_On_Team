@@ -42,7 +42,10 @@ namespace Bank_Presentation_Layer_Consol_App
         }
         static void Main(string[] args)
         {
-            execute_query("CREATE View User_Person_List_View as select Users.* , Persons.FirstName,Persons.LastName,Persons.Country,Persons.City,Persons.Street from Users left join persons on users.person_id = persons.person_id");
+            //execute_query("CREATE View User_Person_List_View as select Users.* , Persons.FirstName,Persons.LastName,Persons.Country,Persons.City,Persons.Street from Users left join persons on users.person_id = persons.person_id");
+            test.find_user(1);
+
+
 
             Console.ReadKey();
         }
@@ -55,7 +58,7 @@ namespace Bank_Presentation_Layer_Consol_App
     class test
     {
 
-        static void print_user(clsUser user)
+        public static void print_user(clsUser user)
         {
 
             Console.WriteLine($"===============================");
@@ -75,7 +78,7 @@ namespace Bank_Presentation_Layer_Consol_App
             Console.WriteLine($" Permission : {user.Permission}");
             Console.WriteLine($"===============================\n\n");
         }
-        static void find_user(int id)
+        public static void find_user(int id)
         {
 
             clsUser user = clsUser.Find(id);
@@ -90,7 +93,7 @@ namespace Bank_Presentation_Layer_Consol_App
             }
         }
 
-        static void update_user_phone(int id, string phone)
+        public static void update_user_phone(int id, string phone)
         {
             clsUser user = clsUser.Find(id);
 
@@ -105,7 +108,7 @@ namespace Bank_Presentation_Layer_Consol_App
             }
         }
 
-        static void add_new_user()
+        public static void add_new_user()
         {
             clsUser new_user = new clsUser();
 
@@ -131,7 +134,7 @@ namespace Bank_Presentation_Layer_Consol_App
             }
         }
 
-        static void print_users_list()
+        public static void print_users_list()
         {
             DataTable list_users = clsUser.list();
 
@@ -201,7 +204,7 @@ namespace Bank_Presentation_Layer_Consol_App
 
 
 
-        static void print_client(clsClient client)
+        public static void print_client(clsClient client)
         {
 
             Console.WriteLine($"===============================");
@@ -222,7 +225,7 @@ namespace Bank_Presentation_Layer_Consol_App
             Console.WriteLine($"===============================\n\n");
         }
 
-        static bool find_client(int Client_ID)
+        public static bool find_client(int Client_ID)
         {
             clsClient client = clsClient.Find(Client_ID);
 
@@ -238,7 +241,7 @@ namespace Bank_Presentation_Layer_Consol_App
             }
         }
 
-        static public void delete_client(int id)
+        public static void delete_client(int id)
         {
             if (find_client(id))
             {
@@ -253,7 +256,7 @@ namespace Bank_Presentation_Layer_Consol_App
             }
         }
 
-        static void update_client(int id)
+        public static void update_client(int id)
         {
             clsClient client = clsClient.Find(id);
 
@@ -283,7 +286,7 @@ namespace Bank_Presentation_Layer_Consol_App
             }
         }
 
-        static void add_new_client()
+        public static void add_new_client()
         {
             clsClient new_client = new clsClient();
 
@@ -310,7 +313,7 @@ namespace Bank_Presentation_Layer_Consol_App
         }
 
 
-        static void transaction_list()
+        public static void transaction_list()
         {
 
 
