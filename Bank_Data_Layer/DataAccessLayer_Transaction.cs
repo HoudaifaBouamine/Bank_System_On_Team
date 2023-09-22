@@ -16,7 +16,7 @@ namespace Bank_Data_Layer
             DataTable table = new DataTable();
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
-            string query = "select * from Transactions;";
+            string query = "select * from Transaction_Details_View;";
 
             SqlCommand command = new SqlCommand(query, connection);
 
