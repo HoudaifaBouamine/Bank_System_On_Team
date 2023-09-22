@@ -43,7 +43,9 @@ namespace Bank_Presentation_Layer_Consol_App
         static void Main(string[] args)
         {
 
-            test.Print_Clients_List();
+            execute_query("Create View Transaction_Details_View as ( select  Transactions.* , User_Person_List_View.Person_ID as UserPerson_ID , UserName,User_Person_List_View.Email as UserEmail, User_Person_List_View.Password as UserPassword,User_Person_List_View.Phone as UserPhone,Permission,User_Person_List_View.FirstName as UserFirstName,User_Person_List_View.LastName as UserLastName, User_Person_List_View.Country as UserCountry,User_Person_List_View.City as UserCity,User_Person_List_View.Street as UserStreet,Receiver.Person_ID as ReceiverPerson_ID,Receiver.AccountNumber as ReceiverAccountNumber,Receiver.Email as ReceiverEmail,Receiver.PinCode as ReceiverPinCode,Receiver.Phone as ReceiverPhone,Receiver.Balance as ReceiverBalance,Receiver.FirstName as ReceiverFirstName,Receiver.LastName as ReceiverLastName,Receiver.Country as ReceiverCountry,Receiver.City as ReceiverCity,Receiver.Street as ReceiverStreet,Sender.Person_ID as SenderPerson_ID,Sender.AccountNumber as SenderAccountNumber,Sender.Email as SenderEmail,Sender.PinCode as SenderPinCode,Sender.Phone as SenderPhone,Sender.Balance as SenderBalance,Sender.FirstName as SenderFirstName,Sender.LastName as SenderLastName,Sender.Country as SenderCountry,Sender.City as SenderCity,Sender.Street as SenderStreet from  Transactions  Left join  User_Person_List_View ON User_Person_List_View.User_ID = Transactions.User_ID Left join  Client_Person_List_View Receiver ON Receiver.Client_ID = Transactions.Receiver_ID Left join  Client_Person_List_View Sender ON Sender.Client_ID = Transactions.Sender_ID ) ");
+
+            //test.Print_Clients_List();
 
             Console.ReadKey();
         }
