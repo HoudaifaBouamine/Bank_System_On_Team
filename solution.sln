@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank_Business_Layer", "Bank
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank_Data_Layer", "Bank_Data_Layer\Bank_Data_Layer.csproj", "{733AA105-AB2B-4821-BF3A-7D9090F75352}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank_Presentation_Layer_Windows_App", "Bank_Presentation_Layer_Windows_App\Bank_Presentation_Layer_Windows_App.csproj", "{2B9599C1-1A82-4731-90B6-489F2CB6A5A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{733AA105-AB2B-4821-BF3A-7D9090F75352}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{733AA105-AB2B-4821-BF3A-7D9090F75352}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{733AA105-AB2B-4821-BF3A-7D9090F75352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B9599C1-1A82-4731-90B6-489F2CB6A5A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B9599C1-1A82-4731-90B6-489F2CB6A5A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B9599C1-1A82-4731-90B6-489F2CB6A5A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B9599C1-1A82-4731-90B6-489F2CB6A5A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
