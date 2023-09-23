@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Bank_Business_Layer;
 
 namespace Bank_Presentation_Layer_Windows_App.ClientStartScreen
 {
@@ -69,6 +70,32 @@ namespace Bank_Presentation_Layer_Windows_App.ClientStartScreen
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             startScreen.open_child_window(new ucCreateAccount(startScreen));
+        }
+
+        private void btn_SignUp_Click(object sender, EventArgs e)
+        {
+            if (cb_Login_as_user.Checked)
+            {
+                if(cb_Login_Email.Checked)
+                {
+                    
+                }
+                else
+                {
+
+                }
+            }
+            else
+            {
+                if (cb_Login_Email.Checked)
+                {
+
+                }
+                else
+                {
+
+                }
+            }
         }
     }
 }

@@ -30,5 +30,10 @@ namespace Bank_Presentation_Layer_Windows_App.ClientLoginScreen
         {
             startScreen.open_child_window(new ucLogin(startScreen));
         }
+
+        private void btn_SignUp_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
