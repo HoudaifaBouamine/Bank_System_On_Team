@@ -1,4 +1,5 @@
-﻿using Bank_Presentation_Layer_Windows_App.LoginScreen;
+﻿using Bank_Presentation_Layer_Windows_App.ClientStartScreen;
+using Bank_Presentation_Layer_Windows_App.LoginScreen;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,7 +24,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientLoginScreen
 
         private void btn_GetStarted_Click(object sender, EventArgs e)
         {
-            this.startScreen.open_child_window(new ucCreateAccount(startScreen));
+            this.startScreen.open_child_window(new ucLogin(startScreen));
         }
     }
 }

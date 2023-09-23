@@ -137,6 +137,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientLoginScreen
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
             this.label5.Location = new System.Drawing.Point(68, 491);
             this.label5.Name = "label5";
@@ -147,6 +148,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientLoginScreen
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(114)))), ((int)(((byte)(175)))));
             this.linkLabel1.Location = new System.Drawing.Point(291, 491);
@@ -156,6 +158,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientLoginScreen
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Log In";
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(114)))), ((int)(((byte)(175)))));
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // ucCreateAccount
             // 

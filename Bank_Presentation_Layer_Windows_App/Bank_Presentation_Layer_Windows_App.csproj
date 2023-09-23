@@ -64,6 +64,12 @@
     <Compile Include="ClientScreen\frm_ClientScreen.Designer.cs">
       <DependentUpon>frm_ClientScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClientStartScreen\ucLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientStartScreen\ucLogin.Designer.cs">
+      <DependentUpon>ucLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClientScreen\frm_ClientScreen.resx">
       <DependentUpon>frm_ClientScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientStartScreen\ucLogin.resx">
+      <DependentUpon>ucLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>
