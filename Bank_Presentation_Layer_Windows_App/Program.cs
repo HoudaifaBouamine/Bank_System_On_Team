@@ -21,7 +21,7 @@ namespace Bank_Presentation_Layer_Windows_App
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new frm_MainForm());
         }
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]

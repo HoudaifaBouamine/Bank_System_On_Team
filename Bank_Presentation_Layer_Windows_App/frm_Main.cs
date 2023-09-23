@@ -12,16 +12,16 @@ using System.Windows.Forms;
 
 namespace Bank_Presentation_Layer_Windows_App
 {
-    public partial class MainForm : Form
+    public partial class frm_MainForm : Form
     {
-        public MainForm()
+        public frm_MainForm()
         {
             InitializeComponent();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            OpenChildForm(new frm_Login());
+            OpenChildForm(new frm_StartScreen());
         }
 
         Form currentActivateForm = null;

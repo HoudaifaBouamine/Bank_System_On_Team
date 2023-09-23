@@ -2,7 +2,7 @@
 
 namespace Bank_Presentation_Layer_Windows_App.LoginScreen
 {
-    partial class frm_Login
+    partial class frm_StartScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -30,12 +30,13 @@ namespace Bank_Presentation_Layer_Windows_App.LoginScreen
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_StartScreen));
             this.pnl_LoginContainer = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // pnl_LoginContainer
             // 
+            this.pnl_LoginContainer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnl_LoginContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.pnl_LoginContainer.Location = new System.Drawing.Point(622, 32);
             this.pnl_LoginContainer.Name = "pnl_LoginContainer";

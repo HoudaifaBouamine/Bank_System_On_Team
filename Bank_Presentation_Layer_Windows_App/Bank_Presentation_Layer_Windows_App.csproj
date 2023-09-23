@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClientLoginScreen\ucCreateAccount.cs">
+    <Compile Include="ClientStartScreen\ucCreateAccount.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ClientLoginScreen\ucCreateAccount.Designer.cs">
+    <Compile Include="ClientStartScreen\ucCreateAccount.Designer.cs">
       <DependentUpon>ucCreateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientStartScreen\ucGetStarted.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientStartScreen\ucGetStarted.Designer.cs">
+      <DependentUpon>ucGetStarted.cs</DependentUpon>
     </Compile>
     <Compile Include="ClientScreen\frm_ClientScreen.cs">
       <SubType>Form</SubType>
@@ -64,16 +70,19 @@
     <Compile Include="frm_Main.Designer.cs">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientLoginScreen\frm_Login.cs">
+    <Compile Include="ClientStartScreen\frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClientLoginScreen\frm_Login.Designer.cs">
+    <Compile Include="ClientStartScreen\frm_Login.Designer.cs">
       <DependentUpon>frm_Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ClientLoginScreen\ucCreateAccount.resx">
+    <EmbeddedResource Include="ClientStartScreen\ucCreateAccount.resx">
       <DependentUpon>ucCreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientStartScreen\ucGetStarted.resx">
+      <DependentUpon>ucGetStarted.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientScreen\frm_ClientScreen.resx">
       <DependentUpon>frm_ClientScreen.cs</DependentUpon>
@@ -81,7 +90,7 @@
     <EmbeddedResource Include="frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientLoginScreen\frm_Login.resx">
+    <EmbeddedResource Include="ClientStartScreen\frm_Login.resx">
       <DependentUpon>frm_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -106,6 +115,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="UserControls\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
