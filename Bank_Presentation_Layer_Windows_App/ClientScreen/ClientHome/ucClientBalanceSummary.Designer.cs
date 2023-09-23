@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.pnl_Balance = new System.Windows.Forms.Panel();
-            this.pnl_Seperator = new System.Windows.Forms.Panel();
-            this.pnl_LastTransaction = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.lbl_Balance = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lbl_TransactionType = new System.Windows.Forms.Label();
-            this.lbl_DateTime = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pnl_LastTransaction = new System.Windows.Forms.Panel();
             this.lbl_LastTransAmount = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lbl_DateTime = new System.Windows.Forms.Label();
+            this.lbl_TransactionType = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.zeroitBevelLine1 = new Zeroit.Framework.LineSeparators.ZeroitBevelLine();
             this.pnl_Balance.SuspendLayout();
             this.pnl_LastTransaction.SuspendLayout();
             this.SuspendLayout();
@@ -53,40 +53,6 @@
             this.pnl_Balance.Size = new System.Drawing.Size(272, 232);
             this.pnl_Balance.TabIndex = 0;
             // 
-            // pnl_Seperator
-            // 
-            this.pnl_Seperator.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_Seperator.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl_Seperator.Location = new System.Drawing.Point(272, 0);
-            this.pnl_Seperator.Name = "pnl_Seperator";
-            this.pnl_Seperator.Size = new System.Drawing.Size(21, 232);
-            this.pnl_Seperator.TabIndex = 1;
-            // 
-            // pnl_LastTransaction
-            // 
-            this.pnl_LastTransaction.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_LastTransaction.Controls.Add(this.lbl_LastTransAmount);
-            this.pnl_LastTransaction.Controls.Add(this.label3);
-            this.pnl_LastTransaction.Controls.Add(this.lbl_DateTime);
-            this.pnl_LastTransaction.Controls.Add(this.lbl_TransactionType);
-            this.pnl_LastTransaction.Controls.Add(this.label2);
-            this.pnl_LastTransaction.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_LastTransaction.Location = new System.Drawing.Point(293, 0);
-            this.pnl_LastTransaction.Name = "pnl_LastTransaction";
-            this.pnl_LastTransaction.Size = new System.Drawing.Size(568, 232);
-            this.pnl_LastTransaction.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 16.8F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(46, 51);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 33);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Balance";
-            // 
             // lbl_Balance
             // 
             this.lbl_Balance.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -99,38 +65,44 @@
             this.lbl_Balance.Text = "150.00 $";
             this.lbl_Balance.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label2
+            // label1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 16.8F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(53, 51);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 33);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Recents";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 16.8F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(46, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(123, 33);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Balance";
             // 
-            // lbl_TransactionType
+            // pnl_LastTransaction
             // 
-            this.lbl_TransactionType.AutoSize = true;
-            this.lbl_TransactionType.Font = new System.Drawing.Font("Arial", 9.8F);
-            this.lbl_TransactionType.ForeColor = System.Drawing.Color.White;
-            this.lbl_TransactionType.Location = new System.Drawing.Point(55, 99);
-            this.lbl_TransactionType.Name = "lbl_TransactionType";
-            this.lbl_TransactionType.Size = new System.Drawing.Size(64, 19);
-            this.lbl_TransactionType.TabIndex = 2;
-            this.lbl_TransactionType.Text = "Deposit";
+            this.pnl_LastTransaction.BackColor = System.Drawing.Color.Transparent;
+            this.pnl_LastTransaction.Controls.Add(this.zeroitBevelLine1);
+            this.pnl_LastTransaction.Controls.Add(this.lbl_LastTransAmount);
+            this.pnl_LastTransaction.Controls.Add(this.label3);
+            this.pnl_LastTransaction.Controls.Add(this.lbl_DateTime);
+            this.pnl_LastTransaction.Controls.Add(this.lbl_TransactionType);
+            this.pnl_LastTransaction.Controls.Add(this.label2);
+            this.pnl_LastTransaction.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_LastTransaction.Location = new System.Drawing.Point(272, 0);
+            this.pnl_LastTransaction.Name = "pnl_LastTransaction";
+            this.pnl_LastTransaction.Size = new System.Drawing.Size(589, 232);
+            this.pnl_LastTransaction.TabIndex = 2;
+            this.pnl_LastTransaction.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_LastTransaction_Paint);
             // 
-            // lbl_DateTime
+            // lbl_LastTransAmount
             // 
-            this.lbl_DateTime.AutoSize = true;
-            this.lbl_DateTime.Font = new System.Drawing.Font("Arial", 9.8F);
-            this.lbl_DateTime.ForeColor = System.Drawing.Color.White;
-            this.lbl_DateTime.Location = new System.Drawing.Point(119, 176);
-            this.lbl_DateTime.Name = "lbl_DateTime";
-            this.lbl_DateTime.Size = new System.Drawing.Size(89, 19);
-            this.lbl_DateTime.TabIndex = 3;
-            this.lbl_DateTime.Text = "00:00 GMT";
+            this.lbl_LastTransAmount.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lbl_LastTransAmount.Font = new System.Drawing.Font("Arial", 16.8F, System.Drawing.FontStyle.Bold);
+            this.lbl_LastTransAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(56)))));
+            this.lbl_LastTransAmount.Location = new System.Drawing.Point(263, 118);
+            this.lbl_LastTransAmount.Name = "lbl_LastTransAmount";
+            this.lbl_LastTransAmount.Size = new System.Drawing.Size(273, 33);
+            this.lbl_LastTransAmount.TabIndex = 5;
+            this.lbl_LastTransAmount.Text = "+10.00 $";
+            this.lbl_LastTransAmount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label3
             // 
@@ -143,17 +115,50 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Time : ";
             // 
-            // lbl_LastTransAmount
+            // lbl_DateTime
             // 
-            this.lbl_LastTransAmount.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lbl_LastTransAmount.Font = new System.Drawing.Font("Arial", 16.8F, System.Drawing.FontStyle.Bold);
-            this.lbl_LastTransAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(56)))));
-            this.lbl_LastTransAmount.Location = new System.Drawing.Point(242, 118);
-            this.lbl_LastTransAmount.Name = "lbl_LastTransAmount";
-            this.lbl_LastTransAmount.Size = new System.Drawing.Size(273, 33);
-            this.lbl_LastTransAmount.TabIndex = 5;
-            this.lbl_LastTransAmount.Text = "+10.00 $";
-            this.lbl_LastTransAmount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_DateTime.AutoSize = true;
+            this.lbl_DateTime.Font = new System.Drawing.Font("Arial", 9.8F);
+            this.lbl_DateTime.ForeColor = System.Drawing.Color.White;
+            this.lbl_DateTime.Location = new System.Drawing.Point(119, 176);
+            this.lbl_DateTime.Name = "lbl_DateTime";
+            this.lbl_DateTime.Size = new System.Drawing.Size(89, 19);
+            this.lbl_DateTime.TabIndex = 3;
+            this.lbl_DateTime.Text = "00:00 GMT";
+            // 
+            // lbl_TransactionType
+            // 
+            this.lbl_TransactionType.AutoSize = true;
+            this.lbl_TransactionType.Font = new System.Drawing.Font("Arial", 9.8F);
+            this.lbl_TransactionType.ForeColor = System.Drawing.Color.White;
+            this.lbl_TransactionType.Location = new System.Drawing.Point(55, 99);
+            this.lbl_TransactionType.Name = "lbl_TransactionType";
+            this.lbl_TransactionType.Size = new System.Drawing.Size(64, 19);
+            this.lbl_TransactionType.TabIndex = 2;
+            this.lbl_TransactionType.Text = "Deposit";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 16.8F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(53, 51);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(124, 33);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Recents";
+            // 
+            // zeroitBevelLine1
+            // 
+            this.zeroitBevelLine1.AllowTransparency = true;
+            this.zeroitBevelLine1.Angle = 0;
+            this.zeroitBevelLine1.BackColor = System.Drawing.Color.White;
+            this.zeroitBevelLine1.Blend = true;
+            this.zeroitBevelLine1.Location = new System.Drawing.Point(3, 28);
+            this.zeroitBevelLine1.Name = "zeroitBevelLine1";
+            this.zeroitBevelLine1.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.zeroitBevelLine1.Size = new System.Drawing.Size(2, 180);
+            this.zeroitBevelLine1.TabIndex = 6;
             // 
             // ucClientBalanceSummary
             // 
@@ -161,7 +166,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(32)))), ((int)(((byte)(78)))));
             this.Controls.Add(this.pnl_LastTransaction);
-            this.Controls.Add(this.pnl_Seperator);
             this.Controls.Add(this.pnl_Balance);
             this.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -178,7 +182,6 @@
         #endregion
 
         private System.Windows.Forms.Panel pnl_Balance;
-        private System.Windows.Forms.Panel pnl_Seperator;
         private System.Windows.Forms.Panel pnl_LastTransaction;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_Balance;
@@ -187,5 +190,6 @@
         private System.Windows.Forms.Label lbl_DateTime;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lbl_LastTransAmount;
+        private Zeroit.Framework.LineSeparators.ZeroitBevelLine zeroitBevelLine1;
     }
 }

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Zeroit.Framework.LineSeparators;
 
 namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome
 {
@@ -18,14 +19,22 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome
         {
             this.client = client;
             InitializeComponent();
+
+            init_Balance_Recent();
         }
 
         private void init_Balance_Recent()
         {
-            this.lbl_Balance.Text = string.Format("{0:0.00}", client.Balance) + " $";
+            this.lbl_Balance.Text = string.Format("{0:0.00}", client.Balance) + "$";
+
+           
 
             // NOTE (HOUDAIFA) : You must modify the database to get the latest trans of the user
         }
 
+        private void pnl_LastTransaction_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
