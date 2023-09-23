@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Bank_Presentation_Layer_Windows_App
+namespace Bank_Presentation_Layer_Windows_App.LoginScreen
 {
-    public partial class ucLoginScreen : UserControl
+    public partial class frm_Login : Form
     {
-        public ucLoginScreen()
+        public frm_Login()
         {
             InitializeComponent();
         }
