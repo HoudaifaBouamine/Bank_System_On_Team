@@ -140,6 +140,66 @@ namespace Bank_Data_Layer
             return isFound;
         }
 
+        static public bool Find_User_By_UserName
+            (
+                string UserName, ref int User_ID, ref int Person_ID,  ref string FirstName, ref string LastName,
+                ref string Country, ref string City, ref string Street,
+                ref string Email, ref string Password,
+                ref string Phone, ref int Permission
+            )
+
+        {
+            bool isFound = false;
+
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+
+            string query = "select * from User_Person_List_View WHERE UserName = @UserName";
+
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@UserName", UserName);
+
+            try
+            {
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+
+                    User_ID = (int)reader["User_ID"];
+                    Person_ID = (int)reader["Person_ID"];
+                    FirstName = (string)reader["FirstName"];
+                    LastName = (string)reader["LastName"];
+                    Country = (string)reader["Country"];
+                    City = (string)reader["City"];
+                    Street = (string)reader["Street"];
+                    Email = (string)reader["Email"];
+                    Password = (string)reader["Password"];
+                    Phone = (string)reader["Phone"];
+                    Permission = Convert.ToInt32(reader["Permission"]);
+
+                    isFound = true;
+                }
+                else
+                {
+                    isFound = false;
+                }
+
+                reader.Close();
+
+            }
+            catch (Exception ex)
+            {
+                isFound = false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return isFound;
+        }
 
         /// <summary>
         /// Create new User on the Database ,
