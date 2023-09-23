@@ -78,6 +78,68 @@ namespace Bank_Data_Layer
             return isFound;
         }
 
+        static public bool Find_Client_By_Email
+           (
+           string Email,ref int Client_ID, ref int Person_ID, ref string AccountNumber, ref string FirstName, ref string LastName,
+           ref string Country, ref string City, ref string Street,
+            ref string PinCode,
+           ref string Phone, ref double Balance
+           )
+
+        {
+            bool isFound = false;
+
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+
+            string query = "select * from Client_Person_List_View WHERE Email = @Email";
+
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@Client_ID", Client_ID);
+
+            try
+            {
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+
+                    Person_ID = (int)reader["Person_ID"];
+                    Client_ID = (int)reader["Client_ID"];
+                    AccountNumber = (string)reader["AccountNumber"];
+                    FirstName = (string)reader["FirstName"];
+                    LastName = (string)reader["LastName"];
+                    Country = (string)reader["Country"];
+                    City = (string)reader["City"];
+                    Street = (string)reader["Street"];
+                    PinCode = (string)reader["PinCode"];
+                    Phone = (string)reader["Phone"];
+                    Balance = Convert.ToInt32(reader["Balance"]);
+
+
+                    isFound = true;
+                }
+                else
+                {
+                    isFound = false;
+                }
+
+                reader.Close();
+
+            }
+            catch (Exception ex)
+            {
+                isFound = false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return isFound;
+        }
+
         static public bool Delete_Client_By_ID(int Client_ID)
         {
             bool isDeleted = false;

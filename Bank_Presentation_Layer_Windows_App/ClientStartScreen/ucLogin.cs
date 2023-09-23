@@ -83,18 +83,18 @@ namespace Bank_Presentation_Layer_Windows_App.ClientStartScreen
                 }
                 else
                 {
-
+                    UserLoginUserName();
                 }
             }
             else
             {
                 if (cb_Login_Email.Checked)
                 {
-
+                    ClientLoginEmail();
                 }
                 else
                 {
-
+                    ClientLoginAccNum();
                 }
             }
 
@@ -124,6 +124,28 @@ namespace Bank_Presentation_Layer_Windows_App.ClientStartScreen
                     MessageBox.Show( "Login Failed , Email Not found", "Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 }
+            }
+
+            void UserLoginUserName()
+            {
+                // Code
+            }
+
+            #endregion
+
+            #region Client
+
+            void ClientLoginEmail()
+            {
+
+               
+
+                // Code
+            }
+
+            void ClientLoginAccNum()
+            {
+                // Code
             }
 
             #endregion
