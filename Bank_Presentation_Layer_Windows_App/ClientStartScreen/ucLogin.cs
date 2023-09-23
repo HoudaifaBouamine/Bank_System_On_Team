@@ -131,7 +131,29 @@ namespace Bank_Presentation_Layer_Windows_App.ClientStartScreen
 
             void UserLoginUserName()
             {
-                // Code
+                string UserName = tb_Email_or_AccNum_or_UserName.Text;
+                clsUser user = clsUser.Find_UserName(UserName);
+
+                if (user != null)
+                {
+                    string password = tb_Pass_Or_PinCode.Text;
+
+                    if (user.Password == password)
+                    {
+                        //MessageBox.Show($"Login Success\nFull Name : {user.FirstName} {user.LastName}", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        startScreen.mainForm.OpenChildForm(new frm_UserScreen(startScreen.mainForm, user));
+                    }
+                    else
+                    {
+                        MessageBox.Show("Login Failed , Password wrong", "Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Login Failed , Email Not found", "Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
             }
 
             #endregion
