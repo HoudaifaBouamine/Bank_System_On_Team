@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Zeroit.Framework.LineSeparators;
 
 namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 {
@@ -23,15 +24,31 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             InitializeComponent();
             init_Screen();
 
+
+
             open_chiled_form(new frm_ClientHome(client));
         }
 
         private void init_Screen()
         {
             lbl_ClientFullName.Text = client.FirstName + " " + client.LastName;
+
+            draw_line(pnl_Seperator1);
+            draw_line(pnl_Seperator2);
+
+
+            void draw_line(Panel sep)
+            {
+                ZeroitChromeLine line = new ZeroitChromeLine();
+                line.Width = 260;
+                line.Location = new Point(40, sep.Height/2 - line.Height/2);
+                
+
+                sep.Controls.Add(line);
+            }
         }
 
-    
+
         private void btn_Home_Click_1(object sender, EventArgs e)
         {
             open_chiled_form(new frm_ClientHome(client));

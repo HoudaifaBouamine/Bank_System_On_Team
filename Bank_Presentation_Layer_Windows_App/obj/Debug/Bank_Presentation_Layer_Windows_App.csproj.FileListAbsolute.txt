@@ -23,3 +23,4 @@ C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Presentation_Layer_Windows_
 C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Presentation_Layer_Windows_App\obj\Debug\Bank_Presentation_Layer_Windows_App.ClientScreen.frm_ClientHome.resources
 C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Presentation_Layer_Windows_App\obj\Debug\Bank_Presentation_Layer_Windows_App.ClientScreen.frm_ClientSettings.resources
 C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Presentation_Layer_Windows_App\obj\Debug\Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.ucClientBalanceSummary.resources
+C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Presentation_Layer_Windows_App\bin\Debug\Zeroit.Framework.LineSeparators.dll
