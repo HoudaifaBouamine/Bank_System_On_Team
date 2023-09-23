@@ -32,7 +32,7 @@
             this.lbl_Dont_Have_Account = new System.Windows.Forms.Label();
             this.btn_SignUp = new System.Windows.Forms.Button();
             this.tb_Pass_Or_PinCode = new System.Windows.Forms.MaskedTextBox();
-            this.tb_Email = new System.Windows.Forms.MaskedTextBox();
+            this.tb_Email_or_AccNum_or_UserName = new System.Windows.Forms.MaskedTextBox();
             this.lbl_Password_Or_PinCode = new System.Windows.Forms.Label();
             this.lbl_Email_or_AccNum_or_UserName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -96,13 +96,13 @@
             // 
             // tb_Email
             // 
-            this.tb_Email.AsciiOnly = true;
-            this.tb_Email.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_Email.Font = new System.Drawing.Font("Arial", 14F);
-            this.tb_Email.Location = new System.Drawing.Point(48, 209);
-            this.tb_Email.Name = "tb_Email";
-            this.tb_Email.Size = new System.Drawing.Size(401, 34);
-            this.tb_Email.TabIndex = 6;
+            this.tb_Email_or_AccNum_or_UserName.AsciiOnly = true;
+            this.tb_Email_or_AccNum_or_UserName.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_Email_or_AccNum_or_UserName.Font = new System.Drawing.Font("Arial", 14F);
+            this.tb_Email_or_AccNum_or_UserName.Location = new System.Drawing.Point(48, 209);
+            this.tb_Email_or_AccNum_or_UserName.Name = "tb_Email";
+            this.tb_Email_or_AccNum_or_UserName.Size = new System.Drawing.Size(401, 34);
+            this.tb_Email_or_AccNum_or_UserName.TabIndex = 6;
             // 
             // lbl_Password_Or_PinCode
             // 
@@ -173,7 +173,7 @@
             this.Controls.Add(this.lbl_Dont_Have_Account);
             this.Controls.Add(this.btn_SignUp);
             this.Controls.Add(this.tb_Pass_Or_PinCode);
-            this.Controls.Add(this.tb_Email);
+            this.Controls.Add(this.tb_Email_or_AccNum_or_UserName);
             this.Controls.Add(this.lbl_Password_Or_PinCode);
             this.Controls.Add(this.lbl_Email_or_AccNum_or_UserName);
             this.Controls.Add(this.label1);
@@ -192,7 +192,7 @@
         private System.Windows.Forms.Label lbl_Dont_Have_Account;
         private System.Windows.Forms.Button btn_SignUp;
         private System.Windows.Forms.MaskedTextBox tb_Pass_Or_PinCode;
-        private System.Windows.Forms.MaskedTextBox tb_Email;
+        private System.Windows.Forms.MaskedTextBox tb_Email_or_AccNum_or_UserName;
         private System.Windows.Forms.Label lbl_Password_Or_PinCode;
         private System.Windows.Forms.Label lbl_Email_or_AccNum_or_UserName;
         private System.Windows.Forms.Label label1;

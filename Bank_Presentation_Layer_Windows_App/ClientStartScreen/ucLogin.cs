@@ -74,11 +74,12 @@ namespace Bank_Presentation_Layer_Windows_App.ClientStartScreen
 
         private void btn_SignUp_Click(object sender, EventArgs e)
         {
+
             if (cb_Login_as_user.Checked)
             {
                 if(cb_Login_Email.Checked)
                 {
-                    
+                    UserLoginEmail();
                 }
                 else
                 {
@@ -96,6 +97,37 @@ namespace Bank_Presentation_Layer_Windows_App.ClientStartScreen
 
                 }
             }
+
+            #region User
+
+            void UserLoginEmail()
+            {
+                string Email = tb_Email_or_AccNum_or_UserName.Text;
+                clsUser user = clsUser.Find(Email);
+
+                if(user != null)
+                {
+                    string password = tb_Pass_Or_PinCode.Text;
+
+                    if(user.Password == password)
+                    {
+                        MessageBox.Show($"Login Success\nFull Name : {user.FirstName} {user.LastName}", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        
+                    }
+                    else
+                    {
+                        MessageBox.Show( "Login Failed , Password wrong","Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show( "Login Failed , Email Not found", "Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+            }
+
+            #endregion
+
         }
     }
 }
