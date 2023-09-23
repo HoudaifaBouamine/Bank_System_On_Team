@@ -55,10 +55,10 @@
     <Compile Include="ClientScreen\ClientHome\ucClientBalanceSummary.Designer.cs">
       <DependentUpon>ucClientBalanceSummary.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientScreen\frm_ClientHistorique.cs">
+    <Compile Include="ClientScreen\ClientHistorique\frm_ClientHistorique.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClientScreen\frm_ClientHistorique.Designer.cs">
+    <Compile Include="ClientScreen\ClientHistorique\frm_ClientHistorique.Designer.cs">
       <DependentUpon>frm_ClientHistorique.cs</DependentUpon>
     </Compile>
     <Compile Include="ClientScreen\ClientHome\frm_ClientHome.cs">
@@ -67,22 +67,22 @@
     <Compile Include="ClientScreen\ClientHome\frm_ClientHome.Designer.cs">
       <DependentUpon>frm_ClientHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientScreen\frm_ClientSettings.cs">
+    <Compile Include="ClientScreen\ClientSettings\frm_ClientSettings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClientScreen\frm_ClientSettings.Designer.cs">
+    <Compile Include="ClientScreen\ClientSettings\frm_ClientSettings.Designer.cs">
       <DependentUpon>frm_ClientSettings.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientStartScreen\ucCreateAccount.cs">
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucCreateAccount.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ClientStartScreen\ucCreateAccount.Designer.cs">
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucCreateAccount.Designer.cs">
       <DependentUpon>ucCreateAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientStartScreen\ucGetStarted.cs">
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucGetStarted.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ClientStartScreen\ucGetStarted.Designer.cs">
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucGetStarted.Designer.cs">
       <DependentUpon>ucGetStarted.cs</DependentUpon>
     </Compile>
     <Compile Include="ClientScreen\frm_ClientScreen.cs">
@@ -91,10 +91,10 @@
     <Compile Include="ClientScreen\frm_ClientScreen.Designer.cs">
       <DependentUpon>frm_ClientScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientStartScreen\ucLogin.cs">
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucLogin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ClientStartScreen\ucLogin.Designer.cs">
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucLogin.Designer.cs">
       <DependentUpon>ucLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_Main.cs">
@@ -103,11 +103,11 @@
     <Compile Include="frm_Main.Designer.cs">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientStartScreen\frm_Login.cs">
+    <Compile Include="ClientStartScreen\frm_StartScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClientStartScreen\frm_Login.Designer.cs">
-      <DependentUpon>frm_Login.cs</DependentUpon>
+    <Compile Include="ClientStartScreen\frm_StartScreen.Designer.cs">
+      <DependentUpon>frm_StartScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -120,32 +120,32 @@
     <EmbeddedResource Include="ClientScreen\ClientHome\ucClientBalanceSummary.resx">
       <DependentUpon>ucClientBalanceSummary.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientScreen\frm_ClientHistorique.resx">
+    <EmbeddedResource Include="ClientScreen\ClientHistorique\frm_ClientHistorique.resx">
       <DependentUpon>frm_ClientHistorique.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientScreen\ClientHome\frm_ClientHome.resx">
       <DependentUpon>frm_ClientHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientScreen\frm_ClientSettings.resx">
+    <EmbeddedResource Include="ClientScreen\ClientSettings\frm_ClientSettings.resx">
       <DependentUpon>frm_ClientSettings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientStartScreen\ucCreateAccount.resx">
+    <EmbeddedResource Include="ClientStartScreen\Sub_StartScreens\ucCreateAccount.resx">
       <DependentUpon>ucCreateAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientStartScreen\ucGetStarted.resx">
+    <EmbeddedResource Include="ClientStartScreen\Sub_StartScreens\ucGetStarted.resx">
       <DependentUpon>ucGetStarted.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientScreen\frm_ClientScreen.resx">
       <DependentUpon>frm_ClientScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientStartScreen\ucLogin.resx">
+    <EmbeddedResource Include="ClientStartScreen\Sub_StartScreens\ucLogin.resx">
       <DependentUpon>ucLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientStartScreen\frm_Login.resx">
-      <DependentUpon>frm_Login.cs</DependentUpon>
+    <EmbeddedResource Include="ClientStartScreen\frm_StartScreen.resx">
+      <DependentUpon>frm_StartScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
