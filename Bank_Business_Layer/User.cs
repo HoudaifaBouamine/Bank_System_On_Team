@@ -141,6 +141,34 @@ namespace Bank_Business_Layer
 
         }
 
+        static public clsUser Find_UserName(string UserName)
+        {
+
+            int Person_ID = -1, Permission = 0,User_ID = -1;
+            string FirstName = "", LastName = "", Country = "", City = "", Street = "",
+                Email = "", Password = "", Phone = "";
+
+            clsUser user = null;
+
+            if (clsDataAccessLayer.Find_User_By_UserName(
+                UserName,ref User_ID, ref Person_ID, ref FirstName,
+                ref LastName, ref Country, ref City, ref Street,
+                ref Email, ref Password, ref Phone, ref Permission
+                ))
+
+            {
+
+                user = new clsUser(User_ID, Person_ID, UserName, FirstName, LastName, Country, City, Street, Email, Password, Phone, Permission);
+
+            }
+            else
+            {
+                user = null;
+            }
+
+            return user;
+
+        }
 
         /// <summary>
         /// Retrieves a list of all users in the system.
