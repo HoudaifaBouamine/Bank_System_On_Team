@@ -166,6 +166,30 @@ namespace Bank_Presentation_Layer_Windows_App.ClientStartScreen
 
             void ClientLoginAccNum()
             {
+
+                string AccountNumber = tb_Email_or_AccNum_or_UserName.Text;
+                clsClient client = clsClient.Find_AccNum(AccountNumber);
+
+                if (client != null)
+                {
+                    string pincode = tb_Pass_Or_PinCode.Text;
+
+                    if (client.PinCode == pincode)
+                    {
+                        MessageBox.Show($"Client Login Success\nFull Name : {client.FirstName} {client.LastName}", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Login Failed , client Pincode wrong", "Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Login Failed , client Email Not found", "Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+
                 // Code
             }
 
