@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Bank_Business_Layer;
 using Bank_Presentation_Layer_Windows_App.ClientScreen;
+using Bank_Presentation_Layer_Windows_App.UserScreen;
 
 namespace Bank_Presentation_Layer_Windows_App.ClientStartScreen
 {
@@ -112,8 +113,9 @@ namespace Bank_Presentation_Layer_Windows_App.ClientStartScreen
 
                     if(user.Password == password)
                     {
-                        MessageBox.Show($"Login Success\nFull Name : {user.FirstName} {user.LastName}", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        
+                        //MessageBox.Show($"Login Success\nFull Name : {user.FirstName} {user.LastName}", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        startScreen.mainForm.OpenChildForm(new frm_UserScreen(startScreen.mainForm,user));
                     }
                     else
                     {

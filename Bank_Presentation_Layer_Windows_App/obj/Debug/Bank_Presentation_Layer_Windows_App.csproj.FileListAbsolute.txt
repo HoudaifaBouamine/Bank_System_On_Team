@@ -18,3 +18,4 @@ C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Presentation_Layer_Windows_
 C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Presentation_Layer_Windows_App\bin\Debug\Bank_Business_Layer.pdb
 C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Presentation_Layer_Windows_App\bin\Debug\Bank_Data_Layer.pdb
 C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Presentation_Layer_Windows_App\obj\Debug\Bank_Presentation_Layer_Windows_App.csproj.CopyComplete
+C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Presentation_Layer_Windows_App\obj\Debug\Bank_Presentation_Layer_Windows_App.UserScreen.frm_UserScreen.resources
