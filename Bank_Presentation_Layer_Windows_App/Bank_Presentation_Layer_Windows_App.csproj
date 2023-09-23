@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClientScreen\frm_ClientHistorique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\frm_ClientHistorique.Designer.cs">
+      <DependentUpon>frm_ClientHistorique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\frm_ClientHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\frm_ClientHome.Designer.cs">
+      <DependentUpon>frm_ClientHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\frm_ClientSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\frm_ClientSettings.Designer.cs">
+      <DependentUpon>frm_ClientSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClientStartScreen\ucCreateAccount.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -90,6 +108,15 @@
     <Compile Include="UserScreen\frm_UserScreen.Designer.cs">
       <DependentUpon>frm_UserScreen.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ClientScreen\frm_ClientHistorique.resx">
+      <DependentUpon>frm_ClientHistorique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\frm_ClientHome.resx">
+      <DependentUpon>frm_ClientHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\frm_ClientSettings.resx">
+      <DependentUpon>frm_ClientSettings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClientStartScreen\ucCreateAccount.resx">
       <DependentUpon>ucCreateAccount.cs</DependentUpon>
     </EmbeddedResource>

@@ -15,45 +15,59 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
     {
 
         frm_MainForm mainForm = null;
+        clsClient client;
         public frm_ClientScreen(frm_MainForm mainForm,clsClient client)
         {
             this.mainForm = mainForm;
+            this.client = client;
             InitializeComponent();
         }
 
-        private void pnl_Main_Paint(object sender, PaintEventArgs e)
+      
+
+    
+        private void btn_Home_Click_1(object sender, EventArgs e)
         {
+            open_chiled_form(new frm_ClientHome(client));
+        }
+
+        private void btn_Settings_Click_1(object sender, EventArgs e)
+        {
+            open_chiled_form(new frm_ClientSettings(client));
+        }
+
+        Form currentActivateForm = null;
+        private void open_chiled_form(Form form)
+        {
+            Form prevForm = null;
+
+            if (currentActivateForm != null)
+            {
+                if(form == currentActivateForm)
+                {
+                    return;
+                }
+
+                prevForm = currentActivateForm;
+            }
+                currentActivateForm = form;
+
+            currentActivateForm.TopLevel = false;
+            pnl_Main.Controls.Add(currentActivateForm);
+            currentActivateForm.Dock = DockStyle.Fill;
+            currentActivateForm.BringToFront();
+            currentActivateForm.Show();
+
+            if(prevForm != null)
+            {
+                pnl_Main.Controls.Remove(prevForm);
+            }
 
         }
 
-        private void btn_Settings_Click(object sender, EventArgs e)
+        private void btn_Historique_Click_1(object sender, EventArgs e)
         {
-
-        }
-
-        private void btn_Home_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pnl_Menu_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pnl_Profile_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btn_Historique_Click(object sender, EventArgs e)
-        {
-
+            open_chiled_form(new frm_ClientHistorique(client));
         }
     }
 }
