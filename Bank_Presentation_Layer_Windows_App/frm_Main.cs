@@ -25,7 +25,7 @@ namespace Bank_Presentation_Layer_Windows_App
         }
 
         Form currentActivateForm = null;
-        private void OpenChildForm(Form form)
+        public void OpenChildForm(Form form)
         {
             if(currentActivateForm != null) 
             {

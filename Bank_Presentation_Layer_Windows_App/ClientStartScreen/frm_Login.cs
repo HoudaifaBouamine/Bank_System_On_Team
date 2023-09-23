@@ -14,7 +14,7 @@ namespace Bank_Presentation_Layer_Windows_App.LoginScreen
 {
     public partial class frm_StartScreen : Form
     {
-        frm_MainForm mainForm = null;
+        public frm_MainForm mainForm = null;
         public frm_StartScreen(frm_MainForm mainForm)
         {
             this.mainForm = mainForm;
