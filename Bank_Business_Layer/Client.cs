@@ -46,6 +46,28 @@ namespace Bank_Business_Layer
             return client;
         }
 
+        public static clsClient Find(string Email)
+        {
+            int Person_ID = -1,Client_ID = -1;
+            string AccountNumber = "", PinCode = "", Phone = "", FirstName = "", LastName = "", Country = "", City = "", Street = "";
+            double Balance = 0;
+
+            clsClient client = null;
+
+            if (clsDataAccessLayer.Find_Client_By_Email(
+                Email,ref Client_ID, ref Person_ID, ref AccountNumber, ref FirstName, ref LastName, ref Country, ref City, ref Street, ref PinCode, ref Phone, ref Balance))
+            {
+                client = new clsClient(Client_ID, Person_ID, AccountNumber, FirstName, LastName, Country, City, Street, Email, PinCode, Phone, Balance);
+            }
+            else
+            {
+                client = null;
+            }
+
+            return client;
+        }
+
+
         /// <summary>
         /// Deletes a client based on their unique Client ID from the data source.
         /// </summary>
