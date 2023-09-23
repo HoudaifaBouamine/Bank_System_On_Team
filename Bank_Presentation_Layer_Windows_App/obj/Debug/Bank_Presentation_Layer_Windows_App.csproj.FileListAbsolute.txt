@@ -10,3 +10,4 @@ C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Presentation_Layer_Windows_
 C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Presentation_Layer_Windows_App\obj\Debug\Bank_Presentation_Layer_Windows_App.pdb
 C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Presentation_Layer_Windows_App\obj\Debug\Bank_Presentation_Layer_Windows_App.ClientScreen.frm_ClientScreen.resources
 C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Presentation_Layer_Windows_App\obj\Debug\Bank_Presentation_Layer_Windows_App.LoginScreen.frm_Login.resources
+C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Presentation_Layer_Windows_App\obj\Debug\Bank_Presentation_Layer_Windows_App.ClientLoginScreen.ucCreateAccount.resources

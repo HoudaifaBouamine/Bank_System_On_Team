@@ -36,10 +36,10 @@ namespace Bank_Presentation_Layer_Windows_App.LoginScreen
             // 
             // pnl_LoginContainer
             // 
-            this.pnl_LoginContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.pnl_LoginContainer.Location = new System.Drawing.Point(638, 44);
+            this.pnl_LoginContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pnl_LoginContainer.Location = new System.Drawing.Point(622, 32);
             this.pnl_LoginContainer.Name = "pnl_LoginContainer";
-            this.pnl_LoginContainer.Size = new System.Drawing.Size(482, 636);
+            this.pnl_LoginContainer.Size = new System.Drawing.Size(500, 650);
             this.pnl_LoginContainer.TabIndex = 0;
             // 
             // frm_Login

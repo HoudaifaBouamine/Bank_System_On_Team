@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClientLoginScreen\ucCreateAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientLoginScreen\ucCreateAccount.Designer.cs">
+      <DependentUpon>ucCreateAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClientScreen\frm_ClientScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ClientLoginScreen\ucCreateAccount.resx">
+      <DependentUpon>ucCreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClientScreen\frm_ClientScreen.resx">
       <DependentUpon>frm_ClientScreen.cs</DependentUpon>
     </EmbeddedResource>
