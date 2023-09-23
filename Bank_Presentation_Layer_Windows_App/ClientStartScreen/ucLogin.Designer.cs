@@ -94,13 +94,13 @@
             this.tb_Pass_Or_PinCode.Size = new System.Drawing.Size(403, 34);
             this.tb_Pass_Or_PinCode.TabIndex = 10;
             // 
-            // tb_Email
+            // tb_Email_or_AccNum_or_UserName
             // 
             this.tb_Email_or_AccNum_or_UserName.AsciiOnly = true;
             this.tb_Email_or_AccNum_or_UserName.BackColor = System.Drawing.SystemColors.Window;
             this.tb_Email_or_AccNum_or_UserName.Font = new System.Drawing.Font("Arial", 14F);
             this.tb_Email_or_AccNum_or_UserName.Location = new System.Drawing.Point(48, 209);
-            this.tb_Email_or_AccNum_or_UserName.Name = "tb_Email";
+            this.tb_Email_or_AccNum_or_UserName.Name = "tb_Email_or_AccNum_or_UserName";
             this.tb_Email_or_AccNum_or_UserName.Size = new System.Drawing.Size(401, 34);
             this.tb_Email_or_AccNum_or_UserName.TabIndex = 6;
             // 
@@ -111,9 +111,9 @@
             this.lbl_Password_Or_PinCode.Font = new System.Drawing.Font("Arial", 11.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Password_Or_PinCode.Location = new System.Drawing.Point(44, 305);
             this.lbl_Password_Or_PinCode.Name = "lbl_Password_Or_PinCode";
-            this.lbl_Password_Or_PinCode.Size = new System.Drawing.Size(84, 22);
+            this.lbl_Password_Or_PinCode.Size = new System.Drawing.Size(89, 22);
             this.lbl_Password_Or_PinCode.TabIndex = 13;
-            this.lbl_Password_Or_PinCode.Text = "PinCode\r\n";
+            this.lbl_Password_Or_PinCode.Text = "Pin Code\r\n";
             // 
             // lbl_Email_or_AccNum_or_UserName
             // 

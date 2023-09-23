@@ -94,7 +94,7 @@ namespace Bank_Data_Layer
             string query = "select * from Client_Person_List_View WHERE Email = @Email";
 
             SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.AddWithValue("@Client_ID", Client_ID);
+            command.Parameters.AddWithValue("@Email", Email);
 
             try
             {
