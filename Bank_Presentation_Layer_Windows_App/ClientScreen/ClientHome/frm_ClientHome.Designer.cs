@@ -38,6 +38,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Deposit = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnl_Balance = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
@@ -160,12 +161,20 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // pnl_Balance
+            // 
+            this.pnl_Balance.Location = new System.Drawing.Point(30, 46);
+            this.pnl_Balance.Name = "pnl_Balance";
+            this.pnl_Balance.Size = new System.Drawing.Size(861, 232);
+            this.pnl_Balance.TabIndex = 4;
+            // 
             // frm_ClientHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(226)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(930, 720);
+            this.Controls.Add(this.pnl_Balance);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -195,5 +204,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_Deposit;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel pnl_Balance;
     }
 }
