@@ -68,6 +68,35 @@ namespace Bank_Business_Layer
         }
 
 
+        public static clsClient Find_AccNum(string AccNum)
+        {
+            int Person_ID = -1, Client_ID = -1;
+            string AccountNumber = "", PinCode = "", Phone = "", FirstName = "", LastName = "", Country = "", City = "", Street = "", Email = "";
+            double Balance = 0;
+
+            clsClient client = null;
+
+            if 
+                (
+                    clsDataAccessLayer.Find_Client_By_AccountNumber
+                    (
+                        AccNum, ref Client_ID, ref Person_ID, ref FirstName, ref LastName,
+                        ref Country, ref City, ref Street,ref Email, ref PinCode, ref Phone, ref Balance
+                    )
+                )
+            {
+                client = new clsClient(Client_ID, Person_ID, AccountNumber, FirstName, LastName,
+                                       Country, City, Street, Email, PinCode, Phone, Balance);
+            }
+            else
+            {
+                client = null;
+            }
+
+            return client;
+        }
+
+
         /// <summary>
         /// Deletes a client based on their unique Client ID from the data source.
         /// </summary>
