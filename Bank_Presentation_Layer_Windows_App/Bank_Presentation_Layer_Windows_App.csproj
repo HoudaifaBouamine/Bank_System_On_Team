@@ -46,16 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClientScreen\ClientHome\ucClientBalanceSummary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\ucClientBalanceSummary.Designer.cs">
+      <DependentUpon>ucClientBalanceSummary.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClientScreen\frm_ClientHistorique.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ClientScreen\frm_ClientHistorique.Designer.cs">
       <DependentUpon>frm_ClientHistorique.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientScreen\frm_ClientHome.cs">
+    <Compile Include="ClientScreen\ClientHome\frm_ClientHome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClientScreen\frm_ClientHome.Designer.cs">
+    <Compile Include="ClientScreen\ClientHome\frm_ClientHome.Designer.cs">
       <DependentUpon>frm_ClientHome.cs</DependentUpon>
     </Compile>
     <Compile Include="ClientScreen\frm_ClientSettings.cs">
@@ -108,10 +114,13 @@
     <Compile Include="UserScreen\frm_UserScreen.Designer.cs">
       <DependentUpon>frm_UserScreen.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ClientScreen\ClientHome\ucClientBalanceSummary.resx">
+      <DependentUpon>ucClientBalanceSummary.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClientScreen\frm_ClientHistorique.resx">
       <DependentUpon>frm_ClientHistorique.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientScreen\frm_ClientHome.resx">
+    <EmbeddedResource Include="ClientScreen\ClientHome\frm_ClientHome.resx">
       <DependentUpon>frm_ClientHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientScreen\frm_ClientSettings.resx">

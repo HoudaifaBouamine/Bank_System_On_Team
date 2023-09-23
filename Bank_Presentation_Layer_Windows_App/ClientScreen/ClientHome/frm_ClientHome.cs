@@ -1,4 +1,5 @@
 ﻿using Bank_Business_Layer;
+using Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,10 +14,16 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 {
     public partial class frm_ClientHome : Form
     {
+
+        clsClient client = null;
         public frm_ClientHome(clsClient client)
         {
+            this.client = client;
             InitializeComponent();
+
+            pnl_Balance.Controls.Add(new ucClientBalanceSummary(client));
         }
+
 
         private void frm_ClientHomePage_Load(object sender, EventArgs e)
         {

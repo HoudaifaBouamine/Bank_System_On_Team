@@ -38,7 +38,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnl_Profile = new System.Windows.Forms.Panel();
             this.lbl_UserType = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_ClientFullName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnl_Main = new System.Windows.Forms.Panel();
             this.pnl_Menu.SuspendLayout();
@@ -161,7 +161,7 @@
             // pnl_Profile
             // 
             this.pnl_Profile.Controls.Add(this.lbl_UserType);
-            this.pnl_Profile.Controls.Add(this.label1);
+            this.pnl_Profile.Controls.Add(this.lbl_ClientFullName);
             this.pnl_Profile.Controls.Add(this.pictureBox1);
             this.pnl_Profile.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Profile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -181,16 +181,16 @@
             this.lbl_UserType.TabIndex = 1;
             this.lbl_UserType.Text = "Normal Client";
             // 
-            // label1
+            // lbl_ClientFullName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 11.2F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(123, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(175, 22);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Houdaifa Bouamine";
+            this.lbl_ClientFullName.AutoSize = true;
+            this.lbl_ClientFullName.Font = new System.Drawing.Font("Arial", 11.2F);
+            this.lbl_ClientFullName.ForeColor = System.Drawing.Color.White;
+            this.lbl_ClientFullName.Location = new System.Drawing.Point(123, 48);
+            this.lbl_ClientFullName.Name = "lbl_ClientFullName";
+            this.lbl_ClientFullName.Size = new System.Drawing.Size(175, 22);
+            this.lbl_ClientFullName.TabIndex = 1;
+            this.lbl_ClientFullName.Text = "Houdaifa Bouamine";
             // 
             // pictureBox1
             // 
@@ -238,7 +238,7 @@
         private System.Windows.Forms.Panel pnl_Main;
         private System.Windows.Forms.Panel pnl_Profile;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_ClientFullName;
         private System.Windows.Forms.Label lbl_UserType;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btn_Settings;

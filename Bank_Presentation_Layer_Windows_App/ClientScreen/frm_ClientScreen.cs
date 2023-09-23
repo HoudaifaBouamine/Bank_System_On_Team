@@ -21,9 +21,15 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             this.mainForm = mainForm;
             this.client = client;
             InitializeComponent();
+            init_Screen();
+
+            open_chiled_form(new frm_ClientHome(client));
         }
 
-      
+        private void init_Screen()
+        {
+            lbl_ClientFullName.Text = client.FirstName + " " + client.LastName;
+        }
 
     
         private void btn_Home_Click_1(object sender, EventArgs e)
