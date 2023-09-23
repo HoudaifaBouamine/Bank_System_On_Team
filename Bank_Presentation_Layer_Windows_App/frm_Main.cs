@@ -1,4 +1,5 @@
-﻿using Bank_Presentation_Layer_Windows_App.ClientScreen;
+﻿using Bank_Business_Layer;
+using Bank_Presentation_Layer_Windows_App.ClientScreen;
 using Bank_Presentation_Layer_Windows_App.LoginScreen;
 using System;
 using System.Collections.Generic;
@@ -21,7 +22,8 @@ namespace Bank_Presentation_Layer_Windows_App
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            OpenChildForm(new frm_StartScreen(this));
+            OpenChildForm(new frm_ClientScreen(this, clsClient.Find(3)));
+            //OpenChildForm(new frm_StartScreen(this));
         }
 
         Form currentActivateForm = null;
