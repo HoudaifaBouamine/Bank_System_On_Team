@@ -21,7 +21,7 @@ namespace Bank_Presentation_Layer_Windows_App
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            OpenChildForm(new frm_StartScreen());
+            OpenChildForm(new frm_StartScreen(this));
         }
 
         Form currentActivateForm = null;
