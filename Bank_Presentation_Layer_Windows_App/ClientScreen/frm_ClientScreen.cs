@@ -60,7 +60,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             open_chiled_form(new frm_ClientSettings(client));
         }
 
-        Form currentActivateForm = null;
+        public Form currentActivateForm = null;
         private void open_chiled_form(Form form)
         {
             Form prevForm = null;
