@@ -5,12 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using Bank_Data_Layer;
+using System.IO;
 
 namespace Bank_Business_Layer
 {
     public class clsPerson
     {
-        public int Person_ID { get;}
+        public int Person_ID { get; protected set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Country { get; set; }
@@ -25,6 +26,16 @@ namespace Bank_Business_Layer
             Country = country;
             City = city;
             Street = street;
+        }
+
+        protected clsPerson()
+        {
+            Person_ID = -1;
+            FirstName = "";
+            LastName = "";
+            Country = "";
+            City = "";
+            Street = "";
         }
     }
 

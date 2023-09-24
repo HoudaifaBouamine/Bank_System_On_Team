@@ -54,6 +54,10 @@
       <Project>{e1cbe111-6a39-4212-90c3-6cce7f771c17}</Project>
       <Name>Bank_Business_Layer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Bank_Data_Layer\Bank_Data_Layer.csproj">
+      <Project>{733aa105-ab2b-4821-bf3a-7d9090f75352}</Project>
+      <Name>Bank_Data_Layer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,101 @@
+CREATE TABLE Persons (
+    Person_ID INT PRIMARY KEY,
+    FirstName nVARCHAR(50) NOT NULL, 
+    LastName nVARCHAR(50) NOT NULL,
+    Country nVARCHAR(20) NOT NULL,
+	City nVARCHAR(20) NOT NULL,
+	Street nVARCHAR(20) NOT NULL,
+);
+
+CREATE TABLE Users (
+    [User_ID] INT PRIMARY KEY,
+    Person_ID INT NOT NULL,
+	UserName nVarchar(50) NOT NULL,
+    Email nVARCHAR(70) NOT NULL,
+    [Password] nVARCHAR(255) NOT NULL,
+	Phone nVARCHAR(20) NOT NULL,
+    FOREIGN KEY (Person_ID) REFERENCES Persons(Person_ID)
+);
+
+CREATE TABLE Users_Login_Logout (
+    Log_ID INT PRIMARY KEY,
+    [User_ID] INT NOT NULL,
+    LoginTime DATETIME NOT NULL,
+    LogoutTime DATETIME NULL,
+    FOREIGN KEY ([User_ID]) REFERENCES Users([User_ID])
+);
+
+
+CREATE TABLE Clients (
+    Client_ID INT PRIMARY KEY,
+    Person_ID INT NOT NULL,
+    AccountNumber NVARCHAR(20) NOT NULL UNIQUE,
+    Email NVARCHAR(70) NOT NULL,
+    PinCode NVARCHAR(20) NOT NULL,
+    Phone NVARCHAR(20) NOT NULL,
+    Balance MONEY NOT NULL,
+    FOREIGN KEY (Person_ID) REFERENCES Persons(Person_ID)
+);
+
+
+CREATE TABLE Transaction_Types (
+    TransactionType_ID INT PRIMARY KEY,
+    TypeName VARCHAR(50)
+	-- Like : Deposit, Withdrawal, Transfer
+);
+
+CREATE TABLE Transactions (
+    Transaction_ID INT PRIMARY KEY,
+    Sender_ID INT NULL,
+    Receiver_ID INT NULL,
+	[User_ID] INT NULL,
+    TransactionType_ID INT NOT NULL, 
+    Amount DECIMAL(12, 2) NOT NULL,
+    TransactionDateTime DATETIME NOT NULL,
+
+	-- If type is Transfer we need the sender and the receiver id , and may be the user , in other types the sender XOR receiver only is required,
+
+    FOREIGN KEY (Sender_ID) REFERENCES Clients(Client_ID),
+    FOREIGN KEY (Receiver_ID) REFERENCES Clients(Client_ID),
+    FOREIGN KEY ([User_ID]) REFERENCES Users([User_ID]),
+    FOREIGN KEY (TransactionType_ID) REFERENCES Transaction_Types(TransactionType_ID)
+);
+
+
+
+
+
+CREATE VIEW ClientPersonView AS
+SELECT
+    C.Client_ID,
+    C.AccountNumber,
+    C.Email AS ClientEmail,
+    C.PinCode,
+    C.Phone AS ClientPhone,
+    C.Balance,
+    P.Person_ID,
+    P.FirstName,
+    P.LastName,
+    P.Country,
+    P.City,
+    P.Street
+FROM Clients C
+INNER JOIN Persons P ON C.Person_ID = P.Person_ID;
+
+
+CREATE VIEW UserPersonView AS
+SELECT
+    U.User_ID,
+    U.UserName,
+    U.Email AS UserEmail,
+    U.Password,
+    U.Phone AS UserPhone,
+    P.Person_ID,
+    P.FirstName,
+    P.LastName,
+    P.Country,
+    P.City,
+    P.Street
+FROM Users U
+INNER JOIN Persons P ON U.Person_ID = P.Person_ID;
+
