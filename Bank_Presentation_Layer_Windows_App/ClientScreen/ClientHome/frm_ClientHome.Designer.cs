@@ -38,6 +38,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Deposit = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.pnl_Balance = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -161,12 +165,49 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(930, 40);
+            this.panel4.TabIndex = 5;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel5.Location = new System.Drawing.Point(890, 40);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(40, 680);
+            this.panel5.TabIndex = 6;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel6.Location = new System.Drawing.Point(0, 40);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(40, 680);
+            this.panel6.TabIndex = 7;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel7.Location = new System.Drawing.Point(40, 680);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(850, 40);
+            this.panel7.TabIndex = 8;
+            // 
             // pnl_Balance
             // 
-            this.pnl_Balance.Location = new System.Drawing.Point(30, 46);
+            this.pnl_Balance.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_Balance.Location = new System.Drawing.Point(40, 40);
             this.pnl_Balance.Name = "pnl_Balance";
-            this.pnl_Balance.Size = new System.Drawing.Size(861, 232);
-            this.pnl_Balance.TabIndex = 4;
+            this.pnl_Balance.Size = new System.Drawing.Size(850, 232);
+            this.pnl_Balance.TabIndex = 9;
             // 
             // frm_ClientHome
             // 
@@ -175,6 +216,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(226)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(930, 720);
             this.Controls.Add(this.pnl_Balance);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -204,6 +249,10 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_Deposit;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel pnl_Balance;
     }
 }

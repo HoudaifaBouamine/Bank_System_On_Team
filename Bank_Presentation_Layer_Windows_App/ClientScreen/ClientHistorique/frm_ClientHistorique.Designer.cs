@@ -30,26 +30,26 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.dgv_ClientTransactionsList = new System.Windows.Forms.DataGridView();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.pnl_TranscationsGraph = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.pnl_Balance = new System.Windows.Forms.Panel();
             this.lbl_Available = new System.Windows.Forms.Label();
             this.lbl_Balance = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.pnl_TranscationsGraph = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.dgv_ClientTransactionsList = new System.Windows.Forms.DataGridView();
             this.panel3.SuspendLayout();
+            this.pnl_Balance.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ClientTransactionsList)).BeginInit();
-            this.pnl_Balance.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -89,71 +89,22 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             this.panel3.Size = new System.Drawing.Size(870, 240);
             this.panel3.TabIndex = 7;
             // 
-            // panel5
+            // pnl_TranscationsGraph
             // 
-            this.panel5.Controls.Add(this.dgv_ClientTransactionsList);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(30, 240);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(870, 450);
-            this.panel5.TabIndex = 8;
+            this.pnl_TranscationsGraph.BackColor = System.Drawing.Color.White;
+            this.pnl_TranscationsGraph.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_TranscationsGraph.Location = new System.Drawing.Point(331, 30);
+            this.pnl_TranscationsGraph.Name = "pnl_TranscationsGraph";
+            this.pnl_TranscationsGraph.Size = new System.Drawing.Size(539, 180);
+            this.pnl_TranscationsGraph.TabIndex = 8;
             // 
-            // dgv_ClientTransactionsList
+            // panel8
             // 
-            this.dgv_ClientTransactionsList.AllowUserToAddRows = false;
-            this.dgv_ClientTransactionsList.AllowUserToDeleteRows = false;
-            this.dgv_ClientTransactionsList.AllowUserToOrderColumns = true;
-            this.dgv_ClientTransactionsList.AllowUserToResizeColumns = false;
-            this.dgv_ClientTransactionsList.AllowUserToResizeRows = false;
-            this.dgv_ClientTransactionsList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_ClientTransactionsList.BackgroundColor = System.Drawing.Color.White;
-            this.dgv_ClientTransactionsList.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgv_ClientTransactionsList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgv_ClientTransactionsList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(78)))));
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(78)))));
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_ClientTransactionsList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle19;
-            this.dgv_ClientTransactionsList.ColumnHeadersHeight = 50;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(112)))), ((int)(((byte)(172)))));
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_ClientTransactionsList.DefaultCellStyle = dataGridViewCellStyle20;
-            this.dgv_ClientTransactionsList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_ClientTransactionsList.EnableHeadersVisualStyles = false;
-            this.dgv_ClientTransactionsList.Location = new System.Drawing.Point(0, 0);
-            this.dgv_ClientTransactionsList.Name = "dgv_ClientTransactionsList";
-            this.dgv_ClientTransactionsList.ReadOnly = true;
-            this.dgv_ClientTransactionsList.RowHeadersVisible = false;
-            this.dgv_ClientTransactionsList.RowHeadersWidth = 51;
-            this.dgv_ClientTransactionsList.RowTemplate.Height = 45;
-            this.dgv_ClientTransactionsList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_ClientTransactionsList.Size = new System.Drawing.Size(870, 450);
-            this.dgv_ClientTransactionsList.TabIndex = 3;
-            // 
-            // panel6
-            // 
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(870, 30);
-            this.panel6.TabIndex = 2;
-            // 
-            // panel7
-            // 
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel7.Location = new System.Drawing.Point(0, 210);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(870, 30);
-            this.panel7.TabIndex = 3;
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel8.Location = new System.Drawing.Point(301, 30);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(30, 180);
+            this.panel8.TabIndex = 7;
             // 
             // pnl_Balance
             // 
@@ -197,22 +148,72 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             this.label1.TabIndex = 0;
             this.label1.Text = "Balance";
             // 
-            // panel8
+            // panel7
             // 
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel8.Location = new System.Drawing.Point(301, 30);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(30, 180);
-            this.panel8.TabIndex = 7;
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel7.Location = new System.Drawing.Point(0, 210);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(870, 30);
+            this.panel7.TabIndex = 3;
             // 
-            // pnl_TranscationsGraph
+            // panel6
             // 
-            this.pnl_TranscationsGraph.BackColor = System.Drawing.Color.White;
-            this.pnl_TranscationsGraph.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_TranscationsGraph.Location = new System.Drawing.Point(331, 30);
-            this.pnl_TranscationsGraph.Name = "pnl_TranscationsGraph";
-            this.pnl_TranscationsGraph.Size = new System.Drawing.Size(539, 180);
-            this.pnl_TranscationsGraph.TabIndex = 8;
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(870, 30);
+            this.panel6.TabIndex = 2;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.dgv_ClientTransactionsList);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(30, 240);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(870, 450);
+            this.panel5.TabIndex = 8;
+            // 
+            // dgv_ClientTransactionsList
+            // 
+            this.dgv_ClientTransactionsList.AllowUserToAddRows = false;
+            this.dgv_ClientTransactionsList.AllowUserToDeleteRows = false;
+            this.dgv_ClientTransactionsList.AllowUserToOrderColumns = true;
+            this.dgv_ClientTransactionsList.AllowUserToResizeColumns = false;
+            this.dgv_ClientTransactionsList.AllowUserToResizeRows = false;
+            this.dgv_ClientTransactionsList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_ClientTransactionsList.BackgroundColor = System.Drawing.Color.White;
+            this.dgv_ClientTransactionsList.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_ClientTransactionsList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_ClientTransactionsList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(78)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(78)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_ClientTransactionsList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_ClientTransactionsList.ColumnHeadersHeight = 50;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(112)))), ((int)(((byte)(172)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_ClientTransactionsList.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_ClientTransactionsList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_ClientTransactionsList.EnableHeadersVisualStyles = false;
+            this.dgv_ClientTransactionsList.Location = new System.Drawing.Point(0, 0);
+            this.dgv_ClientTransactionsList.Name = "dgv_ClientTransactionsList";
+            this.dgv_ClientTransactionsList.ReadOnly = true;
+            this.dgv_ClientTransactionsList.RowHeadersVisible = false;
+            this.dgv_ClientTransactionsList.RowHeadersWidth = 51;
+            this.dgv_ClientTransactionsList.RowTemplate.Height = 45;
+            this.dgv_ClientTransactionsList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_ClientTransactionsList.Size = new System.Drawing.Size(870, 450);
+            this.dgv_ClientTransactionsList.TabIndex = 3;
+            this.dgv_ClientTransactionsList.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgv_ClientTransactionsList_CellFormatting);
             // 
             // frm_ClientHistorique
             // 
@@ -231,10 +232,10 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             this.Name = "frm_ClientHistorique";
             this.Text = "ClientHistorique";
             this.panel3.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_ClientTransactionsList)).EndInit();
             this.pnl_Balance.ResumeLayout(false);
             this.pnl_Balance.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_ClientTransactionsList)).EndInit();
             this.ResumeLayout(false);
 
         }

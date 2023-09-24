@@ -42,7 +42,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
                 clsHisRows hisRows = new clsHisRows();
                 hisRows.Name = client.FirstName + " " + client.LastName;
                 hisRows.Transaction_Id = (int) dr["Transaction_ID"];
-                hisRows.Amount = Operation(dr) + "$" + ( dr["Amount"]);
+                hisRows.Amount = ""+ Operation(dr) + (dr["Amount"]) + " $";
                 hisRows.Time = (DateTime) dr["TransactionDateTime"];
 
                 object[] row = { hisRows.Name , hisRows.Transaction_Id , hisRows.Amount, hisRows.Time };

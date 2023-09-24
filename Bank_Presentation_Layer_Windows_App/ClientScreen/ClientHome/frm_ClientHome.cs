@@ -21,7 +21,9 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             this.client = client;
             InitializeComponent();
 
-            pnl_Balance.Controls.Add(new ucClientBalanceSummary(client));
+            ucClientBalanceSummary balanceSummary = new ucClientBalanceSummary(client);
+            pnl_Balance.Controls.Add(balanceSummary);
+            balanceSummary.Dock = DockStyle.Fill;
         }
 
 
