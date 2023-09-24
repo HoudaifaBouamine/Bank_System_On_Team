@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -47,13 +47,13 @@
             this.panel2.Size = new System.Drawing.Size(1280, 68);
             this.panel2.TabIndex = 1;
             // 
-            // panel1
+            // panel3
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 68);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1280, 720);
-            this.panel1.TabIndex = 2;
+            this.panel3.BackColor = System.Drawing.Color.Gray;
+            this.panel3.Location = new System.Drawing.Point(1003, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(265, 62);
+            this.panel3.TabIndex = 1;
             // 
             // pictureBox1
             // 
@@ -64,13 +64,13 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel3
+            // panel1
             // 
-            this.panel3.BackColor = System.Drawing.Color.Gray;
-            this.panel3.Location = new System.Drawing.Point(1003, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(265, 62);
-            this.panel3.TabIndex = 1;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 68);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1280, 720);
+            this.panel1.TabIndex = 2;
             // 
             // frm_MainForm
             // 
@@ -79,6 +79,7 @@
             this.ClientSize = new System.Drawing.Size(1280, 788);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.MinimumSize = new System.Drawing.Size(1100, 695);
             this.Name = "frm_MainForm";
             this.Text = "Main";
             this.Load += new System.EventHandler(this.MainForm_Load);
