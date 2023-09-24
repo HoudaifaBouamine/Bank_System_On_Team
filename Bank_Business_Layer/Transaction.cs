@@ -32,6 +32,19 @@ namespace Bank_Business_Layer
             return list;
         }
 
+        static public List<clsTransaction> From_Table_To_List(DataTable table)
+        {
+
+            List<clsTransaction> list = new List<clsTransaction>();
+
+            foreach (DataRow row in table.Rows)
+            {
+                list.Add(new clsTransaction(row));
+            }
+
+            return list;
+        }
+
         public int Transaction_ID { get; private set; }
         public clsClient Sender { get; set; }
         public clsClient Receiver { get; set; }
@@ -41,7 +54,9 @@ namespace Bank_Business_Layer
         public DateTime TransactionDateTime { get; set; }
 
         public enTransaction TransactionType { get; private set ; }
-        public enum enTransaction { eDesposit_With_User, eDesposit_Without_User,eWithdrawl_With_User, eWithdrawal_Without_User,eTransfer_With_User, eTransfer_Without_User };
+        public enum enTransaction { eDeposit = 1, eWithdraw, eTransfer };
+
+        public string[] Types = { "Undefined","Deposit","Withdraw","Transfer" };
         private clsTransaction(DataRow row)
         {
             Transaction_ID = Convert.ToInt32( row["Transaction_ID"]);
