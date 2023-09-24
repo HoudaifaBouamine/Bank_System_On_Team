@@ -119,4 +119,21 @@ public:
 		}
 	}
 
+	static bool Delete(clsClient* client){
+		try{
+			(*client).Id=-1;
+			(*client).FirstName="";
+			(*client).LastName="";
+			(*client).Adress=stFullAdress();
+			(*client).Balance=0;
+			(*client).Email="";
+			(*client).Phone="";
+			
+			return true;
+		}
+		catch (...){
+			return false;
+		}
+	}
+
 };
