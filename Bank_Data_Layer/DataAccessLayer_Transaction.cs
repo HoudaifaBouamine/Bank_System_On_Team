@@ -45,5 +45,41 @@ namespace Bank_Data_Layer
             return table;
         }
 
+        static public DataTable Get_Transaction_List_Client_ID(int Client_ID)
+        {
+            DataTable dt = new DataTable();
+
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+
+            string query = "select * from Transactions Where Sender_ID = @Client_ID or Receiver_ID = @Client_ID";
+
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@Client_ID", Client_ID);
+
+            try
+            {
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    dt.Load(reader);
+                }
+
+            }
+            catch (SqlException ex)
+            {
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+
+            return dt;
+        }
+
     }
 }

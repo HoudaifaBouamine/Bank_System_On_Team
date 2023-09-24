@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using Bank_Data_Layer;
 using System.Security.Cryptography;
+using System.Security.Policy;
 
 namespace Bank_Business_Layer
 {
@@ -215,9 +216,15 @@ namespace Bank_Business_Layer
             }
         }
 
+        static public DataTable Transactions_List(int Client_ID)
+        {
+            return clsDataAccessLayer.Get_Transaction_List_Client_ID(Client_ID);
+        }
 
-
-
+        public DataTable Transactions_List()
+        {
+            return Transactions_List(this.Client_ID);
+        }
 
 
         public int Client_ID { get; private set; }

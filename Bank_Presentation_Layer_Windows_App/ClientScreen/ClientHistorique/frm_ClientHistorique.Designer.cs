@@ -29,12 +29,15 @@
         private void InitializeComponent()
         {
             this.pnl_Balance = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnl_TranscationsGraph = new System.Windows.Forms.Panel();
+            this.pnl_TransactionsList = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_Balance = new System.Windows.Forms.Label();
             this.lbl_Available = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pnl_Balance.SuspendLayout();
+            this.pnl_TransactionsList.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_Balance
@@ -48,21 +51,22 @@
             this.pnl_Balance.Size = new System.Drawing.Size(301, 187);
             this.pnl_Balance.TabIndex = 0;
             // 
-            // panel2
+            // pnl_TranscationsGraph
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(359, 25);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(545, 187);
-            this.panel2.TabIndex = 1;
+            this.pnl_TranscationsGraph.BackColor = System.Drawing.Color.White;
+            this.pnl_TranscationsGraph.Location = new System.Drawing.Point(359, 25);
+            this.pnl_TranscationsGraph.Name = "pnl_TranscationsGraph";
+            this.pnl_TranscationsGraph.Size = new System.Drawing.Size(545, 187);
+            this.pnl_TranscationsGraph.TabIndex = 1;
             // 
-            // panel3
+            // pnl_TransactionsList
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(28, 243);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(876, 449);
-            this.panel3.TabIndex = 2;
+            this.pnl_TransactionsList.BackColor = System.Drawing.Color.White;
+            this.pnl_TransactionsList.Controls.Add(this.dataGridView1);
+            this.pnl_TransactionsList.Location = new System.Drawing.Point(28, 243);
+            this.pnl_TransactionsList.Name = "pnl_TransactionsList";
+            this.pnl_TransactionsList.Size = new System.Drawing.Size(876, 449);
+            this.pnl_TransactionsList.TabIndex = 2;
             // 
             // label1
             // 
@@ -94,14 +98,29 @@
             this.lbl_Available.TabIndex = 2;
             this.lbl_Available.Text = "Available";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(876, 449);
+            this.dataGridView1.TabIndex = 0;
+            // 
             // frm_ClientHistorique
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(226)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(930, 720);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pnl_TransactionsList);
+            this.Controls.Add(this.pnl_TranscationsGraph);
             this.Controls.Add(this.pnl_Balance);
             this.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -110,6 +129,8 @@
             this.Text = "ClientHistorique";
             this.pnl_Balance.ResumeLayout(false);
             this.pnl_Balance.PerformLayout();
+            this.pnl_TransactionsList.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -117,10 +138,11 @@
         #endregion
 
         private System.Windows.Forms.Panel pnl_Balance;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnl_TranscationsGraph;
+        private System.Windows.Forms.Panel pnl_TransactionsList;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_Balance;
         private System.Windows.Forms.Label lbl_Available;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
