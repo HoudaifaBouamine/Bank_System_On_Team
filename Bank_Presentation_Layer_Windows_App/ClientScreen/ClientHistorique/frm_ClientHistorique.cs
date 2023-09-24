@@ -18,6 +18,15 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
         {
             this.client = client;
             InitializeComponent();
+            init_Historique();
+        }
+
+
+        private void init_Historique()
+        {
+            DataTable table = client.Transactions_List();
+            
+            dgv_ClientTransactionsList.DataSource = table;
         }
     }
 }

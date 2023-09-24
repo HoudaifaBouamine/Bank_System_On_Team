@@ -34,10 +34,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_Balance = new System.Windows.Forms.Label();
             this.lbl_Available = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_ClientTransactionsList = new System.Windows.Forms.DataGridView();
             this.pnl_Balance.SuspendLayout();
             this.pnl_TransactionsList.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_ClientTransactionsList)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_Balance
@@ -62,7 +62,7 @@
             // pnl_TransactionsList
             // 
             this.pnl_TransactionsList.BackColor = System.Drawing.Color.White;
-            this.pnl_TransactionsList.Controls.Add(this.dataGridView1);
+            this.pnl_TransactionsList.Controls.Add(this.dgv_ClientTransactionsList);
             this.pnl_TransactionsList.Location = new System.Drawing.Point(28, 243);
             this.pnl_TransactionsList.Name = "pnl_TransactionsList";
             this.pnl_TransactionsList.Size = new System.Drawing.Size(876, 449);
@@ -98,20 +98,20 @@
             this.lbl_Available.TabIndex = 2;
             this.lbl_Available.Text = "Available";
             // 
-            // dataGridView1
+            // dgv_ClientTransactionsList
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(876, 449);
-            this.dataGridView1.TabIndex = 0;
+            this.dgv_ClientTransactionsList.AllowUserToAddRows = false;
+            this.dgv_ClientTransactionsList.AllowUserToDeleteRows = false;
+            this.dgv_ClientTransactionsList.AllowUserToOrderColumns = true;
+            this.dgv_ClientTransactionsList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_ClientTransactionsList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_ClientTransactionsList.Location = new System.Drawing.Point(0, 0);
+            this.dgv_ClientTransactionsList.Name = "dgv_ClientTransactionsList";
+            this.dgv_ClientTransactionsList.ReadOnly = true;
+            this.dgv_ClientTransactionsList.RowHeadersWidth = 51;
+            this.dgv_ClientTransactionsList.RowTemplate.Height = 24;
+            this.dgv_ClientTransactionsList.Size = new System.Drawing.Size(876, 449);
+            this.dgv_ClientTransactionsList.TabIndex = 0;
             // 
             // frm_ClientHistorique
             // 
@@ -130,7 +130,7 @@
             this.pnl_Balance.ResumeLayout(false);
             this.pnl_Balance.PerformLayout();
             this.pnl_TransactionsList.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_ClientTransactionsList)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -143,6 +143,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_Balance;
         private System.Windows.Forms.Label lbl_Available;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_ClientTransactionsList;
     }
 }
