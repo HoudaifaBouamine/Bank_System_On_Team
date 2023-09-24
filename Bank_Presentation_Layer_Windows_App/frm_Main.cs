@@ -44,6 +44,9 @@ namespace Bank_Presentation_Layer_Windows_App
             form.Show();
         }
 
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
     }
 }
