@@ -51,7 +51,7 @@ namespace Bank_Data_Layer
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
-            string query = "select * from Transactions Where Sender_ID = @Client_ID or Receiver_ID = @Client_ID";
+            string query = "select * from Transactions Where Sender_ID = @Client_ID or Receiver_ID = @Client_ID ORDER BY TransactionDateTime DESC";
 
             SqlCommand command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@Client_ID", Client_ID);
