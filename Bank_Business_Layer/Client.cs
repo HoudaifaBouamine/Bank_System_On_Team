@@ -227,6 +227,10 @@ namespace Bank_Business_Layer
             return Transactions_List(this.Client_ID);
         }
 
+        public void SendEmail(string Subject,string Body)
+        {
+            clsMailManager.Send(this.Email, Subject, Body);
+        }
 
         public int Client_ID { get; private set; }
         public string AccountNumber { get; set; }
