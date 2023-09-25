@@ -47,12 +47,27 @@ namespace Bank_Business_Layer
 
         public int Transaction_ID { get; private set; }
         public clsClient Sender { get; set; }
+
+        private int Sender_ID;
         public clsClient Receiver { get; set; }
+
+        private int Receiver_ID;
         public clsUser User { get; set; }
+
+        private int User_ID;
+
         public int TransactionType_ID { get; set; }
         public double Amount { get; set; }
         public DateTime TransactionDateTime { get; set; }
 
+        public double SenderBalanceBefor { get; set; }
+        public double SenderBalanceAfter { get; set; }
+
+        public double ReceiverBalanceBefor { get; set; }
+        public double ReceiverBalanceAfter { get; set; }
+
+
+      
         public enTransaction TransactionType { get; private set ; }
         public enum enTransaction { eDeposit = 1, eWithdraw, eTransfer };
 
@@ -161,6 +176,29 @@ namespace Bank_Business_Layer
 
         }
 
+
+        public clsTransaction(enTransaction trans_type, int sender_id, int receiver_id, int user_id, int transactionTypeID, double amount, DateTime transactionDateTime,double SenderBalanceBefor,double ReceiverBalanceBefor)
+        {
+            TransactionType_ID = transactionTypeID;
+            Amount = amount;
+            TransactionDateTime = transactionDateTime;
+
+            Sender_ID = sender_id;
+            Receiver_ID = receiver_id;
+            User_ID = user_id;
+
+            this.SenderBalanceBefor = SenderBalanceBefor;
+            this.ReceiverBalanceBefor = ReceiverBalanceBefor;
+
+            this.SenderBalanceAfter = this.SenderBalanceBefor - amount;
+            this.ReceiverBalanceAfter = this.ReceiverBalanceBefor + amount;
+        }
+
+        public bool Save()
+        {
+            // impliment the save method
+            return true;
+        }
     }
 
 

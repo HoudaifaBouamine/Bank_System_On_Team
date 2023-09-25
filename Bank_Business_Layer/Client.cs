@@ -216,6 +216,27 @@ namespace Bank_Business_Layer
             }
         }
 
+        public bool Transfer(clsClient receiver,double amount)
+        {
+
+            if (receiver == null) return false;
+
+            if (this.Balance < amount) return false;
+
+            clsTransaction TransferTransaction = new clsTransaction
+                (clsTransaction.enTransaction.eTransfer, this.Client_ID, receiver.Client_ID, -1,
+                Convert.ToInt16(clsTransaction.enTransaction.eTransfer), amount, DateTime.Now);
+            
+            this.Balance -= amount;
+            receiver.Balance += amount;
+
+
+            this.Save();
+            receiver.Save();
+            TransferTransaction.Save();
+
+            return true;
+        }
         static public DataTable Transactions_List(int Client_ID)
         {
             return clsDataAccessLayer.Get_Transaction_List_Client_ID(Client_ID);
