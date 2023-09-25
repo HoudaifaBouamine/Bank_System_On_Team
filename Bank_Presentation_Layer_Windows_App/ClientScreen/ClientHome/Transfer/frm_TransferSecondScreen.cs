@@ -15,7 +15,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
     {
 
         frm_TransferMainScreen main = null;
-        clsClient Sender,Reveiver;
+        clsClient Sender,Receiver;
         double Amount;
         string VerificationKey;
         private void btn_SendEmail_Click(object sender, EventArgs e)
@@ -60,14 +60,22 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
                 return;
             }
 
-            // Performe the transaction
+            clsTransaction transaction = Sender.Transfer(Receiver, Amount);
+
+            if (transaction == null)
+            {
+                MessageBox.Show("Somthing Went wrong", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            main.open_chiled_form(new frm_TransferThirdScreen(transaction, Sender, Receiver));
+
         }
 
         public frm_TransferSecondScreen(frm_TransferMainScreen main, clsClient Sender,clsClient Receiver,double Amount)
         {
             this.main = main;
             this.Sender = Sender;
-            this.Reveiver = Receiver;
+            this.Receiver = Receiver;
             this.Amount = Amount;
 
 

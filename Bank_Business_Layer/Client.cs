@@ -216,7 +216,7 @@ namespace Bank_Business_Layer
             }
         }
 
-        public bool Transfer(clsClient receiver,double amount)
+        public clsTransaction Transfer(clsClient receiver,double amount)
         {
 
             if (receiver == null) return false;
@@ -235,7 +235,7 @@ namespace Bank_Business_Layer
             receiver.Save();
             TransferTransaction.Save();
 
-            return true;
+            return TransferTransaction;
         }
         static public DataTable Transactions_List(int Client_ID)
         {

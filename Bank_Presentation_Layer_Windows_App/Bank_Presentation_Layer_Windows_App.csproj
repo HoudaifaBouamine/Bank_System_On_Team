@@ -73,6 +73,12 @@
     <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferSecondScreen.Designer.cs">
       <DependentUpon>frm_TransferSecondScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferThirdScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferThirdScreen.Designer.cs">
+      <DependentUpon>frm_TransferThirdScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClientScreen\ClientHome\ucClientBalanceSummary.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClientScreen\ClientHome\Transfer\frm_TransferSecondScreen.resx">
       <DependentUpon>frm_TransferSecondScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\Transfer\frm_TransferThirdScreen.resx">
+      <DependentUpon>frm_TransferThirdScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientScreen\ClientHome\ucClientBalanceSummary.resx">
       <DependentUpon>ucClientBalanceSummary.cs</DependentUpon>
