@@ -38,6 +38,7 @@ namespace Bank_Presentation_Layer_Windows_App
             form.TopLevel = false;
             form.FormBorderStyle = FormBorderStyle.None;
             form.Dock = DockStyle.Fill;
+            panel1.Controls.Clear();
             panel1.Controls.Add(form);
             panel1.Tag = form;
             form.BringToFront();

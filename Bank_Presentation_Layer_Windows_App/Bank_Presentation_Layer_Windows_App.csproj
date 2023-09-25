@@ -49,6 +49,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositMainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositMainScreen.Designer.cs">
+      <DependentUpon>frm_DepositMainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferMainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferMainScreen.Designer.cs">
+      <DependentUpon>frm_TransferMainScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClientScreen\ClientHome\ucClientBalanceSummary.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -66,6 +78,12 @@
     </Compile>
     <Compile Include="ClientScreen\ClientHome\frm_ClientHome.Designer.cs">
       <DependentUpon>frm_ClientHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawMainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawMainScreen.Designer.cs">
+      <DependentUpon>frm_WithdrawMainScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="ClientScreen\ClientSettings\frm_ClientSettings.cs">
       <SubType>Form</SubType>
@@ -117,6 +135,12 @@
     <Compile Include="UserScreen\frm_UserScreen.Designer.cs">
       <DependentUpon>frm_UserScreen.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ClientScreen\ClientHome\Deposit\frm_DepositMainScreen.resx">
+      <DependentUpon>frm_DepositMainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\Transfer\frm_TransferMainScreen.resx">
+      <DependentUpon>frm_TransferMainScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClientScreen\ClientHome\ucClientBalanceSummary.resx">
       <DependentUpon>ucClientBalanceSummary.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClientScreen\ClientHome\frm_ClientHome.resx">
       <DependentUpon>frm_ClientHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawMainScreen.resx">
+      <DependentUpon>frm_WithdrawMainScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientScreen\ClientSettings\frm_ClientSettings.resx">
       <DependentUpon>frm_ClientSettings.cs</DependentUpon>

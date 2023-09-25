@@ -81,6 +81,7 @@
             this.btn_Logout.Text = "Log out";
             this.btn_Logout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Logout.UseVisualStyleBackColor = false;
+            this.btn_Logout.Click += new System.EventHandler(this.btn_Logout_Click);
             // 
             // pnl_Seperator2
             // 

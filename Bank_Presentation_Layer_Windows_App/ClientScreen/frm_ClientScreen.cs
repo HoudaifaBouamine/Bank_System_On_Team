@@ -1,5 +1,7 @@
 ﻿using Bank_Business_Layer;
 using Bank_Presentation_Layer_Windows_App.ClientScreen.ClientSettings;
+using Bank_Presentation_Layer_Windows_App.ClientStartScreen;
+using Bank_Presentation_Layer_Windows_App.LoginScreen;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -57,7 +59,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
         }
         private void btn_Home_Click_1(object sender, EventArgs e)
         {
-            open_chiled_form(new frm_ClientHome(client));
+            open_chiled_form(new frm_ClientHome(this,client));
         }
 
         private void btn_Settings_Click_1(object sender, EventArgs e)
@@ -67,7 +69,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
         }
 
         public Form currentActivateForm = null;
-        private void open_chiled_form(Form form)
+        public void open_chiled_form(Form form)
         {
             Form prevForm = null;
 
@@ -99,6 +101,20 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
         private void btn_Historique_Click_1(object sender, EventArgs e)
         {
             open_chiled_form(new frm_ClientHistorique(client));
+        }
+
+        private void btn_Logout_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are sure you want to logout ?","Logout confermation",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
+
+
+            if (result == DialogResult.No) return;
+
+            frm_StartScreen frm = new frm_StartScreen(mainForm);
+            frm.open_child_window(new ucLogin(frm));
+
+            mainForm.OpenChildForm(frm);
+            
         }
     }
 }
