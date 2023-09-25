@@ -55,6 +55,12 @@
     <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositMainScreen.Designer.cs">
       <DependentUpon>frm_DepositMainScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferFirstScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferFirstScreen.Designer.cs">
+      <DependentUpon>frm_TransferFirstScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferMainScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     </Compile>
     <EmbeddedResource Include="ClientScreen\ClientHome\Deposit\frm_DepositMainScreen.resx">
       <DependentUpon>frm_DepositMainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\Transfer\frm_TransferFirstScreen.resx">
+      <DependentUpon>frm_TransferFirstScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientScreen\ClientHome\Transfer\frm_TransferMainScreen.resx">
       <DependentUpon>frm_TransferMainScreen.cs</DependentUpon>
