@@ -50,6 +50,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_PersonalInfo = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_SaveClientInfo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tb_Balance
@@ -115,7 +116,7 @@
             this.tb_Phone.Name = "tb_Phone";
             this.tb_Phone.Size = new System.Drawing.Size(758, 31);
             this.tb_Phone.TabIndex = 38;
-            this.tb_Phone.Text = "dwakod";
+            this.tb_Phone.TextChanged += new System.EventHandler(this.tb_Phone_TextChanged);
             // 
             // label9
             // 
@@ -270,10 +271,26 @@
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 848);
+            this.panel1.Location = new System.Drawing.Point(0, 911);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(930, 82);
+            this.panel1.Size = new System.Drawing.Size(909, 56);
             this.panel1.TabIndex = 46;
+            // 
+            // btn_SaveClientInfo
+            // 
+            this.btn_SaveClientInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(78)))));
+            this.btn_SaveClientInfo.FlatAppearance.BorderSize = 0;
+            this.btn_SaveClientInfo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(67)))), ((int)(((byte)(125)))));
+            this.btn_SaveClientInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(60)))), ((int)(((byte)(108)))));
+            this.btn_SaveClientInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_SaveClientInfo.Font = new System.Drawing.Font("Arial", 12.2F);
+            this.btn_SaveClientInfo.ForeColor = System.Drawing.Color.White;
+            this.btn_SaveClientInfo.Location = new System.Drawing.Point(721, 869);
+            this.btn_SaveClientInfo.Name = "btn_SaveClientInfo";
+            this.btn_SaveClientInfo.Size = new System.Drawing.Size(130, 42);
+            this.btn_SaveClientInfo.TabIndex = 47;
+            this.btn_SaveClientInfo.Text = "Save";
+            this.btn_SaveClientInfo.UseVisualStyleBackColor = false;
             // 
             // frm_ClientSettings
             // 
@@ -281,7 +298,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(226)))), ((int)(((byte)(239)))));
-            this.ClientSize = new System.Drawing.Size(930, 930);
+            this.ClientSize = new System.Drawing.Size(930, 940);
+            this.Controls.Add(this.btn_SaveClientInfo);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tb_Balance);
             this.Controls.Add(this.label11);
@@ -310,6 +328,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frm_ClientSettings";
             this.Text = "frm_ClientSettings";
+            this.Load += new System.EventHandler(this.frm_ClientSettings_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -339,5 +358,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_PersonalInfo;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btn_SaveClientInfo;
     }
 }

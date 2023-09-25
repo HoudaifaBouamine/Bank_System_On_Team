@@ -115,7 +115,7 @@
             this.btn_Historique.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(78)))));
             this.btn_Historique.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Historique.FlatAppearance.BorderSize = 0;
-            this.btn_Historique.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(67)))), ((int)(((byte)(115)))));
+            this.btn_Historique.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(67)))), ((int)(((byte)(125)))));
             this.btn_Historique.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(60)))), ((int)(((byte)(108)))));
             this.btn_Historique.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Historique.Font = new System.Drawing.Font("Arial", 12.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
