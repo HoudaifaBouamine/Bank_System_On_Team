@@ -60,10 +60,10 @@ namespace Bank_Business_Layer
         public double Amount { get; set; }
         public DateTime TransactionDateTime { get; set; }
 
-        public double SenderBalanceBefor { get; set; }
+        public double SenderBalanceBefore { get; set; }
         public double SenderBalanceAfter { get; set; }
 
-        public double ReceiverBalanceBefor { get; set; }
+        public double ReceiverBalanceBefore { get; set; }
         public double ReceiverBalanceAfter { get; set; }
 
 
@@ -187,17 +187,30 @@ namespace Bank_Business_Layer
             Receiver_ID = receiver_id;
             User_ID = user_id;
 
-            this.SenderBalanceBefor = SenderBalanceBefor;
-            this.ReceiverBalanceBefor = ReceiverBalanceBefor;
+            this.SenderBalanceBefore = SenderBalanceBefor;
+            this.ReceiverBalanceBefore = ReceiverBalanceBefor;
 
-            this.SenderBalanceAfter = this.SenderBalanceBefor - amount;
-            this.ReceiverBalanceAfter = this.ReceiverBalanceBefor + amount;
+            this.SenderBalanceAfter = this.SenderBalanceBefore - amount;
+            this.ReceiverBalanceAfter = this.ReceiverBalanceBefore + amount;
         }
 
         public bool Save()
         {
-            // impliment the save method
-            return true;
+            return clsDataAccessLayer.Add_New_Transaction
+                (
+                    Sender_ID,
+                    Receiver_ID,
+                    User_ID,
+                    TransactionType_ID,
+                    Amount,
+                    TransactionDateTime,
+                    SenderBalanceBefore,
+                    SenderBalanceAfter,
+                    ReceiverBalanceBefore,
+                    ReceiverBalanceAfter
+                );
+
+
         }
     }
 
