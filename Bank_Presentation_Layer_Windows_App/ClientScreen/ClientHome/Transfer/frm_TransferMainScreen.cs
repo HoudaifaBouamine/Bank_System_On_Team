@@ -19,5 +19,10 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
             this.client = client;
             InitializeComponent();
         }
+
+        private void frm_TransferMainScreen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
