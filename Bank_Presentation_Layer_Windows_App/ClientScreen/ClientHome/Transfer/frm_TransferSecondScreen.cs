@@ -78,9 +78,15 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
             this.Receiver = Receiver;
             this.Amount = Amount;
 
-
-
             InitializeComponent();
+
+            init_Window();
+        }
+
+        void init_Window()
+        {
+            lbl_Amount.Text = string.Format("{0:0.00}", this.Amount) + " $";
+            lbl_ReceiverAccountNumber.Text = this.Receiver.AccountNumber;
         }
     }
 }

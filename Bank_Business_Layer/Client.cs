@@ -72,7 +72,7 @@ namespace Bank_Business_Layer
         public static clsClient Find_AccNum(string AccNum)
         {
             int Person_ID = -1, Client_ID = -1;
-            string AccountNumber = "", PinCode = "", Phone = "", FirstName = "", LastName = "", Country = "", City = "", Street = "", Email = "";
+            string  PinCode = "", Phone = "", FirstName = "", LastName = "", Country = "", City = "", Street = "", Email = "";
             double Balance = 0;
 
             clsClient client = null;
@@ -86,7 +86,7 @@ namespace Bank_Business_Layer
                     )
                 )
             {
-                client = new clsClient(Client_ID, Person_ID, AccountNumber, FirstName, LastName,
+                client = new clsClient(Client_ID, Person_ID, AccNum, FirstName, LastName,
                                        Country, City, Street, Email, PinCode, Phone, Balance);
             }
             else
@@ -219,9 +219,9 @@ namespace Bank_Business_Layer
         public clsTransaction Transfer(clsClient receiver,double amount)
         {
 
-            if (receiver == null) return false;
+            if (receiver == null) return null;
 
-            if (this.Balance < amount) return false;
+            if (this.Balance < amount) return null;
 
             clsTransaction TransferTransaction = new clsTransaction
                 (clsTransaction.enTransaction.eTransfer, this.Client_ID, receiver.Client_ID, -1,
