@@ -15,11 +15,16 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
     {
 
         frm_TransferMainScreen main = null;
-        clsClient client;
-        public frm_TransferSecondScreen(frm_TransferMainScreen main, clsClient client)
+        clsClient Sender,Reveiver;
+        double Amount;
+        public frm_TransferSecondScreen(frm_TransferMainScreen main, clsClient Sender,clsClient Receiver,double Amount)
         {
             this.main = main;
-            this.client = client;
+            this.Sender = Sender;
+            this.Reveiver = Receiver;
+            this.Amount = Amount;
+
+
 
             InitializeComponent();
         }

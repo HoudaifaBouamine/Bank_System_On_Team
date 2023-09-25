@@ -14,35 +14,42 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
     public partial class frm_TransferFirstScreen : Form
     {
         frm_TransferMainScreen main = null;
-        clsClient client;
+        clsClient Client = null;
         public frm_TransferFirstScreen(frm_TransferMainScreen main,clsClient client)
         {
             this.main = main;
-            this.client = client;
+            this.Client = client;
 
             InitializeComponent();
         }
 
         private void btn_Next_Click(object sender, EventArgs e)
         {
-            string AccountNumber = "";
-            AccountNumber = tb_AccountNumber.Text.Trim();
-            clsClient client = clsClient.Find_AccNum(AccountNumber);
+            string Receiver_AccountNumber = "";
+            Receiver_AccountNumber = tb_AccountNumber.Text.Trim();
 
-            if(client == null)
+            if(Receiver_AccountNumber == Client.AccountNumber)
             {
-                MessageBox.Show($"Client With account number [{AccountNumber}] is Not found","Receiver Not Found",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show($"The Receiver account number is the same of the sender account number", "You can not send mony to your self", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            clsClient Receiver = clsClient.Find_AccNum(Receiver_AccountNumber);
+
+            if(Receiver == null)
+            {
+                MessageBox.Show($"Client With account number [{Receiver_AccountNumber}] is Not found","Receiver Not Found",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 return;
             }
 
             double Amount = Convert.ToDouble(tb_Amount.Text.Trim().ToString());
 
-            if(Amount > client.Balance)
+            if(Amount > Receiver.Balance)
             {
-                MessageBox.Show($"The Amount you entered [{Amount}] is greater than your balance [{client.Balance}]", "Amount not valied", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"The Amount you entered [{Amount}] is greater than your balance [{Receiver.Balance}]", "Amount not valied", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            main.open_chiled_form(new frm_TransferSecondScreen(main,client));
+            main.open_chiled_form(new frm_TransferSecondScreen(main,Client,Receiver,Amount));
         }
     }
 }

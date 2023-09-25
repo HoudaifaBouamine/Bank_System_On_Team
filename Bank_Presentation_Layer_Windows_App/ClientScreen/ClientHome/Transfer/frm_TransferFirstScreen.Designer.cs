@@ -99,9 +99,9 @@
             this.label7.Font = new System.Drawing.Font("Arial", 14.2F);
             this.label7.Location = new System.Drawing.Point(85, 239);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(192, 27);
+            this.label7.Size = new System.Drawing.Size(290, 27);
             this.label7.TabIndex = 54;
-            this.label7.Text = "Account Number";
+            this.label7.Text = "Receiver Account Number";
             // 
             // frm_TransferFirstScreen
             // 
