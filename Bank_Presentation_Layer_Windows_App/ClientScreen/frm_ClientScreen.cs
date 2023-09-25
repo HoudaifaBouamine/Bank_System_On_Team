@@ -1,4 +1,5 @@
 ﻿using Bank_Business_Layer;
+using Bank_Presentation_Layer_Windows_App.ClientScreen.ClientSettings;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,7 +28,8 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 
 
             //open_chiled_form(new frm_ClientHome(client));
-            open_chiled_form(new frm_ClientHistorique(client));
+            //open_chiled_form(new frm_ClientHistorique(client));
+            open_chiled_form(new frm_ClientSettings(client));
         }
 
         private void init_Screen()
@@ -58,6 +60,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
         private void btn_Settings_Click_1(object sender, EventArgs e)
         {
             open_chiled_form(new frm_ClientSettings(client));
+
         }
 
         public Form currentActivateForm = null;
@@ -81,6 +84,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             currentActivateForm.Dock = DockStyle.Fill;
             currentActivateForm.BringToFront();
             currentActivateForm.Show();
+            currentActivateForm.Activate();
 
             if(prevForm != null)
             {

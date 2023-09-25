@@ -9,21 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Bank_Presentation_Layer_Windows_App.ClientScreen
+namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientSettings
 {
     public partial class frm_ClientSettings : Form
     {
-
-        clsClient client = null;
         public frm_ClientSettings(clsClient client)
         {
-            this.client = client;
             InitializeComponent();
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
