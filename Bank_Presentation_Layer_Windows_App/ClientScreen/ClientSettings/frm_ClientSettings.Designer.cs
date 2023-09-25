@@ -291,6 +291,7 @@
             this.btn_SaveClientInfo.TabIndex = 47;
             this.btn_SaveClientInfo.Text = "Save";
             this.btn_SaveClientInfo.UseVisualStyleBackColor = false;
+            this.btn_SaveClientInfo.Click += new System.EventHandler(this.btn_SaveClientInfo_Click);
             // 
             // frm_ClientSettings
             // 

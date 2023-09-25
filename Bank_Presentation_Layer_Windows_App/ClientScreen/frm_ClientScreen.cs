@@ -27,14 +27,14 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 
 
 
-            //open_chiled_form(new frm_ClientHome(client));
+            open_chiled_form(new frm_ClientHome(client));
             //open_chiled_form(new frm_ClientHistorique(client));
-            open_chiled_form(new frm_ClientSettings(client));
+            //open_chiled_form(new frm_ClientSettings(this,client));
         }
 
         private void init_Screen()
         {
-            lbl_ClientFullName.Text = client.FirstName + " " + client.LastName;
+            set_client_name();
 
             draw_line(pnl_Seperator1);
             draw_line(pnl_Seperator2);
@@ -51,7 +51,10 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             }
         }
 
-
+        public void set_client_name()
+        {
+            lbl_ClientFullName.Text = client.FirstName + " " + client.LastName;
+        }
         private void btn_Home_Click_1(object sender, EventArgs e)
         {
             open_chiled_form(new frm_ClientHome(client));
@@ -59,7 +62,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 
         private void btn_Settings_Click_1(object sender, EventArgs e)
         {
-            open_chiled_form(new frm_ClientSettings(client));
+            open_chiled_form(new frm_ClientSettings(this,client));
 
         }
 

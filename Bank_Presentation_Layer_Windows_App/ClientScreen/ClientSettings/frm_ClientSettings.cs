@@ -15,11 +15,15 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientSettings
     {
 
         clsClient client=null;
-        public frm_ClientSettings(clsClient client)
+        frm_ClientScreen clientScreen = null;
+        public frm_ClientSettings(frm_ClientScreen clientScreen,clsClient client)
         {
             this.client = client;
+            this.clientScreen = clientScreen;
             InitializeComponent();
             Load_Client_Info();
+
+            
         }
 
         private void Load_Client_Info()
@@ -45,6 +49,61 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientSettings
         private void frm_ClientSettings_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_SaveClientInfo_Click(object sender, EventArgs e)
+        {
+
+           
+
+            if (!Check_Change())
+            {
+                MessageBox.Show("You did not change any of your information\nthere is nothing to save","Nothing Changed",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            }
+            else
+            {
+                SavingChanges();
+            }
+        }
+
+        private void SavingChanges()
+        {
+            DialogResult result = MessageBox.Show("Are You sure you want to save this changes ?", "Change confermation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if(result == DialogResult.No)
+            {
+                return;
+            }
+            else
+            {
+                client.FirstName = tb_FirstName.Text;
+                client.LastName  = tb_LastName.Text ;
+                client.Country   = tb_Country.Text ;
+                client.City      = tb_City.Text ;
+                client.Street    = tb_Street.Text;
+
+                client.Email     = tb_Email.Text;
+                client.Phone     = tb_Phone.Text;
+
+                client.Save();
+            }
+
+            clientScreen.lbl_ClientFullName.Text = client.FirstName + " " + client.LastName;
+        }
+
+        private bool Check_Change()
+        {
+            bool thereIsChange = false;
+
+            thereIsChange = thereIsChange || (tb_FirstName.Text != client.FirstName);
+            thereIsChange = thereIsChange || (tb_LastName.Text != client.LastName);
+            thereIsChange = thereIsChange || (tb_Country.Text != client.Country);
+            thereIsChange = thereIsChange || (tb_City.Text != client.City);
+            thereIsChange = thereIsChange || (tb_Street.Text != client.Street);
+            thereIsChange = thereIsChange || (tb_Email.Text != client.Email);
+            thereIsChange = thereIsChange || (tb_Phone.Text != client.Phone);
+
+            return thereIsChange;
         }
     }
 }

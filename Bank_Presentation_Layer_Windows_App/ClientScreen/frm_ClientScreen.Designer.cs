@@ -238,7 +238,7 @@
         private System.Windows.Forms.Panel pnl_Main;
         private System.Windows.Forms.Panel pnl_Profile;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lbl_ClientFullName;
+        public System.Windows.Forms.Label lbl_ClientFullName;
         private System.Windows.Forms.Label lbl_UserType;
         private System.Windows.Forms.Panel pnl_Seperator2;
         private System.Windows.Forms.Button btn_Settings;
