@@ -20,5 +20,10 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             this.client = client;
             InitializeComponent();
         }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
