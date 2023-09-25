@@ -11,7 +11,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
         {
             this.client = client;
             InitializeComponent();
-            open_chiled_form(new frm_TransferFirstScreen());
+            open_chiled_form(new frm_TransferFirstScreen(this,client));
         }
 
         Form currentActivateForm = null;

@@ -51,6 +51,7 @@
             this.btn_Next.TabIndex = 57;
             this.btn_Next.Text = "Next";
             this.btn_Next.UseVisualStyleBackColor = false;
+            this.btn_Next.Click += new System.EventHandler(this.btn_Next_Click);
             // 
             // label8
             // 
