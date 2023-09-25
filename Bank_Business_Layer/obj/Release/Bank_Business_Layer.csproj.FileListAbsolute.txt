@@ -1,0 +1,9 @@
+C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Business_Layer\bin\Release\Bank_Business_Layer.dll
+C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Business_Layer\bin\Release\Bank_Business_Layer.pdb
+C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Business_Layer\bin\Release\Bank_Data_Layer.dll
+C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Business_Layer\bin\Release\Bank_Data_Layer.pdb
+C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Business_Layer\obj\Release\Bank_Business_Layer.csproj.AssemblyReference.cache
+C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Business_Layer\obj\Release\Bank_Business_Layer.csproj.CoreCompileInputs.cache
+C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Business_Layer\obj\Release\Bank_Business_Layer.csproj.CopyComplete
+C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Business_Layer\obj\Release\Bank_Business_Layer.dll
+C:\Users\houda\source\repos\Bank_System_On_Team\Bank_Business_Layer\obj\Release\Bank_Business_Layer.pdb

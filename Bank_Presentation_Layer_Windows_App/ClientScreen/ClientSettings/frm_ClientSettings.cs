@@ -105,5 +105,10 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientSettings
 
             return thereIsChange;
         }
+
+        private void btn_Reset_Click(object sender, EventArgs e)
+        {
+            Load_Client_Info();
+        }
     }
 }

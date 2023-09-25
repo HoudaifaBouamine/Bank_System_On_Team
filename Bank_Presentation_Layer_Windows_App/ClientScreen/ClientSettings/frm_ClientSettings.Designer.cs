@@ -51,6 +51,7 @@
             this.lbl_PersonalInfo = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_SaveClientInfo = new System.Windows.Forms.Button();
+            this.btn_Reset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tb_Balance
@@ -293,6 +294,23 @@
             this.btn_SaveClientInfo.UseVisualStyleBackColor = false;
             this.btn_SaveClientInfo.Click += new System.EventHandler(this.btn_SaveClientInfo_Click);
             // 
+            // btn_Reset
+            // 
+            this.btn_Reset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(192)))), ((int)(((byte)(211)))));
+            this.btn_Reset.FlatAppearance.BorderSize = 0;
+            this.btn_Reset.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(202)))), ((int)(((byte)(221)))));
+            this.btn_Reset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(212)))), ((int)(((byte)(231)))));
+            this.btn_Reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Reset.Font = new System.Drawing.Font("Arial", 12.2F);
+            this.btn_Reset.ForeColor = System.Drawing.Color.Black;
+            this.btn_Reset.Location = new System.Drawing.Point(585, 869);
+            this.btn_Reset.Name = "btn_Reset";
+            this.btn_Reset.Size = new System.Drawing.Size(130, 42);
+            this.btn_Reset.TabIndex = 48;
+            this.btn_Reset.Text = "Reset";
+            this.btn_Reset.UseVisualStyleBackColor = false;
+            this.btn_Reset.Click += new System.EventHandler(this.btn_Reset_Click);
+            // 
             // frm_ClientSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -300,6 +318,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(226)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(930, 940);
+            this.Controls.Add(this.btn_Reset);
             this.Controls.Add(this.btn_SaveClientInfo);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tb_Balance);
@@ -360,5 +379,6 @@
         private System.Windows.Forms.Label lbl_PersonalInfo;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_SaveClientInfo;
+        private System.Windows.Forms.Button btn_Reset;
     }
 }
