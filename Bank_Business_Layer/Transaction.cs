@@ -56,7 +56,7 @@ namespace Bank_Business_Layer
         public enTransaction TransactionType { get; private set ; }
         public enum enTransaction { eDeposit = 1, eWithdraw, eTransfer };
 
-        public string[] Types = { "Undefined","Deposit","Withdraw","Transfer" };
+        static public string[] Types = { "Undefined","Deposit","Withdraw","Transfer" };
         private clsTransaction(DataRow row)
         {
             Transaction_ID = Convert.ToInt32( row["Transaction_ID"]);

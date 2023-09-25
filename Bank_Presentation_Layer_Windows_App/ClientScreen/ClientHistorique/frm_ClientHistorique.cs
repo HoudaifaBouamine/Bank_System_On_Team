@@ -25,6 +25,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
         private void init_Historique()
         {
             dgv_ClientTransactionsList.DataSource = get_table();
+
         }
 
         private DataTable get_table()

@@ -27,16 +27,18 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 
 
             //
-            pers_Disposit = 261.0 / 930;//261,335
-            pers_Withdraw = 261.0 / 930;
-            pers_Transfer = 268.0 / 930;
-            pers_Height = 335.0 / 930;
-            pers_X_Withdraw = 292.0/ 850;
-            pers_X_Transfer = 589.0/ 850;
 
-            pers_Disposit_Width_Heigth =pnl_Deposit .Height  /  pnl_Deposit.Width ;
-            pers_Withdraw_Width_Heigth =pnl_Withdraw.Height  / pnl_Withdraw.Width ;
-            pers_Transfer_Width_Heigth = pnl_Transfer.Height / pnl_Transfer.Width ;
+            
+            //pers_Disposit = 261.0 / 930;//261,335
+            //pers_Withdraw = 261.0 / 930;
+            //pers_Transfer = 268.0 / 930;
+            //pers_Height = 335.0 / 930;
+            //pers_X_Withdraw = 292.0/ 850;
+            //pers_X_Transfer = 589.0/ 850;
+
+            //pers_Disposit_Width_Heigth =pnl_Deposit .Height  /  pnl_Deposit.Width ;
+            //pers_Withdraw_Width_Heigth =pnl_Withdraw.Height  / pnl_Withdraw.Width ;
+            //pers_Transfer_Width_Heigth = pnl_Transfer.Height / pnl_Transfer.Width ;
         }
 
 

@@ -27,9 +27,69 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome
         {
             this.lbl_Balance.Text = string.Format("{0:0.00}", client.Balance) + "$";
 
-           
+            DataTable table = client.Transactions_List();
+            lbl_DateTime.Text = ((DateTime) table.Rows[0]["TransactionDateTime"]).ToString();
+            lbl_LastTransAmount.Text = "" + Operation(table.Rows[0]) + (table.Rows[0]["Amount"]).ToString();
+            lbl_LastTransAmount.ForeColor = AmountColor(table.Rows[0]);
+            lbl_TransactionType.Text = clsTransaction.Types[(int)table.Rows[0]["TransactionType_ID"]];
 
-            // NOTE (HOUDAIFA) : You must modify the database to get the latest trans of the user
+            Color AmountColor(DataRow row)
+            {
+                clsTransaction.enTransaction type = (clsTransaction.enTransaction)row["TransactionType_ID"];
+
+                if (type == clsTransaction.enTransaction.eDeposit)
+                {
+                    return Color.FromArgb(0, 182, 51);
+                }
+                else if (type == clsTransaction.enTransaction.eWithdraw)
+                {
+                    return Color.FromArgb(215, 0, 0);
+                }
+                else if (type == clsTransaction.enTransaction.eTransfer)
+                {
+                    if (client.Client_ID == (int)row["Receiver_ID"])
+                    {
+                        return Color.FromArgb(0, 182, 51);
+                    }
+                    else
+                    {
+                        return Color.FromArgb(215, 0, 0);
+                    }
+                }
+                else
+                {
+                    return Color.Yellow;// Imposible
+                }
+            }
+
+            char Operation(DataRow row)
+            {
+
+                clsTransaction.enTransaction type = (clsTransaction.enTransaction)row["TransactionType_ID"];
+
+                if (type == clsTransaction.enTransaction.eDeposit)
+                {
+                    return '+';
+                }
+                else if (type == clsTransaction.enTransaction.eWithdraw)
+                {
+                    return '-';
+                }
+                else if (type == clsTransaction.enTransaction.eTransfer)
+                {
+                    if (client.Client_ID == (int)row["Receiver_ID"])
+                    {
+                        return '+';
+                    }
+                    else
+                    {
+                        return '-';
+                    }
+                }
+
+                return ':';
+            }
+
         }
 
         private void pnl_LastTransaction_Paint(object sender, PaintEventArgs e)
