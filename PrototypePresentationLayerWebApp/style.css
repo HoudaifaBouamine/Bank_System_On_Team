@@ -140,10 +140,10 @@ label{
 }
 
 
-caption{
+.caption{
     color: #000;
     text-align: center;
-
+    
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 600;
@@ -155,7 +155,7 @@ a{
     color: #3F72AF;
     font-size: 1.25rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: normal;
 }
 a:hover{
@@ -247,6 +247,7 @@ footer{
 
 .container{
     display: flex;
+    gap: 5px;
 }
 
 
@@ -283,7 +284,6 @@ footer{
 
     background: #000;
 }
-
 
 #logo-icon{
     background-color: white;
@@ -328,9 +328,9 @@ footer{
     align-self: flex-start;
 }
 
-#sign-up{
+#sign-up , #log-in{
     display: flex;
-    width: 20%;
+    min-width: 20%;
     padding: 20px;
     flex-direction: column;
     justify-content: center;
@@ -348,6 +348,8 @@ footer{
     backdrop-filter: blur(40px);
 
 }
+
+
 
 #or{
     align-items: center;
