@@ -29,7 +29,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 
 
 
-            open_chiled_form(new frm_ClientHome(client));
+            open_chiled_form(new frm_ClientHome(this,client));
             //open_chiled_form(new frm_ClientHistorique(client));
             //open_chiled_form(new frm_ClientSettings(this,client));
         }

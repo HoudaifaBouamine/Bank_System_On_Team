@@ -2,6 +2,7 @@
 using Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome;
 using Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Deposit;
 using Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer;
+using Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Withdraw;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -39,7 +40,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 
         private void btn_Withdraw_Click(object sender, EventArgs e)
         {
-            clientScreen.open_chiled_form(new frm_DepositMainScreen(client));
+            clientScreen.open_chiled_form(new frm_WithdrawMainScreen(client));
         }
 
         private void btn_Transfer_Click(object sender, EventArgs e)
