@@ -1,4 +1,6 @@
-﻿using Bank_Presentation_Layer_Windows_App.ClientStartScreen;
+﻿using Bank_Business_Layer;
+using Bank_Presentation_Layer_Windows_App.ClientStartScreen;
+using Bank_Presentation_Layer_Windows_App.ClientStartScreen.Sub_StartScreens;
 using Bank_Presentation_Layer_Windows_App.LoginScreen;
 using System;
 using System.Collections.Generic;
@@ -33,7 +35,14 @@ namespace Bank_Presentation_Layer_Windows_App.ClientLoginScreen
 
         private void btn_SignUp_Click(object sender, EventArgs e)
         {
-            
+            clsClient client = new clsClient();
+
+            client.FirstName = tb_FirstName.Text.Trim();
+            client.LastName = tb_LastName.Text.Trim();
+            client.Email = tb_Email.Text.Trim();
+            client.PinCode = tb_PinCode.Text.Trim();
+
+            startScreen.open_child_window(new ucVerifyEmail(startScreen,client));
         }
     }
 }

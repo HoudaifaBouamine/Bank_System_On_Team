@@ -133,6 +133,12 @@
     <Compile Include="ClientStartScreen\Sub_StartScreens\ucLogin.Designer.cs">
       <DependentUpon>ucLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucVerifyEmail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucVerifyEmail.Designer.cs">
+      <DependentUpon>ucVerifyEmail.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClientStartScreen\Sub_StartScreens\ucLogin.resx">
       <DependentUpon>ucLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientStartScreen\Sub_StartScreens\ucVerifyEmail.resx">
+      <DependentUpon>ucVerifyEmail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>
