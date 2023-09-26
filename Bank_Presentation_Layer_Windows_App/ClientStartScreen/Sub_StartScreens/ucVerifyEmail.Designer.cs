@@ -76,7 +76,6 @@
             this.tb_VerificationKey.Font = new System.Drawing.Font("Arial", 14F);
             this.tb_VerificationKey.Location = new System.Drawing.Point(49, 195);
             this.tb_VerificationKey.Name = "tb_VerificationKey";
-            this.tb_VerificationKey.PasswordChar = '*';
             this.tb_VerificationKey.Size = new System.Drawing.Size(401, 34);
             this.tb_VerificationKey.TabIndex = 13;
             // 

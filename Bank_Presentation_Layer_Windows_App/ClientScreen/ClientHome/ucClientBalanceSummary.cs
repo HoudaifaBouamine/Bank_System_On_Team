@@ -28,10 +28,22 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome
             this.lbl_Balance.Text = string.Format("{0:0.00}", client.Balance) + "$";
 
             DataTable table = client.Transactions_List();
-            lbl_DateTime.Text = ((DateTime) table.Rows[0]["TransactionDateTime"]).ToString();
-            lbl_LastTransAmount.Text = "" + Operation(table.Rows[0]) + (table.Rows[0]["Amount"]).ToString();
-            lbl_LastTransAmount.ForeColor = AmountColor(table.Rows[0]);
-            lbl_TransactionType.Text = clsTransaction.Types[(int)table.Rows[0]["TransactionType_ID"]];
+
+            if (table.Rows.Count > 0)
+            {
+
+                lbl_DateTime.Text = ((DateTime)table.Rows[0]["TransactionDateTime"]).ToString();
+                lbl_LastTransAmount.Text = "" + Operation(table.Rows[0]) + (table.Rows[0]["Amount"]).ToString();
+                lbl_LastTransAmount.ForeColor = AmountColor(table.Rows[0]);
+                lbl_TransactionType.Text = clsTransaction.Types[(int)table.Rows[0]["TransactionType_ID"]];
+
+            }
+            else
+            {
+                lbl_DateTime.Visible = false;
+                lbl_LastTransAmount.Visible = false;
+                lbl_TransactionType.Visible = false;
+            }
 
             Color AmountColor(DataRow row)
             {

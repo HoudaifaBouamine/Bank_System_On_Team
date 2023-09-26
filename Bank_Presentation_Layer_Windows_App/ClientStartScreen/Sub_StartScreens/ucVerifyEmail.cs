@@ -52,7 +52,8 @@ namespace Bank_Presentation_Layer_Windows_App.ClientStartScreen.Sub_StartScreens
                 return;
             }
 
-            // Go To the Next screen
+            startScreen.open_child_window(new ucEnterPhoneNumber(startScreen,client));
+
         }
     }
 }

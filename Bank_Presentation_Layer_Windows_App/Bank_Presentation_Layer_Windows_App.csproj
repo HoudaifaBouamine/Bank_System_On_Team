@@ -115,6 +115,12 @@
     <Compile Include="ClientStartScreen\Sub_StartScreens\ucCreateAccount.Designer.cs">
       <DependentUpon>ucCreateAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucEnterPhoneNumber.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucEnterPhoneNumber.Designer.cs">
+      <DependentUpon>ucEnterPhoneNumber.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClientStartScreen\Sub_StartScreens\ucGetStarted.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -191,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClientStartScreen\Sub_StartScreens\ucCreateAccount.resx">
       <DependentUpon>ucCreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientStartScreen\Sub_StartScreens\ucEnterPhoneNumber.resx">
+      <DependentUpon>ucEnterPhoneNumber.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientStartScreen\Sub_StartScreens\ucGetStarted.resx">
       <DependentUpon>ucGetStarted.cs</DependentUpon>
