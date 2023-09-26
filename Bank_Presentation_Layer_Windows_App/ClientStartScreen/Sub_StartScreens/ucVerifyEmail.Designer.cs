@@ -30,7 +30,7 @@
         {
             this.lnk_ResendKey = new System.Windows.Forms.LinkLabel();
             this.btn_VerifyEmail = new System.Windows.Forms.Button();
-            this.tb_PinCode = new System.Windows.Forms.MaskedTextBox();
+            this.tb_VerificationKey = new System.Windows.Forms.MaskedTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,7 +44,7 @@
             this.lnk_ResendKey.BackColor = System.Drawing.Color.Transparent;
             this.lnk_ResendKey.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.lnk_ResendKey.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(114)))), ((int)(((byte)(175)))));
-            this.lnk_ResendKey.Location = new System.Drawing.Point(37, 337);
+            this.lnk_ResendKey.Location = new System.Drawing.Point(45, 337);
             this.lnk_ResendKey.Name = "lnk_ResendKey";
             this.lnk_ResendKey.Size = new System.Drawing.Size(98, 19);
             this.lnk_ResendKey.TabIndex = 17;
@@ -61,30 +61,31 @@
             this.btn_VerifyEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_VerifyEmail.Font = new System.Drawing.Font("Arial", 10F);
             this.btn_VerifyEmail.ForeColor = System.Drawing.Color.White;
-            this.btn_VerifyEmail.Location = new System.Drawing.Point(41, 280);
+            this.btn_VerifyEmail.Location = new System.Drawing.Point(49, 280);
             this.btn_VerifyEmail.Name = "btn_VerifyEmail";
             this.btn_VerifyEmail.Size = new System.Drawing.Size(401, 44);
             this.btn_VerifyEmail.TabIndex = 16;
             this.btn_VerifyEmail.Text = "Verify Email";
             this.btn_VerifyEmail.UseVisualStyleBackColor = false;
+            this.btn_VerifyEmail.Click += new System.EventHandler(this.btn_VerifyEmail_Click);
             // 
-            // tb_PinCode
+            // tb_VerificationKey
             // 
-            this.tb_PinCode.AsciiOnly = true;
-            this.tb_PinCode.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_PinCode.Font = new System.Drawing.Font("Arial", 14F);
-            this.tb_PinCode.Location = new System.Drawing.Point(41, 195);
-            this.tb_PinCode.Name = "tb_PinCode";
-            this.tb_PinCode.PasswordChar = '*';
-            this.tb_PinCode.Size = new System.Drawing.Size(401, 34);
-            this.tb_PinCode.TabIndex = 13;
+            this.tb_VerificationKey.AsciiOnly = true;
+            this.tb_VerificationKey.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_VerificationKey.Font = new System.Drawing.Font("Arial", 14F);
+            this.tb_VerificationKey.Location = new System.Drawing.Point(49, 195);
+            this.tb_VerificationKey.Name = "tb_VerificationKey";
+            this.tb_VerificationKey.PasswordChar = '*';
+            this.tb_VerificationKey.Size = new System.Drawing.Size(401, 34);
+            this.tb_VerificationKey.TabIndex = 13;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial", 11.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(37, 158);
+            this.label4.Location = new System.Drawing.Point(45, 158);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(141, 22);
             this.label4.TabIndex = 14;
@@ -95,7 +96,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 21.8F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(32, 49);
+            this.label1.Location = new System.Drawing.Point(40, 49);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(328, 44);
@@ -107,7 +108,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 8.2F);
-            this.label2.Location = new System.Drawing.Point(37, 93);
+            this.label2.Location = new System.Drawing.Point(45, 93);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(263, 16);
             this.label2.TabIndex = 18;
@@ -120,7 +121,7 @@
             this.pnl_Main.Controls.Add(this.label2);
             this.pnl_Main.Controls.Add(this.label4);
             this.pnl_Main.Controls.Add(this.lnk_ResendKey);
-            this.pnl_Main.Controls.Add(this.tb_PinCode);
+            this.pnl_Main.Controls.Add(this.tb_VerificationKey);
             this.pnl_Main.Controls.Add(this.btn_VerifyEmail);
             this.pnl_Main.Location = new System.Drawing.Point(0, 119);
             this.pnl_Main.Name = "pnl_Main";
@@ -147,7 +148,7 @@
 
         private System.Windows.Forms.LinkLabel lnk_ResendKey;
         private System.Windows.Forms.Button btn_VerifyEmail;
-        private System.Windows.Forms.MaskedTextBox tb_PinCode;
+        private System.Windows.Forms.MaskedTextBox tb_VerificationKey;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
