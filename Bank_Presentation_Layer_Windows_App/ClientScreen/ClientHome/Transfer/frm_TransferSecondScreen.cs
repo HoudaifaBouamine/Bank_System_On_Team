@@ -48,6 +48,14 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
                 return;
             }
 
+            this.Sender.Refresh();
+
+            if(Sender.Balance < Amount)
+            {
+                MessageBox.Show($"You can not perform this transaction, your balance [{Sender.Balance}] is Less than ammount [{Amount}]", "Balance Not Enough", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             clsTransaction transaction = Sender.Transfer(Receiver, Amount);
 
             if (transaction == null)

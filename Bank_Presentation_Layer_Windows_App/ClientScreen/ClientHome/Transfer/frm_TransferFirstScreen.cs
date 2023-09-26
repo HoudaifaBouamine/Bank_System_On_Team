@@ -19,7 +19,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
         {
             this.main = main;
             this.Client = client;
-
+            
             InitializeComponent();
         }
 
@@ -42,6 +42,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
                 return;
             }
 
+            this.Client.Refresh();
             double Amount = Convert.ToDouble(tb_Amount.Text.Trim().ToString());
 
             if(Amount > Receiver.Balance)

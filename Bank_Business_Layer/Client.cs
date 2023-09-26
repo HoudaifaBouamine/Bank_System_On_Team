@@ -221,6 +221,7 @@ namespace Bank_Business_Layer
 
         public clsTransaction Transfer(clsClient receiver,double amount)
         {
+            this.Refresh();
 
             if (receiver == null) return null;
 

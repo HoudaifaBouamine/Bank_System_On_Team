@@ -17,6 +17,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
         public frm_ClientHistorique(clsClient client)
         {
             this.client = client;
+
             InitializeComponent();
             init_Historique();
         }

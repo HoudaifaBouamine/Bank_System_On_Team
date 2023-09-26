@@ -21,6 +21,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientSettings
             this.client = client;
             this.clientScreen = clientScreen;
             InitializeComponent();
+
             Load_Client_Info();
 
             
@@ -28,6 +29,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientSettings
 
         private void Load_Client_Info()
         {
+
             tb_AccountNumber.Text = client.AccountNumber;
             tb_Balance.Text = string.Format("{0:0.00}", client.Balance) + " $";
 

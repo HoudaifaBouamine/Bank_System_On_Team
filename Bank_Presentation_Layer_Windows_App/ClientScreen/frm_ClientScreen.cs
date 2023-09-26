@@ -12,6 +12,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Zeroit.Framework.LineSeparators;
+using System.Threading;
+using System.Xml;
 
 namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 {
@@ -27,11 +29,21 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             InitializeComponent();
             init_Screen();
 
-
+            Thread RefrechingTread = new Thread(()=> RefrechTheClientInfo());
+            RefrechingTread.Start();
 
             open_chiled_form(new frm_ClientHome(this,client));
             //open_chiled_form(new frm_ClientHistorique(client));
             //open_chiled_form(new frm_ClientSettings(this,client));
+        }
+
+        void RefrechTheClientInfo()
+        {
+            while (true)
+            {
+                client.Refresh();
+                Thread.Sleep(1000);
+            }
         }
 
         private void init_Screen()
