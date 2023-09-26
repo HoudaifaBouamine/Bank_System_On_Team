@@ -57,7 +57,6 @@
             // tb_Balance
             // 
             this.tb_Balance.BackColor = System.Drawing.Color.White;
-            this.tb_Balance.Enabled = false;
             this.tb_Balance.Font = new System.Drawing.Font("Arial", 12.2F);
             this.tb_Balance.ForeColor = System.Drawing.Color.Black;
             this.tb_Balance.Location = new System.Drawing.Point(491, 180);
@@ -79,7 +78,6 @@
             // tb_AccountNumber
             // 
             this.tb_AccountNumber.BackColor = System.Drawing.Color.White;
-            this.tb_AccountNumber.Enabled = false;
             this.tb_AccountNumber.Font = new System.Drawing.Font("Arial", 12.2F);
             this.tb_AccountNumber.ForeColor = System.Drawing.Color.Black;
             this.tb_AccountNumber.Location = new System.Drawing.Point(93, 180);
@@ -116,7 +114,7 @@
             this.tb_Phone.Location = new System.Drawing.Point(93, 811);
             this.tb_Phone.Name = "tb_Phone";
             this.tb_Phone.Size = new System.Drawing.Size(758, 31);
-            this.tb_Phone.TabIndex = 38;
+            this.tb_Phone.TabIndex = 6;
             this.tb_Phone.TextChanged += new System.EventHandler(this.tb_Phone_TextChanged);
             // 
             // label9
@@ -137,7 +135,7 @@
             this.tb_Email.Location = new System.Drawing.Point(93, 704);
             this.tb_Email.Name = "tb_Email";
             this.tb_Email.Size = new System.Drawing.Size(758, 31);
-            this.tb_Email.TabIndex = 37;
+            this.tb_Email.TabIndex = 5;
             // 
             // label7
             // 
@@ -167,7 +165,7 @@
             this.tb_Street.Location = new System.Drawing.Point(611, 494);
             this.tb_Street.Name = "tb_Street";
             this.tb_Street.Size = new System.Drawing.Size(240, 31);
-            this.tb_Street.TabIndex = 35;
+            this.tb_Street.TabIndex = 4;
             // 
             // label5
             // 
@@ -187,7 +185,7 @@
             this.tb_City.Location = new System.Drawing.Point(352, 494);
             this.tb_City.Name = "tb_City";
             this.tb_City.Size = new System.Drawing.Size(240, 31);
-            this.tb_City.TabIndex = 33;
+            this.tb_City.TabIndex = 3;
             // 
             // label3
             // 
@@ -207,7 +205,7 @@
             this.tb_Country.Location = new System.Drawing.Point(93, 494);
             this.tb_Country.Name = "tb_Country";
             this.tb_Country.Size = new System.Drawing.Size(240, 31);
-            this.tb_Country.TabIndex = 32;
+            this.tb_Country.TabIndex = 2;
             // 
             // label4
             // 
@@ -227,7 +225,7 @@
             this.tb_LastName.Location = new System.Drawing.Point(491, 384);
             this.tb_LastName.Name = "tb_LastName";
             this.tb_LastName.Size = new System.Drawing.Size(360, 31);
-            this.tb_LastName.TabIndex = 31;
+            this.tb_LastName.TabIndex = 1;
             // 
             // label2
             // 
@@ -247,7 +245,7 @@
             this.tb_FirstName.Location = new System.Drawing.Point(93, 384);
             this.tb_FirstName.Name = "tb_FirstName";
             this.tb_FirstName.Size = new System.Drawing.Size(360, 31);
-            this.tb_FirstName.TabIndex = 29;
+            this.tb_FirstName.TabIndex = 0;
             // 
             // label1
             // 
@@ -289,7 +287,7 @@
             this.btn_SaveClientInfo.Location = new System.Drawing.Point(721, 869);
             this.btn_SaveClientInfo.Name = "btn_SaveClientInfo";
             this.btn_SaveClientInfo.Size = new System.Drawing.Size(130, 42);
-            this.btn_SaveClientInfo.TabIndex = 47;
+            this.btn_SaveClientInfo.TabIndex = 7;
             this.btn_SaveClientInfo.Text = "Save";
             this.btn_SaveClientInfo.UseVisualStyleBackColor = false;
             this.btn_SaveClientInfo.Click += new System.EventHandler(this.btn_SaveClientInfo_Click);
@@ -306,13 +304,14 @@
             this.btn_Reset.Location = new System.Drawing.Point(585, 869);
             this.btn_Reset.Name = "btn_Reset";
             this.btn_Reset.Size = new System.Drawing.Size(130, 42);
-            this.btn_Reset.TabIndex = 48;
+            this.btn_Reset.TabIndex = 8;
             this.btn_Reset.Text = "Reset";
             this.btn_Reset.UseVisualStyleBackColor = false;
             this.btn_Reset.Click += new System.EventHandler(this.btn_Reset_Click);
             // 
             // frm_ClientSettings
             // 
+            this.AcceptButton = this.btn_SaveClientInfo;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;

@@ -29,7 +29,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientSettings
         private void Load_Client_Info()
         {
             tb_AccountNumber.Text = client.AccountNumber;
-            tb_Balance.Text = client.Balance.ToString();
+            tb_Balance.Text = string.Format("{0:0.00}", client.Balance) + " $";
 
             tb_FirstName.Text = client.FirstName;
             tb_LastName.Text = client.LastName;
@@ -70,23 +70,20 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientSettings
         {
             DialogResult result = MessageBox.Show("Are You sure you want to save this changes ?", "Change confermation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-            if(result == DialogResult.No)
-            {
-                return;
-            }
-            else
-            {
-                client.FirstName = tb_FirstName.Text;
-                client.LastName  = tb_LastName.Text ;
-                client.Country   = tb_Country.Text ;
-                client.City      = tb_City.Text ;
-                client.Street    = tb_Street.Text;
+            if (result == DialogResult.No) return;
+            
+            
+            client.FirstName = tb_FirstName.Text;
+            client.LastName  = tb_LastName.Text ;
+            client.Country   = tb_Country.Text ;
+            client.City      = tb_City.Text ;
+            client.Street    = tb_Street.Text;
 
-                client.Email     = tb_Email.Text;
-                client.Phone     = tb_Phone.Text;
+            client.Email     = tb_Email.Text;
+            client.Phone     = tb_Phone.Text;
 
-                client.Save();
-            }
+            client.Save();
+            
 
             clientScreen.lbl_ClientFullName.Text = client.FirstName + " " + client.LastName;
         }
