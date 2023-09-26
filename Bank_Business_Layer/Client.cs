@@ -256,6 +256,21 @@ namespace Bank_Business_Layer
             clsMailManager.Send(this.Email, Subject, Body);
         }
 
+        public void Refresh()
+        {
+            clsClient client = clsClient.Find(this.Client_ID);
+
+            this.Balance = client.Balance;
+            this.Country = client.Country;
+            this.City = client.City;
+            this.Street = client.Street;
+            this.Email = client.Email;
+            this.Phone = client.Phone;
+            this.FirstName = client.FirstName;
+            this.LastName = client.LastName;
+            this.PinCode = client.PinCode;
+        }
+
         public int Client_ID { get; private set; }
         public string AccountNumber { get; set; }
         public string Email { get; set; }
