@@ -17,6 +17,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
         public frm_ClientHistorique(clsClient client)
         {
             this.client = client;
+
             InitializeComponent();
             init_Historique();
         }
@@ -25,7 +26,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
         private void init_Historique()
         {
             dgv_ClientTransactionsList.DataSource = get_table();
-
+            lbl_Balance.Text = string.Format("{0:0.00}", client.Balance) + "$";
         }
 
         private DataTable get_table()

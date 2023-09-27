@@ -320,7 +320,7 @@ namespace Bank_Data_Layer
 
         static public bool Add_New_Client_By_ID
           (
-              ref int Client_ID, ref int Person_ID, string AccountNumber, string FirstName, string LastName,
+              ref int Client_ID, ref int Person_ID,ref string AccountNumber, string FirstName, string LastName,
                 string Country, string City, string Street,
                 string Email, string PinCode,
                 string Phone, double Balance
@@ -350,6 +350,8 @@ namespace Bank_Data_Layer
 
 
             SqlCommand command = new SqlCommand(query, connection);
+
+
             command.Parameters.AddWithValue("@AccountNumber", AccountNumber);
             command.Parameters.AddWithValue("@FirstName", FirstName);
             command.Parameters.AddWithValue("@LastName", LastName);
@@ -397,6 +399,21 @@ namespace Bank_Data_Layer
                     {
                         Person_ID = Convert.ToInt32(person_id);
                     }
+
+                    string queryToSetAccountNumber =
+                        "UPDATE Clients " +
+                        "SET AccountNumber = @AccountNumber " +
+                        "WHERE Client_ID = @Client_ID;";
+
+                    AccountNumber = (Client_ID + 1000).ToString() ;
+
+                    SqlCommand commandToSetAccountNumber = new SqlCommand(queryToSetAccountNumber, connection);
+                    commandToSetAccountNumber.Parameters.AddWithValue("@AccountNumber", AccountNumber);
+                    commandToSetAccountNumber.Parameters.AddWithValue("@Client_ID", Client_ID);
+
+                    commandToSetAccountNumber.ExecuteNonQuery();
+
+
                 }
 
             }

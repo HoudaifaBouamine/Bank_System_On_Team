@@ -72,7 +72,7 @@ namespace Bank_Business_Layer
         public static clsClient Find_AccNum(string AccNum)
         {
             int Person_ID = -1, Client_ID = -1;
-            string AccountNumber = "", PinCode = "", Phone = "", FirstName = "", LastName = "", Country = "", City = "", Street = "", Email = "";
+            string  PinCode = "", Phone = "", FirstName = "", LastName = "", Country = "", City = "", Street = "", Email = "";
             double Balance = 0;
 
             clsClient client = null;
@@ -86,7 +86,7 @@ namespace Bank_Business_Layer
                     )
                 )
             {
-                client = new clsClient(Client_ID, Person_ID, AccountNumber, FirstName, LastName,
+                client = new clsClient(Client_ID, Person_ID, AccNum, FirstName, LastName,
                                        Country, City, Street, Email, PinCode, Phone, Balance);
             }
             else
@@ -160,13 +160,16 @@ namespace Bank_Business_Layer
             bool _Add_New_Client()
             {
                 int client_id=-1, perons_id = -1;
-                bool isAdded = clsDataAccessLayer.Add_New_Client_By_ID(ref client_id,ref perons_id, AccountNumber,FirstName,LastName,Country,City,Street, Email, PinCode,Phone, Balance);
+                string accNum = "";
+
+                bool isAdded = clsDataAccessLayer.Add_New_Client_By_ID(ref client_id,ref perons_id,ref accNum,FirstName,LastName,Country,City,Street, Email, PinCode,Phone, Balance);
 
                 if (isAdded)
                 {
                     this.Mode = enMode.eUpdate;
                     this.Client_ID = client_id;
                     this.Person_ID = perons_id;
+                    this.AccountNumber = accNum;
 
                     return true;
                 }
@@ -216,6 +219,28 @@ namespace Bank_Business_Layer
             }
         }
 
+        public clsTransaction Transfer(clsClient receiver,double amount)
+        {
+            this.Refresh();
+
+            if (receiver == null) return null;
+
+            if (this.Balance < amount) return null;
+
+            clsTransaction TransferTransaction = new clsTransaction
+                (clsTransaction.enTransaction.eTransfer, this.Client_ID, receiver.Client_ID, -1,
+                Convert.ToInt16(clsTransaction.enTransaction.eTransfer), amount, DateTime.Now);
+            
+            this.Balance -= amount;
+            receiver.Balance += amount;
+
+
+            this.Save();
+            receiver.Save();
+            TransferTransaction.Save();
+
+            return TransferTransaction;
+        }
         static public DataTable Transactions_List(int Client_ID)
         {
             return clsDataAccessLayer.Get_Transaction_List_Client_ID(Client_ID);
@@ -227,6 +252,25 @@ namespace Bank_Business_Layer
             return Transactions_List(this.Client_ID);
         }
 
+        public void SendEmail(string Subject,string Body)
+        {
+            clsMailManager.Send(this.Email, Subject, Body);
+        }
+
+        public void Refresh()
+        {
+            clsClient client = clsClient.Find(this.Client_ID);
+
+            this.Balance = client.Balance;
+            this.Country = client.Country;
+            this.City = client.City;
+            this.Street = client.Street;
+            this.Email = client.Email;
+            this.Phone = client.Phone;
+            this.FirstName = client.FirstName;
+            this.LastName = client.LastName;
+            this.PinCode = client.PinCode;
+        }
 
         public int Client_ID { get; private set; }
         public string AccountNumber { get; set; }

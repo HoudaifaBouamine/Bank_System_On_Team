@@ -35,8 +35,8 @@ namespace Bank_Presentation_Layer_Windows_App.ClientLoginScreen
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tb_FirstName = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
+            this.tb_Email = new System.Windows.Forms.MaskedTextBox();
+            this.tb_PinCode = new System.Windows.Forms.MaskedTextBox();
             this.btn_SignUp = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -85,9 +85,9 @@ namespace Bank_Presentation_Layer_Windows_App.ClientLoginScreen
             this.label4.Font = new System.Drawing.Font("Arial", 11.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(48, 342);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 22);
+            this.label4.Size = new System.Drawing.Size(89, 22);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Password";
+            this.label4.Text = "Pin Code";
             // 
             // tb_FirstName
             // 
@@ -99,26 +99,26 @@ namespace Bank_Presentation_Layer_Windows_App.ClientLoginScreen
             this.tb_FirstName.Size = new System.Drawing.Size(197, 34);
             this.tb_FirstName.TabIndex = 0;
             // 
-            // maskedTextBox2
+            // tb_Email
             // 
-            this.maskedTextBox2.AsciiOnly = true;
-            this.maskedTextBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.maskedTextBox2.Font = new System.Drawing.Font("Arial", 14F);
-            this.maskedTextBox2.Location = new System.Drawing.Point(52, 277);
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(401, 34);
-            this.maskedTextBox2.TabIndex = 2;
+            this.tb_Email.AsciiOnly = true;
+            this.tb_Email.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_Email.Font = new System.Drawing.Font("Arial", 14F);
+            this.tb_Email.Location = new System.Drawing.Point(52, 277);
+            this.tb_Email.Name = "tb_Email";
+            this.tb_Email.Size = new System.Drawing.Size(401, 34);
+            this.tb_Email.TabIndex = 2;
             // 
-            // maskedTextBox3
+            // tb_PinCode
             // 
-            this.maskedTextBox3.AsciiOnly = true;
-            this.maskedTextBox3.BackColor = System.Drawing.SystemColors.Window;
-            this.maskedTextBox3.Font = new System.Drawing.Font("Arial", 14F);
-            this.maskedTextBox3.Location = new System.Drawing.Point(52, 367);
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.PasswordChar = '*';
-            this.maskedTextBox3.Size = new System.Drawing.Size(401, 34);
-            this.maskedTextBox3.TabIndex = 3;
+            this.tb_PinCode.AsciiOnly = true;
+            this.tb_PinCode.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_PinCode.Font = new System.Drawing.Font("Arial", 14F);
+            this.tb_PinCode.Location = new System.Drawing.Point(52, 367);
+            this.tb_PinCode.Name = "tb_PinCode";
+            this.tb_PinCode.PasswordChar = '*';
+            this.tb_PinCode.Size = new System.Drawing.Size(401, 34);
+            this.tb_PinCode.TabIndex = 3;
             // 
             // btn_SignUp
             // 
@@ -194,8 +194,8 @@ namespace Bank_Presentation_Layer_Windows_App.ClientLoginScreen
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btn_SignUp);
-            this.Controls.Add(this.maskedTextBox3);
-            this.Controls.Add(this.maskedTextBox2);
+            this.Controls.Add(this.tb_PinCode);
+            this.Controls.Add(this.tb_Email);
             this.Controls.Add(this.tb_FirstName);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -218,8 +218,8 @@ namespace Bank_Presentation_Layer_Windows_App.ClientLoginScreen
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.MaskedTextBox tb_FirstName;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
+        private System.Windows.Forms.MaskedTextBox tb_Email;
+        private System.Windows.Forms.MaskedTextBox tb_PinCode;
         private System.Windows.Forms.Button btn_SignUp;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.LinkLabel linkLabel1;

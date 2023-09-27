@@ -55,11 +55,29 @@
     <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositMainScreen.Designer.cs">
       <DependentUpon>frm_DepositMainScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferFirstScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferFirstScreen.Designer.cs">
+      <DependentUpon>frm_TransferFirstScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferMainScreen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferMainScreen.Designer.cs">
       <DependentUpon>frm_TransferMainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferSecondScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferSecondScreen.Designer.cs">
+      <DependentUpon>frm_TransferSecondScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferThirdScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferThirdScreen.Designer.cs">
+      <DependentUpon>frm_TransferThirdScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="ClientScreen\ClientHome\ucClientBalanceSummary.cs">
       <SubType>UserControl</SubType>
@@ -97,6 +115,12 @@
     <Compile Include="ClientStartScreen\Sub_StartScreens\ucCreateAccount.Designer.cs">
       <DependentUpon>ucCreateAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucEnterPhoneNumber.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucEnterPhoneNumber.Designer.cs">
+      <DependentUpon>ucEnterPhoneNumber.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClientStartScreen\Sub_StartScreens\ucGetStarted.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -114,6 +138,12 @@
     </Compile>
     <Compile Include="ClientStartScreen\Sub_StartScreens\ucLogin.Designer.cs">
       <DependentUpon>ucLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucVerifyEmail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucVerifyEmail.Designer.cs">
+      <DependentUpon>ucVerifyEmail.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_Main.cs">
       <SubType>Form</SubType>
@@ -138,8 +168,17 @@
     <EmbeddedResource Include="ClientScreen\ClientHome\Deposit\frm_DepositMainScreen.resx">
       <DependentUpon>frm_DepositMainScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\Transfer\frm_TransferFirstScreen.resx">
+      <DependentUpon>frm_TransferFirstScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClientScreen\ClientHome\Transfer\frm_TransferMainScreen.resx">
       <DependentUpon>frm_TransferMainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\Transfer\frm_TransferSecondScreen.resx">
+      <DependentUpon>frm_TransferSecondScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\Transfer\frm_TransferThirdScreen.resx">
+      <DependentUpon>frm_TransferThirdScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientScreen\ClientHome\ucClientBalanceSummary.resx">
       <DependentUpon>ucClientBalanceSummary.cs</DependentUpon>
@@ -159,6 +198,9 @@
     <EmbeddedResource Include="ClientStartScreen\Sub_StartScreens\ucCreateAccount.resx">
       <DependentUpon>ucCreateAccount.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ClientStartScreen\Sub_StartScreens\ucEnterPhoneNumber.resx">
+      <DependentUpon>ucEnterPhoneNumber.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClientStartScreen\Sub_StartScreens\ucGetStarted.resx">
       <DependentUpon>ucGetStarted.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClientStartScreen\Sub_StartScreens\ucLogin.resx">
       <DependentUpon>ucLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientStartScreen\Sub_StartScreens\ucVerifyEmail.resx">
+      <DependentUpon>ucVerifyEmail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>

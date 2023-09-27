@@ -47,12 +47,27 @@ namespace Bank_Business_Layer
 
         public int Transaction_ID { get; private set; }
         public clsClient Sender { get; set; }
+
+        private int Sender_ID;
         public clsClient Receiver { get; set; }
+
+        private int Receiver_ID;
         public clsUser User { get; set; }
+
+        private int User_ID;
+
         public int TransactionType_ID { get; set; }
         public double Amount { get; set; }
         public DateTime TransactionDateTime { get; set; }
 
+        public double SenderBalanceBefore { get; set; }
+        public double SenderBalanceAfter { get; set; }
+
+        public double ReceiverBalanceBefore { get; set; }
+        public double ReceiverBalanceAfter { get; set; }
+
+
+      
         public enTransaction TransactionType { get; private set ; }
         public enum enTransaction { eDeposit = 1, eWithdraw, eTransfer };
 
@@ -161,6 +176,42 @@ namespace Bank_Business_Layer
 
         }
 
+
+        public clsTransaction(enTransaction trans_type, int sender_id, int receiver_id, int user_id, int transactionTypeID, double amount, DateTime transactionDateTime,double SenderBalanceBefor,double ReceiverBalanceBefor)
+        {
+            TransactionType_ID = transactionTypeID;
+            Amount = amount;
+            TransactionDateTime = transactionDateTime;
+
+            Sender_ID = sender_id;
+            Receiver_ID = receiver_id;
+            User_ID = user_id;
+
+            this.SenderBalanceBefore = SenderBalanceBefor;
+            this.ReceiverBalanceBefore = ReceiverBalanceBefor;
+
+            this.SenderBalanceAfter = this.SenderBalanceBefore - amount;
+            this.ReceiverBalanceAfter = this.ReceiverBalanceBefore + amount;
+        }
+
+        public bool Save()
+        {
+            return clsDataAccessLayer.Add_New_Transaction
+                (
+                    Sender_ID,
+                    Receiver_ID,
+                    User_ID,
+                    TransactionType_ID,
+                    Amount,
+                    TransactionDateTime,
+                    SenderBalanceBefore,
+                    SenderBalanceAfter,
+                    ReceiverBalanceBefore,
+                    ReceiverBalanceAfter
+                );
+
+
+        }
     }
 
 

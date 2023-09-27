@@ -32,6 +32,8 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             pnl_Balance.Controls.Add(balanceSummary);
             balanceSummary.Dock = DockStyle.Fill;
 
+
+
         }
         private void btn_Deposit_Click(object sender, EventArgs e)
         {

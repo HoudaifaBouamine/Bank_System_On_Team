@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Client.cs" />
+    <Compile Include="clsMailManager.cs" />
+    <Compile Include="clsUtil.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Transaction.cs" />
     <Compile Include="User.cs" />
