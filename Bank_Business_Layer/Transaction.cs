@@ -146,6 +146,9 @@ namespace Bank_Business_Layer
             TransactionType_ID = transactionTypeID;
             Amount = amount;
             TransactionDateTime = transactionDateTime;
+            Sender_ID = sender_id;
+            Receiver_ID = receiver_id;
+            User_ID = user_id;
 
             if (sender_id == -1)
             {
@@ -174,6 +177,11 @@ namespace Bank_Business_Layer
                 User = clsUser.Find(user_id);
             }
 
+            SenderBalanceAfter = Sender.Balance;
+            ReceiverBalanceAfter = Receiver.Balance;
+
+            SenderBalanceBefore = Sender.Balance + amount;
+            ReceiverBalanceBefore = Receiver.Balance - amount;
         }
 
 
