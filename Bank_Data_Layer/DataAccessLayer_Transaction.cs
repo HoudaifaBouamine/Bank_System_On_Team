@@ -102,8 +102,23 @@ namespace Bank_Data_Layer
 
                     using (SqlCommand cmd = new SqlCommand("INSERT INTO Transactions (Sender_ID, Receiver_ID, User_ID, TransactionType_ID, Amount, TransactionDateTime, Sender_Balance_Befor, Sender_Balance_After, Receiver_Balance_Befor, Receiver_Balance_After) VALUES (@Sender_ID, @Receiver_ID, @User_ID, @TransactionType_ID, @Amount, @TransactionDateTime, @Sender_Balance_Befor, @Sender_Balance_After, @Receiver_Balance_Befor, @Receiver_Balance_After)", connection))
                     {
-                        cmd.Parameters.AddWithValue("@Sender_ID", senderID);
-                        cmd.Parameters.AddWithValue("@Receiver_ID", receiverID);
+                        if (senderID == -1)
+                        {
+                            cmd.Parameters.AddWithValue("@Sender_ID", DBNull.Value);
+                        }
+                        else
+                        {
+                            cmd.Parameters.AddWithValue("@Sender_ID", senderID);
+                        }
+
+                        if (receiverID == -1)
+                        {
+                            cmd.Parameters.AddWithValue("@Receiver_ID", DBNull.Value);
+                        }
+                        else
+                        {
+                            cmd.Parameters.AddWithValue("@Receiver_ID", receiverID);
+                        }
 
                         if (userID == -1)
                         {
@@ -114,6 +129,7 @@ namespace Bank_Data_Layer
                         {
                             cmd.Parameters.AddWithValue("@User_ID", userID);
                         }
+
                         cmd.Parameters.AddWithValue("@TransactionType_ID", transactionTypeID);
                         cmd.Parameters.AddWithValue("@Amount", amount);
                         cmd.Parameters.AddWithValue("@TransactionDateTime", transactionDateTime);
