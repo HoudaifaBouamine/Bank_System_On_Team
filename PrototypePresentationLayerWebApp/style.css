@@ -225,6 +225,62 @@ a:active{
 }
 
 
+.option{
+    align-items: center;
+    justify-content: center;
+}
+
+.option button{
+    display: flex;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+
+    padding-left: 30px;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: transparent;
+}
+
+.option button:hover p{
+    opacity: 1;
+}
+
+.option button:hover div img{
+    opacity: 1;
+}
+
+
+.option button:active{
+    scale: 0.97;
+    background: #3F72AF;
+}
+
+.option button p{
+    color: #FFF;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.6;
+
+}
+
+.option button .icon{
+    width: 2rem;
+    height: 2rem;
+    flex-shrink: 0;
+}
+.option button div img{
+    width: 2rem;
+    height: 2rem;
+    flex-shrink: 0;
+    opacity: 0.8;
+}
+
+
+
+
 footer{
     display: flex;
     justify-content: center;
@@ -286,6 +342,7 @@ footer{
     height: 0.03rem;
 
     background: #000;
+    opacity: 0.6;
 }
 
 .white-line{
