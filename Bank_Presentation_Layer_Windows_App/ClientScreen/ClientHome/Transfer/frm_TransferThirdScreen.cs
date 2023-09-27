@@ -18,7 +18,11 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
         public frm_TransferThirdScreen(clsTransaction transaction,clsClient Sender,clsClient Receiver)
         {
             this.transaction = transaction;
+            this.Sender = Sender;
+            this.Receiver = Receiver;
             InitializeComponent();
+
+            init_StatusWindow();
         }
 
         private void init_StatusWindow()
