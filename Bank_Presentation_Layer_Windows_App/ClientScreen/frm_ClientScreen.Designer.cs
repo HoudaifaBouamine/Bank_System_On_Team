@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_ClientScreen));
             this.pnl_Menu = new System.Windows.Forms.Panel();
             this.btn_Logout = new System.Windows.Forms.Button();
@@ -41,6 +42,7 @@
             this.lbl_ClientFullName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnl_Main = new System.Windows.Forms.Panel();
+            this.timer_Start_Refreaching_Client_Info = new System.Windows.Forms.Timer(this.components);
             this.pnl_Menu.SuspendLayout();
             this.pnl_Profile.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -213,6 +215,12 @@
             this.pnl_Main.Name = "pnl_Main";
             this.pnl_Main.Size = new System.Drawing.Size(930, 720);
             this.pnl_Main.TabIndex = 1;
+            this.pnl_Main.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_Main_Paint);
+            // 
+            // timer_Start_Refreaching_Client_Info
+            // 
+            this.timer_Start_Refreaching_Client_Info.Interval = 1000;
+            this.timer_Start_Refreaching_Client_Info.Tick += new System.EventHandler(this.timer_Start_Refreaching_Client_Info_Tick);
             // 
             // frm_ClientScreen
             // 
@@ -225,6 +233,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_ClientScreen";
             this.Text = "frm_ClientScreen";
+            this.Load += new System.EventHandler(this.frm_ClientScreen_Load);
             this.pnl_Menu.ResumeLayout(false);
             this.pnl_Profile.ResumeLayout(false);
             this.pnl_Profile.PerformLayout();
@@ -247,5 +256,6 @@
         private System.Windows.Forms.Button btn_Home;
         private System.Windows.Forms.Panel pnl_Seperator1;
         private System.Windows.Forms.Button btn_Logout;
+        private System.Windows.Forms.Timer timer_Start_Refreaching_Client_Info;
     }
 }

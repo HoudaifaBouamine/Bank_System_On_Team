@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -49,32 +49,6 @@
             this.panel2.Size = new System.Drawing.Size(1280, 68);
             this.panel2.TabIndex = 1;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Gray;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(998, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(282, 68);
-            this.panel3.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Gray;
-            this.pictureBox1.Location = new System.Drawing.Point(50, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(158, 62);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 68);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1280, 720);
-            this.panel1.TabIndex = 2;
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Gray;
@@ -85,6 +59,33 @@
             this.panel4.Size = new System.Drawing.Size(282, 68);
             this.panel4.TabIndex = 2;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Gray;
+            this.pictureBox1.Location = new System.Drawing.Point(50, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(158, 62);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Gray;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(998, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(282, 68);
+            this.panel3.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 68);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1280, 720);
+            this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // frm_MainForm
             // 
@@ -98,8 +99,8 @@
             this.Text = "Main";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -22,17 +22,15 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 
         frm_MainForm mainForm = null;
         clsClient client;
-        public frm_ClientScreen(frm_MainForm mainForm,clsClient client)
+        public frm_ClientScreen(frm_MainForm mainForm, clsClient client)
         {
             this.mainForm = mainForm;
             this.client = client;
             InitializeComponent();
             init_Screen();
 
-            Thread RefrechingTread = new Thread(()=> RefrechTheClientInfo());
-            RefrechingTread.Start();
 
-            open_chiled_form(new frm_ClientHome(this,client));
+            open_chiled_form(new frm_ClientHome(this, client));
             //open_chiled_form(new frm_ClientHistorique(client));
             //open_chiled_form(new frm_ClientSettings(this,client));
         }
@@ -58,8 +56,8 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             {
                 ZeroitChromeLine line = new ZeroitChromeLine();
                 line.Width = 260;
-                line.Location = new Point(40, sep.Height/2 - line.Height/2);
-                
+                line.Location = new Point(40, sep.Height / 2 - line.Height / 2);
+
 
                 sep.Controls.Add(line);
             }
@@ -71,12 +69,12 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
         }
         private void btn_Home_Click_1(object sender, EventArgs e)
         {
-            open_chiled_form(new frm_ClientHome(this,client));
+            open_chiled_form(new frm_ClientHome(this, client));
         }
 
         private void btn_Settings_Click_1(object sender, EventArgs e)
         {
-            open_chiled_form(new frm_ClientSettings(this,client));
+            open_chiled_form(new frm_ClientSettings(this, client));
 
         }
 
@@ -87,14 +85,14 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 
             if (currentActivateForm != null)
             {
-                if(form == currentActivateForm)
+                if (form == currentActivateForm)
                 {
                     return;
                 }
 
                 prevForm = currentActivateForm;
             }
-                currentActivateForm = form;
+            currentActivateForm = form;
 
             currentActivateForm.TopLevel = false;
             pnl_Main.Controls.Add(currentActivateForm);
@@ -103,7 +101,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             currentActivateForm.Show();
             currentActivateForm.Activate();
 
-            if(prevForm != null)
+            if (prevForm != null)
             {
                 pnl_Main.Controls.Remove(prevForm);
             }
@@ -117,7 +115,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 
         private void btn_Logout_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Are sure you want to logout ?","Logout confermation",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
+            DialogResult result = MessageBox.Show("Are sure you want to logout ?", "Logout confermation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
 
             if (result == DialogResult.No) return;
@@ -126,7 +124,36 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             frm.open_child_window(new ucLogin(frm));
 
             mainForm.OpenChildForm(frm);
-            
+
+        }
+
+        private void pnl_Main_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void frm_ClientScreen_Load(object sender, EventArgs e)
+        {
+//            timer_Start_Refreaching_Client_Info.Start();
+
+        }
+
+        bool isFirst = true;
+        private void timer_Start_Refreaching_Client_Info_Tick(object sender, EventArgs e)
+        {
+
+            if (!isFirst)
+            {
+                Thread RefrechingTread = new Thread(() => RefrechTheClientInfo());
+                RefrechingTread.Start();
+
+                timer_Start_Refreaching_Client_Info.Stop();
+
+            }
+            else
+            {
+                isFirst = false;
+            }
         }
     }
 }
