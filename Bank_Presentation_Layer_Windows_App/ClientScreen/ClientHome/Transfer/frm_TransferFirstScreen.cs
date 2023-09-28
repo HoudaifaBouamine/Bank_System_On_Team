@@ -14,11 +14,11 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
     public partial class frm_TransferFirstScreen : Form
     {
         frm_TransferMainScreen main = null;
-        clsClient Client = null;
+        clsClient Sender = null;
         public frm_TransferFirstScreen(frm_TransferMainScreen main,clsClient client)
         {
             this.main = main;
-            this.Client = client;
+            this.Sender = client;
             
             InitializeComponent();
         }
@@ -28,7 +28,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
             string Receiver_AccountNumber = "";
             Receiver_AccountNumber = tb_AccountNumber.Text.Trim();
 
-            if(Receiver_AccountNumber == Client.AccountNumber)
+            if(Receiver_AccountNumber == Sender.AccountNumber)
             {
                 MessageBox.Show($"The Receiver account number is the same of the sender account number", "You can not send mony to your self", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -42,15 +42,15 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
                 return;
             }
 
-            this.Client.Refresh();
+            this.Sender.Refresh();
             double Amount = Convert.ToDouble(tb_Amount.Text.Trim().ToString());
 
             if(Amount > Receiver.Balance)
             {
-                MessageBox.Show($"The Amount you entered [{Amount}] is greater than your balance [{Receiver.Balance}]", "Amount not valied", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"The Amount you entered [{Amount}] is greater than your balance [{Sender.Balance}]", "Amount not valied", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            main.open_chiled_form(new frm_TransferSecondScreen(main,Client,Receiver,Amount));
+            main.open_chiled_form(new frm_TransferSecondScreen(main,Sender,Receiver,Amount));
         }
     }
 }
