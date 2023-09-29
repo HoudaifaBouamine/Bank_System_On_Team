@@ -176,12 +176,12 @@ namespace Bank_Business_Layer
             {
                 User = clsUser.Find(user_id);
             }
+            SenderBalanceBefore = Sender.Balance;
+            ReceiverBalanceBefore = Receiver.Balance;
 
-            SenderBalanceAfter = Sender.Balance;
-            ReceiverBalanceAfter = Receiver.Balance;
+            SenderBalanceAfter = Sender.Balance - amount;
+            ReceiverBalanceAfter = Receiver.Balance + amount;
 
-            SenderBalanceBefore = Sender.Balance + amount;
-            ReceiverBalanceBefore = Receiver.Balance - amount;
         }
 
 
