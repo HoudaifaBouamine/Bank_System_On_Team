@@ -227,6 +227,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UserScreen\frm_UserScreen.resx">
       <DependentUpon>frm_UserScreen.cs</DependentUpon>
@@ -253,6 +254,9 @@
       <Project>{e1cbe111-6a39-4212-90c3-6cce7f771c17}</Project>
       <Name>Bank_Business_Layer</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
