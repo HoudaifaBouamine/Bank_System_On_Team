@@ -49,6 +49,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositThirdScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositThirdScreen.Designer.cs">
+      <DependentUpon>frm_DepositThirdScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositSecondScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositSecondScreen.Designer.cs">
+      <DependentUpon>frm_DepositSecondScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositFirstScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositFirstScreen.Designer.cs">
+      <DependentUpon>frm_DepositFirstScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositMainScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +183,16 @@
     <Compile Include="UserScreen\frm_UserScreen.Designer.cs">
       <DependentUpon>frm_UserScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Util\clsPagesControler.cs" />
+    <EmbeddedResource Include="ClientScreen\ClientHome\Deposit\frm_DepositThirdScreen.resx">
+      <DependentUpon>frm_DepositThirdScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\Deposit\frm_DepositSecondScreen.resx">
+      <DependentUpon>frm_DepositSecondScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\Deposit\frm_DepositFirstScreen.resx">
+      <DependentUpon>frm_DepositFirstScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClientScreen\ClientHome\Deposit\frm_DepositMainScreen.resx">
       <DependentUpon>frm_DepositMainScreen.cs</DependentUpon>
     </EmbeddedResource>
