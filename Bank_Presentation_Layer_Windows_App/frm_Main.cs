@@ -9,6 +9,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Bank_Presentation_Layer_Windows_App
@@ -22,9 +23,19 @@ namespace Bank_Presentation_Layer_Windows_App
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            //OpenChildForm(new frm_ClientScreen(this, clsClient.Find(1)));
-            OpenChildForm(new frm_StartScreen(this));
+
+            //ConnectToDataBase();
+            OpenChildForm(new frm_ClientScreen(this, clsClient.Find(17)));
+            //OpenChildForm(new frm_StartScreen(this));
+
+             void ConnectToDataBase()
+            {
+                clsClient.Find(0);
+            }
+            
         }
+
+        
 
         Form currentActivateForm = null;
         public void OpenChildForm(Form form)
@@ -46,6 +57,11 @@ namespace Bank_Presentation_Layer_Windows_App
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

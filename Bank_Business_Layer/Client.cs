@@ -261,15 +261,29 @@ namespace Bank_Business_Layer
         {
             clsClient client = clsClient.Find(this.Client_ID);
 
-            this.Balance = client.Balance;
-            this.Country = client.Country;
-            this.City = client.City;
-            this.Street = client.Street;
-            this.Email = client.Email;
-            this.Phone = client.Phone;
-            this.FirstName = client.FirstName;
-            this.LastName = client.LastName;
-            this.PinCode = client.PinCode;
+            if (client == null)
+            {
+
+                return;
+            }
+
+            try
+            {
+
+                this.Balance = client.Balance;
+                this.Country = client.Country;
+                this.City = client.City;
+                this.Street = client.Street;
+                this.Email = client.Email;
+                this.Phone = client.Phone;
+                this.FirstName = client.FirstName;
+                this.LastName = client.LastName;
+                this.PinCode = client.PinCode;
+            }
+            catch (Exception ex)
+            {
+                // Debug the problem here
+            }
         }
 
         public int Client_ID { get; private set; }

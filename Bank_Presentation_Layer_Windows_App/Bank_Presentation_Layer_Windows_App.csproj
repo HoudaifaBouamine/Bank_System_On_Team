@@ -49,11 +49,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositFirstScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositFirstScreen.Designer.cs">
+      <DependentUpon>frm_DepositFirstScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositMainScreen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositMainScreen.Designer.cs">
       <DependentUpon>frm_DepositMainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositSecond.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositSecond.Designer.cs">
+      <DependentUpon>frm_DepositSecond.cs</DependentUpon>
     </Compile>
     <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferFirstScreen.cs">
       <SubType>Form</SubType>
@@ -165,8 +177,15 @@
     <Compile Include="UserScreen\frm_UserScreen.Designer.cs">
       <DependentUpon>frm_UserScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Util\clsPagesControler.cs" />
+    <EmbeddedResource Include="ClientScreen\ClientHome\Deposit\frm_DepositFirstScreen.resx">
+      <DependentUpon>frm_DepositFirstScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClientScreen\ClientHome\Deposit\frm_DepositMainScreen.resx">
       <DependentUpon>frm_DepositMainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\Deposit\frm_DepositSecond.resx">
+      <DependentUpon>frm_DepositSecond.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientScreen\ClientHome\Transfer\frm_TransferFirstScreen.resx">
       <DependentUpon>frm_TransferFirstScreen.cs</DependentUpon>
@@ -227,6 +246,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UserScreen\frm_UserScreen.resx">
       <DependentUpon>frm_UserScreen.cs</DependentUpon>
@@ -253,6 +273,9 @@
       <Project>{e1cbe111-6a39-4212-90c3-6cce7f771c17}</Project>
       <Name>Bank_Business_Layer</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

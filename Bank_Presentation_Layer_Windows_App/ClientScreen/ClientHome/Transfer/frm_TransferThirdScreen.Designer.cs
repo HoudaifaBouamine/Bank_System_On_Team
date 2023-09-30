@@ -98,7 +98,7 @@
             // lbl_Amount
             // 
             this.lbl_Amount.Font = new System.Drawing.Font("Arial", 33.2F, System.Drawing.FontStyle.Bold);
-            this.lbl_Amount.ForeColor = System.Drawing.Color.White;
+            this.lbl_Amount.ForeColor = System.Drawing.Color.Red;
             this.lbl_Amount.Location = new System.Drawing.Point(363, 192);
             this.lbl_Amount.Name = "lbl_Amount";
             this.lbl_Amount.Size = new System.Drawing.Size(314, 70);
@@ -226,11 +226,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_TransferStatus;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbl_DateTime;
         private System.Windows.Forms.Label lbl_ReceiverAccountNumber;
-        private System.Windows.Forms.Label lbl_SenderAccountNumber;
         private System.Windows.Forms.Label lbl_Amount;
+        private System.Windows.Forms.Label lbl_SenderAccountNumber;
+        private System.Windows.Forms.Label label2;
     }
 }

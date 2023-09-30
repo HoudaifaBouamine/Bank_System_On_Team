@@ -18,6 +18,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome
         public ucClientBalanceSummary(clsClient client)
         {
             this.client = client;
+            this.client.Refresh();
             InitializeComponent();
 
             init_Balance_Recent();
@@ -25,7 +26,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome
 
         private void init_Balance_Recent()
         {
-            this.lbl_Balance.Text = string.Format("{0:0.00}", client.Balance) + "$";
+            this.lbl_Balance.Text = string.Format("{0:0.00}", client.Balance) + " $";
 
             DataTable table = client.Transactions_List();
 
@@ -37,6 +38,8 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome
                 lbl_TransactionType.Visible = true;
                 lbl_TimeTitle.Visible = true;
                 lbl_Title.Visible = true;
+
+                
 
                 lbl_DateTime.Text = ((DateTime)table.Rows[0]["TransactionDateTime"]).ToString();
                 lbl_LastTransAmount.Text = "" + Operation(table.Rows[0]) + (table.Rows[0]["Amount"]).ToString();
