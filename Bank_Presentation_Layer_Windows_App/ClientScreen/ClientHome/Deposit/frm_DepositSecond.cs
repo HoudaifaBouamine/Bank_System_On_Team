@@ -15,18 +15,22 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Deposit
     {
         clsClient Client;
         frm_DepositMainScreen Main;
-        public frm_DepositSecondScreen(frm_DepositMainScreen main, clsClient client)
+        clsTransaction Transaction;
+        public frm_DepositSecondScreen(frm_DepositMainScreen main, clsClient client,clsTransaction transaction)
         {
             Client = client;
             Main = main;
+            Transaction = transaction;
             InitializeComponent();
             this.TopLevel = false;
-
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void frm_DepositSecondScreen_Load(object sender, EventArgs e)
         {
-            Main.controler.open_page("Third");
+            lbl_Amount.Text = string.Format("{0:0.00}", Transaction.Amount) + "  $";
+            lbl_DateTime.Text = Transaction.TransactionDateTime.ToString();
+            lbl_ReceiverAccountNumber.Text = Transaction.Receiver.AccountNumber.ToString();
+
         }
     }
 }

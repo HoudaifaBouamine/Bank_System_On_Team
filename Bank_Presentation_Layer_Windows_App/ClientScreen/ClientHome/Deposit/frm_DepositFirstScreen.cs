@@ -15,16 +15,35 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Deposit
     {
         clsClient Client;
         frm_DepositMainScreen Main;
-        public frm_DepositFirstScreen(frm_DepositMainScreen main,clsClient client)
+        clsTransaction Transaction;
+        public frm_DepositFirstScreen(frm_DepositMainScreen main,clsClient client,clsTransaction transaction)
         {
             Client = client;
             Main = main;
+            Transaction = transaction;
             InitializeComponent();
             this.TopLevel = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_Next_Click(object sender, EventArgs e)
         {
+            double Amount = Convert.ToDouble(tb_Amount.Text);
+
+            // Check if Money on the ATM 
+
+            Transaction.ReceiverBalanceBefore = Client.Balance;
+            Transaction.ReceiverBalanceAfter = Client.Balance + Amount;
+            Transaction.Amount = Amount;
+            Transaction.TransactionDateTime = DateTime.Now;
+
+
+
+            Client.Balance += Amount;
+
+
+            Transaction.Save();
+            Client.Save();
+
             Main.controler.open_page("Second");
         }
     }

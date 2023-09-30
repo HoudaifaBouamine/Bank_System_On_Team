@@ -16,14 +16,15 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Deposit
     {
         clsClient client = null;
         Dictionary<string, Form> forms = new Dictionary<string, Form>();
+        public clsTransaction transaction = null;
         public frm_DepositMainScreen(clsClient client)
         {
             this.client = client;
+            transaction = new clsTransaction(clsTransaction.enTransaction.eDeposit,-1,client.Client_ID,-1,(int)clsTransaction.enTransaction.eDeposit,-1,DateTime.MinValue);
             InitializeComponent();
 
-            forms.Add("First", new frm_DepositFirstScreen(this,client));
-            forms.Add("Second", new frm_DepositSecondScreen(this, client));
-            forms.Add("Third", new frm_DepositThirdScreen(this, client));
+            forms.Add("First", new frm_DepositFirstScreen(this,client,transaction));
+            forms.Add("Second", new frm_DepositSecondScreen(this, client,transaction));
 
             controler = new clsPagesControler(pnl_Main,forms);
             controler.open_page("First");

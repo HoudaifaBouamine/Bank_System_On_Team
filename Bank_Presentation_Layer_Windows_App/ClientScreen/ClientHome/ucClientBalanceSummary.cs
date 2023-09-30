@@ -39,14 +39,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome
                 lbl_TimeTitle.Visible = true;
                 lbl_Title.Visible = true;
 
-                if (client.Client_ID == Convert.ToInt32(table.Rows[0]["Sender_ID"]))
-                {
-                    //lbl_Balance.Text = string.Format("{0:0.00}", Convert.ToDouble(table.Rows[0]["Sender_Balance_After"])) + " $";;
-                }
-                else
-                {
-                    //lbl_Balance.Text = string.Format("{0:0.00}", Convert.ToDouble(table.Rows[0]["Receiver_Balance_After"])) + " $"; ;
-                }
+                
 
                 lbl_DateTime.Text = ((DateTime)table.Rows[0]["TransactionDateTime"]).ToString();
                 lbl_LastTransAmount.Text = "" + Operation(table.Rows[0]) + (table.Rows[0]["Amount"]).ToString();

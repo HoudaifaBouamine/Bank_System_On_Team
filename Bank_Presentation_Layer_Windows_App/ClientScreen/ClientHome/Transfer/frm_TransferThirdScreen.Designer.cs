@@ -35,13 +35,13 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.lbl_Amount = new System.Windows.Forms.Label();
             this.lbl_ReceiverAccountNumber = new System.Windows.Forms.Label();
-            this.lbl_SenderAccountNumber = new System.Windows.Forms.Label();
             this.lbl_DateTime = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.lbl_TransferStatus = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lbl_SenderAccountNumber = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -117,17 +117,6 @@
             this.lbl_ReceiverAccountNumber.TabIndex = 7;
             this.lbl_ReceiverAccountNumber.Text = "B1900";
             // 
-            // lbl_SenderAccountNumber
-            // 
-            this.lbl_SenderAccountNumber.AutoSize = true;
-            this.lbl_SenderAccountNumber.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold);
-            this.lbl_SenderAccountNumber.ForeColor = System.Drawing.Color.White;
-            this.lbl_SenderAccountNumber.Location = new System.Drawing.Point(209, 86);
-            this.lbl_SenderAccountNumber.Name = "lbl_SenderAccountNumber";
-            this.lbl_SenderAccountNumber.Size = new System.Drawing.Size(75, 26);
-            this.lbl_SenderAccountNumber.TabIndex = 6;
-            this.lbl_SenderAccountNumber.Text = "A0012";
-            // 
             // lbl_DateTime
             // 
             this.lbl_DateTime.AutoSize = true;
@@ -161,17 +150,6 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Transfer To : ";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 13.2F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(48, 86);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(167, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Transfer From : ";
-            // 
             // lbl_TransferStatus
             // 
             this.lbl_TransferStatus.AutoSize = true;
@@ -193,6 +171,28 @@
             this.label1.Size = new System.Drawing.Size(91, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Status : ";
+            // 
+            // lbl_SenderAccountNumber
+            // 
+            this.lbl_SenderAccountNumber.AutoSize = true;
+            this.lbl_SenderAccountNumber.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold);
+            this.lbl_SenderAccountNumber.ForeColor = System.Drawing.Color.White;
+            this.lbl_SenderAccountNumber.Location = new System.Drawing.Point(209, 86);
+            this.lbl_SenderAccountNumber.Name = "lbl_SenderAccountNumber";
+            this.lbl_SenderAccountNumber.Size = new System.Drawing.Size(75, 26);
+            this.lbl_SenderAccountNumber.TabIndex = 6;
+            this.lbl_SenderAccountNumber.Text = "A0012";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 13.2F);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(48, 86);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(167, 25);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Transfer From : ";
             // 
             // frm_TransferThirdScreen
             // 
@@ -226,11 +226,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_TransferStatus;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbl_DateTime;
         private System.Windows.Forms.Label lbl_ReceiverAccountNumber;
-        private System.Windows.Forms.Label lbl_SenderAccountNumber;
         private System.Windows.Forms.Label lbl_Amount;
+        private System.Windows.Forms.Label lbl_SenderAccountNumber;
+        private System.Windows.Forms.Label label2;
     }
 }

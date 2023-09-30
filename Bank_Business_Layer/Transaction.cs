@@ -157,6 +157,8 @@ namespace Bank_Business_Layer
             else
             {
                 Sender = clsClient.Find(sender_id);
+                SenderBalanceAfter = Sender.Balance - amount;
+                SenderBalanceBefore = Sender.Balance;
             }
 
             if (receiver_id == -1)
@@ -166,6 +168,8 @@ namespace Bank_Business_Layer
             else
             {
                 Receiver = clsClient.Find(receiver_id);
+                ReceiverBalanceBefore = Receiver.Balance;
+                ReceiverBalanceAfter = Receiver.Balance + amount;
             }
 
             if (user_id == -1)
@@ -176,11 +180,6 @@ namespace Bank_Business_Layer
             {
                 User = clsUser.Find(user_id);
             }
-            SenderBalanceBefore = Sender.Balance;
-            ReceiverBalanceBefore = Receiver.Balance;
-
-            SenderBalanceAfter = Sender.Balance - amount;
-            ReceiverBalanceAfter = Receiver.Balance + amount;
 
         }
 
