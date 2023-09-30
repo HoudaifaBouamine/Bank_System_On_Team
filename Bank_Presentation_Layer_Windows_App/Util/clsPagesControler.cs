@@ -14,10 +14,23 @@ namespace Bank_Presentation_Layer_Windows_App.Util
         public clsPagesControler(Panel Container,Dictionary<string,Form> forms)
         {
             Forms = forms;
+
+            foreach(var form in Forms)
+            {
+                Container.Controls.Add(form.Value);
+            }
         }
 
         public void open_page(string FormName)
         {
+
+
+            foreach (var form in Forms)
+            {
+                form.Value.Visible = false;
+            }
+
+            Forms[FormName].Visible = true;
             Forms[FormName].BringToFront();
             Forms[FormName].Select();
         }

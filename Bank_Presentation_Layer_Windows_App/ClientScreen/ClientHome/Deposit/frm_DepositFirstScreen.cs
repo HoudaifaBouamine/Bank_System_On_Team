@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bank_Business_Layer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,19 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Deposit
 {
     public partial class frm_DepositFirstScreen : Form
     {
-        public frm_DepositFirstScreen()
+        clsClient Client;
+        frm_DepositMainScreen Main;
+        public frm_DepositFirstScreen(frm_DepositMainScreen main,clsClient client)
         {
+            Client = client;
+            Main = main;
             InitializeComponent();
+            this.TopLevel = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Main.controler.open_page("Second");
         }
     }
 }

@@ -25,8 +25,8 @@ namespace Bank_Presentation_Layer_Windows_App
         {
 
             //ConnectToDataBase();
-            //OpenChildForm(new frm_ClientScreen(this, clsClient.Find(17)));
-            OpenChildForm(new frm_StartScreen(this));
+            OpenChildForm(new frm_ClientScreen(this, clsClient.Find(17)));
+            //OpenChildForm(new frm_StartScreen(this));
 
              void ConnectToDataBase()
             {
