@@ -32,5 +32,5 @@ The Bank Management System is structured into three main components:
 - [Houdaifa Bouamine](https://github.com/HoudaifaBouamine)
 - [Mohammed Riad](https://github.com/Mohariade)
 - [Belhadj Mehdi Ishaq](https://github.com/ishaq-belhadj-mehdi)
-- [Ishak](https://github.com/IsaacBh1)
+- [Ishak Boukadeh](https://github.com/IsaacBh1)
 
