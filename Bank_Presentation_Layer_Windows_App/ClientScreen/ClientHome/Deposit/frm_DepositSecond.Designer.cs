@@ -62,7 +62,7 @@
             // lbl_Amount
             // 
             this.lbl_Amount.Font = new System.Drawing.Font("Arial", 33.2F, System.Drawing.FontStyle.Bold);
-            this.lbl_Amount.ForeColor = System.Drawing.Color.White;
+            this.lbl_Amount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(56)))));
             this.lbl_Amount.Location = new System.Drawing.Point(363, 192);
             this.lbl_Amount.Name = "lbl_Amount";
             this.lbl_Amount.Size = new System.Drawing.Size(314, 70);

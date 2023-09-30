@@ -27,7 +27,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Deposit
 
         private void frm_DepositSecondScreen_Load(object sender, EventArgs e)
         {
-            lbl_Amount.Text = string.Format("{0:0.00}", Transaction.Amount) + "  $";
+            lbl_Amount.Text = "+"+string.Format("{0:0.00}", Transaction.Amount) + "  $";
             lbl_DateTime.Text = Transaction.TransactionDateTime.ToString();
             lbl_ReceiverAccountNumber.Text = Transaction.Receiver.AccountNumber.ToString();
 

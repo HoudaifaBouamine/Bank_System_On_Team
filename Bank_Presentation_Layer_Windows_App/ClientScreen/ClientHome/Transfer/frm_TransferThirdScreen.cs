@@ -27,7 +27,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
 
         private void init_StatusWindow()
         {
-            lbl_Amount.Text= "+" + string.Format("{0:0.00}", transaction.Amount) + "  $";
+            lbl_Amount.Text = "-" + string.Format("{0:0.00}", transaction.Amount) + "  $";
             lbl_DateTime.Text = transaction.TransactionDateTime.ToString();
             lbl_ReceiverAccountNumber.Text = Receiver.AccountNumber.ToString();
             lbl_SenderAccountNumber.Text = Sender.AccountNumber.ToString();

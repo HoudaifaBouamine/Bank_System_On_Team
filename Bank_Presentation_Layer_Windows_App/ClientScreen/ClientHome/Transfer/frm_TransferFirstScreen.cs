@@ -45,9 +45,10 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
             this.Sender.Refresh();
             double Amount = Convert.ToDouble(tb_Amount.Text.Trim().ToString());
 
-            if(Amount > Receiver.Balance)
+            if(Amount > Sender.Balance)
             {
                 MessageBox.Show($"The Amount you entered [{Amount}] is greater than your balance [{Sender.Balance}]", "Amount not valied", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
 
             main.open_chiled_form(new frm_TransferSecondScreen(main,Sender,Receiver,Amount));
