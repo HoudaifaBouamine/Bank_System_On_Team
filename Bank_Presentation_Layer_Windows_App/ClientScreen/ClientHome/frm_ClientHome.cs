@@ -42,7 +42,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 
         private void btn_Withdraw_Click(object sender, EventArgs e)
         {
-            clientScreen.open_chiled_form(new frm_WithdrawMainScreen(client));
+            clientScreen.open_chiled_form(new frm_WithdrawMainScreen(client)); // NOTE (HOUDAIFA) : Add client as parameter
         }
 
         private void btn_Transfer_Click(object sender, EventArgs e)

@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Deposit
 {
-    public partial class frm_DepositMainScreen : Form
+    public partial class frm_DepositMainScreen : frm_MainBaseClass
     {
         clsClient client = null;
         Dictionary<string, Form> forms = new Dictionary<string, Form>();
@@ -23,13 +23,20 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Deposit
             transaction = new clsTransaction(clsTransaction.enTransaction.eDeposit,-1,client.Client_ID,-1,(int)clsTransaction.enTransaction.eDeposit,-1,DateTime.MinValue);
             InitializeComponent();
 
-            forms.Add("First", new frm_DepositFirstScreen(this,client,transaction));
-            forms.Add("Second", new frm_DepositSecondScreen(this, client,transaction));
+            frm_DepositFirstScreen  firstScreen  = new frm_DepositFirstScreen(this, client, transaction);
+            frm_DepositSecondScreen secondScreen = new frm_DepositSecondScreen(this, client, transaction);
+
+            forms.Add("First", firstScreen);
+            forms.Add("Second", secondScreen);
 
             controler = new clsPagesControler(pnl_Main,forms);
             controler.open_page("First");
         }
 
-        internal clsPagesControler controler = null;
+
+        private void pnl_Main_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

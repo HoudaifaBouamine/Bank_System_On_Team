@@ -1,4 +1,5 @@
 ﻿using Bank_Business_Layer;
+using Bank_Presentation_Layer_Windows_App.Util;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,9 +15,9 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Deposit
     public partial class frm_DepositFirstScreen : Form
     {
         clsClient Client;
-        frm_DepositMainScreen Main;
+        frm_MainBaseClass Main;
         clsTransaction Transaction;
-        public frm_DepositFirstScreen(frm_DepositMainScreen main,clsClient client,clsTransaction transaction)
+        public frm_DepositFirstScreen(frm_MainBaseClass main,clsClient client,clsTransaction transaction)
         {
             Client = client;
             Main = main;
@@ -44,7 +45,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Deposit
             Transaction.Save();
             Client.Save();
 
-            Main.controler.open_page("Second");
+            Main.controler .open_page("Second");
         }
     }
 }
