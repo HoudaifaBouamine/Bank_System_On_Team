@@ -1,6 +1,6 @@
-﻿namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Deposit
+﻿namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Withdraw
 {
-    partial class frm_DepositSecondScreen
+    partial class frm_WithdrawThirdScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.panel5 = new System.Windows.Forms.Panel();
             this.lbl_Amount = new System.Windows.Forms.Label();
-            this.lbl_ReceiverAccountNumber = new System.Windows.Forms.Label();
+            this.lbl_SenderAccountNumber = new System.Windows.Forms.Label();
             this.lbl_DateTime = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,7 +47,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(124)))), ((int)(((byte)(175)))));
             this.panel5.Controls.Add(this.lbl_Amount);
-            this.panel5.Controls.Add(this.lbl_ReceiverAccountNumber);
+            this.panel5.Controls.Add(this.lbl_SenderAccountNumber);
             this.panel5.Controls.Add(this.lbl_DateTime);
             this.panel5.Controls.Add(this.label4);
             this.panel5.Controls.Add(this.label3);
@@ -57,13 +57,12 @@
             this.panel5.Location = new System.Drawing.Point(100, 119);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(730, 370);
-            this.panel5.TabIndex = 9;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            this.panel5.TabIndex = 14;
             // 
             // lbl_Amount
             // 
             this.lbl_Amount.Font = new System.Drawing.Font("Arial", 33.2F, System.Drawing.FontStyle.Bold);
-            this.lbl_Amount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(56)))));
+            this.lbl_Amount.ForeColor = System.Drawing.Color.Red;
             this.lbl_Amount.Location = new System.Drawing.Point(363, 192);
             this.lbl_Amount.Name = "lbl_Amount";
             this.lbl_Amount.Size = new System.Drawing.Size(314, 70);
@@ -71,16 +70,17 @@
             this.lbl_Amount.Text = "100.00  $";
             this.lbl_Amount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // lbl_ReceiverAccountNumber
+            // lbl_SenderAccountNumber
             // 
-            this.lbl_ReceiverAccountNumber.AutoSize = true;
-            this.lbl_ReceiverAccountNumber.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold);
-            this.lbl_ReceiverAccountNumber.ForeColor = System.Drawing.Color.White;
-            this.lbl_ReceiverAccountNumber.Location = new System.Drawing.Point(178, 86);
-            this.lbl_ReceiverAccountNumber.Name = "lbl_ReceiverAccountNumber";
-            this.lbl_ReceiverAccountNumber.Size = new System.Drawing.Size(76, 26);
-            this.lbl_ReceiverAccountNumber.TabIndex = 7;
-            this.lbl_ReceiverAccountNumber.Text = "B1900";
+            this.lbl_SenderAccountNumber.AutoSize = true;
+            this.lbl_SenderAccountNumber.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold);
+            this.lbl_SenderAccountNumber.ForeColor = System.Drawing.Color.White;
+            this.lbl_SenderAccountNumber.Location = new System.Drawing.Point(214, 86);
+            this.lbl_SenderAccountNumber.Name = "lbl_SenderAccountNumber";
+            this.lbl_SenderAccountNumber.Size = new System.Drawing.Size(76, 26);
+            this.lbl_SenderAccountNumber.TabIndex = 7;
+            this.lbl_SenderAccountNumber.Text = "B1900";
+            this.lbl_SenderAccountNumber.Click += new System.EventHandler(this.lbl_ReceiverAccountNumber_Click);
             // 
             // lbl_DateTime
             // 
@@ -111,9 +111,9 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(48, 86);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(136, 25);
+            this.label3.Size = new System.Drawing.Size(201, 25);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Deposit To : ";
+            this.label3.Text = "Withdrowed From : ";
             // 
             // lbl_TransferStatus
             // 
@@ -143,8 +143,7 @@
             this.panel4.Location = new System.Drawing.Point(100, 489);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(730, 231);
-            this.panel4.TabIndex = 8;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            this.panel4.TabIndex = 13;
             // 
             // panel3
             // 
@@ -152,8 +151,7 @@
             this.panel3.Location = new System.Drawing.Point(100, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(730, 119);
-            this.panel3.TabIndex = 7;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            this.panel3.TabIndex = 12;
             // 
             // panel2
             // 
@@ -161,8 +159,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(100, 720);
-            this.panel2.TabIndex = 6;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.panel2.TabIndex = 11;
             // 
             // panel1
             // 
@@ -170,10 +167,9 @@
             this.panel1.Location = new System.Drawing.Point(830, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(100, 720);
-            this.panel1.TabIndex = 5;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panel1.TabIndex = 10;
             // 
-            // frm_DepositSecondScreen
+            // frm_WithdrawSecondScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -187,10 +183,9 @@
             this.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "frm_DepositSecondScreen";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "frm_DepositSecond";
-            this.Load += new System.EventHandler(this.frm_DepositSecondScreen_Load);
+            this.Name = "frm_WithdrawSecondScreen";
+            this.Text = "frm_WithdrawSecondScreen";
+            this.Load += new System.EventHandler(this.frm_WithdrawSecondScreen_Load);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.ResumeLayout(false);
@@ -201,7 +196,7 @@
 
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label lbl_Amount;
-        private System.Windows.Forms.Label lbl_ReceiverAccountNumber;
+        private System.Windows.Forms.Label lbl_SenderAccountNumber;
         private System.Windows.Forms.Label lbl_DateTime;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;

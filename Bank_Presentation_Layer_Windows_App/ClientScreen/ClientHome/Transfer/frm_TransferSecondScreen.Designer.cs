@@ -37,13 +37,13 @@
             this.lbl_ReceiverAccountNumber = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_SendEmail = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.pnl_CheckSpam = new System.Windows.Forms.Panel();
-            this.pnl_NextButton = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.btn_SendEmail = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pnl_NextButton = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.pnl_CheckSpam.SuspendLayout();
             this.pnl_NextButton.SuspendLayout();
@@ -75,6 +75,7 @@
             this.label8.Size = new System.Drawing.Size(475, 37);
             this.label8.TabIndex = 62;
             this.label8.Text = "Verification and Confermation";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // tb_VerificationKey
             // 
@@ -85,6 +86,7 @@
             this.tb_VerificationKey.Name = "tb_VerificationKey";
             this.tb_VerificationKey.Size = new System.Drawing.Size(758, 31);
             this.tb_VerificationKey.TabIndex = 59;
+            this.tb_VerificationKey.TextChanged += new System.EventHandler(this.tb_VerificationKey_TextChanged);
             // 
             // label9
             // 
@@ -95,6 +97,7 @@
             this.label9.Size = new System.Drawing.Size(304, 27);
             this.label9.TabIndex = 61;
             this.label9.Text = "Receiver Account Number :";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label1
             // 
@@ -105,6 +108,7 @@
             this.label1.Size = new System.Drawing.Size(109, 27);
             this.label1.TabIndex = 64;
             this.label1.Text = "Amount :";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // lbl_Amount
             // 
@@ -115,6 +119,7 @@
             this.lbl_Amount.Size = new System.Drawing.Size(72, 29);
             this.lbl_Amount.TabIndex = 65;
             this.lbl_Amount.Text = "100 $";
+            this.lbl_Amount.Click += new System.EventHandler(this.lbl_Amount_Click);
             // 
             // lbl_ReceiverAccountNumber
             // 
@@ -125,6 +130,7 @@
             this.lbl_ReceiverAccountNumber.Size = new System.Drawing.Size(82, 29);
             this.lbl_ReceiverAccountNumber.TabIndex = 66;
             this.lbl_ReceiverAccountNumber.Text = "A1001";
+            this.lbl_ReceiverAccountNumber.Click += new System.EventHandler(this.lbl_ReceiverAccountNumber_Click);
             // 
             // label2
             // 
@@ -135,6 +141,7 @@
             this.label2.Size = new System.Drawing.Size(190, 27);
             this.label2.TabIndex = 67;
             this.label2.Text = "Verification Key :";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel1
             // 
@@ -152,6 +159,36 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(930, 499);
             this.panel1.TabIndex = 68;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btn_SendEmail
+            // 
+            this.btn_SendEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(78)))));
+            this.btn_SendEmail.FlatAppearance.BorderSize = 0;
+            this.btn_SendEmail.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(114)))), ((int)(((byte)(175)))));
+            this.btn_SendEmail.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(59)))), ((int)(((byte)(90)))));
+            this.btn_SendEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_SendEmail.Font = new System.Drawing.Font("Arial", 11F);
+            this.btn_SendEmail.ForeColor = System.Drawing.Color.White;
+            this.btn_SendEmail.Location = new System.Drawing.Point(93, 360);
+            this.btn_SendEmail.Name = "btn_SendEmail";
+            this.btn_SendEmail.Size = new System.Drawing.Size(758, 44);
+            this.btn_SendEmail.TabIndex = 69;
+            this.btn_SendEmail.Text = "Send Email";
+            this.btn_SendEmail.UseVisualStyleBackColor = false;
+            this.btn_SendEmail.Click += new System.EventHandler(this.btn_SendEmail_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(78)))));
+            this.label6.Location = new System.Drawing.Point(135, 318);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(672, 23);
+            this.label6.TabIndex = 68;
+            this.label6.Text = "Press Send Email Button and you will get confimation key on your email box";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // pnl_CheckSpam
             // 
@@ -164,26 +201,6 @@
             this.pnl_CheckSpam.Size = new System.Drawing.Size(930, 43);
             this.pnl_CheckSpam.TabIndex = 69;
             this.pnl_CheckSpam.Visible = false;
-            // 
-            // pnl_NextButton
-            // 
-            this.pnl_NextButton.Controls.Add(this.btn_Confirme);
-            this.pnl_NextButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_NextButton.Location = new System.Drawing.Point(0, 542);
-            this.pnl_NextButton.Name = "pnl_NextButton";
-            this.pnl_NextButton.Size = new System.Drawing.Size(930, 82);
-            this.pnl_NextButton.TabIndex = 70;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(78)))));
-            this.label3.Location = new System.Drawing.Point(77, 13);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(398, 23);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "if you do not find the email , check first your ";
             // 
             // label4
             // 
@@ -207,33 +224,25 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "   if it does not exist press resend button";
             // 
-            // label6
+            // label3
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(78)))));
-            this.label6.Location = new System.Drawing.Point(135, 318);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(672, 23);
-            this.label6.TabIndex = 68;
-            this.label6.Text = "Press Send Email Button and you will get confimation key on your email box";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(78)))));
+            this.label3.Location = new System.Drawing.Point(77, 13);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(398, 23);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "if you do not find the email , check first your ";
             // 
-            // btn_SendEmail
+            // pnl_NextButton
             // 
-            this.btn_SendEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(78)))));
-            this.btn_SendEmail.FlatAppearance.BorderSize = 0;
-            this.btn_SendEmail.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(114)))), ((int)(((byte)(175)))));
-            this.btn_SendEmail.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(59)))), ((int)(((byte)(90)))));
-            this.btn_SendEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_SendEmail.Font = new System.Drawing.Font("Arial", 11F);
-            this.btn_SendEmail.ForeColor = System.Drawing.Color.White;
-            this.btn_SendEmail.Location = new System.Drawing.Point(93, 360);
-            this.btn_SendEmail.Name = "btn_SendEmail";
-            this.btn_SendEmail.Size = new System.Drawing.Size(758, 44);
-            this.btn_SendEmail.TabIndex = 69;
-            this.btn_SendEmail.Text = "Send Email";
-            this.btn_SendEmail.UseVisualStyleBackColor = false;
-            this.btn_SendEmail.Click += new System.EventHandler(this.btn_SendEmail_Click);
+            this.pnl_NextButton.Controls.Add(this.btn_Confirme);
+            this.pnl_NextButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_NextButton.Location = new System.Drawing.Point(0, 542);
+            this.pnl_NextButton.Name = "pnl_NextButton";
+            this.pnl_NextButton.Size = new System.Drawing.Size(930, 82);
+            this.pnl_NextButton.TabIndex = 70;
             // 
             // frm_TransferSecondScreen
             // 
@@ -249,6 +258,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frm_TransferSecondScreen";
             this.Text = "frm_TransferSecondScreen";
+            this.Load += new System.EventHandler(this.frm_TransferSecondScreen_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.pnl_CheckSpam.ResumeLayout(false);

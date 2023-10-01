@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Bank_Business_Layer;
+using Bank_Presentation_Layer_Windows_App.Util;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,14 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Withdraw
 {
     public partial class frm_WithdrawFirstScreen : Form
     {
-        public frm_WithdrawFirstScreen()
+        frm_MainBaseClass Main; clsClient Client; clsTransaction Transaction;
+        public frm_WithdrawFirstScreen(frm_MainBaseClass main, clsClient client,clsTransaction transaction)
         {
+            Main = main;
+            Client = client;
+            Transaction =  transaction;
             InitializeComponent();
+            TopLevel = false;
         }
 
         private void frm_WithdrawFirstScreen_Load(object sender, EventArgs e)
@@ -24,7 +31,29 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Withdraw
 
         private void btn_Next_Click(object sender, EventArgs e)
         {
+            double Amount = Convert.ToDouble( tb_Amount.Text);
 
+            if(Amount <= Client.Balance)
+            {
+                _PrepareTransaction();
+                Main.controler.open_page("Second");
+            }
+            else
+            {
+                MessageBox.Show($"Error,Invalid Amount", $"The Amount [{Amount}] you want to withdraw is greater than your Balance [{Client.Balance}]",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                // Show message
+                return;
+            }
+
+            void _PrepareTransaction()
+            {
+
+
+                Transaction.Amount = Amount;
+                Transaction.SenderBalanceBefore = Client.Balance;
+                Transaction.SenderBalanceAfter = Client.Balance - Amount;
+
+            }
         }
     }
 }

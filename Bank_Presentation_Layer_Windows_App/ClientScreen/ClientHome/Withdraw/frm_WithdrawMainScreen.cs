@@ -22,17 +22,17 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Withdraw
         public frm_WithdrawMainScreen(clsClient client)
         {
             this.client = client;
-            transaction = new clsTransaction(clsTransaction.enTransaction.eDeposit, -1, client.Client_ID, -1, (int)clsTransaction.enTransaction.eDeposit, -1, DateTime.MinValue);
+            transaction = new clsTransaction(clsTransaction.enTransaction.eWithdraw, client.Client_ID,-1, -1, (int)clsTransaction.enTransaction.eWithdraw, -1, DateTime.MinValue);
             InitializeComponent();
 
-            forms.Add("First", new frm_DepositFirstScreen(this, client, transaction));
-            forms.Add("Second", new frm_DepositSecondScreen(this, client, transaction));
+            forms.Add("First", new frm_WithdrawFirstScreen(this, client, transaction));
+            forms.Add("Second", new frm_WithdrawSecondScreen(this, client, transaction));
+            forms.Add("Third", new frm_WithdrawThirdScreen(this, client, transaction));
 
             controler = new clsPagesControler(pnl_Main, forms);
             controler.open_page("First");
         }
 
-        internal clsPagesControler controler = null;
 
        
     }
