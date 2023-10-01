@@ -41,12 +41,10 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             forms.Add("Settings", new frm_ClientSettings(this,client));
 
             controler = new clsPagesControler(pnl_Main, forms);
+
         }
 
-        private void frm_TransferMainScreen_Load(object sender, EventArgs e)
-        {
-            controler.open_page("Home");
-        }
+       
 
         void RefrechTheClientInfo()
         {
@@ -147,7 +145,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 
         private void frm_ClientScreen_Load(object sender, EventArgs e)
         {
-//            timer_Start_Refreaching_Client_Info.Start();
+            controler.open_page("Home");
 
         }
 
