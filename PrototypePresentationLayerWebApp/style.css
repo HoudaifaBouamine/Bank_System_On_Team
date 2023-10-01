@@ -6,6 +6,7 @@ html{
 body{
     height: 100%;
     width: 100%;
+    margin: 100px 0px 0px 22%;
 }
 
 *{
@@ -20,13 +21,23 @@ nav{
     border-bottom: 1px solid #000;
     background: #112D4E;
 
-    height: 50px;
-    padding: 10px;
+    height: 3.5rem;
+    padding: 1rem;
+    width: 100%;
 
     color: #3F72AF;
     padding-left: 20px;
     display: flex;
     justify-content: space-between;
+
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+
+    position: fixed;
+    top: 0;
+    
 }
 
 h1{
@@ -43,7 +54,6 @@ h2{
     font-size: 42px;
     font-weight: 800;
     line-height: 65px;
-    
 
 }
 
@@ -120,7 +130,7 @@ input{
 
 }
 
-input::after{
+input:active{
     border-radius: 0.9375rem;
     border: 1px solid #3F72AF;
     background: #FFF;
@@ -168,6 +178,13 @@ a:active{
     color: #112D4E;
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+
+
 .button{
     display: flex;
     width: 14.375rem;
@@ -195,7 +212,7 @@ a:active{
 
 .label-input{
    flex-direction: column;
-   align-items: stretch;
+   width: 70%;
 }
 
 .button1{
@@ -278,29 +295,28 @@ a:active{
     opacity: 0.8;
 }
 
-
-
-
-footer{
-    display: flex;
-    justify-content: center;
-}
-
-
-
 .main{
     background-image: url("Background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-
-    flex-direction: column;
+    
+    
 
     width: 100%;
     height: 100%;
 
-    justify-content: space-between;
-    align-items: stretch;
+    
+}
+
+#main1{
+    background-image: none;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: column;
+    justify-content: flex-end;
+    
 }
 
 .container{
@@ -308,6 +324,11 @@ footer{
     gap: 5px;
 }
 
+.input-set{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
 .icon{
     padding: 5px;
@@ -362,27 +383,38 @@ footer{
     width: 20rem;
     height: 100%;
     padding-top: 40px;
+
     position: fixed;
     top: 70px;
     left: 0%;
-
+    z-index: 100;
     background: #112D4E;
     
 }
 
-#profile-img{
-    background-color: #DBE2EF;
-    border: solid 4px white;
-
-    width: 42px;
-    height: 42px;
+.country{
+    flex-grow: 1;
 }
 
-#profile-img img{
-    width: 40px;
-    height: 40px;
+.phone-container{
+    gap: 40px;
 }
 
+.fullname-container{
+    gap: 40px;
+}
+
+div .first-name{
+    flex-grow: 1;
+}
+
+div .last-name{
+    flex-grow: 1;
+}
+
+.phone{
+    flex-grow: 9;
+}
 .user{
     padding: 10px;
     height: fit-content;
@@ -430,20 +462,7 @@ footer{
     align-items: center;
 }
 
-#main-content{
-    
-    flex-direction: column;
-    align-self: center;
 
-    position: relative;
-    left: 15%;
-    top: 5%;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 20px;
-}
 
 #get-started{
     align-self: flex-start;
@@ -471,13 +490,47 @@ footer{
 
 }
 
-
-
 #or{
     align-items: center;
     gap: 10px;
 }
 
+#profile-img{
+    background-color: #DBE2EF;
+    border: solid 4px white;
+
+    width: 42px;
+    height: 42px;
+}
+
+#profile-img img{
+    width: 40px;
+    height: 40px;
+}
+
+#settings{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    align-items: stretch;
+   
+}
+
+#wlcm-content{
+    
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    
+    width: fit-content;
+    height: 80%;
+
+    position: relative;
+    left: 50%;
+    top: 20%;
+}
 
 
 
