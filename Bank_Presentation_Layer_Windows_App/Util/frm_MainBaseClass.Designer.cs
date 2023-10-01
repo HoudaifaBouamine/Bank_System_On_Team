@@ -1,6 +1,6 @@
-﻿namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Deposit
+﻿namespace Bank_Presentation_Layer_Windows_App.Util
 {
-    partial class frm_DepositMainScreen
+    partial class frm_MainBaseClass
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.pnl_Main = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // frm_DepositMainScreen
+            // pnl_Main
+            // 
+            this.pnl_Main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_Main.Location = new System.Drawing.Point(0, 0);
+            this.pnl_Main.Name = "pnl_Main";
+            this.pnl_Main.Size = new System.Drawing.Size(930, 720);
+            this.pnl_Main.TabIndex = 0;
+            // 
+            // frm_MainBaseClass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Yellow;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(226)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(930, 720);
-            this.Name = "frm_DepositMainScreen";
-            this.Text = "frm_DepositMainScreen";
+            this.Controls.Add(this.pnl_Main);
+            this.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "frm_MainBaseClass";
+            this.Text = "frm_MainBaseClass";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        public System.Windows.Forms.Panel pnl_Main;
     }
 }

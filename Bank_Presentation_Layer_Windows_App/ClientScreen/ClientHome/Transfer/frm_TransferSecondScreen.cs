@@ -79,6 +79,56 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
             init_Window();
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void frm_TransferSecondScreen_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_ReceiverAccountNumber_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_Amount_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_VerificationKey_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         void init_Window()
         {
             lbl_Amount.Text = string.Format("{0:0.00}", this.Amount) + " $";

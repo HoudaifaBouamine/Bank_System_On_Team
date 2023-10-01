@@ -206,17 +206,11 @@ namespace Bank_Business_Layer
             return Save();
         }
 
-        public bool Withdrawal(double amount)
+        public clsTransaction Withdrawal(double amount)
         {
-            if(Balance >= amount)
-            {
-                Balance -= amount;
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return null;
+
+            // Impliment Withdraw
         }
 
         public clsTransaction Transfer(clsClient receiver,double amount)

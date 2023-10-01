@@ -1,4 +1,5 @@
 ﻿using Bank_Business_Layer;
+using Bank_Presentation_Layer_Windows_App.Util;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,9 +15,9 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Deposit
     public partial class frm_DepositSecondScreen : Form
     {
         clsClient Client;
-        frm_DepositMainScreen Main;
+        frm_MainBaseClass Main;
         clsTransaction Transaction;
-        public frm_DepositSecondScreen(frm_DepositMainScreen main, clsClient client,clsTransaction transaction)
+        public frm_DepositSecondScreen(frm_MainBaseClass main, clsClient client,clsTransaction transaction)
         {
             Client = client;
             Main = main;
@@ -30,6 +31,31 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Deposit
             lbl_Amount.Text = "+"+string.Format("{0:0.00}", Transaction.Amount) + "  $";
             lbl_DateTime.Text = Transaction.TransactionDateTime.ToString();
             lbl_ReceiverAccountNumber.Text = Transaction.Receiver.AccountNumber.ToString();
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

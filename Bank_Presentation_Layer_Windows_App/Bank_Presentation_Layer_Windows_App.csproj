@@ -109,11 +109,23 @@
     <Compile Include="ClientScreen\ClientHome\frm_ClientHome.Designer.cs">
       <DependentUpon>frm_ClientHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawFirstScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawFirstScreen.Designer.cs">
+      <DependentUpon>frm_WithdrawFirstScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawMainScreen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawMainScreen.Designer.cs">
       <DependentUpon>frm_WithdrawMainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawSecondScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawSecondScreen.Designer.cs">
+      <DependentUpon>frm_WithdrawSecondScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="ClientScreen\ClientSettings\frm_ClientSettings.cs">
       <SubType>Form</SubType>
@@ -178,6 +190,12 @@
       <DependentUpon>frm_UserScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Util\clsPagesControler.cs" />
+    <Compile Include="Util\frm_MainBaseClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Util\frm_MainBaseClass.Designer.cs">
+      <DependentUpon>frm_MainBaseClass.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ClientScreen\ClientHome\Deposit\frm_DepositFirstScreen.resx">
       <DependentUpon>frm_DepositFirstScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,8 +226,14 @@
     <EmbeddedResource Include="ClientScreen\ClientHome\frm_ClientHome.resx">
       <DependentUpon>frm_ClientHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawFirstScreen.resx">
+      <DependentUpon>frm_WithdrawFirstScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawMainScreen.resx">
       <DependentUpon>frm_WithdrawMainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawSecondScreen.resx">
+      <DependentUpon>frm_WithdrawSecondScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientScreen\ClientSettings\frm_ClientSettings.resx">
       <DependentUpon>frm_ClientSettings.cs</DependentUpon>
@@ -250,6 +274,9 @@
     </Compile>
     <EmbeddedResource Include="UserScreen\frm_UserScreen.resx">
       <DependentUpon>frm_UserScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Util\frm_MainBaseClass.resx">
+      <DependentUpon>frm_MainBaseClass.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
