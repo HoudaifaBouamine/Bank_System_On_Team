@@ -20,6 +20,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 
             InitializeComponent();
             init_Historique();
+            TopLevel = false;
         }
 
 

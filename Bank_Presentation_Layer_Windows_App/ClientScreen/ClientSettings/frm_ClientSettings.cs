@@ -24,7 +24,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientSettings
 
             Load_Client_Info();
 
-            
+            TopLevel = false;
         }
 
         private void Load_Client_Info()

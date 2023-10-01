@@ -15,9 +15,9 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Deposit
     public partial class frm_DepositFirstScreen : Form
     {
         clsClient Client;
-        frm_MainBaseClass Main;
+        frm_MainBaseForm Main;
         clsTransaction Transaction;
-        public frm_DepositFirstScreen(frm_MainBaseClass main,clsClient client,clsTransaction transaction)
+        public frm_DepositFirstScreen(frm_MainBaseForm main,clsClient client,clsTransaction transaction)
         {
             Client = client;
             Main = main;

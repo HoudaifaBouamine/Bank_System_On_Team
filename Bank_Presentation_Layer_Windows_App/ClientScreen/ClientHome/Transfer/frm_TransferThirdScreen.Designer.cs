@@ -210,6 +210,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frm_TransferThirdScreen";
             this.Text = "frm_TransferThirdScreen";
+            this.Load += new System.EventHandler(this.frm_TransferThirdScreen_Load);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.ResumeLayout(false);

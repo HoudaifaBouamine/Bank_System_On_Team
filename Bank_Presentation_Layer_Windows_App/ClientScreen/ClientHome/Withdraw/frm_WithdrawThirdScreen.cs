@@ -15,8 +15,8 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Withdraw
     public partial class frm_WithdrawThirdScreen : Form
     {
 
-        frm_MainBaseClass Main; clsClient Client; clsTransaction Transaction;
-        public frm_WithdrawThirdScreen(frm_MainBaseClass main, clsClient client, clsTransaction transaction)
+        frm_MainBaseForm Main; clsClient Client; clsTransaction Transaction;
+        public frm_WithdrawThirdScreen(frm_MainBaseForm main, clsClient client, clsTransaction transaction)
         {
             Main = main;
             Client = client;

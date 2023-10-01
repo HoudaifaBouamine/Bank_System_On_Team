@@ -32,7 +32,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             pnl_Balance.Controls.Add(balanceSummary);
             balanceSummary.Dock = DockStyle.Fill;
 
-
+            TopLevel = false;
 
         }
         private void btn_Deposit_Click(object sender, EventArgs e)
@@ -48,6 +48,11 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
         private void btn_Transfer_Click(object sender, EventArgs e)
         {
             clientScreen.open_chiled_form(new frm_TransferMainScreen(client));
+        }
+
+        private void pnl_Transfer_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

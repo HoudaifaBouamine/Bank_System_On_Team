@@ -1,4 +1,5 @@
 ﻿using Bank_Business_Layer;
+using Bank_Presentation_Layer_Windows_App.Util;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,10 +15,21 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
     public partial class frm_TransferSecondScreen : Form
     {
 
-        frm_TransferMainScreen main = null;
-        clsClient Sender,Receiver;
-        double Amount;
+        frm_MainBaseForm Main = null;
+        clsClient Sender = null, Receiver = null;
+        clsTransaction Transaction = null;
         string VerificationKey;
+
+        public frm_TransferSecondScreen(frm_MainBaseForm Main, clsClient Sender, clsClient Receiver, clsTransaction Transaction)
+        {
+            this.Main = Main;
+            this.Sender = Sender;
+            this.Receiver = Receiver;
+            this.Transaction = Transaction;
+
+            InitializeComponent();
+            TopLevel = false;
+        }
         private void btn_SendEmail_Click(object sender, EventArgs e)
         {
 
@@ -50,34 +62,24 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
 
             this.Sender.Refresh();
 
-            if(Sender.Balance < Amount)
+            if(Sender.Balance < Transaction.Amount)
             {
-                MessageBox.Show($"You can not perform this transaction, your balance [{Sender.Balance}] is Less than ammount [{Amount}]", "Balance Not Enough", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"You can not perform this transaction, your balance [{Sender.Balance}] is Less than ammount [{Transaction.Amount}]", "Balance Not Enough", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            clsTransaction transaction = Sender.Transfer(Receiver, Amount);
+            clsTransaction transaction = Sender.Transfer(Receiver, Transaction.Amount);
 
             if (transaction == null)
             {
                 MessageBox.Show("Somthing Went wrong", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            main.open_chiled_form(new frm_TransferThirdScreen(transaction, Sender, Receiver));
+            Main.controler.open_page("Third");
 
         }
 
-        public frm_TransferSecondScreen(frm_TransferMainScreen main, clsClient Sender,clsClient Receiver,double Amount)
-        {
-            this.main = main;
-            this.Sender = Sender;
-            this.Receiver = Receiver;
-            this.Amount = Amount;
-
-            InitializeComponent();
-
-            init_Window();
-        }
+       
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -86,6 +88,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
 
         private void frm_TransferSecondScreen_Load(object sender, EventArgs e)
         {
+            init_Window();
 
         }
 
@@ -131,7 +134,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
 
         void init_Window()
         {
-            lbl_Amount.Text = string.Format("{0:0.00}", this.Amount) + " $";
+            lbl_Amount.Text = string.Format("{0:0.00}", this.Transaction.Amount) + " $";
             lbl_ReceiverAccountNumber.Text = this.Receiver.AccountNumber;
         }
     }

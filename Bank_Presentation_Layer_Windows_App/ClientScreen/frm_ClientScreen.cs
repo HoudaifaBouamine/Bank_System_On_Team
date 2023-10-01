@@ -14,25 +14,38 @@ using System.Windows.Forms;
 using Zeroit.Framework.LineSeparators;
 using System.Threading;
 using System.Xml;
+using Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer;
+using Bank_Presentation_Layer_Windows_App.Util;
 
 namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 {
-    public partial class frm_ClientScreen : Form
+    public partial class frm_ClientScreen : frm_MainBaseForm
     {
 
         frm_MainForm mainForm = null;
         clsClient client;
+
+
+        Dictionary<string, Form> forms = new Dictionary<string, Form>();
+
         public frm_ClientScreen(frm_MainForm mainForm, clsClient client)
         {
             this.mainForm = mainForm;
             this.client = client;
+
             InitializeComponent();
             init_Screen();
 
+            forms.Add("Home", new frm_ClientHome(this,client));
+            forms.Add("Historique", new frm_ClientHistorique(client));
+            forms.Add("Settings", new frm_ClientSettings(this,client));
 
-            open_chiled_form(new frm_ClientHome(this, client));
-            //open_chiled_form(new frm_ClientHistorique(client));
-            //open_chiled_form(new frm_ClientSettings(this,client));
+            controler = new clsPagesControler(pnl_Main, forms);
+        }
+
+        private void frm_TransferMainScreen_Load(object sender, EventArgs e)
+        {
+            controler.open_page("Home");
         }
 
         void RefrechTheClientInfo()
@@ -69,12 +82,12 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
         }
         private void btn_Home_Click_1(object sender, EventArgs e)
         {
-            open_chiled_form(new frm_ClientHome(this, client));
+            controler.open_page("Home");
         }
 
         private void btn_Settings_Click_1(object sender, EventArgs e)
         {
-            open_chiled_form(new frm_ClientSettings(this, client));
+            controler.open_page("Settings");
 
         }
 
@@ -110,7 +123,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 
         private void btn_Historique_Click_1(object sender, EventArgs e)
         {
-            open_chiled_form(new frm_ClientHistorique(client));
+            controler.open_page("Historique");
         }
 
         private void btn_Logout_Click(object sender, EventArgs e)

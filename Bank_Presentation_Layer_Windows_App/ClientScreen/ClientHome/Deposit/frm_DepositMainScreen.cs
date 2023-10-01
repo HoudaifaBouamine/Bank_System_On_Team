@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Deposit
 {
-    public partial class frm_DepositMainScreen : frm_MainBaseClass
+    public partial class frm_DepositMainScreen : frm_MainBaseForm
     {
         clsClient client = null;
         Dictionary<string, Form> forms = new Dictionary<string, Form>();
