@@ -392,7 +392,29 @@ footer{
     
 }
 
+.country{
+    flex-grow: 1;
+}
 
+.phone-container{
+    gap: 40px;
+}
+
+.fullname-container{
+    gap: 40px;
+}
+
+div .first-name{
+    flex-grow: 1;
+}
+
+div .last-name{
+    flex-grow: 1;
+}
+
+.phone{
+    flex-grow: 9;
+}
 .user{
     padding: 10px;
     height: fit-content;
