@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Bank_Presentation_Layer_Web_App/1.0.0": {
+        "runtime": {
+          "Bank_Presentation_Layer_Web_App.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Bank_Presentation_Layer_Web_App/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
