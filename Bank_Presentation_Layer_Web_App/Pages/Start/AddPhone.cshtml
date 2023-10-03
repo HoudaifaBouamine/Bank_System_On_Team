@@ -1,0 +1,31 @@
+﻿@page
+@model Bank_Presentation_Layer_Web_App.Pages.Start.AddPhoneModel
+@{
+}
+
+
+<section class="main-div">
+
+    <div class="container" id="sign-up">
+        <div>
+            <h3>Add phone</h3>
+        </div>
+
+
+        <div class="label-input container">
+            <label>Phone number</label>
+            <input class="input0" type="number" size="10" placeholder="00 00 00 00 00" pattern="[0-9]{10}" step="none">
+        </div>
+
+        <form asp-page="../Client/Home">
+            <button class="fill-container">Sign Up</button>
+        </form>
+
+        <form asp-page="../Client/Home">
+            <button class="fill-container">Skip</button>
+        </form>
+
+    </div>
+
+
+</section>

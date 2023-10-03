@@ -23,12 +23,13 @@
             <input type="password" placeholder="Enter your password">
         </div>
 
-
-        <button class="fill-container">Sign Up</button>
+        <form asp-page="EmailVerification">
+            <button class="fill-container">Sign Up</button>
+        </form>
 
         <div class="container fill-container hint">
             <p class="caption">Already have an acount?</p>
-            <a asp-page="../Index">Login</a>
+            <a asp-page="Login">Login</a>
         </div>
 
         <div class="container" id="or">

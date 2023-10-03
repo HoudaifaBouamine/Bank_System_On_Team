@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Pages\Client\" />
     <Folder Include="wwwroot\pic\" />
   </ItemGroup>
 
