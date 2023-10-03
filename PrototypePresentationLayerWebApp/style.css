@@ -166,15 +166,7 @@ label{
 
 
 
-.caption{
-    color: #000;
-    text-align: center;
-    
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
+
 
 a{
     text-decoration: none;
@@ -204,13 +196,7 @@ footer{
 }
 
 
-.body-style0{
-    background-image: url("Background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-}
+
 
 
 .main-div{
@@ -219,10 +205,23 @@ footer{
 
     display: flex;
     flex-direction: column;
-
     justify-content: space-between;
+
+    background-image: url("Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+
+.caption{
+    color: #000;
+    text-align: center;
+    
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
 
 .button{
     display: flex;
@@ -335,16 +334,7 @@ footer{
 
 
 
-#main1{
-    background-image: none;
-    background-color: red;
-    display: flex;
-    flex-wrap: wrap;
 
-    flex-direction: column;
-    justify-content: flex-end;
-    
-}
 
 .container{
     display: flex;
@@ -450,11 +440,7 @@ div .last-name{
 }
 
 
-.main-container{
-    margin: 80px 0 0 20%;
-    padding: 40px;
-    padding: 40px;
-}
+
 
 
 .user{
@@ -608,7 +594,7 @@ div .last-name{
     padding: 20px;
 
 
-    background-color: #FFF;
+    background-color: yellowgreen;
     border-radius: 0.9375rem;
     box-shadow: 0px 20px 24px 0px rgba(0, 0, 0, 0.10);
    

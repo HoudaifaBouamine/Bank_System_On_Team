@@ -202,10 +202,21 @@ footer {
     justify-content: space-between;
 }
 
+.main-container {
+    margin-top: 100px;
+    margin-left: 15%;
+   
+    padding-left: 0;
 
-.button {
+    width: 80%;
+    height: 100%;
+    
+    padding-right: 20px;
+}
+
+.button0 {
     display: flex;
-    width: 14.375rem;
+    width: 100%;
     padding: 0.625rem;
     justify-content: center;
     align-items: center;
@@ -217,6 +228,27 @@ footer {
     font-weight: 600;
     line-height: normal;
     color: #FFF;
+    border-radius: 0.9375rem;
+    background: #112D4E;
+    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.button {
+    display: flex;
+    
+    padding: 0.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    
     border-radius: 0.9375rem;
     background: #112D4E;
     box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.15);
@@ -415,11 +447,7 @@ div .last-name {
 }
 
 
-.main-container {
-    margin: 80px 0 0 20%;
-    padding: 40px;
-    padding: 40px;
-}
+
 
 
 .user {
@@ -553,7 +581,7 @@ div .last-name {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 100%;
+    
     align-items: stretch;
     padding: 20px;
     background-color: #FFF;
