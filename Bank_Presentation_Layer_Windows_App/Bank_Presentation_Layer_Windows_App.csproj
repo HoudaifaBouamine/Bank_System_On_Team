@@ -127,6 +127,12 @@
     <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawSecondScreen.Designer.cs">
       <DependentUpon>frm_WithdrawSecondScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawThirdScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawThirdScreen.Designer.cs">
+      <DependentUpon>frm_WithdrawThirdScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClientScreen\ClientSettings\frm_ClientSettings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -235,6 +241,9 @@
     <EmbeddedResource Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawSecondScreen.resx">
       <DependentUpon>frm_WithdrawSecondScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawThirdScreen.resx">
+      <DependentUpon>frm_WithdrawThirdScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClientScreen\ClientSettings\frm_ClientSettings.resx">
       <DependentUpon>frm_ClientSettings.cs</DependentUpon>
     </EmbeddedResource>
@@ -303,6 +312,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_Deposit_Withdraw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_Transfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_and_Title.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

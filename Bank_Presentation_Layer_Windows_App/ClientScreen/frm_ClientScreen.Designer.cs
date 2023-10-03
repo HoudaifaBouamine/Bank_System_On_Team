@@ -41,7 +41,6 @@
             this.lbl_UserType = new System.Windows.Forms.Label();
             this.lbl_ClientFullName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pnl_Main = new System.Windows.Forms.Panel();
             this.timer_Start_Refreaching_Client_Info = new System.Windows.Forms.Timer(this.components);
             this.pnl_Menu.SuspendLayout();
             this.pnl_Profile.SuspendLayout();
@@ -245,7 +244,6 @@
         #endregion
 
         private System.Windows.Forms.Panel pnl_Menu;
-        private System.Windows.Forms.Panel pnl_Main;
         private System.Windows.Forms.Panel pnl_Profile;
         private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Label lbl_ClientFullName;

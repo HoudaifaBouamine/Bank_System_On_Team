@@ -17,9 +17,9 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Withdraw
     public partial class frm_WithdrawSecondScreen : Form
     {
 
-        frm_MainBaseClass Main; clsClient Client; clsTransaction Transaction;
+        frm_MainBaseForm Main; clsClient Client; clsTransaction Transaction;
         string VerificationKey = "";
-        public frm_WithdrawSecondScreen(frm_MainBaseClass main, clsClient client, clsTransaction transaction)
+        public frm_WithdrawSecondScreen(frm_MainBaseForm main, clsClient client, clsTransaction transaction)
         {
             Main = main;
             Client = client;
@@ -74,8 +74,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Withdraw
                 return;
             }
 
-            Transaction = Client.Withdrawal(Transaction.Amount);
-            // Impliment winthdrawl
+            Client.Withdrawal(ref Transaction);
 
 
             if (Transaction == null)

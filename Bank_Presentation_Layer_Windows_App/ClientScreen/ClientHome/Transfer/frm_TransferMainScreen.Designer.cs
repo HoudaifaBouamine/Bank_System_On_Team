@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnl_Main = new System.Windows.Forms.Panel();
+            
             this.SuspendLayout();
             // 
             // pnlMain
@@ -58,6 +58,5 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel pnl_Main;
     }
 }

@@ -68,6 +68,20 @@ namespace Bank_Business_Layer
             return client;
         }
 
+        static public bool Find(ref clsClient Client,int Client_ID)
+        {
+            Client = clsClient.Find(Client_ID);
+
+            return Client != null;
+        }
+
+        static public bool Find_AccNum(ref clsClient Client,string AccountNumber)
+        {
+            Client = clsClient.Find_AccNum(AccountNumber);
+
+            return Client != null;
+        }
+
 
         public static clsClient Find_AccNum(string AccNum)
         {
@@ -213,6 +227,47 @@ namespace Bank_Business_Layer
             // Impliment Withdraw
         }
 
+        public bool Withdrawal(ref clsTransaction transaction)
+        {
+            this.Refresh();
+
+            if (transaction.Amount > this.Balance) return false;
+
+            transaction.TransactionType_ID = (int) clsTransaction.enTransaction.eWithdraw;
+            transaction.TransactionDateTime = DateTime.Now;
+            transaction.SenderBalanceBefore = this.Balance;
+            transaction.Receiver = null;
+            transaction.User = null;
+
+
+            this.Balance -= transaction.Amount;
+
+            if (!this.Save())
+            {
+                this.Balance += transaction.Amount;
+                return false;
+            }
+            
+            transaction.SenderBalanceAfter = this.Balance;
+
+            if (!transaction.Save())
+            {
+                this.Balance += transaction.Amount;
+
+                if (!this.Save())
+                {
+                    // Non Saved Transaction
+                }
+
+                return false;
+            }
+
+
+
+            return true;
+
+        }
+
         public clsTransaction Transfer(clsClient receiver,double amount)
         {
             this.Refresh();
@@ -280,6 +335,23 @@ namespace Bank_Business_Layer
             }
         }
 
+        public void Copy(clsClient source)
+        {
+            // Copy values from source to this instance
+            this.Client_ID = source.Client_ID;
+            this.AccountNumber = source.AccountNumber;
+            this.Email = source.Email;
+            this.PinCode = source.PinCode;
+            this.Phone = source.Phone;
+            this.Balance = source.Balance;
+            this.Mode = source.Mode;
+            this.Person_ID = source.Person_ID;
+            this.FirstName = source.FirstName;
+            this.LastName = source.LastName;
+            this.Country = source.Country;
+            this.City = source.City;
+            this.Street = source.Street;
+        }
         public int Client_ID { get; private set; }
         public string AccountNumber { get; set; }
         public string Email { get; set; }

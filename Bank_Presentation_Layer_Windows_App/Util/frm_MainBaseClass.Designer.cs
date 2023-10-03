@@ -1,6 +1,6 @@
 ﻿namespace Bank_Presentation_Layer_Windows_App.Util
 {
-    partial class frm_MainBaseClass
+    partial class frm_MainBaseForm
     {
         /// <summary>
         /// Required designer variable.

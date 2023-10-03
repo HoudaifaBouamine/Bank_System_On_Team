@@ -1,5 +1,6 @@
 ﻿using Bank_Business_Layer;
 using Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Deposit;
+using Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer;
 using Bank_Presentation_Layer_Windows_App.Util;
 using System;
 using System.Collections.Generic;
@@ -13,7 +14,7 @@ using System.Windows.Forms;
 
 namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Withdraw
 {
-    public partial class frm_WithdrawMainScreen : frm_MainBaseClass
+    public partial class frm_WithdrawMainScreen : frm_MainBaseForm
     {
 
         clsClient client = null;

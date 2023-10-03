@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Bank_Presentation_Layer_Windows_App.Util
 {
-    public partial class frm_MainBaseClass : Form
+    public partial class frm_MainBaseForm : Form
     {
-        public frm_MainBaseClass()
+        public frm_MainBaseForm()
         {
             InitializeComponent();
         }

@@ -1,4 +1,5 @@
 ﻿using Bank_Business_Layer;
+using Bank_Presentation_Layer_Windows_App.Util;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,14 +14,18 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
 {
     public partial class frm_TransferFirstScreen : Form
     {
-        frm_TransferMainScreen main = null;
-        clsClient Sender = null;
-        public frm_TransferFirstScreen(frm_TransferMainScreen main,clsClient client)
+        frm_MainBaseForm Main = null;
+        clsClient Sender = null, Receiver = null;
+        clsTransaction Transaction = null;
+        public frm_TransferFirstScreen(frm_MainBaseForm Main,clsClient Sender,clsClient Receiver,clsTransaction Transaction)
         {
-            this.main = main;
-            this.Sender = client;
+            this.Main = Main;
+            this.Sender = Sender;
+            this.Receiver = Receiver;
+            this.Transaction = Transaction;
             
             InitializeComponent();
+            TopLevel = false;
         }
 
         private void btn_Next_Click(object sender, EventArgs e)
@@ -34,9 +39,14 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
                 return;
             }
 
-            clsClient Receiver = clsClient.Find_AccNum(Receiver_AccountNumber);
+            clsClient tmp_Receiver = clsClient.Find_AccNum(Receiver_AccountNumber);
 
-            if(Receiver == null)
+            if (tmp_Receiver != null)
+            {
+                Receiver.Copy(tmp_Receiver);
+            }
+
+            if (Receiver == null)
             {
                 MessageBox.Show($"Client With account number [{Receiver_AccountNumber}] is Not found","Receiver Not Found",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 return;
@@ -51,7 +61,8 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
                 return;
             }
 
-            main.open_chiled_form(new frm_TransferSecondScreen(main,Sender,Receiver,Amount));
+            Transaction.Amount = Amount;
+            Main.controler.open_page("Second");
         }
     }
 }
