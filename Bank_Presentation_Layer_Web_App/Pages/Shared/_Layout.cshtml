@@ -4,40 +4,44 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Bank_Presentation_Layer_Web_App</title>
-    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
-    
+@*     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+ *@    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+@*     <link rel="stylesheet" href="~/Bank_Presentation_Layer_Web_App.styles.css" asp-append-version="true" />
+ *@
 </head>
 <body>
+    <header>
+        <nav class="navbar">
 
-    <section class="main">
-        <header>
-            <nav class="navbar">
-
-                <div class="container" id="company">
-                    <div class="icon" id="logo-icon">
-                        <img src="pic/LOGO.png">
-                    </div>
-                    <div class="icon-name" id="logo-name">
-                        HOUDHIFA'S BANK
-                    </div>
+            <div class="container" id="company">
+                <div class="icon" id="logo-icon">
+                    <img src="pic/LOGO.png">
                 </div>
+                <div class="icon-name" id="logo-name">
+                    HOUDHIFA'S BANK
+                </div>
+            </div>
 
-                <button class="button2">Log In</button>
-           
-            </nav>
-        </header>
+            <button class="button2">Log In</button>
 
+        </nav>
+    </header>
+
+   
+            @RenderBody()
+
+    
+
+    <footer class="border-top footer text-muted">
         <div class="container">
-            <main class="pb-3">
-                @RenderBody()
-            </main>
-        </div>
-
-        <footer>
             this is footer
-        </footer>
-    </section>
- 
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
