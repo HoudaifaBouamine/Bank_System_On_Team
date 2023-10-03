@@ -195,6 +195,10 @@ a:active{
 footer{
     display: flex;
     justify-content: center;
+    background-color: #112D4E;
+
+
+   
 }
 
 
@@ -318,11 +322,6 @@ footer{
     width: 100%;
     height: 100%;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
 }
 
 #main1{
