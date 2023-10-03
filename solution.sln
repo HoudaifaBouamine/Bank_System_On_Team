@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank_Data_Layer", "Bank_Dat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank_Presentation_Layer_Windows_App", "Bank_Presentation_Layer_Windows_App\Bank_Presentation_Layer_Windows_App.csproj", "{2B9599C1-1A82-4731-90B6-489F2CB6A5A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank_Presentation_Layer_Web_App", "Bank_Presentation_Layer_Web_App\Bank_Presentation_Layer_Web_App.csproj", "{CFB12B75-CB05-4D4E-8138-E488F58962C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{2B9599C1-1A82-4731-90B6-489F2CB6A5A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B9599C1-1A82-4731-90B6-489F2CB6A5A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B9599C1-1A82-4731-90B6-489F2CB6A5A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFB12B75-CB05-4D4E-8138-E488F58962C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFB12B75-CB05-4D4E-8138-E488F58962C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFB12B75-CB05-4D4E-8138-E488F58962C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFB12B75-CB05-4D4E-8138-E488F58962C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
