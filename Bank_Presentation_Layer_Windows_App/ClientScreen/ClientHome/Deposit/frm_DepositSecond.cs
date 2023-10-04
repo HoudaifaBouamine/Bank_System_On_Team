@@ -24,6 +24,8 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Deposit
             Transaction = transaction;
             InitializeComponent();
             this.TopLevel = false;
+
+            
         }
 
         private void frm_DepositSecondScreen_Load(object sender, EventArgs e)
@@ -32,31 +34,9 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Deposit
             lbl_DateTime.Text = Transaction.TransactionDateTime.ToString();
             lbl_ReceiverAccountNumber.Text = Transaction.Receiver.AccountNumber.ToString();
 
+            clsGlobal.NeedToRefrech = true;
         }
 
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+     
     }
 }

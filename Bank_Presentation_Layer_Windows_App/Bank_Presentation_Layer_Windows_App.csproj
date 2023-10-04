@@ -175,6 +175,7 @@
     <Compile Include="ClientStartScreen\Sub_StartScreens\ucVerifyEmail.Designer.cs">
       <DependentUpon>ucVerifyEmail.cs</DependentUpon>
     </Compile>
+    <Compile Include="Util\clsGlobal.cs" />
     <Compile Include="frm_Main.cs">
       <SubType>Form</SubType>
     </Compile>

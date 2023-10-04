@@ -53,7 +53,7 @@ namespace Bank_Data_Layer
                     Email = (string)reader["Email"];
                     PinCode = (string)reader["PinCode"];
                     Phone = (string)reader["Phone"];
-                    Balance = Convert.ToInt32( reader["Balance"]);
+                    Balance = Convert.ToDouble( reader["Balance"]);
 
 
                     isFound = true;
@@ -115,7 +115,7 @@ namespace Bank_Data_Layer
                     Street = (string)reader["Street"];
                     PinCode = (string)reader["PinCode"];
                     Phone = (string)reader["Phone"];
-                    Balance = Convert.ToInt32(reader["Balance"]);
+                    Balance = Convert.ToDouble(reader["Balance"]);
 
 
                     isFound = true;
@@ -177,8 +177,8 @@ namespace Bank_Data_Layer
                     Email = (string)reader["Email"];
                     PinCode = (string)reader["PinCode"];
                     Phone = (string)reader["Phone"];
-                    Balance = Convert.ToInt32(reader["Balance"]);
-
+                    Balance = Convert.ToDouble(reader["Balance"]);
+                        
 
                     isFound = true;
                 }

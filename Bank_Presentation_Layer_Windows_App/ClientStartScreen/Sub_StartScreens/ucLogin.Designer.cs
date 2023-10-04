@@ -148,6 +148,7 @@
             this.cb_Login_as_user.TabIndex = 16;
             this.cb_Login_as_user.Text = "Login as user";
             this.cb_Login_as_user.UseVisualStyleBackColor = false;
+            this.cb_Login_as_user.Visible = false;
             this.cb_Login_as_user.CheckedChanged += new System.EventHandler(this.cb_Login_as_user_CheckedChanged);
             // 
             // cb_Login_Email

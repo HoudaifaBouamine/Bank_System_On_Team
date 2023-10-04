@@ -69,7 +69,7 @@
             this.tb_Amount.Location = new System.Drawing.Point(104, 336);
             this.tb_Amount.Name = "tb_Amount";
             this.tb_Amount.Size = new System.Drawing.Size(758, 31);
-            this.tb_Amount.TabIndex = 59;
+            this.tb_Amount.TabIndex = 0;
             // 
             // label9
             // 
@@ -83,6 +83,7 @@
             // 
             // frm_DepositFirstScreen
             // 
+            this.AcceptButton = this.btn_Next;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(226)))), ((int)(((byte)(239)))));

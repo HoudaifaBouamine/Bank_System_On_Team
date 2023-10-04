@@ -22,12 +22,12 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientSettings
             this.clientScreen = clientScreen;
             InitializeComponent();
 
-            Load_Client_Info();
+            init_Settings();
 
             TopLevel = false;
         }
 
-        private void Load_Client_Info()
+        public void init_Settings()
         {
 
             tb_AccountNumber.Text = client.AccountNumber;
@@ -43,15 +43,6 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientSettings
             tb_Phone.Text = client.Phone;
         }
 
-        private void tb_Phone_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void frm_ClientSettings_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_SaveClientInfo_Click(object sender, EventArgs e)
         {
@@ -107,7 +98,16 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientSettings
 
         private void btn_Reset_Click(object sender, EventArgs e)
         {
-            Load_Client_Info();
+            init_Settings();
+        }
+
+        private void frm_ClientSettings_Paint(object sender, PaintEventArgs e)
+        {
+            if (clsGlobal.Refrech[clsGlobal.enPage.Client_Settings])
+            {
+                init_Settings();
+                clsGlobal.Refrech[clsGlobal.enPage.Client_Settings] = false;
+            }
         }
     }
 }

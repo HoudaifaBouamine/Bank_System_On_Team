@@ -28,13 +28,26 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 
             InitializeComponent();
 
-            ucClientBalanceSummary balanceSummary = new ucClientBalanceSummary(client);
-            pnl_Balance.Controls.Add(balanceSummary);
-            balanceSummary.Dock = DockStyle.Fill;
 
             TopLevel = false;
 
         }
+
+        public void init_Home()
+        {
+
+            ucClientBalanceSummary balanceSummary = new ucClientBalanceSummary(client);
+
+            if(pnl_Balance.Controls.Count != 0)
+            {
+                pnl_Balance.Controls.Clear();
+            }
+
+            pnl_Balance.Controls.Add(balanceSummary);
+            balanceSummary.Dock = DockStyle.Fill;
+        }
+
+
         private void btn_Deposit_Click(object sender, EventArgs e)
         {
             clientScreen.open_chiled_form(new frm_DepositMainScreen(client));
@@ -50,8 +63,23 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             clientScreen.open_chiled_form(new frm_TransferMainScreen(client));
         }
 
-        private void pnl_Transfer_Paint(object sender, PaintEventArgs e)
+
+
+        private void frm_ClientHome_Load(object sender, EventArgs e)
         {
+            init_Home();
+
+        }
+
+      
+
+        private void frm_ClientHome_Paint(object sender, PaintEventArgs e)
+        {
+            if (clsGlobal.Refrech[clsGlobal.enPage.Client_Home])
+            {
+                init_Home();
+                clsGlobal.Refrech[clsGlobal.enPage.Client_Home] = false;
+            }
 
         }
     }

@@ -183,7 +183,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientStartScreen
                 }
                 else
                 {
-                    MessageBox.Show("Login Failed , client Email Not found", "Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Login Failed , client email Not found", "Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 }
 
@@ -214,7 +214,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientStartScreen
                 }
                 else
                 {
-                    MessageBox.Show("Login Failed , client Email Not found", "Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Login Failed , client account number Not found", "Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 }
 

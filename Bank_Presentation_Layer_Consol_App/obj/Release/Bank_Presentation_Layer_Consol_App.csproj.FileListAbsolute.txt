@@ -1,0 +1,12 @@
+C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\bin\Release\Bank_Presentation_Layer_Consol_App.exe.config
+C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\bin\Release\Bank_Presentation_Layer_Consol_App.exe
+C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\bin\Release\Bank_Presentation_Layer_Consol_App.pdb
+C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\bin\Release\Bank_Business_Layer.dll
+C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\bin\Release\Bank_Data_Layer.dll
+C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\bin\Release\Bank_Business_Layer.pdb
+C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\bin\Release\Bank_Data_Layer.pdb
+C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\obj\Release\Bank_Presentation_Layer_Consol_App.csproj.AssemblyReference.cache
+C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\obj\Release\Bank_Presentation_Layer_Consol_App.csproj.CoreCompileInputs.cache
+C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\obj\Release\Bank_Presentation_Layer_Consol_App.csproj.CopyComplete
+C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\obj\Release\Bank_Presentation_Layer_Consol_App.exe
+C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Consol_App\obj\Release\Bank_Presentation_Layer_Consol_App.pdb

@@ -231,6 +231,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frm_ClientHistorique";
             this.Text = "ClientHistorique";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.frm_ClientHistorique_Paint);
             this.panel3.ResumeLayout(false);
             this.pnl_Balance.ResumeLayout(false);
             this.pnl_Balance.PerformLayout();
