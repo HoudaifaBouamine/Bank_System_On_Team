@@ -16,8 +16,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Web_App
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/houda/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Client/Historique.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50XEhpc3RvcmlxdWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/houda/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Client/Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50XEhvbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/houda/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Client/Settings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50XFNldHRpbmdzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/houda/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Error.cshtml]

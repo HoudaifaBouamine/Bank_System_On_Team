@@ -24,7 +24,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
         }
 
 
-        private void init_Historique()
+        public void init_Historique()
         {
             dgv_ClientTransactionsList.DataSource = get_table();
             lbl_Balance.Text = string.Format("{0:0.00}", client.Balance) + "$";
@@ -106,6 +106,17 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 
             }
 
+        }
+
+
+        private void frm_ClientHistorique_Paint(object sender, PaintEventArgs e)
+        {
+
+            if (clsGlobal.Refrech[clsGlobal.enPage.Client_Historique])
+            {
+                init_Historique();
+                clsGlobal.Refrech[clsGlobal.enPage.Client_Historique] = false;
+            }
         }
     }
 }

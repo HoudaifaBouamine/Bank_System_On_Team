@@ -34,7 +34,9 @@ namespace Bank_Presentation_Layer_Windows_App.Util
             Forms[FormName].Visible = true;
             Forms[FormName].Show();
             Forms[FormName].BringToFront();
-            Forms[FormName].Select();
+            Forms[FormName].Activate();
+
+
         }
     }
 }

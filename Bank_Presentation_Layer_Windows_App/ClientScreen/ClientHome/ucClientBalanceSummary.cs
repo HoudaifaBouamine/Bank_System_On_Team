@@ -26,7 +26,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome
 
         private void init_Balance_Recent()
         {
-            this.lbl_Balance.Text = string.Format("{0:0.00}", client.Balance) + " $";
+            this.lbl_Balance.Text = string.Format("{0:0.00}", client.Balance) + "$";
 
             DataTable table = client.Transactions_List();
 

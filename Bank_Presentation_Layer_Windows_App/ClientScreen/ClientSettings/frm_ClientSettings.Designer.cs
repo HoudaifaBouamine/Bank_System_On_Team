@@ -115,7 +115,6 @@
             this.tb_Phone.Name = "tb_Phone";
             this.tb_Phone.Size = new System.Drawing.Size(758, 31);
             this.tb_Phone.TabIndex = 6;
-            this.tb_Phone.TextChanged += new System.EventHandler(this.tb_Phone_TextChanged);
             // 
             // label9
             // 
@@ -272,7 +271,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 911);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(909, 56);
+            this.panel1.Size = new System.Drawing.Size(930, 56);
             this.panel1.TabIndex = 46;
             // 
             // btn_SaveClientInfo
@@ -316,7 +315,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(226)))), ((int)(((byte)(239)))));
-            this.ClientSize = new System.Drawing.Size(930, 940);
+            this.ClientSize = new System.Drawing.Size(951, 940);
             this.Controls.Add(this.btn_Reset);
             this.Controls.Add(this.btn_SaveClientInfo);
             this.Controls.Add(this.panel1);
@@ -347,7 +346,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frm_ClientSettings";
             this.Text = "frm_ClientSettings";
-            this.Load += new System.EventHandler(this.frm_ClientSettings_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.frm_ClientSettings_Paint);
             this.ResumeLayout(false);
             this.PerformLayout();
 

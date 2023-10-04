@@ -38,18 +38,18 @@
             // 
             this.lbl_Title.BackColor = System.Drawing.Color.Transparent;
             this.lbl_Title.Font = new System.Drawing.Font("Arial", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Title.Location = new System.Drawing.Point(0, 99);
+            this.lbl_Title.Location = new System.Drawing.Point(-3, 176);
             this.lbl_Title.Name = "lbl_Title";
             this.lbl_Title.Size = new System.Drawing.Size(500, 170);
             this.lbl_Title.TabIndex = 0;
-            this.lbl_Title.Text = "Lorem ipsum\ndolor sit amet";
+            this.lbl_Title.Text = "Welcome to\r\nHoudaifa Bank\r\n";
             this.lbl_Title.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 10F);
-            this.label1.Location = new System.Drawing.Point(0, 269);
+            this.label1.Location = new System.Drawing.Point(-3, 320);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(500, 162);
             this.label1.TabIndex = 1;
@@ -65,7 +65,7 @@
             this.btn_GetStarted.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_GetStarted.Font = new System.Drawing.Font("Arial", 10F);
             this.btn_GetStarted.ForeColor = System.Drawing.Color.White;
-            this.btn_GetStarted.Location = new System.Drawing.Point(0, 434);
+            this.btn_GetStarted.Location = new System.Drawing.Point(-3, 497);
             this.btn_GetStarted.Name = "btn_GetStarted";
             this.btn_GetStarted.Size = new System.Drawing.Size(201, 44);
             this.btn_GetStarted.TabIndex = 4;

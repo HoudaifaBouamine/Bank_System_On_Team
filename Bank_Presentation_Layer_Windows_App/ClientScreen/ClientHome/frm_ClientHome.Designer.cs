@@ -34,21 +34,21 @@
             this.pnl_Main = new System.Windows.Forms.Panel();
             this.pnl_Withdraw = new System.Windows.Forms.Panel();
             this.btn_Withdraw = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnl_Transfer = new System.Windows.Forms.Panel();
             this.btn_Transfer = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pnl_Deposit = new System.Windows.Forms.Panel();
             this.btn_Deposit = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pnl_Main.SuspendLayout();
             this.pnl_Withdraw.SuspendLayout();
-            this.pnl_Transfer.SuspendLayout();
-            this.pnl_Deposit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pnl_Transfer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.pnl_Deposit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
@@ -117,6 +117,17 @@
             this.btn_Withdraw.UseVisualStyleBackColor = false;
             this.btn_Withdraw.Click += new System.EventHandler(this.btn_Withdraw_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.BackgroundImage = global::Bank_Presentation_Layer_Windows_App.Properties.Resources.img_Deposit_Withdraw;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(13, 17);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(234, 200);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // pnl_Transfer
             // 
             this.pnl_Transfer.BackColor = System.Drawing.Color.White;
@@ -126,7 +137,6 @@
             this.pnl_Transfer.Name = "pnl_Transfer";
             this.pnl_Transfer.Size = new System.Drawing.Size(261, 335);
             this.pnl_Transfer.TabIndex = 30;
-            this.pnl_Transfer.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_Transfer_Paint);
             // 
             // btn_Transfer
             // 
@@ -145,6 +155,17 @@
             this.btn_Transfer.Text = "Transfer";
             this.btn_Transfer.UseVisualStyleBackColor = false;
             this.btn_Transfer.Click += new System.EventHandler(this.btn_Transfer_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox5.BackgroundImage = global::Bank_Presentation_Layer_Windows_App.Properties.Resources.img_Transfer;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.Location = new System.Drawing.Point(13, 17);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(234, 200);
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
             // 
             // pnl_Deposit
             // 
@@ -174,6 +195,17 @@
             this.btn_Deposit.UseVisualStyleBackColor = false;
             this.btn_Deposit.Click += new System.EventHandler(this.btn_Deposit_Click);
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox4.BackgroundImage = global::Bank_Presentation_Layer_Windows_App.Properties.Resources.img_Deposit_Withdraw;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Location = new System.Drawing.Point(13, 17);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(234, 200);
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(226)))), ((int)(((byte)(239)))));
@@ -192,39 +224,6 @@
             this.panel4.Size = new System.Drawing.Size(930, 40);
             this.panel4.TabIndex = 5;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.BackgroundImage = global::Bank_Presentation_Layer_Windows_App.Properties.Resources.img_Deposit_Withdraw;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(13, 17);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(234, 200);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox5.BackgroundImage = global::Bank_Presentation_Layer_Windows_App.Properties.Resources.img_Transfer;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(13, 17);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(234, 200);
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox4.BackgroundImage = global::Bank_Presentation_Layer_Windows_App.Properties.Resources.img_Deposit_Withdraw;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(13, 17);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(234, 200);
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            // 
             // frm_ClientHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -242,12 +241,14 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frm_ClientHome";
             this.Text = "frm_ClientHomePage";
+            this.Load += new System.EventHandler(this.frm_ClientHome_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.frm_ClientHome_Paint);
             this.pnl_Main.ResumeLayout(false);
             this.pnl_Withdraw.ResumeLayout(false);
-            this.pnl_Transfer.ResumeLayout(false);
-            this.pnl_Deposit.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.pnl_Transfer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.pnl_Deposit.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
