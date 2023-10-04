@@ -1,0 +1,7 @@
+C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Web_App\obj\Release\net6.0\PubTmp\Out\Bank_Presentation_Layer_Web_App.exe
+C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Web_App\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Web_App\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Web_App\obj\Release\net6.0\PubTmp\Out\Bank_Presentation_Layer_Web_App.dll
+C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Web_App\obj\Release\net6.0\PubTmp\Out\Bank_Presentation_Layer_Web_App.deps.json
+C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Web_App\obj\Release\net6.0\PubTmp\Out\Bank_Presentation_Layer_Web_App.runtimeconfig.json
+C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Web_App\obj\Release\net6.0\PubTmp\Out\Bank_Presentation_Layer_Web_App.pdb
