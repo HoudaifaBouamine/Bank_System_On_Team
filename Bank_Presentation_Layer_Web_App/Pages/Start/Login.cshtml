@@ -1,0 +1,48 @@
+﻿@page
+@model Bank_Presentation_Layer_Web_App.Pages.Start.LoginModel
+@{
+}
+
+
+
+
+<section class="main-div">
+
+    <section class="container" id="log-in">
+        <div>
+            <h3>Log In</h3>
+        </div>
+        <div class="label-input container">
+            <label>Email</label>
+            <input type="email" placeholder="example@mail.com">
+        </div>
+        <div class="label-input container">
+            <label>Password</label>
+            <input type="password" placeholder="Enter you password">
+        </div>
+
+
+        <form asp-page="../Client/Home">
+            <button class="fill-container">Log in</button>
+        </form>
+
+        <div class="container fill-container hint">
+            <p class="caption">Don't have an account ?</p>
+            <a asp-page="CreateAccount">Sign-in</a>
+        </div>
+
+        <div class="container" id="or">
+            <div class="line"></div>
+            <div>Or</div>
+            <div class="line"></div>
+        </div>
+
+        <div class="button button1">
+            <img class="icon" src="~/pic/google.png" alt="">
+            <a href="www.google.com">Continue width google</a>
+        </div>
+
+    </section>
+
+</section>
+

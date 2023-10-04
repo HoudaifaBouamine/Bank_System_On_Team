@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "djI1ooMe0D4ROhC51pEGUJcz+oCJ9H4OmO8oWKkRQy3OQF2fouQVUco+g+Na2pKHqckS0S93hnUhATCOpwqt/g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\Bank_Presentation_Layer_Web_App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\houda\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\6.0.22\\microsoft.netcore.app.runtime.win-x86.6.0.22.nupkg.sha512",
+    "C:\\Users\\houda\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\6.0.22\\microsoft.windowsdesktop.app.runtime.win-x86.6.0.22.nupkg.sha512",
+    "C:\\Users\\houda\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\6.0.22\\microsoft.aspnetcore.app.runtime.win-x86.6.0.22.nupkg.sha512"
+  ],
+  "logs": []
+}

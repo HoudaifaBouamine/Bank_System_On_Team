@@ -8,8 +8,6 @@ body{
     background-color: #DBE2EF;
 }
 
-
-
 *{
     padding: 0;
     margin: 0;
@@ -162,11 +160,6 @@ label{
     font-weight: 600;
     line-height: normal;
 }
-
-
-
-
-
 
 a{
     text-decoration: none;
@@ -331,10 +324,6 @@ footer{
     flex-shrink: 0;
     opacity: 0.8;
 }
-
-
-
-
 
 .container{
     display: flex;
@@ -614,12 +603,3 @@ div .last-name{
     left: 50%;
     top: 20%;
 }
-
-
-
-
-
-
-
-
-

@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank_Data_Layer", "Bank_Dat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank_Presentation_Layer_Windows_App", "Bank_Presentation_Layer_Windows_App\Bank_Presentation_Layer_Windows_App.csproj", "{2B9599C1-1A82-4731-90B6-489F2CB6A5A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank_Presentation_Layer_Web_App", "Bank_Presentation_Layer_Web_App\Bank_Presentation_Layer_Web_App.csproj", "{663B412E-4216-4DE7-91A2-1EEFF877E91F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bank_Presentation_Layer_Web_App", "Bank_Presentation_Layer_Web_App\Bank_Presentation_Layer_Web_App.csproj", "{663B412E-4216-4DE7-91A2-1EEFF877E91F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
