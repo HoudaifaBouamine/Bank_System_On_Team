@@ -199,10 +199,6 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    background-image: url("Background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 
@@ -602,4 +598,5 @@ div .last-name{
     position: relative;
     left: 50%;
     top: 20%;
+    
 }

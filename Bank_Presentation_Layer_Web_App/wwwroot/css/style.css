@@ -1,11 +1,12 @@
 html {
     width: 100%;
     height: 100%;
+    
 }
 
 body {
     margin-top: 5%;
-    height: 90%;
+    height: 100%;
 
     display: flex;
 
@@ -14,8 +15,13 @@ body {
     justify-content: space-between;
     align-items: stretch;
 
-    gap: 20px;
-    background-color: red;
+    gap: 0px;
+    
+    background-image: url("../pic/Background.png");
+    background-repeat: no-repeat;
+
+
+    
 }
 
 
@@ -192,38 +198,63 @@ footer {
     display: flex;
     justify-content: center;
     background-color: #112D4E;
+
+
+    flex: 1;
 }
 
 
 
 
 .main-div {
-    background-image: url("../pic/Background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+   
 
+    
+
+    display: flex;
     width: 100%;
     height: 100%;
 
-   
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    flex:19;
+    padding: 0px;
+
+    flex-flow: wrap;
+
+    background-color: #DBE2EF;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.img-container img{
+    width: 90%;
 }
 
 .main-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+
     justify-content: center;
     align-items: center;
 
-    align-self: stretch;
-
-    background-color: #DBE2EF;
-
     padding: 20px;
     
-    margin-left: 20%;
+    
+
+    flex: 19;
+
+    gap: 20px;
+
+    flex-flow: wrap;
+
+   
+    
    
 }
 
@@ -621,10 +652,10 @@ div .last-name {
     flex-direction: column;
     gap: 20px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+
     width: fit-content;
-    height: 80%;
-    position: relative;
-    left: 50%;
-    top: 20%;
+
+    
+    
 }
