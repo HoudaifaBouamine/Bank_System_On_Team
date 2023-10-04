@@ -1,11 +1,27 @@
 html {
     width: 100%;
     height: 100%;
+    
 }
 
 body {
+    margin-top: 5%;
     height: 100%;
-    background-color: #DBE2EF;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+    align-items: stretch;
+
+    gap: 0px;
+    
+    background-image: url("../pic/Background.png");
+    background-repeat: no-repeat;
+
+
+    
 }
 
 
@@ -27,6 +43,7 @@ nav {
     padding-left: 20px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 10px;
     position: fixed;
     z-index: 100;
@@ -95,7 +112,7 @@ button {
     box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.15);
 }
 
-    button:hover {
+button:hover {
         background: #203B5A;
         box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.15);
     }
@@ -103,7 +120,9 @@ button {
 input {
     padding: 0.625rem 1.25rem;
     gap: 5rem;
-    flex-shrink: 0;
+
+    
+
     border-radius: 0.9375rem;
     border: 1px solid #3F72AF;
     background: #FFF;
@@ -133,7 +152,7 @@ input {
 
 
 label {
-    height: 2.375rem;
+    
     align-self: stretch;
     color: rgba(0, 0, 0, 0.80);
     font-size: 1.25rem;
@@ -179,39 +198,64 @@ footer {
     display: flex;
     justify-content: center;
     background-color: #112D4E;
+
+
+    flex: 1;
 }
 
 
-.body-style0 {
-    background-image: url("../pic/Background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-}
 
 
 .main-div {
-    background-image: url("../pic/Background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+   
+
+    
+
+    display: flex;
     width: 100%;
     height: 100%;
+
+    flex-direction: row;
+    justify-content: center;
+    flex:19;
+    padding: 0px;
+
+    flex-flow: wrap;
+
+    background-color: #DBE2EF;
+}
+
+.img-container{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.img-container img{
+    width: 90%;
 }
 
 .main-container {
-    margin-top: 100px;
-    margin-left: 15%;
-   
-    padding-left: 0;
+    display: flex;
+    flex-direction: row;
 
-    width: 80%;
-    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
     
-    padding-right: 20px;
+    
+
+    flex: 19;
+
+    gap: 20px;
+
+    flex-flow: wrap;
+
+   
+    
+   
 }
 
 .button0 {
@@ -235,28 +279,22 @@ footer {
 
 
 
-.button {
-    display: flex;
-    
-    padding: 0.625rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625rem;
-    color: #FFF;
-    text-align: center;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    
-    border-radius: 0.9375rem;
-    background: #112D4E;
-    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.15);
-}
+
+
+
+
+
 
 
 .label-input {
     flex-direction: column;
+    width: 100%;
+    
+    gap: 0px;
+}
+
+.label-input input{
+    width: auto;
 }
 
 .button1 {
@@ -266,11 +304,17 @@ footer {
     box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.15);
 }
 
-    .button1:hover {
+.button1:hover {
         border: 2px solid #3F72AF;
-        background: #FFF;
+        
+        background-color: #DBE2EF;
+        color: #203B5A;
         box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.15);
-    }
+}
+
+.button1:active{
+    background-color: #d9d9d9;
+}
 
 .button2 {
     color: #3F72AF;
@@ -340,19 +384,19 @@ footer {
 
 
 
-#main1 {
-    background-image: none;
-    background-color: red;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-}
+
 
 .container {
     display: flex;
     gap: 10px;
+    
 }
+
+.h-inputs{
+    
+    flex-flow: wrap;
+}
+
 
 .input-set {
     display: flex;
@@ -473,9 +517,10 @@ div .last-name {
 }
 
 .hist-container {
-    justify-content: flex-start;
+    flex-flow: wrap;
+    justify-content: space-between;
     align-items: center;
-    gap: 140px;
+    gap: 10px;
     padding-left: 20px;
     border-radius: 0.9375rem;
     border: 1px solid #000;
@@ -485,7 +530,7 @@ div .last-name {
     .hist-container p {
         color: #000;
         text-align: center;
-        font-size: 1.5rem;
+        
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -511,10 +556,15 @@ div .last-name {
     justify-content: flex-start;
     align-items: stretch;
     gap: 20px;
+    width: 60%;
+    align-items: stretch;
     padding: 20px;
+
     border-radius: 0.9375rem;
     box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.15);
     background-color: #FFF;
+
+
 }
 
 
@@ -549,11 +599,20 @@ div .last-name {
 
 #sign-up, #log-in {
     flex-direction: column;
-    width: 25%;
-    padding: 20px;
-    position: relative;
-    left: 50%;
-    top: 40%;
+    width: 360px;
+    padding: 15px;
+    
+    
+    
+    margin: auto;
+
+    position: absolute;
+    right:20%;
+
+
+
+   
+
     border-radius: 0.9375rem;
     background: rgba(255, 255, 255, 0.20);
     box-shadow: 0px 20px 24px 0px rgba(0, 0, 0, 0.10);
@@ -581,7 +640,7 @@ div .last-name {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    
+    width: 60%;
     align-items: stretch;
     padding: 20px;
     background-color: #FFF;
@@ -593,10 +652,10 @@ div .last-name {
     flex-direction: column;
     gap: 20px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+
     width: fit-content;
-    height: 80%;
-    position: relative;
-    left: 50%;
-    top: 20%;
+
+    
+    
 }
