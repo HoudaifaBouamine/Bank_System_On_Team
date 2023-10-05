@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1ooy+ytfCCtPq8JAfkHgd7k24UkG7QIhmGM0t8mCrYM=",
+  "Hash": "sutUaKxCfI11CDyjqvUWJ4fmy3gFzLaHSVKQ/ja9Tc4=",
   "Source": "Bank_Presentation_Layer_Web_App",
   "BasePath": "_content/Bank_Presentation_Layer_Web_App",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Bank_Presentation_Layer_Web_App\\wwwroot",
       "Source": "Bank_Presentation_Layer_Web_App",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Bank_Presentation_Layer_Web_App.styles.css",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Bank_Presentation_Layer_Web_App.styles.css",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "Bank_Presentation_Layer_Web_App.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Bank_Presentation_Layer_Web_App.styles.css"
+      "OriginalItemSpec": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Bank_Presentation_Layer_Web_App.styles.css"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Bank_Presentation_Layer_Web_App.bundle.scp.css",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Bank_Presentation_Layer_Web_App.bundle.scp.css",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "Bank_Presentation_Layer_Web_App.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Bank_Presentation_Layer_Web_App.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Bank_Presentation_Layer_Web_App.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\css\\style.css",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\css\\style.css",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\js\\site.js",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\pic\\Background.png",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\pic\\Background.png",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "pic/Background.png",
       "AssetKind": "All",
@@ -1071,10 +1071,27 @@
       "OriginalItemSpec": "wwwroot\\pic\\Background.png"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\pic\\google.png",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\pic\\bank.png",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "BasePath": "_content/Bank_Presentation_Layer_Web_App",
+      "RelativePath": "pic/bank.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\pic\\bank.png"
+    },
+    {
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\pic\\google.png",
+      "SourceId": "Bank_Presentation_Layer_Web_App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "pic/google.png",
       "AssetKind": "All",
@@ -1088,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\pic\\google.png"
     },
     {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\pic\\LOGO.png",
+      "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\pic\\LOGO.png",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
       "RelativePath": "pic/LOGO.png",
       "AssetKind": "All",
