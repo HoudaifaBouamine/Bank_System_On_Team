@@ -24,9 +24,11 @@ namespace Bank_Presentation_Layer_Windows_App
         private async void MainForm_Load(object sender, EventArgs e)
         {
 
+
+
             //ConnectToDataBase();
-            //OpenChildForm(new frm_ClientScreen(this, clsClient.Find(17)));
-            OpenChildForm(new frm_StartScreen(this));
+            OpenChildForm(new frm_ClientScreen(this, clsClient.Find(17)));
+            //OpenChildForm(new frm_StartScreen(this));
             //await ConnectToDataBase();
 
 
