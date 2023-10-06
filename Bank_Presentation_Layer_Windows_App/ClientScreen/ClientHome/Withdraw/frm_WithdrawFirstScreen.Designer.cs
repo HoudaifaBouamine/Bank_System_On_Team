@@ -46,7 +46,7 @@
             this.btn_Next.Location = new System.Drawing.Point(104, 428);
             this.btn_Next.Name = "btn_Next";
             this.btn_Next.Size = new System.Drawing.Size(758, 44);
-            this.btn_Next.TabIndex = 67;
+            this.btn_Next.TabIndex = 1;
             this.btn_Next.Text = "Next";
             this.btn_Next.UseVisualStyleBackColor = false;
             this.btn_Next.Click += new System.EventHandler(this.btn_Next_Click);
@@ -69,7 +69,7 @@
             this.tb_Amount.Location = new System.Drawing.Point(104, 355);
             this.tb_Amount.Name = "tb_Amount";
             this.tb_Amount.Size = new System.Drawing.Size(758, 31);
-            this.tb_Amount.TabIndex = 64;
+            this.tb_Amount.TabIndex = 0;
             // 
             // label9
             // 
@@ -83,6 +83,7 @@
             // 
             // frm_WithdrawFirstScreen
             // 
+            this.AcceptButton = this.btn_Next;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(226)))), ((int)(((byte)(239)))));

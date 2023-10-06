@@ -82,5 +82,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             }
 
         }
+
+
     }
 }

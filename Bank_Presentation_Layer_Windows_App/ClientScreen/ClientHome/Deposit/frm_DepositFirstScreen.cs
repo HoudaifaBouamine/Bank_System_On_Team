@@ -47,5 +47,11 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Deposit
 
             Main.controler .open_page("Second");
         }
+
+        private void frm_DepositFirstScreen_Shown(object sender, EventArgs e)
+        {
+            tb_Amount.Select();
+
+        }
     }
 }

@@ -46,7 +46,7 @@
             this.btn_Next.Location = new System.Drawing.Point(104, 409);
             this.btn_Next.Name = "btn_Next";
             this.btn_Next.Size = new System.Drawing.Size(758, 44);
-            this.btn_Next.TabIndex = 63;
+            this.btn_Next.TabIndex = 1;
             this.btn_Next.Text = "Next";
             this.btn_Next.UseVisualStyleBackColor = false;
             this.btn_Next.Click += new System.EventHandler(this.btn_Next_Click);
@@ -98,6 +98,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frm_DepositFirstScreen";
             this.Text = "frm_DepositFirstScreen";
+            this.Shown += new System.EventHandler(this.frm_DepositFirstScreen_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -21,16 +21,19 @@ namespace Bank_Presentation_Layer_Windows_App
             InitializeComponent();
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
+        private async void MainForm_Load(object sender, EventArgs e)
         {
 
             //ConnectToDataBase();
             //OpenChildForm(new frm_ClientScreen(this, clsClient.Find(17)));
             OpenChildForm(new frm_StartScreen(this));
+            await ConnectToDataBase();
 
-             void ConnectToDataBase()
+
+             Task ConnectToDataBase()
              {
                 clsClient.Find(0);
+                return Task.CompletedTask;
              }
             
         }

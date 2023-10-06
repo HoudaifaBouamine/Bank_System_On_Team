@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using Bank_Business_Layer;
 using Bank_Presentation_Layer_Windows_App.ClientScreen;
 using Bank_Presentation_Layer_Windows_App.UserScreen;
+using System.Runtime.CompilerServices;
 
 namespace Bank_Presentation_Layer_Windows_App.ClientStartScreen
 {
@@ -74,12 +75,18 @@ namespace Bank_Presentation_Layer_Windows_App.ClientStartScreen
             startScreen.open_child_window(new ucCreateAccount(startScreen));
         }
 
-        private void btn_SignUp_Click(object sender, EventArgs e)
+        private async void btn_SignUp_Click(object sender, EventArgs e)
         {
 
+            await _Login();
+
+        }
+
+        private async Task _Login()
+        {
             if (cb_Login_as_user.Checked)
             {
-                if(cb_Login_Email.Checked)
+                if (cb_Login_Email.Checked)
                 {
                     UserLoginEmail();
                 }
@@ -96,7 +103,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientStartScreen
                 }
                 else
                 {
-                    ClientLoginAccNum();
+                    await ClientLoginAccNum();
                 }
             }
 
@@ -107,26 +114,27 @@ namespace Bank_Presentation_Layer_Windows_App.ClientStartScreen
                 string Email = tb_Email_or_AccNum_or_UserName.Text;
                 clsUser user = clsUser.Find(Email);
 
-                if(user != null)
+                if (user != null)
                 {
                     string password = tb_Pass_Or_PinCode.Text;
 
-                    if(user.Password == password)
+                    if (user.Password == password)
                     {
                         //MessageBox.Show($"Login Success\nFull Name : {user.FirstName} {user.LastName}", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        startScreen.mainForm.OpenChildForm(new frm_UserScreen(startScreen.mainForm,user));
+                        startScreen.mainForm.OpenChildForm(new frm_UserScreen(startScreen.mainForm, user));
                     }
                     else
                     {
-                        MessageBox.Show( "Login Failed , Password wrong","Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Login Failed , Password wrong", "Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 else
                 {
-                    MessageBox.Show( "Login Failed , Email Not found", "Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Login Failed , Email Not found", "Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 }
+
             }
 
             void UserLoginUserName()
@@ -174,7 +182,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientStartScreen
                     {
                         //MessageBox.Show($"Client Login Success\nFull Name : {client.FirstName} {client.LastName}", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        startScreen.mainForm.OpenChildForm(new frm_ClientScreen(startScreen.mainForm,client));
+                        startScreen.mainForm.OpenChildForm(new frm_ClientScreen(startScreen.mainForm, client));
                     }
                     else
                     {
@@ -190,7 +198,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientStartScreen
                 // Code
             }
 
-            void ClientLoginAccNum()
+            Task ClientLoginAccNum()
             {
 
                 string AccountNumber = tb_Email_or_AccNum_or_UserName.Text;
@@ -218,11 +226,10 @@ namespace Bank_Presentation_Layer_Windows_App.ClientStartScreen
 
                 }
 
-                // Code
+                return Task.CompletedTask;
             }
 
             #endregion
-
         }
     }
 }

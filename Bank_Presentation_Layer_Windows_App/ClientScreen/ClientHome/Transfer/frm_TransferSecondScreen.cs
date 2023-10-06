@@ -42,7 +42,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
             pnl_CheckSpam.Visible = true;
 
             btn_SendEmail.Text = "Resend Email";
-
+            tb_VerificationKey.Select();
         }
 
         private void btn_Confirme_Click(object sender, EventArgs e)

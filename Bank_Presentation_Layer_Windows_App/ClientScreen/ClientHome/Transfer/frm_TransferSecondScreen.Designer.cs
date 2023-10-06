@@ -61,7 +61,7 @@
             this.btn_Confirme.Location = new System.Drawing.Point(93, 19);
             this.btn_Confirme.Name = "btn_Confirme";
             this.btn_Confirme.Size = new System.Drawing.Size(758, 44);
-            this.btn_Confirme.TabIndex = 63;
+            this.btn_Confirme.TabIndex = 2;
             this.btn_Confirme.Text = "Confirme";
             this.btn_Confirme.UseVisualStyleBackColor = false;
             this.btn_Confirme.Click += new System.EventHandler(this.btn_Confirme_Click);
@@ -85,7 +85,7 @@
             this.tb_VerificationKey.Location = new System.Drawing.Point(93, 459);
             this.tb_VerificationKey.Name = "tb_VerificationKey";
             this.tb_VerificationKey.Size = new System.Drawing.Size(758, 31);
-            this.tb_VerificationKey.TabIndex = 59;
+            this.tb_VerificationKey.TabIndex = 1;
             this.tb_VerificationKey.TextChanged += new System.EventHandler(this.tb_VerificationKey_TextChanged);
             // 
             // label9
@@ -173,7 +173,7 @@
             this.btn_SendEmail.Location = new System.Drawing.Point(93, 360);
             this.btn_SendEmail.Name = "btn_SendEmail";
             this.btn_SendEmail.Size = new System.Drawing.Size(758, 44);
-            this.btn_SendEmail.TabIndex = 69;
+            this.btn_SendEmail.TabIndex = 0;
             this.btn_SendEmail.Text = "Send Email";
             this.btn_SendEmail.UseVisualStyleBackColor = false;
             this.btn_SendEmail.Click += new System.EventHandler(this.btn_SendEmail_Click);
@@ -246,6 +246,7 @@
             // 
             // frm_TransferSecondScreen
             // 
+            this.AcceptButton = this.btn_Confirme;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(226)))), ((int)(((byte)(239)))));
