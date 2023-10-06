@@ -19,9 +19,7 @@ body {
     
     background-image: url("../pic/Background.png");
     background-repeat: no-repeat;
-
-
-    
+    background-clip: ;
 }
 
 
