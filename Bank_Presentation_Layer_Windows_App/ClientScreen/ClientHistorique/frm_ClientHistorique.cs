@@ -118,5 +118,12 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
                 clsGlobal.Refrech[clsGlobal.enPage.Client_Historique] = false;
             }
         }
+
+        private void dgv_ClientTransactionsList_Scroll(object sender, ScrollEventArgs e)
+        {
+            
+        }
+
+    
     }
 }
