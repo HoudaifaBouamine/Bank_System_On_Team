@@ -55,7 +55,6 @@
             this.pnl_Main.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_Main.Size = new System.Drawing.Size(1046, 855);
             this.pnl_Main.TabIndex = 1;
-            this.pnl_Main.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_Main_Paint);
             // 
             // pnl_Menu
             // 

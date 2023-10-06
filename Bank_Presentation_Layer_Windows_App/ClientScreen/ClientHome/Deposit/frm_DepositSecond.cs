@@ -37,6 +37,9 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Deposit
             clsGlobal.NeedToRefrech = true;
         }
 
-     
+        private void frm_DepositSecondScreen_Validating(object sender, CancelEventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -30,8 +30,8 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pnl_TranscationsGraph = new System.Windows.Forms.Panel();
             this.pnl_Balance = new System.Windows.Forms.Panel();
@@ -39,8 +39,8 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             this.lbl_Balance = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.dgv_ClientTransactionsList = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dgv_ClientTransactionsList = new System.Windows.Forms.DataGridView();
             this.panel3.SuspendLayout();
             this.pnl_Balance.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -118,6 +118,14 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             this.panel5.Size = new System.Drawing.Size(930, 480);
             this.panel5.TabIndex = 8;
             // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(900, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(30, 480);
+            this.panel1.TabIndex = 4;
+            // 
             // dgv_ClientTransactionsList
             // 
             this.dgv_ClientTransactionsList.AllowUserToAddRows = false;
@@ -133,23 +141,23 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             this.dgv_ClientTransactionsList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_ClientTransactionsList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgv_ClientTransactionsList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(78)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(78)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_ClientTransactionsList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(78)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(78)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_ClientTransactionsList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgv_ClientTransactionsList.ColumnHeadersHeight = 50;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(112)))), ((int)(((byte)(172)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_ClientTransactionsList.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(112)))), ((int)(((byte)(172)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_ClientTransactionsList.DefaultCellStyle = dataGridViewCellStyle10;
             this.dgv_ClientTransactionsList.EnableHeadersVisualStyles = false;
             this.dgv_ClientTransactionsList.Location = new System.Drawing.Point(30, 0);
             this.dgv_ClientTransactionsList.Name = "dgv_ClientTransactionsList";
@@ -164,14 +172,6 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             this.dgv_ClientTransactionsList.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgv_ClientTransactionsList_CellFormatting);
             this.dgv_ClientTransactionsList.Scroll += new System.Windows.Forms.ScrollEventHandler(this.dgv_ClientTransactionsList_Scroll);
             // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(900, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(30, 480);
-            this.panel1.TabIndex = 4;
-            // 
             // frm_ClientHistorique
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -185,7 +185,11 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frm_ClientHistorique";
             this.Text = "ClientHistorique";
+            this.VisibleChanged += new System.EventHandler(this.frm_ClientHistorique_VisibleChanged);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.frm_ClientHistorique_Paint);
+            this.Enter += new System.EventHandler(this.frm_ClientHistorique_Enter);
+            this.Resize += new System.EventHandler(this.frm_ClientHistorique_Resize);
+            this.Validating += new System.ComponentModel.CancelEventHandler(this.frm_ClientHistorique_Validating);
             this.panel3.ResumeLayout(false);
             this.pnl_Balance.ResumeLayout(false);
             this.pnl_Balance.PerformLayout();

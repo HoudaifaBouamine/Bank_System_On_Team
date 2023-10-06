@@ -21,8 +21,8 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientSettings
             this.client = client;
             this.clientScreen = clientScreen;
             InitializeComponent();
-
             init_Settings();
+
 
             TopLevel = false;
         }

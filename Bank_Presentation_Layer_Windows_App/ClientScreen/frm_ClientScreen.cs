@@ -138,11 +138,6 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 
         }
 
-        private void pnl_Main_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void frm_ClientScreen_Load(object sender, EventArgs e)
         {
             controler.open_page("Home");

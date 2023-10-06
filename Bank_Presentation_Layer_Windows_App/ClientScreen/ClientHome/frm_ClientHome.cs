@@ -28,7 +28,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 
             InitializeComponent();
 
-
+            init_Home();
             TopLevel = false;
 
         }
@@ -67,7 +67,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 
         private void frm_ClientHome_Load(object sender, EventArgs e)
         {
-            init_Home();
+            //init_Home();
 
         }
 
