@@ -56,6 +56,9 @@
             // 
             // tb_Balance
             // 
+            this.tb_Balance.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_Balance.BackColor = System.Drawing.Color.White;
             this.tb_Balance.Font = new System.Drawing.Font("Arial", 12.2F);
             this.tb_Balance.ForeColor = System.Drawing.Color.Black;
@@ -77,6 +80,9 @@
             // 
             // tb_AccountNumber
             // 
+            this.tb_AccountNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_AccountNumber.BackColor = System.Drawing.Color.White;
             this.tb_AccountNumber.Font = new System.Drawing.Font("Arial", 12.2F);
             this.tb_AccountNumber.ForeColor = System.Drawing.Color.Black;
