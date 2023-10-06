@@ -109,5 +109,12 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientSettings
                 clsGlobal.Refrech[clsGlobal.enPage.Client_Settings] = false;
             }
         }
+
+
+
+        private void tb_Balance_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
