@@ -98,6 +98,7 @@
             this.pnl_Withdraw.Name = "pnl_Withdraw";
             this.pnl_Withdraw.Size = new System.Drawing.Size(261, 335);
             this.pnl_Withdraw.TabIndex = 27;
+            this.pnl_Withdraw.Click += new System.EventHandler(this.btn_Withdraw_Click);
             // 
             // btn_Withdraw
             // 
@@ -127,6 +128,7 @@
             this.pictureBox2.Size = new System.Drawing.Size(234, 200);
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.btn_Withdraw_Click);
             // 
             // pnl_Transfer
             // 
@@ -137,6 +139,7 @@
             this.pnl_Transfer.Name = "pnl_Transfer";
             this.pnl_Transfer.Size = new System.Drawing.Size(261, 335);
             this.pnl_Transfer.TabIndex = 30;
+            this.pnl_Transfer.Click += new System.EventHandler(this.btn_Transfer_Click);
             // 
             // btn_Transfer
             // 
@@ -166,6 +169,7 @@
             this.pictureBox5.Size = new System.Drawing.Size(234, 200);
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.btn_Transfer_Click);
             // 
             // pnl_Deposit
             // 
@@ -176,6 +180,7 @@
             this.pnl_Deposit.Name = "pnl_Deposit";
             this.pnl_Deposit.Size = new System.Drawing.Size(261, 335);
             this.pnl_Deposit.TabIndex = 20;
+            this.pnl_Deposit.Click += new System.EventHandler(this.btn_Deposit_Click);
             // 
             // btn_Deposit
             // 
@@ -205,6 +210,7 @@
             this.pictureBox4.Size = new System.Drawing.Size(234, 200);
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.btn_Deposit_Click);
             // 
             // panel5
             // 
