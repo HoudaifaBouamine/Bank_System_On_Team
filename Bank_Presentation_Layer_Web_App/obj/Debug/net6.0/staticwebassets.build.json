@@ -1,10 +1,6 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "Hash": "9O+Na0erlyO+zsny+LUKV3zWdHZpOq/oqY9YRf1LtX8=",
-=======
   "Hash": "sutUaKxCfI11CDyjqvUWJ4fmy3gFzLaHSVKQ/ja9Tc4=",
->>>>>>> 5141c557e89720340aeac661b3b94f372c420f8f
   "Source": "Bank_Presentation_Layer_Web_App",
   "BasePath": "_content/Bank_Presentation_Layer_Web_App",
   "Mode": "Default",
@@ -89,147 +85,7 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-      "SourceId": "Bank_Presentation_Layer_Web_App",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
-      "BasePath": "_content/Bank_Presentation_Layer_Web_App",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
-    },
-    {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
-      "SourceId": "Bank_Presentation_Layer_Web_App",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
-      "BasePath": "_content/Bank_Presentation_Layer_Web_App",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
-      "SourceId": "Bank_Presentation_Layer_Web_App",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
-      "BasePath": "_content/Bank_Presentation_Layer_Web_App",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
-    },
-    {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
-      "SourceId": "Bank_Presentation_Layer_Web_App",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
-      "BasePath": "_content/Bank_Presentation_Layer_Web_App",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
-      "SourceId": "Bank_Presentation_Layer_Web_App",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
-      "BasePath": "_content/Bank_Presentation_Layer_Web_App",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
-    },
-    {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
-      "SourceId": "Bank_Presentation_Layer_Web_App",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
-      "BasePath": "_content/Bank_Presentation_Layer_Web_App",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
-      "SourceId": "Bank_Presentation_Layer_Web_App",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
-      "BasePath": "_content/Bank_Presentation_Layer_Web_App",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
-    },
-    {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
-      "SourceId": "Bank_Presentation_Layer_Web_App",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
-      "BasePath": "_content/Bank_Presentation_Layer_Web_App",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
-=======
       "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
->>>>>>> 5141c557e89720340aeac661b3b94f372c420f8f
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
@@ -637,9 +493,6 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
-=======
       "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
@@ -777,7 +630,6 @@
     },
     {
       "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
->>>>>>> 5141c557e89720340aeac661b3b94f372c420f8f
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
@@ -998,16 +850,12 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery\\dist\\jquery.js",
-=======
       "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
->>>>>>> 5141c557e89720340aeac661b3b94f372c420f8f
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
-      "RelativePath": "lib/jquery/dist/jquery.js",
+      "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1016,19 +864,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
-=======
       "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
->>>>>>> 5141c557e89720340aeac661b3b94f372c420f8f
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
-      "RelativePath": "lib/jquery/dist/jquery.min.js",
+      "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1037,19 +881,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
-=======
       "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
->>>>>>> 5141c557e89720340aeac661b3b94f372c420f8f
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
-      "RelativePath": "lib/jquery/dist/jquery.min.map",
+      "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1058,24 +898,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
-    },
-    {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery\\LICENSE.txt",
-      "SourceId": "Bank_Presentation_Layer_Web_App",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
-      "BasePath": "_content/Bank_Presentation_Layer_Web_App",
-      "RelativePath": "lib/jquery/LICENSE.txt",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
       "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
@@ -1163,16 +986,12 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
-=======
       "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery\\dist\\jquery.js",
->>>>>>> 5141c557e89720340aeac661b3b94f372c420f8f
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
-      "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1181,19 +1000,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
-=======
       "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
->>>>>>> 5141c557e89720340aeac661b3b94f372c420f8f
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
-      "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1202,19 +1017,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
-=======
       "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
->>>>>>> 5141c557e89720340aeac661b3b94f372c420f8f
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
       "BasePath": "_content/Bank_Presentation_Layer_Web_App",
-      "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1223,9 +1034,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
-=======
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
@@ -1244,7 +1052,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
->>>>>>> 5141c557e89720340aeac661b3b94f372c420f8f
     },
     {
       "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\pic\\Background.png",
@@ -1264,28 +1071,7 @@
       "OriginalItemSpec": "wwwroot\\pic\\Background.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\pic\\bank.png",
-      "SourceId": "Bank_Presentation_Layer_Web_App",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",
-      "BasePath": "_content/Bank_Presentation_Layer_Web_App",
-      "RelativePath": "pic/bank.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\pic\\bank.png"
-    },
-    {
-      "Identity": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\pic\\google.png",
-=======
       "Identity": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\pic\\bank.png",
->>>>>>> 5141c557e89720340aeac661b3b94f372c420f8f
       "SourceId": "Bank_Presentation_Layer_Web_App",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\wwwroot\\",

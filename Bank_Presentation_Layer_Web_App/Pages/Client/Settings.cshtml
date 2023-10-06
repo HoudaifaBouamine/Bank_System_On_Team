@@ -1,4 +1,66 @@
-﻿@page
+﻿@page "/Settings"
 @model Bank_Presentation_Layer_Web_App.Pages.Client.SettingsModel
 @{
 }
+<div class="main-container">
+    
+
+    <section id="settings">
+
+        <div  class="input-set">
+            <h3>Personal Infos</h3>
+            <div class="label-input container">
+                <label>Fullname</label>
+                <div class="container h-inputs">
+                    <input class="first-name" type="text" placeholder="First name">
+                    <input  class="last-name" placeholder="Last name">
+                </div>
+                
+            </div>
+    
+            <div class="label-input container">
+                <label>Adress</label>
+                <input type="text" placeholder="Country, City, Street">
+            </div>
+        </div>
+
+        <div  class="input-set">
+            <h3>Contacts</h3>
+            <div class="label-input container">
+                <label>Phone</label>
+                <div class="container h-inputs">
+                    <input class="country-code" type="number" placeholder="+213">
+                    <input class="phone" type="number" placeholder="0 00 00 00 00">
+                </div>
+                
+            </div>
+    
+            <div class="label-input container">
+                <label>Email</label>
+                <input type="text" placeholder="example@email.com">
+            </div>
+        </div>
+        <div  class="input-set">
+            <h3>Security</h3>
+            <div class="label-input container">
+                <label>Current Password</label>
+                <input type="password" placeholder="password">
+            </div>
+
+            <div class="label-input container">
+                <button class="button1 fill-container">Change Password</button>
+            </div>
+
+
+        </div>
+        
+        <div>
+            <div class="label-input container">
+                <button class="fill-container">Save</button>
+            </div>
+        </div>
+
+    </section>
+
+</div>
+
