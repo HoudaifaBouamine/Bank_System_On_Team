@@ -1,13 +1,10 @@
-﻿@page "SignUp-EmailVerify"
+﻿@page "/EmailVerification"
 @model Bank_Presentation_Layer_Web_App.Pages.Start.EmailVerificationModel
-@{
-}
-
 
 <section class="main-container">
 
             <div class="img-container">
-                <img src="../Bank_Presentation_Layer_Web_App//wwwroot/pic/bank.png" alt="">
+                <img src="/pic/bank.png" alt="">
             </div>
         
             <section class="container" id="sign-up">
@@ -19,15 +16,16 @@
             
                 <div class="label-input container">
                     <label>Code PIN</label>
-                    <input type="password" placeholder="XX XX XX">
+                    <input type="password" size="6" placeholder="XXXXXX">
                 </div>
 
-                
-                <button class="fill-container">Continue</button>
+                <form>
+                    <button class="fill-container" asp-page="AddPhone">Continue</button>
+                </form>
 
                 <div class="container fill-container hint">
                     <p class="caption">You didn't recieve any code?</p>
-                    <a href="login.html">Resend</a>
+                    <a>Resend</a>
                 </div>
 
             </section>

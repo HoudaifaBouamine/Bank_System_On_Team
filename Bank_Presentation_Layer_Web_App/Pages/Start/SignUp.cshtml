@@ -7,7 +7,7 @@
 <section class="main-container">
 
         <div class="img-container">
-            <img src="../Bank_Presentation_Layer_Web_App//wwwroot/pic/bank.png" alt="">
+            <img src="/pic/bank.png" alt="">
         </div>
        
         <section class="container" id="sign-up">
@@ -27,12 +27,13 @@
                 <input type="password" placeholder="Enter your password">
             </div>
 
-            
-            <button class="fill-container">Sign Up</button>
+            <form>
+                <button class="fill-container" asp-page="EmailVerification">Sign Up</button>
+            </form>
 
             <div class="container fill-container hint">
                 <p class="caption">Already have an acount?</p>
-                <a href="login.html">Log In</a>
+                <a href="Login">Log In</a>
             </div>
 
             <div class="container" id="or">
