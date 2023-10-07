@@ -1,10 +1,4 @@
 .vs
-
-Bank_Presentation_Layer_Windows_App\bin\*
-
-Bank_Presentation_Layer_Windows_App/bin/Debug/Bank_Presentation_Layer_Windows_App.exe
-
-Bank_Presentation_Layer_Windows_App/bin/Debug/Bank_Presentation_Layer_Windows_App.exe
-
-
-Bank_Presentation_Layer_Windows_App/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+*.dll
+*.exe
+*.pdb

@@ -30,6 +30,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel1 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
@@ -47,12 +48,17 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgv_ClientTransactionsList = new System.Windows.Forms.DataGridView();
+            this.bankSystemDataSet = new Bank_Presentation_Layer_Windows_App.BankSystemDataSet();
+            this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clientsTableAdapter = new Bank_Presentation_Layer_Windows_App.BankSystemDataSetTableAdapters.ClientsTableAdapter();
             this.panel3.SuspendLayout();
             this.pnl_TranscationsGraph.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_MoneyIO)).BeginInit();
             this.pnl_Balance.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ClientTransactionsList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bankSystemDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -118,8 +124,8 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             series1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
             series1.BorderWidth = 3;
             series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.SplineArea;
-            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
             series1.CustomProperties = "DrawSideBySide=False";
             series1.Legend = "lgnd_MonyOut";
             series1.MarkerColor = System.Drawing.Color.Blue;
@@ -128,8 +134,8 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             series1.YValuesPerPoint = 2;
             series2.BorderWidth = 3;
             series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.SplineArea;
-            series2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(77)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             series2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             series2.Legend = "lgnd_MonyOut";
             series2.MarkerColor = System.Drawing.Color.Blue;
@@ -243,8 +249,23 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             this.dgv_ClientTransactionsList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_ClientTransactionsList.Size = new System.Drawing.Size(890, 450);
             this.dgv_ClientTransactionsList.TabIndex = 3;
+            this.dgv_ClientTransactionsList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ClientTransactionsList_CellDoubleClick);
             this.dgv_ClientTransactionsList.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgv_ClientTransactionsList_CellFormatting);
             this.dgv_ClientTransactionsList.Scroll += new System.Windows.Forms.ScrollEventHandler(this.dgv_ClientTransactionsList_Scroll);
+            // 
+            // bankSystemDataSet
+            // 
+            this.bankSystemDataSet.DataSetName = "BankSystemDataSet";
+            this.bankSystemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // clientsBindingSource
+            // 
+            this.clientsBindingSource.DataMember = "Clients";
+            this.clientsBindingSource.DataSource = this.bankSystemDataSet;
+            // 
+            // clientsTableAdapter
+            // 
+            this.clientsTableAdapter.ClearBeforeFill = true;
             // 
             // frm_ClientHistorique
             // 
@@ -259,6 +280,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frm_ClientHistorique";
             this.Text = "ClientHistorique";
+            this.Load += new System.EventHandler(this.frm_ClientHistorique_Load);
             this.VisibleChanged += new System.EventHandler(this.frm_ClientHistorique_VisibleChanged);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.frm_ClientHistorique_Paint);
             this.Enter += new System.EventHandler(this.frm_ClientHistorique_Enter);
@@ -271,6 +293,8 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             this.pnl_Balance.PerformLayout();
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ClientTransactionsList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bankSystemDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -286,5 +310,8 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
         private Panel pnl_TranscationsGraph;
         private Panel panel1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_MoneyIO;
+        private BankSystemDataSet bankSystemDataSet;
+        private BindingSource clientsBindingSource;
+        private BankSystemDataSetTableAdapters.ClientsTableAdapter clientsTableAdapter;
     }
 }
