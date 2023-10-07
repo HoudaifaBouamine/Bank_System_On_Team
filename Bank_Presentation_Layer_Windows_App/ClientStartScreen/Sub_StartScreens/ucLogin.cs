@@ -11,7 +11,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Bank_Business_Layer;
 using Bank_Presentation_Layer_Windows_App.ClientScreen;
-using Bank_Presentation_Layer_Windows_App.UserScreen;
 using System.Runtime.CompilerServices;
 
 namespace Bank_Presentation_Layer_Windows_App.ClientStartScreen
@@ -30,32 +29,17 @@ namespace Bank_Presentation_Layer_Windows_App.ClientStartScreen
 
         private void change_login_requrments()
         {
-            if (cb_Login_as_user.Checked)
-            {
-                lbl_Password_Or_PinCode.Text = "Password";
+            
 
-                if (!cb_Login_Email.Checked)
-                {
-                    lbl_Email_or_AccNum_or_UserName.Text = "User Name";
-                }
-                else
-                {
-                    lbl_Email_or_AccNum_or_UserName.Text = "Email";
-                }
+            if (!cb_Login_Email.Checked)
+            {
+                lbl_Email_or_AccNum_or_UserName.Text = "Account Number";
             }
             else
             {
-                lbl_Password_Or_PinCode.Text = "Pin Code";
-
-                if (!cb_Login_Email.Checked)
-                {
-                    lbl_Email_or_AccNum_or_UserName.Text = "Account Number";
-                }
-                else
-                {
-                    lbl_Email_or_AccNum_or_UserName.Text = "Email";
-                }
+                lbl_Email_or_AccNum_or_UserName.Text = "Email";
             }
+            
         }
 
         private void cb_Login_as_user_CheckedChanged(object sender, EventArgs e)
@@ -84,19 +68,8 @@ namespace Bank_Presentation_Layer_Windows_App.ClientStartScreen
 
         private async Task _Login()
         {
-            if (cb_Login_as_user.Checked)
-            {
-                if (cb_Login_Email.Checked)
-                {
-                    UserLoginEmail();
-                }
-                else
-                {
-                    UserLoginUserName();
-                }
-            }
-            else
-            {
+            
+
                 if (cb_Login_Email.Checked)
                 {
                     ClientLoginEmail();
@@ -105,66 +78,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientStartScreen
                 {
                     await ClientLoginAccNum();
                 }
-            }
-
-            #region User
-
-            void UserLoginEmail()
-            {
-                string Email = tb_Email_or_AccNum_or_UserName.Text;
-                clsUser user = clsUser.Find(Email);
-
-                if (user != null)
-                {
-                    string password = tb_Pass_Or_PinCode.Text;
-
-                    if (user.Password == password)
-                    {
-                        //MessageBox.Show($"Login Success\nFull Name : {user.FirstName} {user.LastName}", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                        startScreen.mainForm.OpenChildForm(new frm_UserScreen(startScreen.mainForm, user));
-                    }
-                    else
-                    {
-                        MessageBox.Show("Login Failed , Password wrong", "Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Login Failed , Email Not found", "Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                }
-
-            }
-
-            void UserLoginUserName()
-            {
-                string UserName = tb_Email_or_AccNum_or_UserName.Text;
-                clsUser user = clsUser.Find_UserName(UserName);
-
-                if (user != null)
-                {
-                    string password = tb_Pass_Or_PinCode.Text;
-
-                    if (user.Password == password)
-                    {
-                        //MessageBox.Show($"Login Success\nFull Name : {user.FirstName} {user.LastName}", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                        startScreen.mainForm.OpenChildForm(new frm_UserScreen(startScreen.mainForm, user));
-                    }
-                    else
-                    {
-                        MessageBox.Show("Login Failed , Password wrong", "Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Login Failed , Email Not found", "Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                }
-            }
-
-            #endregion
+            
 
             #region Client
 

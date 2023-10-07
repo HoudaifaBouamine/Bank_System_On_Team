@@ -36,7 +36,6 @@
             this.lbl_Password_Or_PinCode = new System.Windows.Forms.Label();
             this.lbl_Email_or_AccNum_or_UserName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cb_Login_as_user = new System.Windows.Forms.CheckBox();
             this.cb_Login_Email = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
@@ -46,7 +45,7 @@
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(114)))), ((int)(((byte)(175)))));
-            this.linkLabel1.Location = new System.Drawing.Point(314, 504);
+            this.linkLabel1.Location = new System.Drawing.Point(314, 508);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(67, 19);
             this.linkLabel1.TabIndex = 15;
@@ -60,7 +59,7 @@
             this.lbl_Dont_Have_Account.AutoSize = true;
             this.lbl_Dont_Have_Account.BackColor = System.Drawing.Color.Transparent;
             this.lbl_Dont_Have_Account.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.lbl_Dont_Have_Account.Location = new System.Drawing.Point(107, 504);
+            this.lbl_Dont_Have_Account.Location = new System.Drawing.Point(107, 508);
             this.lbl_Dont_Have_Account.Name = "lbl_Dont_Have_Account";
             this.lbl_Dont_Have_Account.Size = new System.Drawing.Size(200, 19);
             this.lbl_Dont_Have_Account.TabIndex = 14;
@@ -75,7 +74,7 @@
             this.btn_SignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_SignUp.Font = new System.Drawing.Font("Arial", 10F);
             this.btn_SignUp.ForeColor = System.Drawing.Color.White;
-            this.btn_SignUp.Location = new System.Drawing.Point(48, 433);
+            this.btn_SignUp.Location = new System.Drawing.Point(49, 440);
             this.btn_SignUp.Name = "btn_SignUp";
             this.btn_SignUp.Size = new System.Drawing.Size(401, 44);
             this.btn_SignUp.TabIndex = 12;
@@ -88,7 +87,7 @@
             this.tb_Pass_Or_PinCode.AsciiOnly = true;
             this.tb_Pass_Or_PinCode.BackColor = System.Drawing.SystemColors.Window;
             this.tb_Pass_Or_PinCode.Font = new System.Drawing.Font("Arial", 14F);
-            this.tb_Pass_Or_PinCode.Location = new System.Drawing.Point(48, 330);
+            this.tb_Pass_Or_PinCode.Location = new System.Drawing.Point(49, 353);
             this.tb_Pass_Or_PinCode.Name = "tb_Pass_Or_PinCode";
             this.tb_Pass_Or_PinCode.PasswordChar = '*';
             this.tb_Pass_Or_PinCode.Size = new System.Drawing.Size(403, 34);
@@ -99,7 +98,7 @@
             this.tb_Email_or_AccNum_or_UserName.AsciiOnly = true;
             this.tb_Email_or_AccNum_or_UserName.BackColor = System.Drawing.SystemColors.Window;
             this.tb_Email_or_AccNum_or_UserName.Font = new System.Drawing.Font("Arial", 14F);
-            this.tb_Email_or_AccNum_or_UserName.Location = new System.Drawing.Point(48, 209);
+            this.tb_Email_or_AccNum_or_UserName.Location = new System.Drawing.Point(49, 232);
             this.tb_Email_or_AccNum_or_UserName.Name = "tb_Email_or_AccNum_or_UserName";
             this.tb_Email_or_AccNum_or_UserName.Size = new System.Drawing.Size(401, 34);
             this.tb_Email_or_AccNum_or_UserName.TabIndex = 6;
@@ -109,7 +108,7 @@
             this.lbl_Password_Or_PinCode.AutoSize = true;
             this.lbl_Password_Or_PinCode.BackColor = System.Drawing.Color.Transparent;
             this.lbl_Password_Or_PinCode.Font = new System.Drawing.Font("Arial", 11.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Password_Or_PinCode.Location = new System.Drawing.Point(44, 305);
+            this.lbl_Password_Or_PinCode.Location = new System.Drawing.Point(45, 328);
             this.lbl_Password_Or_PinCode.Name = "lbl_Password_Or_PinCode";
             this.lbl_Password_Or_PinCode.Size = new System.Drawing.Size(89, 22);
             this.lbl_Password_Or_PinCode.TabIndex = 13;
@@ -120,7 +119,7 @@
             this.lbl_Email_or_AccNum_or_UserName.AutoSize = true;
             this.lbl_Email_or_AccNum_or_UserName.BackColor = System.Drawing.Color.Transparent;
             this.lbl_Email_or_AccNum_or_UserName.Font = new System.Drawing.Font("Arial", 11.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Email_or_AccNum_or_UserName.Location = new System.Drawing.Point(44, 184);
+            this.lbl_Email_or_AccNum_or_UserName.Location = new System.Drawing.Point(45, 207);
             this.lbl_Email_or_AccNum_or_UserName.Name = "lbl_Email_or_AccNum_or_UserName";
             this.lbl_Email_or_AccNum_or_UserName.Size = new System.Drawing.Size(151, 22);
             this.lbl_Email_or_AccNum_or_UserName.TabIndex = 9;
@@ -131,31 +130,18 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 24.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(39, 90);
+            this.label1.Location = new System.Drawing.Point(40, 113);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(138, 49);
             this.label1.TabIndex = 7;
             this.label1.Text = "Login";
             // 
-            // cb_Login_as_user
-            // 
-            this.cb_Login_as_user.AutoSize = true;
-            this.cb_Login_as_user.BackColor = System.Drawing.Color.Transparent;
-            this.cb_Login_as_user.Location = new System.Drawing.Point(48, 404);
-            this.cb_Login_as_user.Name = "cb_Login_as_user";
-            this.cb_Login_as_user.Size = new System.Drawing.Size(130, 23);
-            this.cb_Login_as_user.TabIndex = 16;
-            this.cb_Login_as_user.Text = "Login as user";
-            this.cb_Login_as_user.UseVisualStyleBackColor = false;
-            this.cb_Login_as_user.Visible = false;
-            this.cb_Login_as_user.CheckedChanged += new System.EventHandler(this.cb_Login_as_user_CheckedChanged);
-            // 
             // cb_Login_Email
             // 
             this.cb_Login_Email.AutoSize = true;
             this.cb_Login_Email.BackColor = System.Drawing.Color.Transparent;
-            this.cb_Login_Email.Location = new System.Drawing.Point(48, 249);
+            this.cb_Login_Email.Location = new System.Drawing.Point(49, 272);
             this.cb_Login_Email.Name = "cb_Login_Email";
             this.cb_Login_Email.Size = new System.Drawing.Size(147, 23);
             this.cb_Login_Email.TabIndex = 17;
@@ -169,7 +155,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Controls.Add(this.cb_Login_Email);
-            this.Controls.Add(this.cb_Login_as_user);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.lbl_Dont_Have_Account);
             this.Controls.Add(this.btn_SignUp);
@@ -197,7 +182,6 @@
         private System.Windows.Forms.Label lbl_Password_Or_PinCode;
         private System.Windows.Forms.Label lbl_Email_or_AccNum_or_UserName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox cb_Login_as_user;
         private System.Windows.Forms.CheckBox cb_Login_Email;
     }
 }
