@@ -20,6 +20,9 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 
         clsClient client = null;
         frm_ClientScreen clientScreen = null;
+        ucClientBalanceSummary balanceSummary = null;
+
+
         public frm_ClientHome(frm_ClientScreen clientScreen,clsClient client)
         {
 
@@ -27,16 +30,10 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             this.clientScreen = clientScreen;
 
             InitializeComponent();
-
-            init_Home();
             TopLevel = false;
 
-        }
 
-        public void init_Home()
-        {
-
-            ucClientBalanceSummary balanceSummary = new ucClientBalanceSummary(client);
+            balanceSummary = new ucClientBalanceSummary(client);
 
             if(pnl_Balance.Controls.Count != 0)
             {
@@ -45,6 +42,13 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 
             pnl_Balance.Controls.Add(balanceSummary);
             balanceSummary.Dock = DockStyle.Fill;
+
+            init_Home();
+        }
+
+        public void init_Home()
+        {
+            balanceSummary.init_Balance_Recent();
         }
 
 

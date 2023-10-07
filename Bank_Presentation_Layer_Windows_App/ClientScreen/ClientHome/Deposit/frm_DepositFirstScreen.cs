@@ -26,7 +26,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Deposit
             this.TopLevel = false;
         }
 
-        private void btn_Next_Click(object sender, EventArgs e)
+        private async void btn_Next_Click(object sender, EventArgs e)
         {
             double Amount = Convert.ToDouble(tb_Amount.Text);
 

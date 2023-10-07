@@ -194,12 +194,12 @@
         private System.Windows.Forms.Panel pnl_Balance;
         private System.Windows.Forms.Panel pnl_LastTransaction;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lbl_Balance;
+        public System.Windows.Forms.Label lbl_Balance;
         private System.Windows.Forms.Label lbl_Title;
-        private System.Windows.Forms.Label lbl_TransactionType;
-        private System.Windows.Forms.Label lbl_DateTime;
+        public System.Windows.Forms.Label lbl_TransactionType;
+        public System.Windows.Forms.Label lbl_DateTime;
         private System.Windows.Forms.Label lbl_TimeTitle;
-        private System.Windows.Forms.Label lbl_LastTransAmount;
+        public System.Windows.Forms.Label lbl_LastTransAmount;
         private System.Windows.Forms.Panel panel1;
         private Zeroit.Framework.LineSeparators.ZeroitBevelLine zeroitBevelLine1;
     }

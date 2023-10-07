@@ -88,11 +88,12 @@
             this.lbl_DateTime.AutoSize = true;
             this.lbl_DateTime.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold);
             this.lbl_DateTime.ForeColor = System.Drawing.Color.White;
-            this.lbl_DateTime.Location = new System.Drawing.Point(123, 274);
+            this.lbl_DateTime.Location = new System.Drawing.Point(123, 305);
             this.lbl_DateTime.Name = "lbl_DateTime";
             this.lbl_DateTime.Size = new System.Drawing.Size(67, 26);
             this.lbl_DateTime.TabIndex = 5;
             this.lbl_DateTime.Text = "00:00";
+            this.lbl_DateTime.Click += new System.EventHandler(this.lbl_DateTime_Click);
             // 
             // label4
             // 
@@ -100,11 +101,12 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 13.2F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(48, 274);
+            this.label4.Location = new System.Drawing.Point(48, 305);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 25);
             this.label4.TabIndex = 4;
             this.label4.Text = "Time : ";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 

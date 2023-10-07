@@ -41,5 +41,15 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Deposit
         {
             Close();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_DateTime_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

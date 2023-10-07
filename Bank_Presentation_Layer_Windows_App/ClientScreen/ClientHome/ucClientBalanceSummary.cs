@@ -24,13 +24,14 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome
             init_Balance_Recent();
         }
 
-        private void init_Balance_Recent()
+        DataTable table_get_last_trans_info = new DataTable();
+        public async void init_Balance_Recent()
         {
             this.lbl_Balance.Text = string.Format("{0:0.00}", client.Balance) + "$";
 
-            DataTable table = client.Transactions_List();
+            await Fetch_Data();
 
-            if (table.Rows.Count > 0)
+            if (table_get_last_trans_info.Rows.Count > 0)
             {
 
                 lbl_DateTime.Visible = true;
@@ -41,10 +42,10 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome
 
                 
 
-                lbl_DateTime.Text = ((DateTime)table.Rows[0]["TransactionDateTime"]).ToString();
-                lbl_LastTransAmount.Text = "" + Operation(table.Rows[0]) + (table.Rows[0]["Amount"]).ToString();
-                lbl_LastTransAmount.ForeColor = AmountColor(table.Rows[0]);
-                lbl_TransactionType.Text = clsTransaction.Types[(int)table.Rows[0]["TransactionType_ID"]];
+                lbl_DateTime.Text = ((DateTime)table_get_last_trans_info.Rows[0]["TransactionDateTime"]).ToString();
+                lbl_LastTransAmount.Text = "" + Operation(table_get_last_trans_info.Rows[0]) + (table_get_last_trans_info.Rows[0]["Amount"]).ToString();
+                lbl_LastTransAmount.ForeColor = AmountColor(table_get_last_trans_info.Rows[0]);
+                lbl_TransactionType.Text = clsTransaction.Types[(int)table_get_last_trans_info.Rows[0]["TransactionType_ID"]];
 
             }
             else
@@ -55,6 +56,13 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome
                 lbl_TimeTitle.Visible = false;
                 lbl_Title.Visible = true;
                 lbl_Title.Text = "No Transaction is done yet";
+            }
+
+            Task Fetch_Data()
+            {
+                table_get_last_trans_info = client.Transactions_List();
+
+                return Task.CompletedTask;
             }
 
             Color AmountColor(DataRow row)
