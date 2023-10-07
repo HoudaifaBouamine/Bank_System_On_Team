@@ -55,11 +55,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BankSystemDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BankSystemDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositFirstScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -299,17 +294,6 @@
     <EmbeddedResource Include="Util\frm_MainBaseClass.resx">
       <DependentUpon>frm_MainBaseClass.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="BankSystemDataSet.xsc">
-      <DependentUpon>BankSystemDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="BankSystemDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BankSystemDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BankSystemDataSet.xss">
-      <DependentUpon>BankSystemDataSet.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

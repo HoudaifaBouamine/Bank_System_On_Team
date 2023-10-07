@@ -282,7 +282,6 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
         private void frm_ClientHistorique_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'bankSystemDataSet.Clients' table. You can move, or remove it, as needed.
-            this.clientsTableAdapter.Fill(this.bankSystemDataSet.Clients);
 
         }
 

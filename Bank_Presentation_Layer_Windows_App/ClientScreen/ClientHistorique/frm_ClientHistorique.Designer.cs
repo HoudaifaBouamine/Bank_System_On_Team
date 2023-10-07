@@ -48,16 +48,13 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgv_ClientTransactionsList = new System.Windows.Forms.DataGridView();
-            this.bankSystemDataSet = new Bank_Presentation_Layer_Windows_App.BankSystemDataSet();
             this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clientsTableAdapter = new Bank_Presentation_Layer_Windows_App.BankSystemDataSetTableAdapters.ClientsTableAdapter();
             this.panel3.SuspendLayout();
             this.pnl_TranscationsGraph.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_MoneyIO)).BeginInit();
             this.pnl_Balance.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ClientTransactionsList)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bankSystemDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -253,20 +250,6 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             this.dgv_ClientTransactionsList.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgv_ClientTransactionsList_CellFormatting);
             this.dgv_ClientTransactionsList.Scroll += new System.Windows.Forms.ScrollEventHandler(this.dgv_ClientTransactionsList_Scroll);
             // 
-            // bankSystemDataSet
-            // 
-            this.bankSystemDataSet.DataSetName = "BankSystemDataSet";
-            this.bankSystemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clientsBindingSource
-            // 
-            this.clientsBindingSource.DataMember = "Clients";
-            this.clientsBindingSource.DataSource = this.bankSystemDataSet;
-            // 
-            // clientsTableAdapter
-            // 
-            this.clientsTableAdapter.ClearBeforeFill = true;
-            // 
             // frm_ClientHistorique
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -293,7 +276,6 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             this.pnl_Balance.PerformLayout();
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ClientTransactionsList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bankSystemDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -310,8 +292,6 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
         private Panel pnl_TranscationsGraph;
         private Panel panel1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_MoneyIO;
-        private BankSystemDataSet bankSystemDataSet;
         private BindingSource clientsBindingSource;
-        private BankSystemDataSetTableAdapters.ClientsTableAdapter clientsTableAdapter;
     }
 }
