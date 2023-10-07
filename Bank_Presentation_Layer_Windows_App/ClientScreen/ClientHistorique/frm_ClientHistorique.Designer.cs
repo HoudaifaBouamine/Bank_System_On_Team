@@ -31,6 +31,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
         private void InitializeComponent()
         {
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel1 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -38,7 +39,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pnl_TranscationsGraph = new System.Windows.Forms.Panel();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart_MoneyIO = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.pnl_Balance = new System.Windows.Forms.Panel();
             this.lbl_Available = new System.Windows.Forms.Label();
             this.lbl_Balance = new System.Windows.Forms.Label();
@@ -48,7 +49,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             this.dgv_ClientTransactionsList = new System.Windows.Forms.DataGridView();
             this.panel3.SuspendLayout();
             this.pnl_TranscationsGraph.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_MoneyIO)).BeginInit();
             this.pnl_Balance.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ClientTransactionsList)).BeginInit();
@@ -69,16 +70,19 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             this.pnl_TranscationsGraph.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnl_TranscationsGraph.BackColor = System.Drawing.Color.White;
-            this.pnl_TranscationsGraph.Controls.Add(this.chart1);
+            this.pnl_TranscationsGraph.Controls.Add(this.chart_MoneyIO);
             this.pnl_TranscationsGraph.Location = new System.Drawing.Point(361, 30);
             this.pnl_TranscationsGraph.Name = "pnl_TranscationsGraph";
             this.pnl_TranscationsGraph.Size = new System.Drawing.Size(539, 180);
             this.pnl_TranscationsGraph.TabIndex = 8;
             // 
-            // chart1
+            // chart_MoneyIO
             // 
-            this.chart1.BackColor = System.Drawing.Color.Transparent;
+            this.chart_MoneyIO.BackColor = System.Drawing.Color.Transparent;
+            chartArea1.AxisX.CustomLabels.Add(customLabel1);
             chartArea1.AxisX.InterlacedColor = System.Drawing.Color.White;
+            chartArea1.AxisX.IsLabelAutoFit = false;
+            chartArea1.AxisX.LabelStyle.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             chartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(112)))), ((int)(((byte)(133)))));
             chartArea1.AxisX.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(247)))));
             chartArea1.AxisX.MajorGrid.LineWidth = 0;
@@ -91,8 +95,8 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             chartArea1.AxisY.MajorTickMark.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             chartArea1.AxisY.MajorTickMark.Size = 0F;
             chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chart_MoneyIO.ChartAreas.Add(chartArea1);
+            this.chart_MoneyIO.Dock = System.Windows.Forms.DockStyle.Fill;
             legend1.Alignment = System.Drawing.StringAlignment.Far;
             legend1.BorderWidth = 0;
             legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
@@ -102,32 +106,40 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             legend1.IsTextAutoFit = false;
             legend1.MaximumAutoSize = 20F;
             legend1.Name = "lgnd_MonyOut";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(0, 0);
-            this.chart1.Margin = new System.Windows.Forms.Padding(0);
-            this.chart1.Name = "chart1";
-            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            this.chart1.PaletteCustomColors = new System.Drawing.Color[] {
+            this.chart_MoneyIO.Legends.Add(legend1);
+            this.chart_MoneyIO.Location = new System.Drawing.Point(0, 0);
+            this.chart_MoneyIO.Margin = new System.Windows.Forms.Padding(0);
+            this.chart_MoneyIO.Name = "chart_MoneyIO";
+            this.chart_MoneyIO.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
+            this.chart_MoneyIO.PaletteCustomColors = new System.Drawing.Color[] {
         System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(145)))), ((int)(((byte)(255))))),
         System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))))};
             series1.BackSecondaryColor = System.Drawing.Color.White;
             series1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDot;
+            series1.BorderWidth = 3;
             series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.SplineArea;
+            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             series1.CustomProperties = "DrawSideBySide=False";
             series1.Legend = "lgnd_MonyOut";
+            series1.MarkerColor = System.Drawing.Color.Blue;
+            series1.MarkerSize = 8;
             series1.Name = "Money out";
             series1.YValuesPerPoint = 2;
+            series2.BorderWidth = 3;
             series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.SplineArea;
+            series2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(77)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
             series2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             series2.Legend = "lgnd_MonyOut";
-            series2.MarkerBorderColor = System.Drawing.Color.White;
+            series2.MarkerColor = System.Drawing.Color.Blue;
+            series2.MarkerSize = 8;
             series2.Name = "Money in";
-            this.chart1.Series.Add(series1);
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(539, 180);
-            this.chart1.TabIndex = 0;
-            this.chart1.Text = "chrt_Money_Out_In";
+            this.chart_MoneyIO.Series.Add(series1);
+            this.chart_MoneyIO.Series.Add(series2);
+            this.chart_MoneyIO.Size = new System.Drawing.Size(539, 180);
+            this.chart_MoneyIO.TabIndex = 0;
+            this.chart_MoneyIO.Text = "chrt_Money_Out_In";
             // 
             // pnl_Balance
             // 
@@ -254,7 +266,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             this.Validating += new System.ComponentModel.CancelEventHandler(this.frm_ClientHistorique_Validating);
             this.panel3.ResumeLayout(false);
             this.pnl_TranscationsGraph.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_MoneyIO)).EndInit();
             this.pnl_Balance.ResumeLayout(false);
             this.pnl_Balance.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -273,6 +285,6 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
         private Label label1;
         private Panel pnl_TranscationsGraph;
         private Panel panel1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart_MoneyIO;
     }
 }

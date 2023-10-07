@@ -99,7 +99,7 @@
             this.Controls.Add(this.panel2);
             this.MinimumSize = new System.Drawing.Size(1300, 795);
             this.Name = "frm_MainForm";
-            this.Text = "Main";
+            this.Text = "Bank";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);

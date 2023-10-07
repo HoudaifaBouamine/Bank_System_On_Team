@@ -8,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections.Generic;
+using System.Web.UI;
+using System.Windows.Forms.DataVisualization;
 
 namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 {
@@ -23,14 +26,115 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             TopLevel = false;
         }
 
+        
+        //public void init_Historique()
+        //{
+
+
+        //    List<Tuple<double, double>> money_io_per_day =new List<Tuple<double, double>>(30);
+        //    DataTable transactionsTable = get_table(money_io_per_day);
+        //    dgv_ClientTransactionsList.DataSource = transactionsTable;
+        //    lbl_Balance.Text = string.Format("{0:0.00}", client.Balance) + "$";
+
+            
+        //    chart_MoneyIO.DataSource = money_io_per_day;
+        //}
+
+        //private DataTable get_table(List<Tuple<double, double>> money_io_per_day)
+        //{
+        //    DataTable Trans = new DataTable("Transactions List");
+        //    Trans.Columns.Add("Name");
+        //    Trans.Columns.Add("Id");
+        //    Trans.Columns.Add("Amount");
+        //    Trans.Columns.Add("Time");
+
+        //    DataTable table = client.Transactions_List();
+
+        //    for(int i = 0; i < money_io_per_day.Capacity; i++)
+        //    {
+        //        money_io_per_day.Add(new Tuple<double, double>(0,0));
+        //    }
+
+        //    foreach(DataRow dr in table.Rows)
+        //    {
+        //        clsHisRows hisRows = new clsHisRows();
+        //        hisRows.Name = client.FirstName + " " + client.LastName;
+        //        hisRows.Transaction_Id = (int) dr["Transaction_ID"];
+        //        hisRows.Amount = ""+ Operation(dr) + (dr["Amount"]) + " $";
+        //        hisRows.Time = (DateTime) dr["TransactionDateTime"];
+
+        //        object[] row = { hisRows.Name , hisRows.Transaction_Id , hisRows.Amount, hisRows.Time };
+
+                
+        //        Trans.Rows.Add(row);
+
+        //        TimeSpan timeSpan = DateTime.Now - hisRows.Time;
+
+        //        if (timeSpan < new TimeSpan(30, 0, 0, 0))
+        //        {
+        //            double money = Convert.ToDouble(dr["Amount"]);
+
+        //            if (money < 0)
+        //            {
+
+        //            }
+
+
+
+        //            money_io_per_day[timeSpan.Days] = new Tuple<double, double>(18,5);
+        //        }
+        //    }
+
+        //    return Trans;
+
+        //    char Operation(DataRow row)
+        //    {
+        //        clsTransaction.enTransaction type =  (clsTransaction.enTransaction)row["TransactionType_ID"];
+
+        //        if (type == clsTransaction.enTransaction.eDeposit)
+        //        {
+        //            return '+';
+        //        }
+        //        else if (type == clsTransaction.enTransaction.eWithdraw)
+        //        {
+        //            return '-';
+        //        }
+        //        else if (type == clsTransaction.enTransaction.eTransfer)
+        //        {
+        //            if(client.Client_ID ==(int) row["Receiver_ID"])
+        //            {
+        //                return '+';
+        //            }
+        //            else
+        //            {
+        //                return '-';
+        //            }
+        //        }
+
+        //        return ':';
+        //    }
+        //}
+
 
         public void init_Historique()
         {
-            dgv_ClientTransactionsList.DataSource = get_table();
+
+
+            List <Tuple<double, double>> money_io_per_day = new List<Tuple<double, double>>(30);
+            DataTable transactionsTable = get_table(money_io_per_day);
+            dgv_ClientTransactionsList.DataSource = transactionsTable;
             lbl_Balance.Text = string.Format("{0:0.00}", client.Balance) + "$";
+
+
+            for (int i = 0; i < money_io_per_day.Count; i++) {
+
+                chart_MoneyIO.Series[0].Points.Add(new System.Windows.Forms.DataVisualization.Charting.DataPoint((DateTime.Now).Day - i, money_io_per_day[i].Item1));
+                chart_MoneyIO.Series[1].Points.Add(new System.Windows.Forms.DataVisualization.Charting.DataPoint((DateTime.Now).Day - i, money_io_per_day[i].Item2));
+
+            }
         }
 
-        private DataTable get_table()
+        private DataTable get_table(List<Tuple<double, double>> money_io_per_day)
         {
             DataTable Trans = new DataTable("Transactions List");
             Trans.Columns.Add("Name");
@@ -40,25 +144,51 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 
             DataTable table = client.Transactions_List();
 
-            foreach(DataRow dr in table.Rows)
+            for (int i = 0; i < money_io_per_day.Capacity; i++)
+            {
+                money_io_per_day.Add(new Tuple<double,double>(0,0));
+            }
+
+            foreach (DataRow dr in table.Rows)
             {
                 clsHisRows hisRows = new clsHisRows();
                 hisRows.Name = client.FirstName + " " + client.LastName;
-                hisRows.Transaction_Id = (int) dr["Transaction_ID"];
-                hisRows.Amount = ""+ Operation(dr) + (dr["Amount"]) + " $";
-                hisRows.Time = (DateTime) dr["TransactionDateTime"];
+                hisRows.Transaction_Id = (int)dr["Transaction_ID"];
+                hisRows.Amount = "" + Operation(dr) + (dr["Amount"]) + " $";
+                hisRows.Time = (DateTime)dr["TransactionDateTime"];
 
-                object[] row = { hisRows.Name , hisRows.Transaction_Id , hisRows.Amount, hisRows.Time };
+                object[] row = { hisRows.Name, hisRows.Transaction_Id, hisRows.Amount, hisRows.Time };
 
-                
+
                 Trans.Rows.Add(row);
+
+                TimeSpan timeSpan = DateTime.Now - hisRows.Time;
+
+                if (timeSpan < new TimeSpan(30, 0, 0, 0))
+                {
+                    double money = Convert.ToDouble(dr["Amount"]);
+
+                    if (money < 0) money *= -1;
+
+                    if (Operation(dr) == '-')
+                    {
+                        money_io_per_day[timeSpan.Days] = new Tuple<double,double>(money_io_per_day[timeSpan.Days].Item1 + money, money_io_per_day[timeSpan.Days].Item2);
+
+                    }
+                    else
+                    {
+                        money_io_per_day[timeSpan.Days] = new Tuple<double, double>(money_io_per_day[timeSpan.Days].Item1, money_io_per_day[timeSpan.Days].Item2 + money);
+                    }
+
+
+                }
             }
 
             return Trans;
 
             char Operation(DataRow row)
             {
-                clsTransaction.enTransaction type =  (clsTransaction.enTransaction)row["TransactionType_ID"];
+                clsTransaction.enTransaction type = (clsTransaction.enTransaction)row["TransactionType_ID"];
 
                 if (type == clsTransaction.enTransaction.eDeposit)
                 {
@@ -70,7 +200,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
                 }
                 else if (type == clsTransaction.enTransaction.eTransfer)
                 {
-                    if(client.Client_ID ==(int) row["Receiver_ID"])
+                    if (client.Client_ID == (int)row["Receiver_ID"])
                     {
                         return '+';
                     }

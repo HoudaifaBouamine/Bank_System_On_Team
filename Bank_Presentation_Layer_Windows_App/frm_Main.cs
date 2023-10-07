@@ -19,6 +19,7 @@ namespace Bank_Presentation_Layer_Windows_App
         public frm_MainForm()
         {
             InitializeComponent();
+
         }
 
         private async void MainForm_Load(object sender, EventArgs e)
