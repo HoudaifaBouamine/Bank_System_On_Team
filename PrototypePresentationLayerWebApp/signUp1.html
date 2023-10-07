@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Bank System Main Page </title>
-    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="../Bank_Presentation_Layer_Web_App/wwwroot/css/style.css" >
 </head>
 <body>
-    <section class="main">
+    
         <nav class="navbar">
 
             <div class="container" id="company">
@@ -23,31 +23,35 @@
            
         </nav>
 
+        <section class="main-container">
 
-
-
-        <section class="container" id="sign-up">
-            <div>
-                <h3>Email Verification</h3>
-                <p>A message that contain a Code PIN have been sent to your email adress</p>
+            <div class="img-container">
+                <img src="../Bank_Presentation_Layer_Web_App//wwwroot/pic/bank.png" alt="">
             </div>
+        
+            <section class="container" id="sign-up">
+                <div>
+                    <h3>Email Verification</h3>
+                    <p>A message that contain a Code PIN have been sent to your email adress</p>
+                </div>
+                
             
-           
-            <div class="label-input container">
-                <label>Code PIN</label>
-                <input type="password" placeholder="XX XX XX">
-            </div>
+                <div class="label-input container">
+                    <label>Code PIN</label>
+                    <input type="password" placeholder="XX XX XX">
+                </div>
 
-            
-            <button class="fill-container">Continue</button>
+                
+                <button class="fill-container">Continue</button>
 
-            <div class="container fill-container hint">
-                <p class="caption">You didn't recieve any code?</p>
-                <a href="login.html">Resend</a>
-            </div>
+                <div class="container fill-container hint">
+                    <p class="caption">You didn't recieve any code?</p>
+                    <a href="login.html">Resend</a>
+                </div>
+
+            </section>
 
         </section>
-
 
 
 
@@ -56,6 +60,6 @@
         <footer>
             this is a footer
         </footer>
-    </section>
+   
 </body>
 </html>

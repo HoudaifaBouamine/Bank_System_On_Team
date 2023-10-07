@@ -1,31 +1,35 @@
-﻿@page
+﻿@page "SignUp-EmailVerify"
 @model Bank_Presentation_Layer_Web_App.Pages.Start.EmailVerificationModel
 @{
 }
 
 
-<section class="container" id="sign-up">
-    <div>
-        <h3>Email Verification</h3>
-        <p>A message that contain a Code PIN have been sent to your email adress</p>
-    </div>
+<section class="main-container">
 
+            <div class="img-container">
+                <img src="../Bank_Presentation_Layer_Web_App//wwwroot/pic/bank.png" alt="">
+            </div>
+        
+            <section class="container" id="sign-up">
+                <div>
+                    <h3>Email Verification</h3>
+                    <p>A message that contain a Code PIN have been sent to your email adress</p>
+                </div>
+                
+            
+                <div class="label-input container">
+                    <label>Code PIN</label>
+                    <input type="password" placeholder="XX XX XX">
+                </div>
 
-    <div class="label-input container">
-        <label>Code PIN</label>
-        <input type="password" placeholder="XX XX XX">
-    </div>
+                
+                <button class="fill-container">Continue</button>
 
+                <div class="container fill-container hint">
+                    <p class="caption">You didn't recieve any code?</p>
+                    <a href="login.html">Resend</a>
+                </div>
 
-
-
-    <form asp-page="AddPhone">
-        <button class="fill-container">Continue</button>
-    </form>
-
-    <div class="container fill-container hint">
-        <p class="caption">You didn't recieve any code?</p>
-        <a href="login.html">Resend</a>
-    </div>
+            </section>
 
 </section>
