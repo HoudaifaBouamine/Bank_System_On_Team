@@ -8,24 +8,26 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\DELL latutude\\.nuget\\packages\\": {}
+    "C:\\Users\\houda\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\Bank_Presentation_Layer_Web_App.csproj",
+      "projectUniqueName": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\Bank_Presentation_Layer_Web_App.csproj",
       "projectName": "Bank_Presentation_Layer_Web_App",
-      "projectPath": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\Bank_Presentation_Layer_Web_App.csproj",
-      "packagesPath": "C:\\Users\\DELL latutude\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL latutude\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\obj\\",
+      "projectPath": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\Bank_Presentation_Layer_Web_App.csproj",
+      "packagesPath": "C:\\Users\\houda\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\houda\\Desktop\\Bank_System_On_Team\\Bank_Presentation_Layer_Web_App\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DELL latutude\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\houda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -49,7 +51,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -61,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.317\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

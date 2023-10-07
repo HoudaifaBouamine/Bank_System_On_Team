@@ -46,7 +46,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1336, 68);
+            this.panel2.Size = new System.Drawing.Size(1582, 68);
             this.panel2.TabIndex = 1;
             // 
             // panel4
@@ -76,7 +76,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(78)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1054, 0);
+            this.panel3.Location = new System.Drawing.Point(1300, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(282, 68);
             this.panel3.TabIndex = 1;
@@ -86,7 +86,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 68);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1336, 720);
+            this.panel1.Size = new System.Drawing.Size(1582, 785);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -94,10 +94,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1336, 788);
+            this.ClientSize = new System.Drawing.Size(1582, 853);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.MinimumSize = new System.Drawing.Size(1100, 695);
+            this.MinimumSize = new System.Drawing.Size(1300, 795);
             this.Name = "frm_MainForm";
             this.Text = "Main";
             this.Load += new System.EventHandler(this.MainForm_Load);

@@ -94,6 +94,8 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 
         private void dgv_ClientTransactionsList_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
+           
+
             if (e.ColumnIndex != 2) return;
 
             if (e.Value.ToString()[0] == '+')
@@ -109,8 +111,36 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
         }
 
 
+      
+
+        private void dgv_ClientTransactionsList_Scroll(object sender, ScrollEventArgs e)
+        {
+            
+        }
+
         private void frm_ClientHistorique_Paint(object sender, PaintEventArgs e)
         {
+            
+        }
+
+        private void frm_ClientHistorique_Enter(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void frm_ClientHistorique_Resize(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frm_ClientHistorique_Validating(object sender, CancelEventArgs e)
+        {
+            
+        }
+
+        private void frm_ClientHistorique_VisibleChanged(object sender, EventArgs e)
+        {
+            if(!Visible) { return; }
 
             if (clsGlobal.Refrech[clsGlobal.enPage.Client_Historique])
             {

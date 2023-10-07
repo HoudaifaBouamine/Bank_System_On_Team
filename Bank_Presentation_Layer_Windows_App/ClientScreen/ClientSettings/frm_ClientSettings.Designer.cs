@@ -32,7 +32,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.tb_AccountNumber = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.tb_Phone = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.tb_Email = new System.Windows.Forms.TextBox();
@@ -49,9 +48,10 @@
             this.tb_FirstName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_PersonalInfo = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btn_SaveClientInfo = new System.Windows.Forms.Button();
             this.btn_Reset = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // tb_Balance
@@ -64,6 +64,7 @@
             this.tb_Balance.ReadOnly = true;
             this.tb_Balance.Size = new System.Drawing.Size(360, 31);
             this.tb_Balance.TabIndex = 28;
+            this.tb_Balance.TextChanged += new System.EventHandler(this.tb_Balance_TextChanged);
             // 
             // label11
             // 
@@ -95,16 +96,6 @@
             this.label10.Size = new System.Drawing.Size(192, 27);
             this.label10.TabIndex = 44;
             this.label10.Text = "Account Number";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial", 19.2F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(56, 69);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(328, 37);
-            this.label8.TabIndex = 43;
-            this.label8.Text = "Banking information";
             // 
             // tb_Phone
             // 
@@ -266,14 +257,6 @@
             this.lbl_PersonalInfo.TabIndex = 25;
             this.lbl_PersonalInfo.Text = "Personal informations";
             // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 911);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(930, 56);
-            this.panel1.TabIndex = 46;
-            // 
             // btn_SaveClientInfo
             // 
             this.btn_SaveClientInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(78)))));
@@ -283,7 +266,7 @@
             this.btn_SaveClientInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_SaveClientInfo.Font = new System.Drawing.Font("Arial", 12.2F);
             this.btn_SaveClientInfo.ForeColor = System.Drawing.Color.White;
-            this.btn_SaveClientInfo.Location = new System.Drawing.Point(721, 869);
+            this.btn_SaveClientInfo.Location = new System.Drawing.Point(721, 868);
             this.btn_SaveClientInfo.Name = "btn_SaveClientInfo";
             this.btn_SaveClientInfo.Size = new System.Drawing.Size(130, 42);
             this.btn_SaveClientInfo.TabIndex = 7;
@@ -300,13 +283,31 @@
             this.btn_Reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Reset.Font = new System.Drawing.Font("Arial", 12.2F);
             this.btn_Reset.ForeColor = System.Drawing.Color.Black;
-            this.btn_Reset.Location = new System.Drawing.Point(585, 869);
+            this.btn_Reset.Location = new System.Drawing.Point(585, 868);
             this.btn_Reset.Name = "btn_Reset";
             this.btn_Reset.Size = new System.Drawing.Size(130, 42);
             this.btn_Reset.TabIndex = 8;
             this.btn_Reset.Text = "Reset";
             this.btn_Reset.UseVisualStyleBackColor = false;
             this.btn_Reset.Click += new System.EventHandler(this.btn_Reset_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 19.2F, System.Drawing.FontStyle.Bold);
+            this.label8.Location = new System.Drawing.Point(56, 69);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(328, 37);
+            this.label8.TabIndex = 43;
+            this.label8.Text = "Banking information";
+            // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 910);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(973, 46);
+            this.panel1.TabIndex = 46;
             // 
             // frm_ClientSettings
             // 
@@ -315,10 +316,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(226)))), ((int)(((byte)(239)))));
-            this.ClientSize = new System.Drawing.Size(951, 940);
+            this.ClientSize = new System.Drawing.Size(994, 940);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_Reset);
             this.Controls.Add(this.btn_SaveClientInfo);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.tb_Balance);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.tb_AccountNumber);
@@ -358,7 +359,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox tb_AccountNumber;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox tb_Phone;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tb_Email;
@@ -375,8 +375,9 @@
         private System.Windows.Forms.TextBox tb_FirstName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_PersonalInfo;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_SaveClientInfo;
         private System.Windows.Forms.Button btn_Reset;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel panel1;
     }
 }

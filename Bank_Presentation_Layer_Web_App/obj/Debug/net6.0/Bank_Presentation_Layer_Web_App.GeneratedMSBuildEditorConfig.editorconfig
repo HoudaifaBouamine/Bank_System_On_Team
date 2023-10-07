@@ -5,72 +5,73 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Bank_Presentation_Layer_Web_App
 build_property.RootNamespace = Bank_Presentation_Layer_Web_App
-build_property.ProjectDir = C:\Users\DELL latutude\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Web_App\
+build_property.ProjectDir = C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Web_App\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\DELL latutude\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Web_App
+build_property.MSBuildProjectDirectory = C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Web_App
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/DELL latutude/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Client/Historique.cshtml]
+[C:/Users/houda/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Client/Historique.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50XEhpc3RvcmlxdWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL latutude/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Client/Home.cshtml]
+[C:/Users/houda/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Client/Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50XEhvbWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL latutude/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Client/Settings.cshtml]
+[C:/Users/houda/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Client/Settings.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50XFNldHRpbmdzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL latutude/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Client/welcome.cshtml]
+[C:/Users/houda/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Client/welcome.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50XHdlbGNvbWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL latutude/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Error.cshtml]
+[C:/Users/houda/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL latutude/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Index.cshtml]
+[C:/Users/houda/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL latutude/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Privacy.cshtml]
+[C:/Users/houda/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL latutude/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/houda/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL latutude/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Start/AddPhone.cshtml]
+[C:/Users/houda/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Start/AddPhone.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhcnRcQWRkUGhvbmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL latutude/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Start/CreateAccount.cshtml]
+[C:/Users/houda/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Start/CreateAccount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhcnRcQ3JlYXRlQWNjb3VudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL latutude/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Start/EmailVerification.cshtml]
+[C:/Users/houda/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Start/EmailVerification.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhcnRcRW1haWxWZXJpZmljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL latutude/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Start/Login.cshtml]
+[C:/Users/houda/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Start/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhcnRcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL latutude/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/_ViewImports.cshtml]
+[C:/Users/houda/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL latutude/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/_ViewStart.cshtml]
+[C:/Users/houda/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL latutude/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Shared/_Layout.cshtml]
+[C:/Users/houda/Desktop/Bank_System_On_Team/Bank_Presentation_Layer_Web_App/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-71olqie0n8

@@ -21,8 +21,8 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientSettings
             this.client = client;
             this.clientScreen = clientScreen;
             InitializeComponent();
-
             init_Settings();
+
 
             TopLevel = false;
         }
@@ -108,6 +108,13 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientSettings
                 init_Settings();
                 clsGlobal.Refrech[clsGlobal.enPage.Client_Settings] = false;
             }
+        }
+
+
+
+        private void tb_Balance_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -61,6 +61,7 @@
             // 
             // lbl_Amount
             // 
+            this.lbl_Amount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_Amount.Font = new System.Drawing.Font("Arial", 33.2F, System.Drawing.FontStyle.Bold);
             this.lbl_Amount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(56)))));
             this.lbl_Amount.Location = new System.Drawing.Point(363, 192);
@@ -83,6 +84,7 @@
             // 
             // lbl_DateTime
             // 
+            this.lbl_DateTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbl_DateTime.AutoSize = true;
             this.lbl_DateTime.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold);
             this.lbl_DateTime.ForeColor = System.Drawing.Color.White;
@@ -94,6 +96,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 13.2F);
             this.label4.ForeColor = System.Drawing.Color.White;
@@ -186,6 +189,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "frm_DepositSecond";
             this.Load += new System.EventHandler(this.frm_DepositSecondScreen_Load);
+            this.Validating += new System.ComponentModel.CancelEventHandler(this.frm_DepositSecondScreen_Validating);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.ResumeLayout(false);
