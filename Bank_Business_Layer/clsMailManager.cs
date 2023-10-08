@@ -13,8 +13,8 @@ namespace Bank_Business_Layer
     {
         static public void Send(string ReceiverMail, string Subject, string Body)
         {
-            string fromMail = "bank.houdaifa@gmail.com";
-            string fromPassword = "mpsbrcgbjganomfc";
+            string fromMail = "houdaifa.bank@gmail.com";
+            string fromPassword = "elhyurnscytlktfk";
 
             MailMessage message = new MailMessage();
             message.From = new MailAddress(fromMail);
