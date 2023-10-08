@@ -89,7 +89,7 @@
             this.tb_Pass_Or_PinCode.Font = new System.Drawing.Font("Arial", 14F);
             this.tb_Pass_Or_PinCode.Location = new System.Drawing.Point(49, 353);
             this.tb_Pass_Or_PinCode.Name = "tb_Pass_Or_PinCode";
-            this.tb_Pass_Or_PinCode.PasswordChar = '*';
+            this.tb_Pass_Or_PinCode.PasswordChar = '•';
             this.tb_Pass_Or_PinCode.Size = new System.Drawing.Size(403, 34);
             this.tb_Pass_Or_PinCode.TabIndex = 10;
             // 

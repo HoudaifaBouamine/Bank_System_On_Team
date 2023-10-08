@@ -116,7 +116,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientLoginScreen
             this.tb_PinCode.Font = new System.Drawing.Font("Arial", 14F);
             this.tb_PinCode.Location = new System.Drawing.Point(52, 367);
             this.tb_PinCode.Name = "tb_PinCode";
-            this.tb_PinCode.PasswordChar = '*';
+            this.tb_PinCode.PasswordChar = '•';
             this.tb_PinCode.Size = new System.Drawing.Size(401, 34);
             this.tb_PinCode.TabIndex = 3;
             // 
