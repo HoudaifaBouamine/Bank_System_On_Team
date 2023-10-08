@@ -27,7 +27,6 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Withdraw
             InitializeComponent();
             TopLevel = false;
 
-            init_Window();
         }
 
 
@@ -87,6 +86,12 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Withdraw
 
 
 
+
+        }
+
+        private void frm_WithdrawSecondScreen_Load(object sender, EventArgs e)
+        {
+            init_Window();
 
         }
     }

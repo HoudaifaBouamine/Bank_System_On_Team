@@ -161,6 +161,7 @@
             this.lbl_LastTransAmount.TabIndex = 8;
             this.lbl_LastTransAmount.Text = "+10.00 $";
             this.lbl_LastTransAmount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl_LastTransAmount.Click += new System.EventHandler(this.lbl_LastTransAmount_Click);
             // 
             // panel1
             // 

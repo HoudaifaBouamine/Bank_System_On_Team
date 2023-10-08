@@ -41,7 +41,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
             forms.Add("Settings", new frm_ClientSettings(this,client));
 
             controler = new clsPagesControler(pnl_Main, forms);
-
+            SelectButton(btn_Home);
         }
 
        
@@ -72,20 +72,65 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 
                 sep.Controls.Add(line);
             }
+
+            btn_Historique.Tag = "NOT_SELECTED";
+            btn_Settings.Tag = "NOT_SELECTED";
+            btn_Logout.Tag = "NOT_SELECTED";
+            btn_Home.Tag = "SELECTED";
         }
 
         public void set_client_name()
         {
             lbl_ClientFullName.Text = client.FirstName + " " + client.LastName;
         }
+
+        Button _LastButtonClicked = null;
+        private void SelectButton(Button btn)
+        {
+
+            if (btn_Historique.Tag.ToString() == "SELECTED")
+            {
+                btn_Historique.Tag = "NOT_SELECTED";
+                btn_Historique.BackColor = Color.FromArgb(17, 45, 78);
+                _LastButtonClicked = btn_Historique;
+            }
+            else if (btn_Home.Tag.ToString() == "SELECTED")
+            {
+                btn_Home.Tag = "NOT_SELECTED";
+                btn_Home.BackColor = Color.FromArgb(17, 45, 78);                _LastButtonClicked = btn_Historique;
+                _LastButtonClicked = btn_Home;
+
+            }
+            else if (btn_Settings.Tag.ToString() == "SELECTED")
+            {
+                btn_Settings.Tag = "NOT_SELECTED";
+                btn_Settings.BackColor = Color.FromArgb(17, 45, 78);
+                _LastButtonClicked = btn_Settings;
+
+            }
+            else if (btn_Logout.Tag.ToString() == "SELECTED")
+            {
+                btn_Logout.Tag = "NOT_SELECTED";
+                btn_Logout.BackColor = Color.FromArgb(17, 45, 78);
+                _LastButtonClicked = btn_Logout;
+
+            }
+
+
+            btn.Tag = "SELECTED";
+            btn.BackColor = Color.FromArgb(35, 67, 115);
+
+        }
         private void btn_Home_Click_1(object sender, EventArgs e)
         {
             controler.open_page("Home");
+            SelectButton((Button)sender);
         }
 
         private void btn_Settings_Click_1(object sender, EventArgs e)
         {
             controler.open_page("Settings");
+            SelectButton((Button)sender);
 
         }
 
@@ -122,14 +167,23 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
         private void btn_Historique_Click_1(object sender, EventArgs e)
         {
             controler.open_page("Historique");
+            SelectButton((Button)sender);
         }
 
         private void btn_Logout_Click(object sender, EventArgs e)
         {
+
+
+            SelectButton((Button)sender);
             DialogResult result = MessageBox.Show("Are sure you want to logout ?", "Logout confermation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
 
-            if (result == DialogResult.No) return;
+            if (result == DialogResult.No) {
+
+                SelectButton(_LastButtonClicked);
+                return;
+                    
+            }
 
             frm_StartScreen frm = new frm_StartScreen(mainForm);
             frm.open_child_window(new ucLogin(frm));
@@ -163,3 +217,4 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
         }
     }
 }
+

@@ -28,7 +28,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome
         public async void init_Balance_Recent()
         {
             this.lbl_Balance.Text = string.Format("{0:0.00}", client.Balance) + "$";
-
+            
             await Fetch_Data();
 
             if (table_get_last_trans_info.Rows.Count > 0)
@@ -43,7 +43,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome
                 
 
                 lbl_DateTime.Text = ((DateTime)table_get_last_trans_info.Rows[0]["TransactionDateTime"]).ToString();
-                lbl_LastTransAmount.Text = "" + Operation(table_get_last_trans_info.Rows[0]) + (table_get_last_trans_info.Rows[0]["Amount"]).ToString();
+                lbl_LastTransAmount.Text = "" + Operation(table_get_last_trans_info.Rows[0]) + (table_get_last_trans_info.Rows[0]["Amount"]).ToString() + "$";
                 lbl_LastTransAmount.ForeColor = AmountColor(table_get_last_trans_info.Rows[0]);
                 lbl_TransactionType.Text = clsTransaction.Types[(int)table_get_last_trans_info.Rows[0]["TransactionType_ID"]];
 
@@ -128,5 +128,12 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome
         {
 
         }
+
+        private void lbl_LastTransAmount_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

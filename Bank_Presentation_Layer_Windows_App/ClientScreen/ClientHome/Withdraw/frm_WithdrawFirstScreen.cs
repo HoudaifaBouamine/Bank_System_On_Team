@@ -35,7 +35,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Withdraw
 
             if(Amount <= Client.Balance)
             {
-                _PrepareTransaction();
+                Transaction.Amount = Amount;
                 Main.controler.open_page("Second");
             }
             else
@@ -45,13 +45,6 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Withdraw
                 return;
             }
 
-            void _PrepareTransaction()
-            {
-
-
-                Transaction.Amount = Amount;
-                
-            }
         }
     }
 }
