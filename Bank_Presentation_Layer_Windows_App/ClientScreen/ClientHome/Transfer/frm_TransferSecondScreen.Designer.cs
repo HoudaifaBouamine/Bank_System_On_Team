@@ -51,6 +51,7 @@
             // 
             // btn_Confirme
             // 
+            this.btn_Confirme.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Confirme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(78)))));
             this.btn_Confirme.FlatAppearance.BorderSize = 0;
             this.btn_Confirme.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(114)))), ((int)(((byte)(175)))));
@@ -68,6 +69,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 19.2F, System.Drawing.FontStyle.Bold);
             this.label8.Location = new System.Drawing.Point(58, 121);
@@ -79,6 +81,7 @@
             // 
             // tb_VerificationKey
             // 
+            this.tb_VerificationKey.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_VerificationKey.BackColor = System.Drawing.Color.White;
             this.tb_VerificationKey.Font = new System.Drawing.Font("Arial", 12.2F);
             this.tb_VerificationKey.ForeColor = System.Drawing.Color.Black;
@@ -90,6 +93,7 @@
             // 
             // label9
             // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial", 14.2F);
             this.label9.Location = new System.Drawing.Point(134, 183);
@@ -101,6 +105,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 14.2F);
             this.label1.Location = new System.Drawing.Point(134, 224);
@@ -112,6 +117,7 @@
             // 
             // lbl_Amount
             // 
+            this.lbl_Amount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_Amount.AutoSize = true;
             this.lbl_Amount.Font = new System.Drawing.Font("Arial", 14.2F, System.Drawing.FontStyle.Bold);
             this.lbl_Amount.Location = new System.Drawing.Point(239, 222);
@@ -123,6 +129,7 @@
             // 
             // lbl_ReceiverAccountNumber
             // 
+            this.lbl_ReceiverAccountNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_ReceiverAccountNumber.AutoSize = true;
             this.lbl_ReceiverAccountNumber.Font = new System.Drawing.Font("Arial", 14.2F, System.Drawing.FontStyle.Bold);
             this.lbl_ReceiverAccountNumber.Location = new System.Drawing.Point(441, 181);
@@ -134,6 +141,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 14.2F);
             this.label2.Location = new System.Drawing.Point(88, 429);
@@ -163,6 +171,7 @@
             // 
             // btn_SendEmail
             // 
+            this.btn_SendEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_SendEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(78)))));
             this.btn_SendEmail.FlatAppearance.BorderSize = 0;
             this.btn_SendEmail.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(114)))), ((int)(((byte)(175)))));
@@ -180,6 +189,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(78)))));
@@ -201,9 +211,11 @@
             this.pnl_CheckSpam.Size = new System.Drawing.Size(930, 43);
             this.pnl_CheckSpam.TabIndex = 69;
             this.pnl_CheckSpam.Visible = false;
+            this.pnl_CheckSpam.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_CheckSpam_Paint);
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
@@ -212,9 +224,11 @@
             this.label4.Size = new System.Drawing.Size(67, 24);
             this.label4.TabIndex = 1;
             this.label4.Text = "spam,";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(78)))));
@@ -223,9 +237,11 @@
             this.label5.Size = new System.Drawing.Size(363, 23);
             this.label5.TabIndex = 2;
             this.label5.Text = "   if it does not exist press resend button";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(78)))));
@@ -234,6 +250,7 @@
             this.label3.Size = new System.Drawing.Size(398, 23);
             this.label3.TabIndex = 0;
             this.label3.Text = "if you do not find the email , check first your ";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // pnl_NextButton
             // 

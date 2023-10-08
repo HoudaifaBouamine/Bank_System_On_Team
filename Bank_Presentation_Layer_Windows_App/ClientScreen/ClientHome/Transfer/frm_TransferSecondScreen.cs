@@ -132,6 +132,26 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
 
         }
 
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnl_CheckSpam_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         void init_Window()
         {
             lbl_Amount.Text = string.Format("{0:0.00}", this.Transaction.Amount) + " $";

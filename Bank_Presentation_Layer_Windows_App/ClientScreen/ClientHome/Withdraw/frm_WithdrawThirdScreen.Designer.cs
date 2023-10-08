@@ -61,6 +61,7 @@
             // 
             // lbl_Amount
             // 
+            this.lbl_Amount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_Amount.Font = new System.Drawing.Font("Arial", 33.2F, System.Drawing.FontStyle.Bold);
             this.lbl_Amount.ForeColor = System.Drawing.Color.Red;
             this.lbl_Amount.Location = new System.Drawing.Point(363, 192);
@@ -84,6 +85,7 @@
             // 
             // lbl_DateTime
             // 
+            this.lbl_DateTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbl_DateTime.AutoSize = true;
             this.lbl_DateTime.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold);
             this.lbl_DateTime.ForeColor = System.Drawing.Color.White;
@@ -95,6 +97,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 13.2F);
             this.label4.ForeColor = System.Drawing.Color.White;
@@ -169,7 +172,7 @@
             this.panel1.Size = new System.Drawing.Size(100, 720);
             this.panel1.TabIndex = 10;
             // 
-            // frm_WithdrawSecondScreen
+            // frm_WithdrawThirdScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -183,7 +186,7 @@
             this.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "frm_WithdrawSecondScreen";
+            this.Name = "frm_WithdrawThirdScreen";
             this.Text = "frm_WithdrawSecondScreen";
             this.Load += new System.EventHandler(this.frm_WithdrawSecondScreen_Load);
             this.panel5.ResumeLayout(false);

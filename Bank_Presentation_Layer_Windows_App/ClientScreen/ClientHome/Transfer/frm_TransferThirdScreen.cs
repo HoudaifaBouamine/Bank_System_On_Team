@@ -30,6 +30,9 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Transfer
 
             InitializeComponent();
             TopLevel = false;
+
+            clsGlobal.NeedToRefrech = true;
+
         }
 
         private void frm_TransferThirdScreen_Load(object sender, EventArgs e)

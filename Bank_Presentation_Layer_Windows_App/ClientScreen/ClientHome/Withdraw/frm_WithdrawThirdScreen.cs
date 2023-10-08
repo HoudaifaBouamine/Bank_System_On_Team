@@ -24,6 +24,7 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome.Withdraw
             InitializeComponent();
             TopLevel = false;
 
+            clsGlobal.NeedToRefrech = true;
 
         }
 
