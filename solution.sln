@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank_Business_Layer", "Bank
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank_Data_Layer", "Bank_Data_Layer\Bank_Data_Layer.csproj", "{733AA105-AB2B-4821-BF3A-7D9090F75352}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank_Presentation_Layer_Windows_App", "Bank_Presentation_Layer_Windows_App\Bank_Presentation_Layer_Windows_App.csproj", "{2B9599C1-1A82-4731-90B6-489F2CB6A5A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank_Presentation_Layer_Client_Windows_App", "Bank_Presentation_Layer_Windows_App\Bank_Presentation_Layer_Client_Windows_App.csproj", "{2B9599C1-1A82-4731-90B6-489F2CB6A5A1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bank_Presentation_Layer_Web_App", "Bank_Presentation_Layer_Web_App\Bank_Presentation_Layer_Web_App.csproj", "{663B412E-4216-4DE7-91A2-1EEFF877E91F}"
 EndProject
