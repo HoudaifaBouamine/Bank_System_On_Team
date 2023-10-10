@@ -11,6 +11,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
+using System.Runtime.InteropServices;
 
 namespace Bank_Presentation_Layer_Windows_App
 {
@@ -25,7 +27,7 @@ namespace Bank_Presentation_Layer_Windows_App
         private async void MainForm_Load(object sender, EventArgs e)
         {
 
-
+            
 
             //ConnectToDataBase();
             await ConnectToDataBase();
@@ -68,6 +70,11 @@ namespace Bank_Presentation_Layer_Windows_App
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void frm_MainForm_Paint(object sender, PaintEventArgs e)
         {
 
         }

@@ -73,7 +73,7 @@ namespace Bank_Business_Layer
         public enTransaction TransactionType { get; private set ; }
         public enum enTransaction { eDeposit = 1, eWithdraw, eTransfer };
 
-        static public string[] Types = { "Undefined","Deposit","Withdraw","Transfer" };
+        static public string[] TransactionTypes = { "Undefined","Deposit","Withdraw","Transfer" };
         
         static public clsTransaction Find(int Transaction_ID)
         {

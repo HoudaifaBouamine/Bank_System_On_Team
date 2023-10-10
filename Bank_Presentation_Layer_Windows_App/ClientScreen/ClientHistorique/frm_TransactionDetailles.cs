@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -38,29 +39,36 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHistorique
 
         private void Reload()
         {
-            tb_Amount.Text = Transaction.Amount.ToString();
-            tb_ID.Text = Transaction.Transaction_ID.ToString();
-
-            if (Transaction.Sender != null)
-            {
-                tb_Sender_AccountNumber.Text = Transaction.Sender.AccountNumber.ToString();
-            }
-            else
-            {
-                tb_Sender_AccountNumber.Text = "NULL";
-
-            }
-
+            lbl_TransactionType.Text = "" + clsTransaction.TransactionTypes[Transaction.TransactionType_ID];
+            lbl_Amount.Text          = "Amount : " + Transaction.Amount.ToString() + "$";
+            lbl_DateTime.Text        = "Date Time : " + Transaction.TransactionDateTime.ToString();
+            lbl_ID.Text              = "Transaction ID : " + Transaction.Transaction_ID.ToString();
 
             if (Transaction.Receiver != null)
             {
-                tb_Receiver_AccountNumber.Text = Transaction.Receiver.AccountNumber.ToString();
+                lbl_ReceiverAccNum.Visible = true;
+                lbl_ReceiverAccNum.Text = "Receiver Account Number : " + Transaction.Receiver.AccountNumber;
+                lbl_ReceiverName.Text = "Receiver Name : " + Transaction.Receiver.FullName;
             }
             else
             {
-                tb_Receiver_AccountNumber.Text = "NULL";
-
+                lbl_ReceiverAccNum.Visible = false;
+                lbl_ReceiverName.Visible = false;
             }
+
+            if(Transaction.Sender != null)
+            {
+                lbl_SenderAccNum.Visible = true;
+                lbl_SenderAccNum.Text = "Sender Account Number : " + Transaction.Sender.AccountNumber;
+                lbl_SenderName.Text = "Sender Name : " + Transaction.Sender.FullName;
+            }
+            else
+            {
+                lbl_SenderAccNum.Visible = false;
+                lbl_SenderName.Visible = false;
+            }
+
+            
 
             this.Visible = false;
         }
@@ -70,6 +78,22 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHistorique
             if(_Transaction == null) { return; }
 
             Reload();
+        }
+
+        private void label1_MouseHover(object sender, EventArgs e)
+        {
+        }
+
+        private void label1_MouseEnter(object sender, EventArgs e)
+        {
+            ((Label)sender).BackColor = Color.FromArgb(31, 60, 108);
+            ((Label)sender).ForeColor = Color.White;
+        }
+
+        private void label1_MouseLeave(object sender, EventArgs e)
+        {
+            ((Label)sender).BackColor = Color.Transparent;
+            ((Label)sender).ForeColor = Color.Black;
         }
     }
 }

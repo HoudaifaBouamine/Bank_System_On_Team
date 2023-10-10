@@ -14,6 +14,15 @@ namespace Bank_Business_Layer
         public int Person_ID { get; protected set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+
+        public string FullName 
+        {
+            get
+            {
+                return FirstName + " " + LastName;  
+            }
+            
+        }
         public string Country { get; set; }
         public string City { get; set; }
         public string Street { get; set; }
