@@ -328,7 +328,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(962, 700);
+            this.panel3.Size = new System.Drawing.Size(982, 700);
             this.panel3.TabIndex = 56;
             // 
             // pnl_ChangePinCodeScreen
@@ -344,7 +344,7 @@
             this.pnl_ChangePinCodeScreen.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_ChangePinCodeScreen.Location = new System.Drawing.Point(0, 700);
             this.pnl_ChangePinCodeScreen.Name = "pnl_ChangePinCodeScreen";
-            this.pnl_ChangePinCodeScreen.Size = new System.Drawing.Size(962, 381);
+            this.pnl_ChangePinCodeScreen.Size = new System.Drawing.Size(982, 381);
             this.pnl_ChangePinCodeScreen.TabIndex = 57;
             this.pnl_ChangePinCodeScreen.Visible = false;
             // 
@@ -465,7 +465,7 @@
             this.pnl_ChangePinCodeChoice.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_ChangePinCodeChoice.Location = new System.Drawing.Point(0, 1081);
             this.pnl_ChangePinCodeChoice.Name = "pnl_ChangePinCodeChoice";
-            this.pnl_ChangePinCodeChoice.Size = new System.Drawing.Size(962, 134);
+            this.pnl_ChangePinCodeChoice.Size = new System.Drawing.Size(982, 134);
             this.pnl_ChangePinCodeChoice.TabIndex = 58;
             // 
             // label12
@@ -485,7 +485,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 1215);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(962, 97);
+            this.panel6.Size = new System.Drawing.Size(982, 97);
             this.panel6.TabIndex = 60;
             // 
             // btn_Save

@@ -45,6 +45,8 @@ namespace Bank_Business_Layer
             return list;
         }
 
+
+
         public int Transaction_ID { get; private set; }
         public clsClient Sender { get; set; }
 
@@ -72,6 +74,12 @@ namespace Bank_Business_Layer
         public enum enTransaction { eDeposit = 1, eWithdraw, eTransfer };
 
         static public string[] Types = { "Undefined","Deposit","Withdraw","Transfer" };
+        
+        static public clsTransaction Find(int Transaction_ID)
+        {
+            DataRow dataRow = clsTransaction.Table().Select($"Transaction_ID = {Transaction_ID}")[0];
+            return new clsTransaction(dataRow) ;
+        }
         private clsTransaction(DataRow row)
         {
             Transaction_ID = Convert.ToInt32( row["Transaction_ID"]);

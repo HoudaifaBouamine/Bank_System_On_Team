@@ -55,6 +55,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClientScreen\ClientHistorique\frm_TransactionDetailles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientScreen\ClientHistorique\frm_TransactionDetailles.Designer.cs">
+      <DependentUpon>frm_TransactionDetailles.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositFirstScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,6 +209,9 @@
     <Compile Include="Util\frm_MainBaseClass.Designer.cs">
       <DependentUpon>frm_MainBaseClass.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ClientScreen\ClientHistorique\frm_TransactionDetailles.resx">
+      <DependentUpon>frm_TransactionDetailles.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClientScreen\ClientHome\Deposit\frm_DepositFirstScreen.resx">
       <DependentUpon>frm_DepositFirstScreen.cs</DependentUpon>
     </EmbeddedResource>

@@ -281,13 +281,34 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen
 
         private void frm_ClientHistorique_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'bankSystemDataSet.Clients' table. You can move, or remove it, as needed.
-
+            
         }
 
         private void dgv_ClientTransactionsList_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             //dgv_ClientTransactionsList.SelectedRows[0].
+        }
+
+        private void tsmi_ShowDetailles_Click(object sender, EventArgs e)
+        {
+
+
+            DataRow dr = ((DataRowView) dgv_ClientTransactionsList.SelectedRows[0].DataBoundItem).Row;
+
+            int Transaction_ID_Index = 1;
+
+            int Transaction_ID = Convert.ToInt32(dr[Transaction_ID_Index]);
+
+            clsGlobal.Show_Transaction_Detailles(clsTransaction.Find(Transaction_ID));
+
+        }
+
+        private void dgv_ClientTransactionsList_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                dgv_ClientTransactionsList.CurrentCell = dgv_ClientTransactionsList[e.ColumnIndex, e.RowIndex];
+            }
         }
     }
 }
