@@ -1,8 +1,8 @@
 namespace Bank_Presentation_Layer_User_Windows_App
 {
-    public partial class Form1 : Form
+    public partial class frm_Main : Form
     {
-        public Form1()
+        public frm_Main()
         {
             InitializeComponent();
         }

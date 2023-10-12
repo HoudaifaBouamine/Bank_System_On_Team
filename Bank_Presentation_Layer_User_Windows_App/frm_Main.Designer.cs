@@ -1,6 +1,6 @@
 ﻿namespace Bank_Presentation_Layer_User_Windows_App
 {
-    partial class Form1
+    partial class frm_Main
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,10 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Main));
+            SuspendLayout();
+            // 
+            // frm_Main
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1262, 673);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "frm_Main";
+            Text = "Bank Management System";
+            ResumeLayout(false);
         }
 
         #endregion
