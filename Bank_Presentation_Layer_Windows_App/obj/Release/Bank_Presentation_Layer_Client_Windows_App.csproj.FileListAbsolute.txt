@@ -39,3 +39,4 @@ C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Windows_App\o
 C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Windows_App\obj\Release\Bank_Presentation_Layer_Client_Windows_App.csproj.CopyComplete
 C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Windows_App\obj\Release\Bank_Presentation_Layer_Windows_App.exe
 C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Windows_App\obj\Release\Bank_Presentation_Layer_Windows_App.pdb
+C:\Users\houda\Desktop\Bank_System_On_Team\Bank_Presentation_Layer_Windows_App\obj\Release\Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHistorique.frm_TransactionDetailles.resources

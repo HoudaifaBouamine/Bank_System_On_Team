@@ -39,8 +39,9 @@ namespace Bank_Presentation_Layer_Windows_App.ClientScreen.ClientHome
                 lbl_TransactionType.Visible = true;
                 lbl_TimeTitle.Visible = true;
                 lbl_Title.Visible = true;
+                lbl_Title.Text = "Recents";
 
-                
+
 
                 lbl_DateTime.Text = ((DateTime)table_get_last_trans_info.Rows[0]["TransactionDateTime"]).ToString();
                 lbl_LastTransAmount.Text = "" + Operation(table_get_last_trans_info.Rows[0]) + (table_get_last_trans_info.Rows[0]["Amount"]).ToString() + "$";

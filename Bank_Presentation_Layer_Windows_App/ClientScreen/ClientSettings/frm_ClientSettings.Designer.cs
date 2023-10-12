@@ -503,6 +503,7 @@
             this.btn_Save.TabIndex = 7;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
+            this.btn_Save.Click += new System.EventHandler(this.btn_SaveClientInfo_Click);
             // 
             // btn_Reset
             // 
@@ -519,6 +520,7 @@
             this.btn_Reset.TabIndex = 8;
             this.btn_Reset.Text = "Reset";
             this.btn_Reset.UseVisualStyleBackColor = false;
+            this.btn_Reset.Click += new System.EventHandler(this.btn_Reset_Click);
             // 
             // frm_ClientSettings
             // 
