@@ -63,6 +63,16 @@ namespace Bank_Presentation_Layer_User_Windows_App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap img_Background {
+            get {
+                object obj = ResourceManager.GetObject("img_Background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap img_BackGround_No_Bank {
             get {
                 object obj = ResourceManager.GetObject("img_BackGround_No_Bank", resourceCulture);
