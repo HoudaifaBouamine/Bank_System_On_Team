@@ -55,83 +55,123 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClientScreen\ClientHistorique\frm_TransactionDetailles.cs" />
+    <Compile Include="ClientScreen\ClientHistorique\frm_TransactionDetailles.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ClientScreen\ClientHistorique\frm_TransactionDetailles.Designer.cs">
       <DependentUpon>frm_TransactionDetailles.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositFirstScreen.cs" />
+    <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositFirstScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositFirstScreen.Designer.cs">
       <DependentUpon>frm_DepositFirstScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositMainScreen.cs" />
+    <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositMainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositMainScreen.Designer.cs">
       <DependentUpon>frm_DepositMainScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositSecond.cs" />
+    <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositSecond.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ClientScreen\ClientHome\Deposit\frm_DepositSecond.Designer.cs">
       <DependentUpon>frm_DepositSecond.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferFirstScreen.cs" />
+    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferFirstScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferFirstScreen.Designer.cs">
       <DependentUpon>frm_TransferFirstScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferMainScreen.cs" />
+    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferMainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferMainScreen.Designer.cs">
       <DependentUpon>frm_TransferMainScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferSecondScreen.cs" />
+    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferSecondScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferSecondScreen.Designer.cs">
       <DependentUpon>frm_TransferSecondScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferThirdScreen.cs" />
+    <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferThirdScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ClientScreen\ClientHome\Transfer\frm_TransferThirdScreen.Designer.cs">
       <DependentUpon>frm_TransferThirdScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientScreen\ClientHome\ucClientBalanceSummary.cs" />
+    <Compile Include="ClientScreen\ClientHome\ucClientBalanceSummary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="ClientScreen\ClientHome\ucClientBalanceSummary.Designer.cs">
       <DependentUpon>ucClientBalanceSummary.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientScreen\ClientHistorique\frm_ClientHistorique.cs" />
+    <Compile Include="ClientScreen\ClientHistorique\frm_ClientHistorique.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ClientScreen\ClientHistorique\frm_ClientHistorique.Designer.cs">
       <DependentUpon>frm_ClientHistorique.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientScreen\ClientHome\frm_ClientHome.cs" />
+    <Compile Include="ClientScreen\ClientHome\frm_ClientHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ClientScreen\ClientHome\frm_ClientHome.Designer.cs">
       <DependentUpon>frm_ClientHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawFirstScreen.cs" />
+    <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawFirstScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawFirstScreen.Designer.cs">
       <DependentUpon>frm_WithdrawFirstScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawMainScreen.cs" />
+    <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawMainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawMainScreen.Designer.cs">
       <DependentUpon>frm_WithdrawMainScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawSecondScreen.cs" />
+    <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawSecondScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawSecondScreen.Designer.cs">
       <DependentUpon>frm_WithdrawSecondScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawThirdScreen.cs" />
+    <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawThirdScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ClientScreen\ClientHome\Withdraw\frm_WithdrawThirdScreen.Designer.cs">
       <DependentUpon>frm_WithdrawThirdScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientScreen\ClientSettings\frm_ClientSettings.cs" />
+    <Compile Include="ClientScreen\ClientSettings\frm_ClientSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ClientScreen\ClientSettings\frm_ClientSettings.Designer.cs">
       <DependentUpon>frm_ClientSettings.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientStartScreen\Sub_StartScreens\ucCreateAccount.cs" />
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucCreateAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="ClientStartScreen\Sub_StartScreens\ucCreateAccount.Designer.cs">
       <DependentUpon>ucCreateAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientStartScreen\Sub_StartScreens\ucEnterPhoneNumber.cs" />
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucEnterPhoneNumber.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="ClientStartScreen\Sub_StartScreens\ucEnterPhoneNumber.Designer.cs">
       <DependentUpon>ucEnterPhoneNumber.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientStartScreen\Sub_StartScreens\ucGetStarted.cs" />
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucGetStarted.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="ClientStartScreen\Sub_StartScreens\ucGetStarted.Designer.cs">
       <DependentUpon>ucGetStarted.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientScreen\frm_ClientScreen.cs" />
+    <Compile Include="ClientScreen\frm_ClientScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ClientScreen\frm_ClientScreen.Designer.cs">
       <DependentUpon>frm_ClientScreen.cs</DependentUpon>
     </Compile>
@@ -141,23 +181,31 @@
     <Compile Include="ClientStartScreen\Sub_StartScreens\ucLogin.Designer.cs">
       <DependentUpon>ucLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientStartScreen\Sub_StartScreens\ucVerifyEmail.cs" />
+    <Compile Include="ClientStartScreen\Sub_StartScreens\ucVerifyEmail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="ClientStartScreen\Sub_StartScreens\ucVerifyEmail.Designer.cs">
       <DependentUpon>ucVerifyEmail.cs</DependentUpon>
     </Compile>
     <Compile Include="Util\clsGlobal.cs" />
-    <Compile Include="frm_Main.cs" />
+    <Compile Include="frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_Main.Designer.cs">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientStartScreen\frm_StartScreen.cs" />
+    <Compile Include="ClientStartScreen\frm_StartScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ClientStartScreen\frm_StartScreen.Designer.cs">
       <DependentUpon>frm_StartScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util\clsPagesControler.cs" />
-    <Compile Include="Util\frm_MainBaseClass.cs" />
+    <Compile Include="Util\frm_MainBaseClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Util\frm_MainBaseClass.Designer.cs">
       <DependentUpon>frm_MainBaseClass.cs</DependentUpon>
     </Compile>

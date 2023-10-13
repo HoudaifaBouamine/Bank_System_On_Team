@@ -10,8 +10,8 @@ namespace Bank_Presentation_Layer_User_Windows_App.Util
     public class clsGlobal
     {
 
-        private clsUser _CurrentUser = null;
-        public clsUser CurrentUser 
+        static private clsUser _CurrentUser = null;
+        static public clsUser CurrentUser 
         {
             get
             {
