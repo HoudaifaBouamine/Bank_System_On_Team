@@ -29,21 +29,123 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Login));
+            panel1 = new Panel();
+            label1 = new Label();
+            tb_Email = new TextBox();
+            label2 = new Label();
+            label3 = new Label();
+            tb_Password = new TextBox();
+            button1 = new Button();
+            panel1.SuspendLayout();
             SuspendLayout();
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(70, 217, 217, 217);
+            panel1.Controls.Add(button1);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(tb_Password);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(tb_Email);
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(657, 56);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(450, 550);
+            panel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Arial", 20.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(24, 38);
+            label1.Name = "label1";
+            label1.Size = new Size(109, 40);
+            label1.TabIndex = 0;
+            label1.Text = "Login";
+            // 
+            // tb_Email
+            // 
+            tb_Email.BackColor = Color.White;
+            tb_Email.Font = new Font("Arial", 14.2F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_Email.Location = new Point(39, 166);
+            tb_Email.Name = "tb_Email";
+            tb_Email.Size = new Size(371, 35);
+            tb_Email.TabIndex = 1;
+            tb_Email.Text = "houdaifa.bouamine@gmail.com";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Arial", 11.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(39, 141);
+            label2.Name = "label2";
+            label2.Size = new Size(57, 22);
+            label2.TabIndex = 2;
+            label2.Text = "Email";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Arial", 11.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(39, 253);
+            label3.Name = "label3";
+            label3.Size = new Size(94, 22);
+            label3.TabIndex = 4;
+            label3.Text = "Password";
+            // 
+            // tb_Password
+            // 
+            tb_Password.BackColor = Color.White;
+            tb_Password.Font = new Font("Arial", 14.2F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_Password.Location = new Point(39, 278);
+            tb_Password.Name = "tb_Password";
+            tb_Password.PasswordChar = '•';
+            tb_Password.Size = new Size(371, 35);
+            tb_Password.TabIndex = 3;
+            tb_Password.Text = "houdaifa.bouamine@gmail.com";
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(17, 45, 78);
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(62, 81, 111);
+            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(41, 62, 94);
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(39, 376);
+            button1.Name = "button1";
+            button1.Size = new Size(371, 44);
+            button1.TabIndex = 5;
+            button1.Text = "Login";
+            button1.UseVisualStyleBackColor = false;
             // 
             // frm_Login
             // 
             AutoScaleDimensions = new SizeF(9F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Red;
-            ClientSize = new Size(1262, 673);
+            BackColor = Color.FromArgb(217, 217, 217);
+            BackgroundImage = Properties.Resources.img_Background;
+            BackgroundImageLayout = ImageLayout.Zoom;
+            ClientSize = new Size(1280, 680);
+            Controls.Add(panel1);
+            DoubleBuffered = true;
             Font = new Font("Arial", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frm_Login";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Panel panel1;
+        private Label label1;
+        private Label label2;
+        private TextBox tb_Email;
+        private Label label3;
+        private TextBox tb_Password;
+        private Button button1;
     }
 }
