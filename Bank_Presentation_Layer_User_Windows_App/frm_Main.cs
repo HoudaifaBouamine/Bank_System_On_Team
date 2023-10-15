@@ -1,4 +1,5 @@
 using Bank_Presentation_Layer_User_Windows_App.Properties;
+using Bank_Presentation_Layer_User_Windows_App.Start;
 using System.Runtime.InteropServices;
 
 namespace Bank_Presentation_Layer_User_Windows_App
@@ -12,7 +13,12 @@ namespace Bank_Presentation_Layer_User_Windows_App
             this.Text = string.Empty;
             this.ControlBox = false;
             this.DoubleBuffered = true;
+
+
         }
+        frm_Login LoginScreen = null;
+
+
 
         //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -50,6 +56,14 @@ namespace Bank_Presentation_Layer_User_Windows_App
             this.Close();
         }
 
+        private void frm_Main_Shown(object sender, EventArgs e)
+        {
 
+            this.LoginScreen = frm_Login.Screen;
+            this.pnl_Background.Controls.Add(LoginScreen);
+            this.LoginScreen.Dock = DockStyle.Fill;
+            this.LoginScreen.BringToFront();
+            this.LoginScreen.Show();
+        }
     }
 }

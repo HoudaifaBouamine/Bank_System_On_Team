@@ -120,6 +120,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "frm_Main";
             Text = "Bank Management System";
+            Shown += frm_Main_Shown;
             pnl_HeaderBar.ResumeLayout(false);
             ResumeLayout(false);
         }
