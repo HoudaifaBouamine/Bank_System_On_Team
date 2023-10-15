@@ -41,7 +41,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(70, 217, 217, 217);
+            panel1.BackColor = Color.FromArgb(110, 255, 255, 255);
             panel1.Controls.Add(btn_Login);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(tb_Password);

@@ -15,29 +15,45 @@ namespace Bank_Presentation_Layer_User_Windows_App.Start
 {
     public partial class frm_Login : Form
     {
-        public frm_Login()
+        private frm_Login()
         {
             InitializeComponent();
+            this.TopLevel = false;
+        }
+
+        static private frm_Login _Screen = null;
+        static public frm_Login Screen
+        {
+            get
+            {
+                if (_Screen == null)
+                {
+                    _Screen = new frm_Login();
+                }
+
+                return _Screen;
+            }
         }
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            enLoginStatus LoginResult = _TryLoginEmail(tb_Email.Text.Trim(),tb_Password.Text.Trim());
+            enLoginStatus LoginResult = _TryLoginEmail(tb_Email.Text.Trim(), tb_Password.Text.Trim());
 
-            if(LoginResult == enLoginStatus.eSuccess)
+            if (LoginResult == enLoginStatus.eSuccess)
             {
                 // Login Code
+
             }
         }
 
-        private enLoginStatus _TryLoginEmail(string Email,string Password)
+        private enLoginStatus _TryLoginEmail(string Email, string Password)
         {
-            if(string.IsNullOrEmpty(Email))
+            if (string.IsNullOrEmpty(Email))
             {
                 return enLoginStatus.eEmailEmpty;
             }
 
-            if(Password == "")
+            if (Password == "")
             {
                 return enLoginStatus.ePasswordEmpty;
             }
@@ -59,7 +75,7 @@ namespace Bank_Presentation_Layer_User_Windows_App.Start
                 return enLoginStatus.eFailedEmailNotFound;
             }
 
-            if(user.Password != Password)
+            if (user.Password != Password)
             {
                 return enLoginStatus.eFailedPasswordWrong;
             }
@@ -78,7 +94,7 @@ namespace Bank_Presentation_Layer_User_Windows_App.Start
             {
                 MailAddress mailAddress = new MailAddress(Email);
             }
-            catch(Exception ex) 
+            catch (Exception ex)
             {
                 return false;
             }
@@ -86,8 +102,8 @@ namespace Bank_Presentation_Layer_User_Windows_App.Start
             return true;
         }
 
-        
+
         #endregion
-        private enum enLoginStatus { eSuccess,eFailedEmailNotFound,eFailedPasswordWrong,eEmailEmpty,eEmailNonValid,ePasswordEmpty,ePasswordSmallerThanMinLength};
+        private enum enLoginStatus { eSuccess, eFailedEmailNotFound, eFailedPasswordWrong, eEmailEmpty, eEmailNonValid, ePasswordEmpty, ePasswordSmallerThanMinLength };
     }
 }
